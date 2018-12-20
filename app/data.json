@@ -161,6 +161,11 @@
                 },
                 {
                     "group": "typography",
+                    "name": "sub-heading-rds",
+                    "title": "Sub Heading-rds"
+                },
+                {
+                    "group": "typography",
                     "name": "copy-text",
                     "title": "Copy Text"
                 },
