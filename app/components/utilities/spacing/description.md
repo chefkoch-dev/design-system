@@ -22,7 +22,7 @@ Seite-Abkürzungen:
 
 Größen:
 
-    0: Eliminierung der margins/paddings (status: noch nicht implementiert)
+    0: Eliminierung der margins/paddings
     1: (status: bei Bedarf noch zu implementieren)
     2: klein
     3: standard

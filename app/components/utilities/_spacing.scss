@@ -34,6 +34,21 @@ $spacing-xlarge: 20px;
 
 
 // Margin Utilities
+.ds-mt--0 { margin-top: 0; }
+.ds-mr--0 { margin-right: 0; }
+.ds-ml--0 { margin-left: 0; }
+.ds-mb--0 { margin-bottom: 0; }
+
+.ds-mx--0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.ds-my--0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .ds-mt--3 { margin-top: $spacing-default; }
 .ds-mr--3 { margin-right: $spacing-default; }
 .ds-mb--3 { margin-bottom: $spacing-default; }
@@ -106,6 +121,21 @@ $spacing-xlarge: 20px;
 
 
 // Padding Utilities
+.ds-pt--0 { padding-top: 0; }
+.ds-pr--0 { padding-right: 0; }
+.ds-pb--0 { padding-bottom: 0; }
+.ds-pl--0 { padding-left: 0; }
+
+.ds-px--0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ds-py--0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .ds-pt--3 { padding-top: $spacing-default; }
 .ds-pr--3 { padding-right: $spacing-default; }
 .ds-pb--3 { padding-bottom: $spacing-default; }
