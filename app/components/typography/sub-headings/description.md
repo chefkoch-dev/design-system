@@ -3,6 +3,6 @@ __Code__
 
 __Styles__  
 Helvetica Neue Regular  
-F 12px / L 20px / M kommt von h*
+F 12px / L 20px / M ?
   
 <small>F: Fontsize / L: Line-Height / M: Margin (bottom)</small>

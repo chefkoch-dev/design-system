@@ -1,3 +1,5 @@
+⚠ Will be modified in future
+
 __Usage__  
     
     Via Shortlink
@@ -8,4 +10,3 @@ __Usage__
     
     Original Location
     @import "~chefkoch-design-system/app/components/breakpoints/breakpoints";
-    

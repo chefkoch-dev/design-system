@@ -1,32 +1,60 @@
-///*------------------------------------*\
-//    #Fonts
-//\*------------------------------------*/
+/* font-family
+----------------------------------- */
 
-$fontfamily-sansserif: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+$fontfamily-base: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+
+/* font-sizes
+----------------------------------- */
+
+$fontsize-base: 16px !default;
+$fontsize-small: 14px !default;
+
+$fontsize-h1: 32px !default;
+$fontsize-h2: 24px !default;
+$fontsize-h3: 20px !default;
+$fontsize-h4: $fontsize-base;
+$fontsize-h5: $fontsize-small;
+
+/* line-heights
+----------------------------------- */
+
+// we use px here so that we can reuse this variable again
+$lineheight-base: 24px !default;
+$lineheight-small: 20px !default;
+
+$lineheight-h1: $fontsize-h1 + $unit !default; //40px
+$lineheight-h2: $fontsize-h2 + $unit !default; //32px
+$lineheight-h3: $lineheight-base;
+$lineheight-h4: $lineheight-base;
+$lineheight-h5: $lineheight-small;
+
+
+/* font: x;
+----------------------------------- */
+// font: font-weight font-size/line-height font-family;
+
+$font-base: normal #{$fontsize-base}/#{$lineheight-base} $fontfamily-base !default;
+
+$font-h1: 700 #{$fontsize-h1}/#{$lineheight-h1} $fontfamily-base !default;
+$font-h2: 700 #{$fontsize-h2}/#{$lineheight-h2} $fontfamily-base !default;
+$font-h3: 700 #{$fontsize-h3}/#{$lineheight-h3} $fontfamily-base !default;
+$font-h4: 700 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base !default;
+$font-h5: 700 #{$fontsize-h5}/#{$lineheight-h5} $fontfamily-base !default;
+
+
+/* will be deleted
+** when RDS gets its makeover
+----------------------------------- */
+
+$font-subheading-1: normal #{$fontsize-h3}/#{$unit * 4} $fontfamily-base !default;
+
+
+/* deprecated?
+----------------------------------- */
+
+// will this be used?
 $fontfamily-serif: "Georgia", "Times", "Times New Roman", serif;
-
-$fontsize-heading-1: 32px !default;
-$fontsize-heading-2: 24px !default;
-$fontsize-heading-3: 20px !default;
-$fontsize-heading-4: 16px !default;
-$fontsize-heading-5: 14px !default;
-
-$fontsize-text-copy: 16px !default;
-$fontsize-text-small: 14px !default;
-$fontsize-text-marginalia: 10px !default;
-
-$fontsize-button--bigboss: 18px !default;
-$fontsize-icon: 15px !default;
-
-$lineheight-heading-1: $fontsize-heading-1 + $unit !default;
-$lineheight-heading-2: $fontsize-heading-2 + $unit !default;
-$lineheight-heading-3: $fontsize-heading-3 + ($unit / 2) !default;
-$lineheight-heading-4: $fontsize-heading-4 + $unit !default;
-$lineheight-heading-5: 20px !default;
-
-$lineheight-text-copy: $fontsize-text-copy + $unit !default;
-$lineheight-text-small: 20px !default;
-$lineheight-text-marginalia: 1.5 !default;
+$fontsize-marginalia: 10px !default;
 
 $fontweight-thin: 100;
 $fontweight-extra-light: 200;
@@ -37,17 +65,3 @@ $fontweight-semi-bold: 600;
 $fontweight-bold: 700;
 $fontweight-extra-bold: 800;
 $fontweight-black: 900;
-
-$fontfamily--base: $fontfamily-sansserif;
-$fontsize--base: $fontsize-text-copy;
-
-$font-heading-1: $fontweight-bold #{$fontsize-heading-1}/#{$lineheight-heading-1} $fontfamily-sansserif !default;
-$font-heading-2: $fontweight-bold #{$fontsize-heading-2}/#{$lineheight-heading-2} $fontfamily-sansserif !default;
-$font-heading-3: $fontweight-bold #{$fontsize-heading-3}/#{$lineheight-heading-3} $fontfamily-sansserif !default;
-$font-heading-4: $fontweight-bold #{$fontsize-heading-4}/#{$lineheight-heading-4} $fontfamily-sansserif !default;
-$font-heading-5: $fontweight-bold #{$fontsize-heading-5}/#{$lineheight-heading-5} $fontfamily-sansserif !default;
-
-$font-subheading-1: $fontweight-normal #{$fontsize-heading-3}/#{$unit * 4} $fontfamily-sansserif !default;
-
-$font-text-copy: $fontweight-normal #{$fontsize-text-copy}/#{$lineheight-text-copy} $fontfamily-sansserif !default;
-$font-text-small: $fontweight-normal #{$fontsize-text-small}/#{$lineheight-text-small} $fontfamily-sansserif !default;

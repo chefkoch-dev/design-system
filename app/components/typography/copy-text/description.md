@@ -7,7 +7,7 @@ Copy Text sollte möglichst immer in Absätzen `<p>` sein. `<span>` ist für seh
 Font-size und line-height sind auf dem body als default definiert und müssen daher nicht mehr explizit auf Copy Texte im main-content geschrieben werden.
 
 __Utilities__  
-Weitere Textauszeichnungen über utility-Klasse `.ds-text-center` möglich.
+Weitere Textauszeichnungen über ds-utility-Klassen `.ds-text-center` oder `.ds-text-right` möglich.
 
 __Styles__  
 Helvetica Neue Regular  

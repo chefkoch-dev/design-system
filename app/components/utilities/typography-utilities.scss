@@ -1,0 +1,25 @@
+/* typography utilities
+----------------------------------- */
+
+small,
+.ds-text-small {
+    display: block;
+    font-size: $fontsize-small;
+    line-height: $lineheight-small;
+}
+
+.ds-text-center {
+    text-align: center;
+}
+
+.ds-text-right {
+    text-align: right;
+}
+
+.ds-text-italic {
+    font-style: italic;
+}
+
+.ds-text-bold {
+    font-weight: bold;
+}

@@ -161,11 +161,6 @@
                 },
                 {
                     "group": "typography",
-                    "name": "sub-heading-rds",
-                    "title": "Sub Heading-rds"
-                },
-                {
-                    "group": "typography",
                     "name": "copy-text",
                     "title": "Copy Text"
                 },
@@ -173,6 +168,32 @@
                     "group": "typography",
                     "name": "small-text",
                     "title": "Small Text"
+                }
+            ]
+        },
+        {
+            "name": "utilities",
+            "title": "Utilities",
+            "components": [
+                {
+                    "group": "utilities",
+                    "name": "typography-utilities",
+                    "title": "Typography Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "list-utilities",
+                    "title": "List Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "layout-utilities",
+                    "title": "Layout Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "screenreader-utilities",
+                    "title": "Screenreader Utilities"
                 }
             ]
         },
@@ -309,20 +330,6 @@
                     "title": "Tabs",
                     "options": {
                         "sample_dark_background": true
-                    }
-                }
-            ]
-        },
-        {
-            "name": "utilities",
-            "title": "Utilities",
-            "components": [
-                {
-                    "group": "utilities",
-                    "name": "spacing",
-                    "title": "Spacing",
-                    "options": {
-                        "disable_code_sample": true
                     }
                 }
             ]

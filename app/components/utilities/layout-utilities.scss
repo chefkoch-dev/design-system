@@ -1,0 +1,18 @@
+/* layout-utilities
+----------------------------------- */
+
+@mixin ds-float-left {
+    float: left;
+}
+
+.ds-float-left {
+    float: left;
+}
+
+@mixin clearfix {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}

@@ -3,10 +3,11 @@
 @import "../colors/colors";
 
 body {
-    font-family: $fontfamily--base;
-    font-size: em($fontsize--base); // 16px
-    line-height: 1.5; // 24px
+    font: $font-base;
 }
+
+/* reset
+----------------------------------- */
 
 h1,
 .ds-h1,
@@ -22,9 +23,12 @@ ul {
     margin-top: 0;
 }
 
+/* headlines
+----------------------------------- */
+
 h1,
 .ds-h1 {
-    font: $font-heading-1;
+    font: $font-h1;
     margin-bottom: $unit * 4;
 }
 
@@ -36,25 +40,25 @@ h1 + .ds-sub-h1 {
 
 h2,
 .ds-h2 {
-    font: $font-heading-2;
+    font: $font-h2;
     margin-bottom: $unit * 4;
 }
 
 h3,
 .ds-h3 {
-    font: $font-heading-3;
+    font: $font-h3;
     margin-bottom: $unit * 2;
 }
 
 h4,
 .ds-h4 {
-    font: $font-heading-4;
+    font: $font-h4;
     margin-bottom: $unit * 2;
 }
 
 h5,
 .ds-h5 {
-    font: $font-heading-5;
+    font: $font-h5;
     margin: 0;
 }
 
@@ -65,50 +69,4 @@ h5,
     font-weight: normal;
     letter-spacing: 0.5px;
     line-height: 20px;
-}
-
-p {
-    font: $font-text-copy;
-}
-
-small,
-.ds-text-small {
-    display: block;
-    font: $font-text-small;
-}
-
-.ds-text-center {
-    text-align: center;
-}
-
-.ds-text-right {
-    text-align: right;
-}
-
-.ds-text-italic {
-    font-style: italic;
-}
-
-.ds-list-plain {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-        margin: 0;
-        padding: 0;
-    }
-}
-
-.ds-list-cloud {
-    display: flex;
-    flex-wrap: wrap;
-
-    li {
-        margin: 0 $unit $unit 0;
-    }
-
-    &:not(:last-of-type) {
-        margin-bottom: $unit * 2;
-    }
 }

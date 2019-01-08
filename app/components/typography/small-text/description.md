@@ -6,7 +6,7 @@ In der Sidebar (`<aside>`) ist small-text bereits vordefiniert.
 Small Text im Content (`<main>`) sollte kein Absatz `<p>` sein, sondern `<small>`. Oder ein `<span class="ds-text-small">`, da er dann auch sehr kurz gehalten ist.  
 
 __Utilities__  
-Weitere Textauszeichnungen über utility-Klassen `.ds-text-right` und `.ds-text-italic` möglich.
+Weitere Textauszeichnungen über ds-utility-Klassen (zum Beispiel `.ds-text-right`, `.ds-text-italic`) möglich.
 
 __Styles__  
 Helvetica Neue Regular  
