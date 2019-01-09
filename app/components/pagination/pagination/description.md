@@ -6,7 +6,7 @@ Die Pagination besteht aus verlinkten vor- und zurück Pfeilen und Seitennummern
 - Die letzte Seite wird nicht angezeigt.
 
 __Aktives Item__  
-- Im Beispiel ist die aktive Seite die Seite 1. Dieser Link wird rund mit Hinterghrund `$color-corporate-green` und Schriftfarbe `$color-white` dargestellt. 
+- Im Beispiel ist die aktive Seite die Seite 1. Dieser Link wird rund mit Hintergrund `$color-corporate-green` und Schriftfarbe `$color-white` dargestellt. 
 - Bei :hover / :focus ändert sich der Hintergrund zu `$color-corporate-green-dark`.
 
 __Standard Item__  
