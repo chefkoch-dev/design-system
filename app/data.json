@@ -282,6 +282,17 @@
             ]
         },
         {
+            "name": "rating-stars",
+            "title": "Rating Stars",
+            "components": [
+                {
+                    "group": "rating-stars",
+                    "name": "rating-stars",
+                    "title": "Rating Stars"
+                }
+            ]
+        },
+        {
             "name": "icons",
             "title": "Icons",
             "components": [
@@ -294,17 +305,6 @@
                     "group": "icons",
                     "name": "schmuck-icons",
                     "title": "Schmuck-Icons"
-                }
-            ]
-        },
-        {
-            "name": "stars",
-            "title": "Stars",
-            "components": [
-                {
-                    "group": "stars",
-                    "name": "stars",
-                    "title": "Sterne"
                 }
             ]
         },

@@ -1,0 +1,50 @@
+@import "../colors/colors";
+
+/* rating stars
+----------------------------------- */
+
+@mixin small-stars {
+    font-size: 20px;
+    width: 18px;
+}
+
+.ds-rating {
+    display: flex;
+    margin-bottom: $unit * 1.5;
+
+    @include media-breakpoint-from(s) {
+        margin-bottom: $unit * 2;
+    }
+}
+
+.ds-rating-stars {
+    display: flex;
+    margin-left: -2px; // for visual alignment on the left
+
+    i {
+        color: $color-yellow;
+        width: 21px;
+
+        @include media-breakpoint-to(xs) {
+            @include small-stars;
+        }
+
+        aside & {
+            @include small-stars;
+        }
+    }
+
+    &.ds-no-rating {
+        i {
+            color: $color-grey-medium;
+        }
+    }
+}
+
+.ds-rating-count {
+    margin-left: $unit;
+
+    @include media-breakpoint-to(xs) {
+        font: $font-small;
+    }
+}

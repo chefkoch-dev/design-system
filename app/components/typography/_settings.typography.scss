@@ -34,6 +34,7 @@ $lineheight-h5: $lineheight-small;
 // font: font-weight font-size/line-height font-family;
 
 $font-base: normal #{$fontsize-base}/#{$lineheight-base} $fontfamily-base !default;
+$font-small: normal #{$fontsize-small}/#{$lineheight-small} $fontfamily-base !default;
 
 $font-h1: 700 #{$fontsize-h1}/#{$lineheight-h1} $fontfamily-base !default;
 $font-h2: 700 #{$fontsize-h2}/#{$lineheight-h2} $fontfamily-base !default;
