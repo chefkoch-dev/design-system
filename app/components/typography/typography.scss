@@ -37,6 +37,7 @@ h1,
 }
 
 h1 + .ds-sub-h1 {
+    // will be deleted in future
     font: $font-subheading-1;
     margin-bottom: $unit * 2;
     margin-top: -($unit * 4);
@@ -66,11 +67,9 @@ h5,
     margin: 0;
 }
 
-.ds-h6 {
+.ds-h7 {
     color: $color-grey-dark;
     display: block;
-    font-size: 12px;
-    font-weight: normal;
+    font: $font-tiny;
     letter-spacing: 0.5px;
-    line-height: 20px;
 }
