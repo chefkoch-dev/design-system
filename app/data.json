@@ -17,7 +17,7 @@
         "highlight_color": "#F9FAFC",
         "brand_color": "#618F30",
         "background_color": "#F6F5F2",
-        "code_highlight_theme": "github",
+        "code_highlight_theme": "",
         "override_code_highlight_bg": "#F9FAFC",
         "sample_dark_background": "#333333",
         "show_project_name": false,
