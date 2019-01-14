@@ -45,6 +45,7 @@
 
 .ndpl-page, .ndpl-loading__title, .ndpl-error, .ndpl-info, .ndpl-header, .ndpl-sidebar, .ndpl-intro, .ndpl-library__title, .ndpl-group__description, .ndpl-component__title, .ndpl-component__description, .ndpl-component__label, .ndpl-component__code-toggle, .ndpl-component__color, .ndpl-page, .ndpl-nav__title, .ndpl-sidebar__title {
     font-family: $fontfamily-base;
+    color: $color-black;
 }
 
 .ndpl-page,
@@ -55,18 +56,27 @@
         font-size: $fontsize-base;
     }
 
+    pre code,
     code {
+        background: #f1efec;
         border: 1px solid $color-grey-medium;
+        border-radius: $unit / 2;
         color: $color-black;
         font-size: $fontsize-small;
+        line-height: $lineheight-small;
     }
 
-    pre {
-        code {
-            background: $color-sand;
-            padding: $unit;
-        }
+    pre code {
+        box-sizing: border-box;
+        padding: $unit;
+        width: 100%
     }
+}
+
+.ndpl-page pre code,
+.ndpl-component__description pre code,
+.ndpl-component__code .ndpl-code {
+    opacity: 1;
 }
 
 .ndpl-page {
