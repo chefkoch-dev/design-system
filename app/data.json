@@ -21,7 +21,7 @@
         "override_code_highlight_bg": "#F9FAFC",
         "sample_dark_background": "#333333",
         "show_project_name": false,
-        "show_version": false,
+        "show_version": true,
         "max_width": null,
         "titles": {
             "library_title": "Chefkoch Design System",
@@ -53,6 +53,11 @@
                 "name": "contribution",
                 "title": "Entwicklung",
                 "file": "./pages/contribution.md"
+            },
+            {
+                "name": "versioning",
+                "title": "Versionen",
+                "file": "./pages/versioning.md"
             },
             {
                 "name": "accessibility-matrix",
