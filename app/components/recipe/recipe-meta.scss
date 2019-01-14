@@ -1,0 +1,32 @@
+/* recipe-meta
+----------------------------------- */
+
+.ds-recipe-meta {
+    color: $color-grey-dark;
+
+    > span {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: $unit;
+        margin-right: $unit;
+
+        @include media-breakpoint-from(s) {
+            margin-right: $unit * 1.5;
+        }
+    }
+
+    i {
+        font-size: 20px;
+        margin-right: $unit / 2;
+    }
+
+    .ds-recipe-difficulty {
+        i {
+            transform: rotate(90deg);
+        }
+    }
+
+    .ds-recipe-date {
+        margin-right: 0;
+    }
+}
