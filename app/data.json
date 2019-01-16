@@ -20,11 +20,11 @@
         "code_highlight_theme": "",
         "override_code_highlight_bg": "#F9FAFC",
         "sample_dark_background": "#333333",
-        "show_project_name": false,
+        "show_project_name": true,
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "Chefkoch Design System",
+            "library_title": "v3.3.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
