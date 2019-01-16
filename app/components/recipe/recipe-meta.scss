@@ -3,30 +3,30 @@
 
 .ds-recipe-meta {
     color: $color-grey-dark;
+    margin-left: -2px;
 
     > span {
         display: inline-flex;
         align-items: center;
+        height: $unit * 2;
         margin-bottom: $unit;
         margin-right: $unit;
 
         @include media-breakpoint-from(s) {
-            margin-right: $unit * 1.5;
+            margin-right: $unit * 2;
+        }
+
+        &:last-child {
+            margin-right: 0;
         }
     }
 
     i {
-        font-size: 20px;
+        font-size: 18px;
         margin-right: $unit / 2;
-    }
 
-    .ds-recipe-difficulty {
-        i {
-            transform: rotate(90deg);
+        @include media-breakpoint-from(s) {
+            font-size: 20px;
         }
-    }
-
-    .ds-recipe-date {
-        margin-right: 0;
     }
 }
