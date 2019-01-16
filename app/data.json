@@ -156,6 +156,11 @@
                 },
                 {
                     "group": "typography",
+                    "name": "secondary-headings",
+                    "title": "Secondary Headings"
+                },
+                {
+                    "group": "typography",
                     "name": "copy-text",
                     "title": "Copy Text"
                 },

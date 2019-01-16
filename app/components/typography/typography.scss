@@ -1,5 +1,6 @@
 @import "settings.typography";
 @import "tools.typography";
+@import "../colors/colors";
 
 body {
     font: $font-base;
@@ -36,6 +37,7 @@ h1,
 }
 
 h1 + .ds-sub-h1 {
+    // will be deleted in future
     font: $font-subheading-1;
     margin-bottom: $unit * 2;
     margin-top: -($unit * 4);
@@ -65,3 +67,21 @@ h5,
     margin: 0;
 }
 
+.ds-h7-top,
+.ds-h7-btm {
+    display: flex;
+}
+
+.ds-h7-btm {
+    flex-direction: column;
+}
+
+.ds-h7-top {
+    flex-direction: column-reverse;
+}
+
+.ds-h7 {
+    color: $color-grey-dark;
+    font: $font-tiny;
+    letter-spacing: 0.5px;
+}
