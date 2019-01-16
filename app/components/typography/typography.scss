@@ -67,9 +67,21 @@ h5,
     margin: 0;
 }
 
+.ds-h7-top,
+.ds-h7-btm {
+    display: flex;
+}
+
+.ds-h7-btm {
+    flex-direction: column;
+}
+
+.ds-h7-top {
+    flex-direction: column-reverse;
+}
+
 .ds-h7 {
     color: $color-grey-dark;
-    display: block;
     font: $font-tiny;
     letter-spacing: 0.5px;
 }
