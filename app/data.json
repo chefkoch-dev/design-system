@@ -193,6 +193,22 @@
             ]
         },
         {
+            "name": "forms",
+            "title": "Formulare",
+            "components": [
+                {
+                    "group": "forms",
+                    "name": "structure",
+                    "title": "Struktur"
+                },
+                {
+                    "group": "forms",
+                    "name": "input",
+                    "title": "Input Felder"
+                }
+            ]
+        },
+        {
             "name": "links",
             "title": "Links",
             "components": [

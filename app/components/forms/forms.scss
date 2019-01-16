@@ -1,0 +1,39 @@
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: $unit * 2;
+}
+
+.ds-form-item {
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+        * {
+            cursor: pointer;
+        }
+    }
+}
+
+.ds-input {
+    border: 1px solid $color-grey-medium;
+    color: $color-black;
+    border-radius: $unit;
+    box-sizing: border-box;
+    font-size: inherit;
+    height: $unit * 5;
+    margin-bottom: $unit * 2;
+    padding: $unit $unit * 1.5;
+    width: 100%;
+
+    &:focus {
+        border-color: $color-corporate-green-dark;
+        outline: 0;
+    }
+}
