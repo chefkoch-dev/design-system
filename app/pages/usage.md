@@ -17,6 +17,9 @@ includePath für das Design-System gesetzt sein:
         includePaths: ['node_modules/chefkoch-design-system/components/']
     }) 
 
+Mit einem modernen Buildsystem können die Styles direkt via `@import "~chefkoch-design-system/components/dsy-base";`
+eingebunden werden. Die Tilde wird von dem lokalen Buildsystem (z.B. webpack, vergl. [sass-loader](https://github.com/webpack-contrib/sass-loader#imports) ) aufgelöst.
+
 ## 3. Einbindung und Nutzung
     
 __Base__  
