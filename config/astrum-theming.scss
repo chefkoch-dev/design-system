@@ -282,7 +282,7 @@
             transition: opacity 0.3s ease;
         }
 
-        h1, h2, h3, h4, h5, p, small {
+        h1, h2, h3, h4, h5, .ds-h7, p, small {
             background-color: transparent;
             transition: background-color 0.3s ease 0.15s;
         }
@@ -302,7 +302,7 @@
                     z-index: -1;
                 }
 
-                h1, h2, h3, h4, h5, p, small {
+                h1, h2, h3, h4, h5, .ds-h7, p, small {
                     background-color: rgba($color-grey-light, 0.5);
                 }
             }

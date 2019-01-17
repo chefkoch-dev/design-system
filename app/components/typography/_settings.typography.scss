@@ -8,6 +8,7 @@ $fontfamily-base: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-
 
 $fontsize-base: 16px !default;
 $fontsize-small: 14px !default;
+$fontsize-tiny: 12px !default;
 
 $fontsize-h1: 32px !default;
 $fontsize-h2: 24px !default;
@@ -35,6 +36,7 @@ $lineheight-h5: $lineheight-small;
 
 $font-base: normal #{$fontsize-base}/#{$lineheight-base} $fontfamily-base !default;
 $font-small: normal #{$fontsize-small}/#{$lineheight-small} $fontfamily-base !default;
+$font-tiny: normal #{$fontsize-tiny}/#{$lineheight-small} $fontfamily-base !default;
 
 $font-h1: 700 #{$fontsize-h1}/#{$lineheight-h1} $fontfamily-base !default;
 $font-h2: 700 #{$fontsize-h2}/#{$lineheight-h2} $fontfamily-base !default;
