@@ -78,32 +78,7 @@ $container-m-min: $screen-m;
 	position: relative;
 }
 
-.ds-col-xs,
-.ds-col-xs-1,
-.ds-col-xs-2,
-.ds-col-xs-3,
-.ds-col-xs-4,
-.ds-col-xs-5,
-.ds-col-xs-6,
-.ds-col-xs-7,
-.ds-col-xs-8,
-.ds-col-xs-9,
-.ds-col-xs-10,
-.ds-col-xs-11,
-.ds-col-xs-12,
-.ds-col-xs-off-0,
-.ds-col-xs-off-1,
-.ds-col-xs-off-2,
-.ds-col-xs-off-3,
-.ds-col-xs-off-4,
-.ds-col-xs-off-5,
-.ds-col-xs-off-6,
-.ds-col-xs-off-7,
-.ds-col-xs-off-8,
-.ds-col-xs-off-9,
-.ds-col-xs-off-10,
-.ds-col-xs-off-11,
-.ds-col-xs-off-12 {
+[class^="ds-col-xs"] {
 	box-sizing: border-box;
 	flex: 0 1 auto; //grow shrink basis
 
@@ -233,32 +208,7 @@ $container-m-min: $screen-m;
 }
 
 @include media-breakpoint-only(s) {
-	.ds-col-s,
-	.ds-col-s-1,
-	.ds-col-s-2,
-	.ds-col-s-3,
-	.ds-col-s-4,
-	.ds-col-s-5,
-	.ds-col-s-6,
-	.ds-col-s-7,
-	.ds-col-s-8,
-	.ds-col-s-9,
-	.ds-col-s-10,
-	.ds-col-s-11,
-	.ds-col-s-12,
-	.ds-col-s-off-0,
-	.ds-col-s-off-1,
-	.ds-col-s-off-2,
-	.ds-col-s-off-3,
-	.ds-col-s-off-4,
-	.ds-col-s-off-5,
-	.ds-col-s-off-6,
-	.ds-col-s-off-7,
-	.ds-col-s-off-8,
-	.ds-col-s-off-9,
-	.ds-col-s-off-10,
-	.ds-col-s-off-11,
-	.ds-col-s-off-12 {
+	[class^="ds-col-s"] {
 		box-sizing: border-box;
 		flex: 0 0 auto;
 		padding-right: $gutter-half-std;
@@ -381,32 +331,7 @@ $container-m-min: $screen-m;
 }
 
 @include media-breakpoint-from(m) {
-	.ds-col-m,
-	.ds-col-m-1,
-	.ds-col-m-2,
-	.ds-col-m-3,
-	.ds-col-m-4,
-	.ds-col-m-5,
-	.ds-col-m-6,
-	.ds-col-m-7,
-	.ds-col-m-8,
-	.ds-col-m-9,
-	.ds-col-m-10,
-	.ds-col-m-11,
-	.ds-col-m-12,
-	.ds-col-m-off-0,
-	.ds-col-m-off-1,
-	.ds-col-m-off-2,
-	.ds-col-m-off-3,
-	.ds-col-m-off-4,
-	.ds-col-m-off-5,
-	.ds-col-m-off-6,
-	.ds-col-m-off-7,
-	.ds-col-m-off-8,
-	.ds-col-m-off-9,
-	.ds-col-m-off-10,
-	.ds-col-m-off-11,
-	.ds-col-m-off-12 {
+	[class^="ds-col-m"] {
 		box-sizing: border-box;
 		flex: 0 0 auto;
 		padding-right: $gutter-half-big;
@@ -529,32 +454,7 @@ $container-m-min: $screen-m;
 }
 
 @media (--lg-viewport) {
-	.ds-col-l,
-	.ds-col-l-1,
-	.ds-col-l-2,
-	.ds-col-l-3,
-	.ds-col-l-4,
-	.ds-col-l-5,
-	.ds-col-l-6,
-	.ds-col-l-7,
-	.ds-col-l-8,
-	.ds-col-l-9,
-	.ds-col-l-10,
-	.ds-col-l-11,
-	.ds-col-l-12,
-	.ds-col-l-off-0,
-	.ds-col-l-off-1,
-	.ds-col-l-off-2,
-	.ds-col-l-off-3,
-	.ds-col-l-off-4,
-	.ds-col-l-off-5,
-	.ds-col-l-off-6,
-	.ds-col-l-off-7,
-	.ds-col-l-off-8,
-	.ds-col-l-off-9,
-	.ds-col-l-off-10,
-	.ds-col-l-off-11,
-	.ds-col-l-off-12 {
+	[class^="ds-col-l"] {
 		box-sizing: border-box;
 		flex: 0 0 auto;
 		padding-right: $gutter-half-big;
