@@ -1,6 +1,9 @@
 /* Customizable Flexbox-Grid
 ** Inspired by http://flexboxgrid.com/
 ** https://github.com/kristoferjoseph/flexboxgrid/blob/master/src/css/flexboxgrid.css
+**
+** You need offset classes or other utilities of the flexbox grid on github?
+** No problem, mate! Just make a new file (like grid-utilities or sth), copy what you need from github, prefix it with .ds- and import it to your project. Boom, you're done.
 */
 
 /* stylelint-disable */
@@ -93,12 +96,6 @@ $container-m-min: $screen-m;
 	}
 }
 
-.ds-col-xs {
-	flex-grow: 1;
-	flex-basis: 0;
-	width: 100%;
-}
-
 .ds-col-xs-1 {
 	flex-basis: 8.33333333%;
 	width: 8.33333333%;
@@ -159,66 +156,12 @@ $container-m-min: $screen-m;
 	width: 100%;
 }
 
-.ds-col-xs-off-0 {
-	margin-left: 0;
-}
-
-.ds-col-xs-off-1 {
-	margin-left: 8.33333333%;
-}
-
-.ds-col-xs-off-2 {
-	margin-left: 16.66666667%;
-}
-
-.ds-col-xs-off-3 {
-	margin-left: 25%;
-}
-
-.ds-col-xs-off-4 {
-	margin-left: 33.33333333%;
-}
-
-.ds-col-xs-off-5 {
-	margin-left: 41.66666667%;
-}
-
-.ds-col-xs-off-6 {
-	margin-left: 50%;
-}
-
-.ds-col-xs-off-7 {
-	margin-left: 58.33333333%;
-}
-
-.ds-col-xs-off-8 {
-	margin-left: 66.66666667%;
-}
-
-.ds-col-xs-off-9 {
-	margin-left: 75%;
-}
-
-.ds-col-xs-off-10 {
-	margin-left: 83.33333333%;
-}
-
-.ds-col-xs-off-11 {
-	margin-left: 91.66666667%;
-}
-
 @include media-breakpoint-only(s) {
 	[class^="ds-col-s"] {
 		box-sizing: border-box;
 		flex: 0 0 auto;
 		padding-right: $gutter-half-std;
 		padding-left: $gutter-half-std;
-	}
-
-	.ds-col-s {
-		flex-grow: 1;
-		flex-basis: 0;
-		width: 100%;
 	}
 
 	.ds-col-s-1 {
@@ -280,54 +223,6 @@ $container-m-min: $screen-m;
 		flex-basis: 100%;
 		width: 100%;
 	}
-
-	.ds-col-s-off-0 {
-		margin-left: 0;
-	}
-
-	.ds-col-s-off-1 {
-		margin-left: 8.33333333%;
-	}
-
-	.ds-col-s-off-2 {
-		margin-left: 16.66666667%;
-	}
-
-	.ds-col-s-off-3 {
-		margin-left: 25%;
-	}
-
-	.ds-col-s-off-4 {
-		margin-left: 33.33333333%;
-	}
-
-	.ds-col-s-off-5 {
-		margin-left: 41.66666667%;
-	}
-
-	.ds-col-s-off-6 {
-		margin-left: 50%;
-	}
-
-	.ds-col-s-off-7 {
-		margin-left: 58.33333333%;
-	}
-
-	.ds-col-s-off-8 {
-		margin-left: 66.66666667%;
-	}
-
-	.ds-col-s-off-9 {
-		margin-left: 75%;
-	}
-
-	.ds-col-s-off-10 {
-		margin-left: 83.33333333%;
-	}
-
-	.ds-col-s-off-11 {
-		margin-left: 91.66666667%;
-	}
 }
 
 @include media-breakpoint-from(m) {
@@ -336,12 +231,6 @@ $container-m-min: $screen-m;
 		flex: 0 0 auto;
 		padding-right: $gutter-half-big;
 		padding-left: $gutter-half-big;
-	}
-
-	.ds-col-m {
-		flex-grow: 1;
-		flex-basis: 0;
-		width: 100%;
 	}
 
 	.ds-col-m-1 {
@@ -403,54 +292,6 @@ $container-m-min: $screen-m;
 		flex-basis: 100%;
 		width: 100%;
 	}
-
-	.ds-col-m-off-0 {
-		margin-left: 0;
-	}
-
-	.ds-col-m-off-1 {
-		margin-left: 8.33333333%;
-	}
-
-	.ds-col-m-off-2 {
-		margin-left: 16.66666667%;
-	}
-
-	.ds-col-m-off-3 {
-		margin-left: 25%;
-	}
-
-	.ds-col-m-off-4 {
-		margin-left: 33.33333333%;
-	}
-
-	.ds-col-m-off-5 {
-		margin-left: 41.66666667%;
-	}
-
-	.ds-col-m-off-6 {
-		margin-left: 50%;
-	}
-
-	.ds-col-m-off-7 {
-		margin-left: 58.33333333%;
-	}
-
-	.ds-col-m-off-8 {
-		margin-left: 66.66666667%;
-	}
-
-	.ds-col-m-off-9 {
-		margin-left: 75%;
-	}
-
-	.ds-col-m-off-10 {
-		margin-left: 83.33333333%;
-	}
-
-	.ds-col-m-off-11 {
-		margin-left: 91.66666667%;
-	}
 }
 
 @media (--lg-viewport) {
@@ -459,12 +300,6 @@ $container-m-min: $screen-m;
 		flex: 0 0 auto;
 		padding-right: $gutter-half-big;
 		padding-left: $gutter-half-big;
-	}
-
-	.ds-col-l {
-		flex-grow: 1;
-		flex-basis: 0;
-		width: 100%;
 	}
 
 	.ds-col-l-1 {
@@ -525,54 +360,6 @@ $container-m-min: $screen-m;
 	.ds-col-l-12 {
 		flex-basis: 100%;
 		width: 100%;
-	}
-
-	.ds-col-l-off-0 {
-		margin-left: 0;
-	}
-
-	.ds-col-l-off-1 {
-		margin-left: 8.33333333%;
-	}
-
-	.ds-col-l-off-2 {
-		margin-left: 16.66666667%;
-	}
-
-	.ds-col-l-off-3 {
-		margin-left: 25%;
-	}
-
-	.ds-col-l-off-4 {
-		margin-left: 33.33333333%;
-	}
-
-	.ds-col-l-off-5 {
-		margin-left: 41.66666667%;
-	}
-
-	.ds-col-l-off-6 {
-		margin-left: 50%;
-	}
-
-	.ds-col-l-off-7 {
-		margin-left: 58.33333333%;
-	}
-
-	.ds-col-l-off-8 {
-		margin-left: 66.66666667%;
-	}
-
-	.ds-col-l-off-9 {
-		margin-left: 75%;
-	}
-
-	.ds-col-l-off-10 {
-		margin-left: 83.33333333%;
-	}
-
-	.ds-col-l-off-11 {
-		margin-left: 91.66666667%;
 	}
 }
 
