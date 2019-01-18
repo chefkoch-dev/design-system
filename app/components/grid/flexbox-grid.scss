@@ -81,7 +81,7 @@ $container-m-min: $screen-m;
 	position: relative;
 }
 
-[class^="ds-col-xs"] {
+[class*="ds-col-xs"] {
 	box-sizing: border-box;
 	flex: 0 1 auto; //grow shrink basis
 
@@ -157,7 +157,7 @@ $container-m-min: $screen-m;
 }
 
 @include media-breakpoint-only(s) {
-	[class^="ds-col-s"] {
+	[class*="ds-col-s"] {
 		box-sizing: border-box;
 		flex: 0 0 auto;
 		padding-right: $gutter-half-std;
@@ -226,7 +226,7 @@ $container-m-min: $screen-m;
 }
 
 @include media-breakpoint-from(m) {
-	[class^="ds-col-m"] {
+	[class*="ds-col-m"] {
 		box-sizing: border-box;
 		flex: 0 0 auto;
 		padding-right: $gutter-half-big;
@@ -295,7 +295,7 @@ $container-m-min: $screen-m;
 }
 
 @media (--lg-viewport) {
-	[class^="ds-col-l"] {
+	[class*="ds-col-l"] {
 		box-sizing: border-box;
 		flex: 0 0 auto;
 		padding-right: $gutter-half-big;
