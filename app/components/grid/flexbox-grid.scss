@@ -98,62 +98,62 @@ $container-m-min: $screen-m;
 
 .ds-col-xs-1 {
 	flex-basis: 8.33333333%;
-	width: 8.33333333%;
+	max-width: 8.33333333%;
 }
 
 .ds-col-xs-2 {
 	flex-basis: 16.66666667%;
-	width: 16.66666667%;
+	max-width: 16.66666667%;
 }
 
 .ds-col-xs-3 {
 	flex-basis: 25%;
-	width: 25%;
+	max-width: 25%;
 }
 
 .ds-col-xs-4 {
 	flex-basis: 33.33333333%;
-	width: 33.33333333%;
+	max-width: 33.33333333%;
 }
 
 .ds-col-xs-5 {
 	flex-basis: 41.66666667%;
-	width: 41.66666667%;
+	max-width: 41.66666667%;
 }
 
 .ds-col-xs-6 {
 	flex-basis: 50%;
-	width: 50%;
+	max-width: 50%;
 }
 
 .ds-col-xs-7 {
 	flex-basis: 58.33333333%;
-	width: 58.33333333%;
+	max-width: 58.33333333%;
 }
 
 .ds-col-xs-8 {
 	flex-basis: 66.66666667%;
-	width: 66.66666667%;
+	max-width: 66.66666667%;
 }
 
 .ds-col-xs-9 {
 	flex-basis: 75%;
-	width: 75%;
+	max-width: 75%;
 }
 
 .ds-col-xs-10 {
 	flex-basis: 83.33333333%;
-	width: 83.33333333%;
+	max-width: 83.33333333%;
 }
 
 .ds-col-xs-11 {
 	flex-basis: 91.66666667%;
-	width: 91.66666667%;
+	max-width: 91.66666667%;
 }
 
 .ds-col-xs-12 {
 	flex-basis: 100%;
-	width: 100%;
+	max-width: 100%;
 }
 
 @include media-breakpoint-only(s) {
@@ -166,62 +166,62 @@ $container-m-min: $screen-m;
 
 	.ds-col-s-1 {
 		flex-basis: 8.33333333%;
-		width: 8.33333333%;
+		max-width: 8.33333333%;
 	}
 
 	.ds-col-s-2 {
 		flex-basis: 16.66666667%;
-		width: 16.66666667%;
+		max-width: 16.66666667%;
 	}
 
 	.ds-col-s-3 {
 		flex-basis: 25%;
-		width: 25%;
+		max-width: 25%;
 	}
 
 	.ds-col-s-4 {
 		flex-basis: 33.33333333%;
-		width: 33.33333333%;
+		max-width: 33.33333333%;
 	}
 
 	.ds-col-s-5 {
 		flex-basis: 41.66666667%;
-		width: 41.66666667%;
+		max-width: 41.66666667%;
 	}
 
 	.ds-col-s-6 {
 		flex-basis: 50%;
-		width: 50%;
+		max-width: 50%;
 	}
 
 	.ds-col-s-7 {
 		flex-basis: 58.33333333%;
-		width: 58.33333333%;
+		max-width: 58.33333333%;
 	}
 
 	.ds-col-s-8 {
 		flex-basis: 66.66666667%;
-		width: 66.66666667%;
+		max-width: 66.66666667%;
 	}
 
 	.ds-col-s-9 {
 		flex-basis: 75%;
-		width: 75%;
+		max-width: 75%;
 	}
 
 	.ds-col-s-10 {
 		flex-basis: 83.33333333%;
-		width: 83.33333333%;
+		max-width: 83.33333333%;
 	}
 
 	.ds-col-s-11 {
 		flex-basis: 91.66666667%;
-		width: 91.66666667%;
+		max-width: 91.66666667%;
 	}
 
 	.ds-col-s-12 {
 		flex-basis: 100%;
-		width: 100%;
+		max-width: 100%;
 	}
 }
 
@@ -235,62 +235,62 @@ $container-m-min: $screen-m;
 
 	.ds-col-m-1 {
 		flex-basis: 8.33333333%;
-		width: 8.33333333%;
+		max-width: 8.33333333%;
 	}
 
 	.ds-col-m-2 {
 		flex-basis: 16.66666667%;
-		width: 16.66666667%;
+		max-width: 16.66666667%;
 	}
 
 	.ds-col-m-3 {
 		flex-basis: 25%;
-		width: 25%;
+		max-width: 25%;
 	}
 
 	.ds-col-m-4 {
 		flex-basis: 33.33333333%;
-		width: 33.33333333%;
+		max-width: 33.33333333%;
 	}
 
 	.ds-col-m-5 {
 		flex-basis: 41.66666667%;
-		width: 41.66666667%;
+		max-width: 41.66666667%;
 	}
 
 	.ds-col-m-6 {
 		flex-basis: 50%;
-		width: 50%;
+		max-width: 50%;
 	}
 
 	.ds-col-m-7 {
 		flex-basis: 58.33333333%;
-		width: 58.33333333%;
+		max-width: 58.33333333%;
 	}
 
 	.ds-col-m-8 {
 		flex-basis: 66.66666667%;
-		width: 66.66666667%;
+		max-width: 66.66666667%;
 	}
 
 	.ds-col-m-9 {
 		flex-basis: 75%;
-		width: 75%;
+		max-width: 75%;
 	}
 
 	.ds-col-m-10 {
 		flex-basis: 83.33333333%;
-		width: 83.33333333%;
+		max-width: 83.33333333%;
 	}
 
 	.ds-col-m-11 {
 		flex-basis: 91.66666667%;
-		width: 91.66666667%;
+		max-width: 91.66666667%;
 	}
 
 	.ds-col-m-12 {
 		flex-basis: 100%;
-		width: 100%;
+		max-width: 100%;
 	}
 }
 
@@ -304,62 +304,62 @@ $container-m-min: $screen-m;
 
 	.ds-col-l-1 {
 		flex-basis: 8.33333333%;
-		width: 8.33333333%;
+		max-width: 8.33333333%;
 	}
 
 	.ds-col-l-2 {
 		flex-basis: 16.66666667%;
-		width: 16.66666667%;
+		max-width: 16.66666667%;
 	}
 
 	.ds-col-l-3 {
 		flex-basis: 25%;
-		width: 25%;
+		max-width: 25%;
 	}
 
 	.ds-col-l-4 {
 		flex-basis: 33.33333333%;
-		width: 33.33333333%;
+		max-width: 33.33333333%;
 	}
 
 	.ds-col-l-5 {
 		flex-basis: 41.66666667%;
-		width: 41.66666667%;
+		max-width: 41.66666667%;
 	}
 
 	.ds-col-l-6 {
 		flex-basis: 50%;
-		width: 50%;
+		max-width: 50%;
 	}
 
 	.ds-col-l-7 {
 		flex-basis: 58.33333333%;
-		width: 58.33333333%;
+		max-width: 58.33333333%;
 	}
 
 	.ds-col-l-8 {
 		flex-basis: 66.66666667%;
-		width: 66.66666667%;
+		max-width: 66.66666667%;
 	}
 
 	.ds-col-l-9 {
 		flex-basis: 75%;
-		width: 75%;
+		max-width: 75%;
 	}
 
 	.ds-col-l-10 {
 		flex-basis: 83.33333333%;
-		width: 83.33333333%;
+		max-width: 83.33333333%;
 	}
 
 	.ds-col-l-11 {
 		flex-basis: 91.66666667%;
-		width: 91.66666667%;
+		max-width: 91.66666667%;
 	}
 
 	.ds-col-l-12 {
 		flex-basis: 100%;
-		width: 100%;
+		max-width: 100%;
 	}
 }
 
