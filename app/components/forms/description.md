@@ -1,4 +1,4 @@
-Formularelemente sind per default 100% breit. Die tatsächliche Breite und Anordnung der einzelnen Elemente wird über parent container mittels Gridklassen gesteuert.
+Formularelemente sind per default 100% breit. Die tatsächliche Breite und Anordnung der einzelnen Elemente wird über Gridklassen gesteuert.
 
 __Usage__  
     

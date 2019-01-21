@@ -21,6 +21,9 @@ legend {
     }
 }
 
+/* input field
+-------------------------- */
+
 .ds-input {
     border: 1px solid $color-grey-medium;
     color: $color-black;
@@ -35,5 +38,56 @@ legend {
     &:focus {
         border-color: $color-corporate-green-dark;
         outline: 0;
+    }
+}
+
+/* input field
+-------------------------- */
+
+.ds-cb,
+.ds-rb {
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+.ds-cb {
+    // we don't show the checkbox but we need it to simulate the click on the icon
+    zoom: 1.5;
+
+    @supports not (zoom:1.5) {
+        height: $unit * 2.5;
+        width: $unit * 2.5;
+    }
+}
+
+.ds-cb:not(:checked) ~ .ds-icon-active,
+.ds-rb:not(:checked) ~ .ds-icon-active,
+.ds-cb:checked ~ .ds-icon-inactive,
+.ds-rb:checked ~ .ds-icon-inactive {
+    display: none;
+}
+
+.ds-rb {
+    appearance: none;
+    z-index: -1;
+
+    + label {
+        border-radius: $unit * 2.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: $unit * 5;
+        width: $unit * 5;
+
+        &:hover {
+            background: $color-corporate-green;
+            color: $color-white;
+        }
+    }
+
+    &:checked + label {
+        background: $color-corporate-green-dark;
+        color: $color-white;
     }
 }
