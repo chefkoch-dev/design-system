@@ -16,3 +16,5 @@ Die Ziffern können beliebig hochgezählt werden. Eine Version 2.30.99 ist durch
 Kommt ein neues Feature oder Modul hinzu, wird dieses Release auf 2.31.0 versioniert.  
 Sobald sich jedoch Codeänderungen ergeben (Änderungen von Variablen, Klassennamen oder Markup, welches auch CSS-Änderungen mit sich zieht) muss die Major Version um eins erhöht werden. Die neue Version wäre dann 3.0.0
 
+Näheres dazu findest du [im Wiki](https://wiki.chefkoch.de/pages/viewpage.action?pageId=65737468). 
+
