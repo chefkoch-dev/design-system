@@ -90,6 +90,17 @@
             ]
         },
         {
+            "name": "layout",
+            "title": "Layout",
+            "components": [
+                {
+                    "group": "layout",
+                    "name": "media-block",
+                    "title": "Media-Block"
+                }
+            ]
+        },
+        {
             "name": "margins",
             "title": "Abstände",
             "components": [
