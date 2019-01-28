@@ -208,8 +208,13 @@
                 },
                 {
                     "group": "forms",
+                    "name": "checkboxes",
+                    "title": "Checkboxen"
+                },
+                {
+                    "group": "forms",
                     "name": "radiobuttons",
-                    "title": "Radio Buttons"
+                    "title": "Radiobuttons"
                 }
             ]
         },
