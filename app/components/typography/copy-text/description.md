@@ -12,6 +12,6 @@ Weitere Textauszeichnungen über [ds-utility-Klassen](#group-utilities-component
 ### Styles  
 Helvetica Neue Regular  
 Im __main-content__: F 16px / L 24px / M 16 (kommt vom `<body>`)    
-In der __sidebar__: F 14px / L 20px / M 16 (kommt von `<aside>` oder mit `.ds-text-small`, siehe Typographie / Small Text)  
+In der __sidebar__: F 14px / L 20px / M 16 (kommt von `<aside>` oder mit `.ds-text-small`, siehe [Small Text](#group-typography-component-small-text))  
 
 <small>F: Fontsize / L: Line-Height / M: Margin (bottom)</small>
