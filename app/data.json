@@ -58,11 +58,6 @@
                 "name": "versioning",
                 "title": "Versionen",
                 "file": "./pages/versioning.md"
-            },
-            {
-                "name": "accessibility-matrix",
-                "title": "Barrierefreie Farben",
-                "file": "./pages/accessibility-matrix.md"
             }
         ]
     },
