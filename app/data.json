@@ -167,6 +167,11 @@
                 },
                 {
                     "group": "typography",
+                    "name": "secondary-headings",
+                    "title": "Secondary Headings"
+                },
+                {
+                    "group": "typography",
                     "name": "copy-text",
                     "title": "Copy Text"
                 },
@@ -200,22 +205,6 @@
                     "group": "utilities",
                     "name": "screenreader-utilities",
                     "title": "Screenreader Utilities"
-                }
-            ]
-        },
-        {
-            "name": "links",
-            "title": "Links",
-            "components": [
-                {
-                    "group": "links",
-                    "name": "copy",
-                    "title": "Copy Links"
-                },
-                {
-                    "group": "links",
-                    "name": "headline",
-                    "title": "Headline Links"
                 }
             ]
         },
@@ -261,6 +250,33 @@
             ]
         },
         {
+            "name": "links",
+            "title": "Links",
+            "components": [
+                {
+                    "group": "links",
+                    "name": "copy",
+                    "title": "Copy Links"
+                },
+                {
+                    "group": "links",
+                    "name": "headline",
+                    "title": "Headline Links"
+                }
+            ]
+        },
+        {
+            "name": "pagination",
+            "title": "Pagination",
+            "components": [
+                {
+                    "group": "pagination",
+                    "name": "pagination",
+                    "title": "Pagination"
+                }
+            ]
+        },
+        {
             "name": "pills",
             "title": "Pills",
             "components": [
@@ -277,17 +293,6 @@
             ]
         },
         {
-            "name": "pagination",
-            "title": "Pagination",
-            "components": [
-                {
-                    "group": "pagination",
-                    "name": "pagination",
-                    "title": "Pagination"
-                }
-            ]
-        },
-        {
             "name": "rating-stars",
             "title": "Rating Stars",
             "components": [
@@ -295,6 +300,17 @@
                     "group": "rating-stars",
                     "name": "rating-stars",
                     "title": "Rating Stars"
+                }
+            ]
+        },
+        {
+            "name": "recipe",
+            "title": "Recipe",
+            "components": [
+                {
+                    "group": "recipe",
+                    "name": "recipe-meta",
+                    "title": "Recipe Meta"
                 }
             ]
         },
