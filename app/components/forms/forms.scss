@@ -1,3 +1,5 @@
+$stdFormHeight: $unit * 5;
+
 fieldset {
     border: 0;
     margin: 0;
@@ -47,7 +49,7 @@ legend {
     border-radius: $unit;
     box-sizing: border-box;
     font-size: inherit;
-    height: $unit * 5;
+    height: $stdFormHeight;
     margin-bottom: $unit * 2;
     padding: $unit $unit * 1.5;
     width: 100%;
@@ -59,7 +61,7 @@ legend {
 }
 
 
-/* input field
+/* checkboxes / radiobuttons
 -------------------------- */
 
 .ds-cb,
@@ -88,7 +90,7 @@ legend {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: $unit * 5;
+        height: $stdFormHeight;
         width: $unit * 5;
 
         /*
@@ -106,3 +108,70 @@ legend {
     }
     */
 }
+
+/* select
+-------------------------- */
+
+.ds-select-box {
+    position: relative;
+
+    i {
+        color: $color-grey-medium;
+        pointer-events: none;
+        position: absolute;
+        right: $unit;
+        top: calc(50% - 12px);
+    }
+}
+
+.ds-select {
+    appearance: none;
+    background-color: $color-white;
+    border: 1px solid $color-grey-medium;
+    font-size: inherit;
+    height: $stdFormHeight;
+    padding: 0 $unit * 4 0 $unit * 2;
+}
+
+.ds-input:focus + .ds-select-box {
+    .ds-select {
+        border-color: $color-corporate-green-dark;
+    }
+}
+
+/* search form
+-------------------------- */
+
+.ds-search-form {
+    display: flex;
+    height: $stdFormHeight;
+
+    .ds-input {
+        border-radius: $unit 0 0 $unit;
+        border-right: 0;
+        flex-grow: 1;
+        height: 100%;
+        margin: 0;
+        width: auto;
+    }
+
+    .ds-select {
+        border-radius: 0;
+        border-right: 0;
+        height: 100%;
+    }
+
+    button {
+        border-radius: 0 $unit $unit 0;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: $stdFormHeight;
+
+        i {
+            margin: 0;
+        }
+    }
+}
+

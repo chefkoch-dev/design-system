@@ -215,6 +215,11 @@
                     "group": "forms",
                     "name": "radiobuttons",
                     "title": "Radiobuttons"
+                },
+                {
+                    "group": "forms",
+                    "name": "search-field",
+                    "title": "Suchfeld"
                 }
             ]
         },

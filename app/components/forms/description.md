@@ -1,6 +1,6 @@
 Formularelemente sind per default 100% breit. Die tatsächliche Breite und Anordnung der einzelnen Elemente wird über Gridklassen gesteuert.
 
-__Usage__  
+### Usage  
     
     Via Shortlink
     @import "~chefkoch-design-system/components/forms";
