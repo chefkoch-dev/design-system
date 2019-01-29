@@ -4,10 +4,10 @@ __Code__
 Semantisch immer die korrekte Auszeichnung verwenden.  
 Copy Text sollte möglichst immer in Absätzen `<p>` sein. `<span>` ist für sehr kurze Texte ebenfalls möglich.  
 
-Font-size und line-height sind auf dem body als default definiert und müssen daher nicht mehr explizit auf Copy Texte im main-content geschrieben werden.
+Font-size und line-height sind auf dem body als default definiert und müssen daher nicht mehr explizit gesetzt werden.
 
 __Utilities__  
-Weitere Textauszeichnungen über ds-utility-Klassen `.ds-text-center` oder `.ds-text-right` möglich.
+Weitere Textauszeichnungen über [ds-utility-Klassen](#group-utilities-component-typography-utilities) möglich.
 
 __Styles__  
 Helvetica Neue Regular  

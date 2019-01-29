@@ -300,7 +300,7 @@
             z-index: -1;
         }
 
-        h1, h2, h3, h4, h5, p, small {
+        h1, h2, h3, h4, h5, p, small, .ds-text-small {
             background-color: transparent;
             transition: background-color 0.3s ease 0.15s;
         }
@@ -313,7 +313,7 @@
                     opacity: 1;
                 }
 
-                h1, h2, h3, h4, h5, p, small {
+                h1, h2, h3, h4, h5, p, small, .ds-text-small {
                     background-color: rgba(#d9d5d0, 0.35);
                 }
             }
