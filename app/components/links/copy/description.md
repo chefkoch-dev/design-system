@@ -1,7 +1,7 @@
 Copy Link bezeichnet einen Link im Fließtext im Content.
 
-__Utilities__  
+### Utilities  
 Weitere Textauszeichnungen über [ds-utility-Klassen](#group-utilities-component-typography-utilities) möglich.
 
-__Styles__  
+### Styles  
 geerbt von Copy Text

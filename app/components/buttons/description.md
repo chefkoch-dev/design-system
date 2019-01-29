@@ -1,13 +1,13 @@
 ⚠ Will be modified in future
 
-__Code__  
+### Code  
 Auch wenn Buttons mithilfe von der Klasse `.ds-button` als `<button>`, `<a>` oder `<input type="button">` gebaut werden können, sollte semantisch immer die korrekte Auszeichnung verwendet werden.
 
-__Usecases__  
+### Usecases  
 Buttons gibt es für mehrere usecases:
 `standard`, `info`, `warning`, `danger` & `light`
 
-__Utilities__  
+### Utilities  
 Für standard button:  
 `.ds-button--bigboss` macht die Buttonfläche insgesamt größer. (siehe Buttons / Big Button)  
 `.ds-button--wide` macht die Buttonfläche breiter. (siehe Buttons / Wide Button)  
@@ -16,10 +16,10 @@ Für standard button:
 Für alle Buttons:  
 `.ds-button-deactivated` setzt den Button inaktiv. (siehe Buttons / Inaktiv/Deaktiviert)
 
-__Styles__  
+### Styles  
  geerbt von Copy Text
 
-__Usage__  
+### Usage  
     
     Via Shortlink
     @import "~chefkoch-design-system/components/buttons";

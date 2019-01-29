@@ -1,6 +1,6 @@
 __NOTE:__ Die Pagination wird auf der RSEL mittels Twig dynamisch gebaut, daher ist dieses Beispiel nur zum Verständnis und zur visuellen Ansicht.
 
-__Usage__  
+### Usage 
     
     Via Shortlink
     @import "~chefkoch-design-system/components/pagination";

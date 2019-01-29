@@ -1,4 +1,4 @@
-__Usage__  
+### Usage  
     
     Via Shortlink
     @import "~chefkoch-design-system/components/layout-utilities";

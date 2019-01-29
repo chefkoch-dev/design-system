@@ -1,6 +1,6 @@
 ⚠ Will be modified in future
 
-__Usage__  
+### Usage  
     
     Via Shortlink
     @import "~chefkoch-design-system/components/breakpoints";
