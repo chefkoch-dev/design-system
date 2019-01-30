@@ -46,7 +46,11 @@ Im Ordner `config` liegen die relevanten SCSS-Files für Astrum selbst.
     ⃢ config
         astrum-theming.scss (beinhaltet interne Verbesserungen der Styleguide UI)
         chefkoch-design-system.scss (beinhaltet alles und wird zu app/build kompiliert)
-  
-Happy coding.
 
-Weitere Infos zum Entwickeln und Releasen findest du [im Wiki](https://wiki.chefkoch.de/pages/viewpage.action?pageId=65737468). 
+## Workflow
+
+1. Im [Design System Board](https://jira.chefkoch.de/secure/RapidBoard.jspa?rapidView=269&useStoredSettings=true) ein Ticket aufmachen
+2. Den Code auf einem Branch entwickeln
+3. Einen Pull-Request auf GitHub stellen
+
+Happy coding.
