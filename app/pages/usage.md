@@ -1,6 +1,6 @@
 # Benutzung
 
-⚠ Achte bitte immer auf die Version, des DSY. Änderungen der Major Version, verursachen breaking changes!
+⚠ Achte bitte immer auf die Version, des DSY. Änderungen der Major Version, beinhalten breaking changes!
 
 ## 1. Installation des Design-Systems
 Um das Design-System im eigenen Projekt nutzen zu können, muss
