@@ -1,5 +1,7 @@
 # Benutzung
 
+⚠ Achte bitte immer auf die Version des DSY. Änderungen der Major Version beinhalten breaking changes!
+
 ## 1. Installation des Design-Systems
 Um das Design-System im eigenen Projekt nutzen zu können, muss
 das Paket als Abhängigkeit in der package.json definiert
@@ -55,7 +57,7 @@ Alle Utilities bekommst du über
 
 Darin enthalten sind folgende Bestandteile:  
 
-Clearfix <small>@import "~chefkoch-design-system/app/components/utilities/clearfix";</small>  
-Float
-  <small>@import "~chefkoch-design-system/app/components/utilities/float";</small>  
+Typography Utilities <small>@import "~chefkoch-design-system/app/components/utilities/typography-utilities";</small>  
+List Utilities <small>@import "~chefkoch-design-system/app/components/utilities/list-utilities";</small>  
+Float / Clearfix <small>@import "~chefkoch-design-system/app/components/utilities/layout-utilities";</small>  
 Screenreader / Hidden text <small>@import "~chefkoch-design-system/app/components/utilities/sr-only";</small> 

@@ -4,7 +4,7 @@ Die Grids sind an Chefkoch angepasst und daher keine Standardlösung.
 Das normale Grid orientiert sich technisch an [Flexbox Grid](http://flexboxgrid.com/), [Github](https://github.com/kristoferjoseph/flexboxgrid) und optisch an [Material Design](https://material.io/design/layout/responsive-layout-grid.html#columns-gutters-margins)  
 Hilfe für das Baseline Grid gibt [Grid Lover](https://www.gridlover.net/try).
 
-__Usage__  
+### Usage  
     
     Via Shortlink
     @import "~chefkoch-design-system/components/flexbox-grid";

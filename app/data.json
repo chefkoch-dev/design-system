@@ -17,14 +17,14 @@
         "highlight_color": "#F9FAFC",
         "brand_color": "#618F30",
         "background_color": "#F6F5F2",
-        "code_highlight_theme": "github",
+        "code_highlight_theme": "",
         "override_code_highlight_bg": "#F9FAFC",
         "sample_dark_background": "#333333",
-        "show_project_name": false,
-        "show_version": false,
+        "show_project_name": true,
+        "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "Chefkoch Design System",
+            "library_title": "v3.4.1",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -46,6 +46,11 @@
         "pages": [
             {
                 "name": "introduction",
+                "title": "Intro",
+                "file": "./pages/intro.md"
+            },
+            {
+                "name": "usage",
                 "title": "Benutzung",
                 "file": "./pages/usage.md"
             },
@@ -55,9 +60,9 @@
                 "file": "./pages/contribution.md"
             },
             {
-                "name": "accessibility-matrix",
-                "title": "Barrierefreie Farben",
-                "file": "./pages/accessibility-matrix.md"
+                "name": "versioning",
+                "title": "Versionen",
+                "file": "./pages/versioning.md"
             }
         ]
     },
@@ -107,6 +112,17 @@
                     "group": "margins",
                     "name": "footer",
                     "title": "Footer"
+                }
+            ]
+        },
+        {
+            "name": "logo",
+            "title": "Logo",
+            "components": [
+                {
+                    "group": "logo",
+                    "name": "logo",
+                    "title": "Logo"
                 }
             ]
         },
@@ -309,39 +325,8 @@
             "components": [
                 {
                     "group": "icons",
-                    "name": "functional-icons",
-                    "title": "Funktionale Icons"
-                },
-                {
-                    "group": "icons",
                     "name": "schmuck-icons",
                     "title": "Schmuck-Icons"
-                }
-            ]
-        },
-        {
-            "name": "alerts",
-            "title": "Feedback",
-            "components": [
-                {
-                    "group": "alerts",
-                    "name": "note",
-                    "title": "Hinweis",
-                    "width": "half"
-                }
-            ]
-        },
-        {
-            "name": "tabs",
-            "title": "Tabs",
-            "components": [
-                {
-                    "group": "tabs",
-                    "name": "tabs",
-                    "title": "Tabs",
-                    "options": {
-                        "sample_dark_background": true
-                    }
                 }
             ]
         }
