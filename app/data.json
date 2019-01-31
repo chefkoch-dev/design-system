@@ -46,6 +46,11 @@
         "pages": [
             {
                 "name": "introduction",
+                "title": "Intro",
+                "file": "./pages/intro.md"
+            },
+            {
+                "name": "usage",
                 "title": "Benutzung",
                 "file": "./pages/usage.md"
             },
@@ -320,39 +325,8 @@
             "components": [
                 {
                     "group": "icons",
-                    "name": "functional-icons",
-                    "title": "Funktionale Icons"
-                },
-                {
-                    "group": "icons",
                     "name": "schmuck-icons",
                     "title": "Schmuck-Icons"
-                }
-            ]
-        },
-        {
-            "name": "alerts",
-            "title": "Feedback",
-            "components": [
-                {
-                    "group": "alerts",
-                    "name": "note",
-                    "title": "Hinweis",
-                    "width": "half"
-                }
-            ]
-        },
-        {
-            "name": "tabs",
-            "title": "Tabs",
-            "components": [
-                {
-                    "group": "tabs",
-                    "name": "tabs",
-                    "title": "Tabs",
-                    "options": {
-                        "sample_dark_background": true
-                    }
                 }
             ]
         }
