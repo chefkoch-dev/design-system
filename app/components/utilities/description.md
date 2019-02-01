@@ -1,6 +1,6 @@
 __NOTE:__ ds-Utility Klassen können insoweit kombiniert werden, sofern es den Designregeln nicht widerspricht.
 
-__Usage__  
+### Usage  
     
     Via Shortlink
     @import "~chefkoch-design-system/components/dsy-utilities";

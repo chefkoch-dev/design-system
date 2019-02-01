@@ -29,6 +29,12 @@
     max-width: 100%;
 }
 
+.ndpl-content {
+    @media screen and (max-width: 959px) {
+        padding-top: 100px;
+    }
+}
+
 .ndpl-library {
     padding-top: 0;
 }
@@ -45,6 +51,23 @@
 
 .ndpl-page, .ndpl-loading__title, .ndpl-error, .ndpl-info, .ndpl-header, .ndpl-sidebar, .ndpl-intro, .ndpl-library__title, .ndpl-group__description, .ndpl-component__title, .ndpl-component__description, .ndpl-component__label, .ndpl-component__code-toggle, .ndpl-component__color, .ndpl-page, .ndpl-nav__title, .ndpl-sidebar__title {
     font-family: $fontfamily-base;
+    color: $color-black;
+}
+
+.ndpl-library__title {
+    @extend .ds-h1;
+}
+
+.ndpl-component__title {
+    @extend .ds-h2;
+}
+
+.ndpl-group__description,
+.ndpl-component__description {
+    h3 {
+        font-weight: inherit;
+        padding-top: $unit * 2;
+    }
 }
 
 .ndpl-page,
@@ -55,18 +78,28 @@
         font-size: $fontsize-base;
     }
 
+    pre code,
     code {
+        background: #f1efec;
         border: 1px solid $color-grey-medium;
+        border-radius: $unit / 2;
         color: $color-black;
         font-size: $fontsize-small;
+        line-height: $lineheight-small;
     }
 
-    pre {
-        code {
-            background: $color-sand;
-            padding: $unit;
-        }
+    pre code {
+        box-sizing: border-box;
+        overflow-x: scroll;
+        padding: $unit;
+        width: 100%;
     }
+}
+
+.ndpl-page pre code,
+.ndpl-component__description pre code,
+.ndpl-component__code .ndpl-code {
+    opacity: 1;
 }
 
 .ndpl-page {
@@ -141,6 +174,7 @@
     font-size: 10px;
     height: $unit * 2;
     letter-spacing: 0.5px;
+    line-height: 12px;
     margin-bottom: $unit;
     overflow: hidden;
     position: relative;
@@ -278,13 +312,20 @@
 
     div[class*="component__sample"] {
         &:before {
+            background: url("../app/images/baseline-grid-16px.png") repeat 36px 36px;
             content: '';
             display: block;
+            height: 100%;
             opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
             transition: opacity 0.3s ease;
+            width: 100%;
+            z-index: -1;
         }
 
-        h1, h2, h3, h4, h5, .ds-h7, p, small {
+        h1, h2, h3, h4, h5, p, small, .ds-text-small {
             background-color: transparent;
             transition: background-color 0.3s ease 0.15s;
         }
@@ -294,18 +335,11 @@
         &:hover {
             div[class*="component__sample"] {
                 &:before {
-                    background: url("../app/images/baseline-grid-16px.png") repeat 36px 36px;
-                    height: 100%;
                     opacity: 1;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    z-index: -1;
                 }
 
-                h1, h2, h3, h4, h5, .ds-h7, p, small {
-                    background-color: rgba($color-grey-light, 0.5);
+                h1, h2, h3, h4, h5, p, small, .ds-text-small {
+                    background-color: rgba(#d9d5d0, 0.35);
                 }
             }
         }
@@ -360,6 +394,17 @@ td {
         transition: opacity 0.3s ease 0.15s;
     }
 
+    .margin-helper,
+    .margin-helper-2 {
+        background-image: linear-gradient(135deg, rgba(255, 165, 0, 0.1) 25%, rgba(255, 165, 0, 0.3) 25%, rgba(255, 165, 0, 0.3) 50%, rgba(255, 165, 0, 0.1) 50%, rgba(255, 165, 0, 0.1) 75%, rgba(255, 165, 0, 0.3) 75%, rgba(255, 165, 0, 0.3) 100%);
+        background-size: 22.63px 22.63px;
+    }
+
+    .padding-helper {
+        background-image: linear-gradient(135deg, rgba(97, 143, 48, 0.1) 25%, rgba(97, 143, 48, 0.3) 25%, rgba(97, 143, 48, 0.3) 50%, rgba(97, 143, 48, 0.1) 50%, rgba(97, 143, 48, 0.1) 75%, rgba(97, 143, 48, 0.3) 75%, rgba(97, 143, 48, 0.3) 100%);
+        background-size: 22.63px 22.63px;
+    }
+
     hr {
         border: 0;
         border-top: 1px solid $color-grey-light;
@@ -367,16 +412,9 @@ td {
     }
 
     &:hover {
-        .padding-helper {
-            background-image: linear-gradient(135deg, rgba(97, 143, 48, 0.1) 25%, rgba(97, 143, 48, 0.3) 25%, rgba(97, 143, 48, 0.3) 50%, rgba(97, 143, 48, 0.1) 50%, rgba(97, 143, 48, 0.1) 75%, rgba(97, 143, 48, 0.3) 75%, rgba(97, 143, 48, 0.3) 100%);
-            background-size: 22.63px 22.63px;
-            opacity: 1;
-        }
-
+        .padding-helper,
         .margin-helper,
         .margin-helper-2 {
-            background-image: linear-gradient(135deg, rgba(255, 165, 0, 0.1) 25%, rgba(255, 165, 0, 0.3) 25%, rgba(255, 165, 0, 0.3) 50%, rgba(255, 165, 0, 0.1) 50%, rgba(255, 165, 0, 0.1) 75%, rgba(255, 165, 0, 0.3) 75%, rgba(255, 165, 0, 0.3) 100%);
-            background-size: 22.63px 22.63px;
             opacity: 1;
         }
     }

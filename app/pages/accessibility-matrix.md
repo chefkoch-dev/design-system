@@ -1,3 +1,0 @@
-Die _barrierefreie Kombinationsmatrix_ zeigt die Farbkombinationen auf, die im Hinblick auf Barrierefreiheit guten 
-Gewissens verwendet werden können. Quelle: [http://contrast-grid.eightshapes.com/](http://contrast-grid.eightshapes.com/?background-colors=&foreground-colors=%23FFFFFF%2C%20White%0D%0A%23f6f5f2%2C%20Background%20Sand%0D%0A%23d8d8d8%2C%20Border%20Grey%0D%0A%23bbb9b9%2C%20Icon%20Grey%0D%0A%239d9d9d%2C%20Text%20Grey%0D%0A%23403b3b%2C%20Text%20Black%0D%0A%23618f30%2C%20Corporate%20Green%0D%0A%23537a29%2C%20Corporate%20Green%20Text%0D%0A%23bf538d%2C%20Action%20Color%0D%0A%23007c8c%2C%20Info%20Blue%0D%0A%23f2c829%2C%20Info%20Yellow%0D%0A%23ff665e%2C%20Info%20Red%0D%0A&es-color-form__tile-size=compact
-).
