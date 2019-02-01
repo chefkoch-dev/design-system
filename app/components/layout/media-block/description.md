@@ -21,13 +21,13 @@ Folgende Styles sind demnach im Projekt selbst zu definieren:
 Die Breite von `.ds-mb-right` inkludiert den vordefinierten Abstand zwischen den beiden Kindern.
 - Bei vertikaler Ausrichtung bestimmen die Gridklassen des/der Eltern-Element/e die Breite. Die Kinder sind demnach standardmäßig 100% breit.
 
-__Statisch__
+### Statisch
 
 Wenn die Ausrichtung des Moduls __breakpointübergreifend gleich__ bleibt, können folgende Klassen auf `.ds-mb` hinzugefügt werden. Der Abstand (padding) zwischen den beiden Kindern ist dann bereits gegeben.
 - `.ds-mb-row` (horizontal)
 - `.ds-mb-col` (vertikal)
 
-__Dynamisch__
+### Dynamisch
 
 Sofern sich die Ausrichtung jedoch __bei einem Breakpoint verändern soll__, stehen für diesen Zweck __@mixins__ bereit, welche auf `.ds-mb` geschrieben werden:
 
