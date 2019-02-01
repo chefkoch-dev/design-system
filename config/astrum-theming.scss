@@ -501,6 +501,74 @@ td {
     }
 }
 
+#group-layout {
+    .dsy-helper-ignore-this {
+        background: rgba($color-grey-medium, 0.4);
+    }
+}
+
+#group-layout-component-bereich {
+    .ndpl-component__container {
+        display: none;
+    }
+}
+
+#group-layout-component-statischer-bereich,
+#group-layout-component-visueller-bereich {
+    .dsy-helper-ignore-this {
+        margin: 4px;
+    }
+
+    .dsy-helper-ignore-this,
+    .dsy-helper-ignore-this-1 {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .dsy-helper-ignore-this-1,
+    .dsy-helper-ignore-this-2 ,
+    .dsy-helper-ignore-this-3 {
+        background: rgba($color-grey-medium, 0.25);
+    }
+
+    .dsy-helper-ignore-this-1 {
+        margin: 4px;
+
+        .dsy-helper-ignore-this-2 {
+            height: 100px;
+        }
+    }
+
+    .dsy-helper-ignore-this-2 {
+        margin-bottom: 4px;
+
+        .dsy-helper-ignore-this {
+            margin-bottom: 4px;
+            margin-top: 4px;
+            padding: 0 12px;
+        }
+
+        .dsy-helper-ignore-this-2 {
+            margin-left: 0;
+        }
+    }
+
+    .dsy-helper-ignore-this-3 {
+        border: 1px solid #999;
+        margin-bottom: 4px;
+    }
+
+    .ds-col-m-6 {
+        .dsy-helper-ignore-this-1 {
+            .dsy-helper-ignore-this-2 {
+                @include media-breakpoint-from(s) {
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
 /* other
 ----------------------------------- */
 

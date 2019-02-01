@@ -1,6 +1,6 @@
-Bereiche können im Code gekennzeichnet oder rein visuell definiert werden.  
+Bereiche können im Code oder rein visuell entstehen.  
 
-Im Code werden Bereiche durch folgende Tags repräsentiert:  
-`<header>`, `<main>`, `<aside>` & `<footer>`. 
+Im Code werden Bereiche durch u.A. folgende Tags repräsentiert:  
+`<header>`, `<main>`, `<section>`, `<aside>` & `<footer>`. 
 
-Besteht laut Design ein fluider, dynamischer Aufbau der Seite, könnte man einen (visuellen) Content Bereich definieren, in dem sich `<main>` und `<aside>` responsiv verhalten. 
+Besteht laut Design ein fluider, dynamischer Aufbau der Seite, könnte man einen (visuellen) Content Bereich definieren, in dem sich `<main>` und `<aside>` befinden und responsiv verhalten. 

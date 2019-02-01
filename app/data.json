@@ -122,7 +122,20 @@
                 {
                     "group": "layout",
                     "name": "bereich",
-                    "title": "Bereich"
+                    "title": "Bereich",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "layout",
+                    "name": "statischer-bereich",
+                    "title": "Statische Bereiche"
+                },
+                {
+                    "group": "layout",
+                    "name": "visueller-bereich",
+                    "title": "Visuelle Bereiche"
                 }
             ]
         },
