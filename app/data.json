@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v3.4.1",
+            "library_title": "v3.5.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -91,6 +91,17 @@
                     "group": "grid",
                     "name": "grid",
                     "title": "Grid"
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "title": "Layout",
+            "components": [
+                {
+                    "group": "layout",
+                    "name": "media-block",
+                    "title": "Media-Block"
                 }
             ]
         },
