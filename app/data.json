@@ -130,12 +130,21 @@
                 {
                     "group": "layout",
                     "name": "statischer-bereich",
-                    "title": "Statische Bereiche"
+                    "title": "Statische Bereiche",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+
                 },
                 {
                     "group": "layout",
                     "name": "visueller-bereich",
-                    "title": "Visuelle Bereiche"
+                    "title": "Visuelle Bereiche",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
                 }
             ]
         },
