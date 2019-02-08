@@ -246,6 +246,7 @@
 /* Container hints
 ----------------------------------- */
 
+#group-layout,
 #group-typography,
 #group-links,
 #group-buttons,
@@ -272,6 +273,7 @@
     }
 }
 
+#group-layout,
 #group-typography,
 #group-links,
 #group-margins,
@@ -373,6 +375,7 @@ td {
 /* Magic Margins
 ----------------------------------- */
 
+#group-layout,
 #group-margins,
 #group-typography,
 #group-pagination {
@@ -417,6 +420,7 @@ td {
     }
 }
 
+#group-layout,
 #group-margins,
 #group-typography {
     .margin-helper {
@@ -501,15 +505,16 @@ td {
     }
 }
 
-#group-layout {
-    .dsy-helper-ignore-this {
-        background: rgba($color-grey-medium, 0.4);
-    }
-}
-
 #group-layout-component-bereich {
     .ndpl-component__container {
         display: none;
+    }
+}
+
+/*
+#group-layout {
+    .dsy-helper-ignore-this {
+        background: rgba($color-grey-medium, 0.4);
     }
 }
 
@@ -566,6 +571,40 @@ td {
                 }
             }
         }
+    }
+}
+
+*/
+
+#group-layout {
+    .ds-mb.dsy-helper-ignore-this {
+        background: rgba($color-grey-medium, 0.25);
+    }
+
+    .ds-mb.dsy-helper-ignore-this-2 {
+        @include ds-fd-col;
+        @include ds-mb-padding("top", 1.5);
+
+        @include media-breakpoint-from(xs) {
+            @include ds-fd-col;
+            @include ds-mb-padding("left", 1.5);
+        }
+
+        @include media-breakpoint-from(s) {
+            @include ds-fd-row;
+            @include ds-mb-padding("left", 2);
+        }
+
+        @include media-breakpoint-from(m) {
+            @include ds-fd-col;
+            @include ds-mb-padding("top", 2);
+        }
+    }
+
+    .ds-mb-left.dsy-helper-ignore-this {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
 }
 

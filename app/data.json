@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v3.4.1",
+            "library_title": "v3.5.1",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -95,27 +95,6 @@
             ]
         },
         {
-            "name": "margins",
-            "title": "Abstände",
-            "components": [
-                {
-                    "group": "margins",
-                    "name": "content",
-                    "title": "Content"
-                },
-                {
-                    "group": "margins",
-                    "name": "context",
-                    "title": "Context"
-                },
-                {
-                    "group": "margins",
-                    "name": "footer",
-                    "title": "Footer"
-                }
-            ]
-        },
-        {
             "name": "layout",
             "title": "Layout",
             "components": [
@@ -145,6 +124,32 @@
                     "options": {
                         "disable_code_sample": true
                     }
+                },
+                {
+                    "group": "layout",
+                    "name": "media-block",
+                    "title": "Media-Block"
+                }
+            ]
+        },
+        {
+            "name": "margins",
+            "title": "Abstände",
+            "components": [
+                {
+                    "group": "margins",
+                    "name": "content",
+                    "title": "Content"
+                },
+                {
+                    "group": "margins",
+                    "name": "context",
+                    "title": "Context"
+                },
+                {
+                    "group": "margins",
+                    "name": "footer",
+                    "title": "Footer"
                 }
             ]
         },

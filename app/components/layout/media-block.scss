@@ -1,0 +1,46 @@
+@mixin ds-fd-row {
+    flex-direction: row;
+}
+
+@mixin ds-fd-col {
+    flex-direction: column;
+}
+
+@mixin ds-mb-padding($direction, $unitMultiplier) {
+    .ds-mb-right {
+        @if $direction == "left" {
+            padding: 0 0 0 $unit * $unitMultiplier;
+        }
+
+        @if $direction == "top" {
+            padding: $unit * $unitMultiplier 0 0;
+        }
+    }
+}
+
+.ds-mb {
+    display: flex;
+
+    > [class*="ds-mb"] {
+        box-sizing: border-box;
+        word-break: break-word;
+    }
+}
+
+.ds-mb-row {
+    @include ds-fd-row;
+    @include ds-mb-padding("left", 1.5);
+
+    @include media-breakpoint-from(s) {
+        @include ds-mb-padding("left", 2);
+    }
+}
+
+.ds-mb-col {
+    @include ds-fd-col;
+    @include ds-mb-padding("top", 1.5);
+
+    @include media-breakpoint-from(s) {
+        @include ds-mb-padding("top", 2);
+    }
+}
