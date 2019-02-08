@@ -8,6 +8,6 @@ Bei statischen Bereichen, wie sie beim klassischen Spalten Layout vorkommen, fun
 
 ### Visuelle / flexible Bereiche
 
-Bei visuellen oder flexible Bereichen wie z.B. auf der RSEL, fungiert `<main>` als Wrapper für den gesamten Content, nicht nur für den Main-Content. 
+Bei visuellen / flexible Bereichen wie z.B. auf der RSEL, fungiert `<main>` als Wrapper für den gesamten Content, nicht nur für den Main-Content. 
 Innerhalb dessen, werden die Bereiche für Content und Sidebar nicht hart im HTML definiert sondern ausschließlich über die Positionierung der Module bestimmt.  
  Stehen alle Sidebar Inhalte auf der rechten seite und der Main-Content auf der Linken, sieht es visuell genau so aus, wie der statische Aufbau der Bereiche, jedoch existieren diese nicht im Code.
