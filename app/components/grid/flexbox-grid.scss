@@ -41,11 +41,6 @@ $container-m-min: $screen-m;
 		max-width: $container-s-min;
 	}
 
-	@include media-breakpoint-to(s) {
-		display: flex;
-		flex-direction: column;
-	}
-
 	@include media-breakpoint-from(m) {
 		padding: 0 $gutter-half-big;
 		width: $container-m-min;
