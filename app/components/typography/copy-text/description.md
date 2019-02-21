@@ -1,17 +1,17 @@
 Copy Text oder Body Text bezeichnet den Fließtext im Content. 
 
-__Code__  
+### Code  
 Semantisch immer die korrekte Auszeichnung verwenden.  
 Copy Text sollte möglichst immer in Absätzen `<p>` sein. `<span>` ist für sehr kurze Texte ebenfalls möglich.  
 
-Font-size und line-height sind auf dem body als default definiert und müssen daher nicht mehr explizit auf Copy Texte im main-content geschrieben werden.
+Font-size und line-height sind auf dem body als default definiert und müssen daher nicht mehr explizit gesetzt werden.
 
-__Utilities__  
-Weitere Textauszeichnungen über ds-utility-Klassen `.ds-text-center` oder `.ds-text-right` möglich.
+### Utilities  
+Weitere Textauszeichnungen über [ds-utility-Klassen](#group-utilities-component-typography-utilities) möglich.
 
-__Styles__  
+### Styles  
 Helvetica Neue Regular  
 Im __main-content__: F 16px / L 24px / M 16 (kommt vom `<body>`)    
-In der __sidebar__: F 14px / L 20px / M 16 (kommt von `<aside>` oder mit `.ds-text-small`, siehe Typographie / Small Text)  
+In der __sidebar__: F 14px / L 20px / M 16 (kommt von `<aside>` oder mit `.ds-text-small`, siehe [Small Text](#group-typography-component-small-text))  
 
 <small>F: Fontsize / L: Line-Height / M: Margin (bottom)</small>
