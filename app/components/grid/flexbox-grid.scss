@@ -48,6 +48,18 @@ $container-m-min: $screen-m;
 }
 
 .ds-grid {
+	/* NOTE
+	** The shorthand flex stands for flex-grow, flex-shrink, flex-basis
+	** Old browsers (like Safari 8/9, IE) need this property to handle flexbox correctly
+	**
+	** https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
+	** here: initial value 0 = items don't grow uneven, all items share equal space
+	** https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink
+	** here: initial value 1 = items do shrink down to fit into the grid
+	** https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
+	** here: initial value auto = main-size of all items is equal
+	*/
+
 	box-sizing: border-box;
 	display: flex;
 	flex: 0 1 auto;
