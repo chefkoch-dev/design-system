@@ -249,7 +249,6 @@
 #group-typography,
 #group-links,
 #group-buttons,
-#group-margins,
 #group-pagination {
     .ndpl-component__container {
         background: $color-white;
@@ -274,7 +273,6 @@
 
 #group-typography,
 #group-links,
-#group-margins,
 #group-pagination {
     .ndpl-component__container {
         &:before {
@@ -373,7 +371,6 @@ td {
 /* Magic Margins
 ----------------------------------- */
 
-#group-margins,
 #group-typography,
 #group-pagination {
     .ndpl-component__container {
@@ -417,7 +414,6 @@ td {
     }
 }
 
-#group-margins,
 #group-typography {
     .margin-helper {
         height: $unit * 4;
@@ -428,7 +424,6 @@ td {
     }
 }
 
-#group-margins,
 #group-pagination {
     .margin-box {
         height: 160px;
@@ -444,21 +439,6 @@ td {
         top: $unit * 2;
         width: calc(100% - #{$unit * 4});
     }
-
-    #group-margins-component-content {
-        .content-helper-1 {
-            left: $unit * 2;
-            top: $unit * 2;
-            width: 33%;
-        }
-
-        .content-helper-2 {
-            margin-left: calc(33% + #{$unit * 4});
-            top: $unit * 2;
-            left: auto;
-            width: calc(66% - 42px);
-        }
-    }
 }
 
 #group-typography {
@@ -470,12 +450,6 @@ td {
         margin-top: -($unit * 2);
     }
 
-    .padding-helper {
-        height: 100%;
-    }
-}
-
-#group-margins {
     .padding-helper {
         height: 100%;
     }
