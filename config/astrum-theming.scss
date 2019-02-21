@@ -555,7 +555,7 @@ td {
     }
 }
 
-/* Hide Code Samples
+/* Code Samples
 ----------------------------------- */
 
 #group-margins,
@@ -565,6 +565,15 @@ td {
     .ndpl-component__code-toggle {
         display: none;
     }
+}
+
+.ndpl-component__code .ndpl-code {
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.ndpl-component__code .ndpl-code {
+    display: block;
 }
 
 /* stylelint-enable */
