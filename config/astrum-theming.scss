@@ -608,9 +608,9 @@ td {
 }
 
 #group-margins-component-elemente {
-    .ndpl-component__container {
+    .ndpl-component__container,
+    .ndpl-component__sample-hidden {
         display: none;
     }
 }
-
 /* stylelint-enable */
