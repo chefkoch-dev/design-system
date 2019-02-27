@@ -1,3 +1,5 @@
+⚠ Grafiken werden noch ausgetauscht
+
 Wir nutzen strukturierte und konsistente Abstände auf allen Chefkoch Seiten.  
 Abstände werden im Regelfall __immer nach unten__ definiert, um Deplazierungen zu vermeiden, sofern ein Modul oder ein Element aus Gründen mal nicht angezeigt werden sollte. 
 
