@@ -195,22 +195,10 @@
 }
 
 .cds-color-wrapper {
-    display: flex;
-    flex-direction: column;
     margin-bottom: $unit * 3;
-
-    @extend .ds-col-xs-12;
-    @extend .ds-col-s-6;
-    @extend .ds-col-m-4;
 }
 
 #group-colors {
-    .ds-grid:first-child {
-        .cds-color-wrapper {
-            @extend .ds-col-m-6;
-        }
-    }
-
     .ndpl-component__sample {
         code {
             border: 1px solid $color-grey-medium;
@@ -595,7 +583,7 @@ td {
     }
 }
 
-/* Hide Code Samples
+/* Code Samples
 ----------------------------------- */
 
 #group-margins,
@@ -613,4 +601,13 @@ td {
         display: none;
     }
 }
+.ndpl-component__code .ndpl-code {
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.ndpl-component__code .ndpl-code {
+    display: block;
+}
+
 /* stylelint-enable */

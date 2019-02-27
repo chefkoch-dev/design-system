@@ -74,12 +74,18 @@
                 {
                     "group": "breakpoints",
                     "name": "mediaqueries",
-                    "title": "MediaQueries"
+                    "title": "MediaQueries",
+                    "options": {
+                        "disable_code_sample": true
+                    }
                 },
                 {
                     "group": "breakpoints",
                     "name": "viewports",
-                    "title": "Viewports"
+                    "title": "Viewports",
+                    "options": {
+                        "disable_code_sample": true
+                    }
                 }
             ]
         },
