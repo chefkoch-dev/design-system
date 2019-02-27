@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v3.5.3",
+            "library_title": "v3.6.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -106,6 +106,60 @@
             "components": [
                 {
                     "group": "layout",
+                    "name": "bereich",
+                    "title": "Bereich",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "layout",
+                    "name": "statischer-bereich",
+                    "title": "— Statische Bereiche",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+
+                },
+                {
+                    "group": "layout",
+                    "name": "visueller-bereich",
+                    "title": "— Visuelle Bereiche",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "layout",
+                    "name": "modul",
+                    "title": "Modul",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "layout",
+                    "name": "einfaches-modul",
+                    "title": "— Einfache Module",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+
+                },
+                {
+                    "group": "layout",
+                    "name": "komplexes-modul",
+                    "title": "— Komplexe Module",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "layout",
                     "name": "media-block",
                     "title": "Media-Block"
                 }
@@ -117,18 +171,33 @@
             "components": [
                 {
                     "group": "margins",
-                    "name": "content",
-                    "title": "Content"
+                    "name": "bereich",
+                    "title": "Bereich + Bereich",
+                    "width": "half"
                 },
                 {
                     "group": "margins",
-                    "name": "context",
-                    "title": "Context"
+                    "name": "modul",
+                    "title": "Modul + Modul",
+                    "width": "half"
                 },
                 {
                     "group": "margins",
-                    "name": "footer",
-                    "title": "Footer"
+                    "name": "aside",
+                    "title": "Aside Modul + Aside Modul",
+                    "width": "half"
+                },
+                {
+                    "group": "margins",
+                    "name": "komplexes-modul",
+                    "title": "Modul + Modul in komplexem Modul",
+                    "width": "half"
+                },
+                {
+                    "group": "margins",
+                    "name": "elemente",
+                    "title": "Elemente",
+                    "width": "half"
                 }
             ]
         },
@@ -227,6 +296,11 @@
                     "group": "utilities",
                     "name": "screenreader-utilities",
                     "title": "Screenreader Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "breakpoint-utilities",
+                    "title": "Breakpoint Utilities"
                 }
             ]
         },
