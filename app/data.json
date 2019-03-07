@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v3.6.2",
+            "library_title": "v3.7.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -281,6 +281,11 @@
                     "group": "utilities",
                     "name": "typography-utilities",
                     "title": "Typography Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "text-truncation-utilities",
+                    "title": "Text Truncation Utilities"
                 },
                 {
                     "group": "utilities",
