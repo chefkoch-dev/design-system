@@ -3,53 +3,54 @@
     position: relative;
 }
 
-hr {
+.ds-hr {
     border: 0;
     border-bottom: 1px solid $color-grey-light;
     margin: 0;
+    padding-top: $unit * 4;
     width: 100%;
 
     /* stylelint-disable all */
     .ad--top &,
     .ad--bottom & {
         margin: 0 auto;
-        width: calc(100% - 16px);
+        width: calc(100% - #{$unit * 2});
 
         @include media-breakpoint-from(xxs) {
-            width: calc(100% - 32px);
+            width: calc(100% - #{$unit * 4});
         }
 
         @include media-breakpoint-from(s) {
-            width: 568px;
+            width: calc(#{$screen-s} - #{$unit * 4});
         }
 
         @include media-breakpoint-from(m) {
-            width: calc(100% - 48px);
+            width: calc(100% - #{$unit * 5});
         }
+    }
+
+    .ad & {
+        padding-top: 0;
     }
     /* stylelint-enable all */
 
     /* direct children of main  only */
     main > & {
         margin: 0 auto;
-        width: calc(100% - 8px);
+        width: calc(100% - #{$unit});
 
         @include media-breakpoint-from(xxs) {
-            width: calc(100% - 16px);
+            width: calc(100% - #{$unit * 2});
         }
 
         @include media-breakpoint-from(s) {
-            width: 568px;
+            width: calc(#{$screen-s} - #{$unit * 4});
         }
 
         @include media-breakpoint-from(m) {
-            width: calc(100% - 24px);
+            width: calc(100% - #{$unit * 3});
         }
     }
-}
-
-.ds-hr {
-    padding-top: $unit * 4;
 }
 
 .ds-to-s {
