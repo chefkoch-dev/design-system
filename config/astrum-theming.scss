@@ -610,4 +610,10 @@ td {
     display: block;
 }
 
+#group-utilities-component-text-truncation-utilities {
+    .ndpl-component__sample p {
+        max-width: 200px
+    }
+}
+
 /* stylelint-enable */
