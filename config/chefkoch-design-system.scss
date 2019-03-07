@@ -34,3 +34,5 @@ $screen-m: 960px + 312px + 48px;
 
 // custom astrum UI enhancements
 @import "astrum-theming";
+
+@import "../app/components/utilities/text-truncation-utilities";
