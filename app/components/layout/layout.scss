@@ -3,44 +3,53 @@
     position: relative;
 }
 
-.ds-hr {
+hr {
     border: 0;
-    border-top: 1px solid $color-grey-light;
-    margin: 0 auto $unit * 4;
+    border-bottom: 1px solid $color-grey-light;
+    margin: 0;
     width: 100%;
 
     /* stylelint-disable all */
-
-    main > & {
-        width: calc(100% - #{$unit});
-
-        @include media-breakpoint-from(xxs) {
-            width: calc(100% - #{$unit * 2});
-        }
-    }
-
-    .ad & {
-        width: calc(100% - #{$unit * 2});
+    .ad--top &,
+    .ad--bottom & {
+        margin: 0 auto;
+        width: calc(100% - 16px);
 
         @include media-breakpoint-from(xxs) {
-            width: calc(100% - #{$unit * 4});
+            width: calc(100% - 32px);
         }
 
-        @include media-breakpoint-only(s) {
-            width: $screen-s - 32px;
+        @include media-breakpoint-from(s) {
+            width: 568px;
         }
-    }
 
-    main > &,
-    .ad & {
         @include media-breakpoint-from(m) {
-            margin-bottom: 0;
-            padding-bottom: 32px; // margin isn't included into main, but outside of it. maybe b/c of the float?
-            width: calc(#{$screen-m} - #{$unit * 5});
+            width: calc(100% - 48px);
         }
     }
-
     /* stylelint-enable all */
+
+    /* direct children of main  only */
+    main > & {
+        margin: 0 auto;
+        width: calc(100% - 8px);
+
+        @include media-breakpoint-from(xxs) {
+            width: calc(100% - 16px);
+        }
+
+        @include media-breakpoint-from(s) {
+            width: 568px;
+        }
+
+        @include media-breakpoint-from(m) {
+            width: calc(100% - 24px);
+        }
+    }
+}
+
+.ds-hr {
+    padding-top: $unit * 4;
 }
 
 .ds-to-s {
