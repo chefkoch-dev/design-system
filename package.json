@@ -1,6 +1,6 @@
 {
   "name": "chefkoch-design-system",
-  "version": "3.8.1",
+  "version": "3.8.2",
   "description": "Chefkoch Design System",
   "repository": "https://github.com/chefkoch-dev/design-system.git",
   "author": "Team Geist/Team Funkytown Avengers",
@@ -10,6 +10,7 @@
     "astrum": "^1.9.5",
     "browser-sync": "^2.26.3",
     "chefkoch-stylelint-config": "^1.0.2",
+    "extend": "^3.0.2",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-if": "^2.0.2",
