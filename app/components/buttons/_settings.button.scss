@@ -1,0 +1,47 @@
+.ds-btn-box {
+    display: flex;
+}
+
+.ds-btn + .ds-btn {
+    margin-left: $unit * 2;
+}
+
+@mixin btn-reset {
+    background: transparent;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+
+    // normalize inner #fffspace in Firefox
+    &::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@mixin btn-base {
+    border-radius: $unit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $fontsize-small;
+    height: $unit * 5;
+    letter-spacing: 0.5px;
+    line-height: $lineheight-base;
+    margin-bottom: $unit * 2;
+    min-width: $unit * 5;
+    padding: 0 $unit * 2;
+    text-transform: uppercase;
+}
+
+.ds-btn {
+    @include btn-reset;
+    @include btn-base;
+
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+}

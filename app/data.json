@@ -315,38 +315,28 @@
             "components": [
                 {
                     "group": "buttons",
-                    "name": "standard",
-                    "title": "Standard Button"
+                    "name": "primary",
+                    "title": "Primary Button"
                 },
                 {
                     "group": "buttons",
-                    "name": "big",
-                    "title": "Big Button"
+                    "name": "secondary",
+                    "title": "Secondary Button"
                 },
                 {
                     "group": "buttons",
-                    "name": "wide",
-                    "title": "Wide Button"
+                    "name": "tertiary",
+                    "title": "Tertiary Button"
                 },
                 {
                     "group": "buttons",
-                    "name": "variations",
-                    "title": "Button Variationen"
+                    "name": "icon",
+                    "title": "Icon Button"
                 },
                 {
                     "group": "buttons",
                     "name": "deactivated",
                     "title": "Inaktiv / Deaktiviert"
-                },
-                {
-                    "group": "buttons",
-                    "name": "light",
-                    "title": "Light Button"
-                },
-                {
-                    "group": "buttons",
-                    "name": "text",
-                    "title": "Text Button"
                 }
             ]
         },

@@ -1,2 +1,0 @@
-Der text button ist für am niedrigsten priorisierte Aktionen gedacht. Zum Beispiel ein Cancel Button in einem Formular.  
-Er darf __niemals alleine stehen__, d.h. links von ihm muss immer ein primary oder secondary Button stehen.
