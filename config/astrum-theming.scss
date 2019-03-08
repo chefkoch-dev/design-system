@@ -616,4 +616,21 @@ td {
     }
 }
 
+#group-carousel-component-indicators {
+    .slides-container {
+        height: 300px;
+        position: relative;
+        width: 400px;
+
+        img {
+            border-radius: $unit;
+        }
+    }
+
+    .ds-carousel-indicators {
+        position: absolute;
+        top: calc(50% - 20px);
+    }
+}
+
 /* stylelint-enable */

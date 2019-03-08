@@ -1,0 +1,17 @@
+/* stylelint-disable all */
+
+@import "./mixins.indicators";
+
+.amp-carousel-button {
+    @include carouselIndicatorBase();
+}
+
+.amp-carousel-button-prev {
+    @include carouselPrevButton();
+}
+
+.amp-carousel-button-next {
+    @include carouselNextButton();
+}
+
+/* stylelint-enable all */
