@@ -1,14 +1,14 @@
 # Chefkoch Design System
 [![Build Status](https://travis-ci.org/chefkoch-dev/design-system.svg?branch=master)](https://travis-ci.org/chefkoch-dev/design-system)
 
-This repository contains the Chefkoch Design System. 
+This repository contains the Chefkoch Design System (DSY). 
 Its patterns and documentation are built with
 [Astrum](http://astrum.nodividestudio.com/).
 
-Showcase: [http://design.chefkoch.de](http://design.chefkoch.de)
+Showcase: [http://design.chefkoch.de](https://design.chefkoch.de)
 
 ## Contents
-* [Installation](#installation)
+* [Installation & Usage](#installation--usage)
 * [Contributing](#contributing)
 * [Disclaimer](#disclaimer)
 
@@ -19,6 +19,8 @@ Showcase: [http://design.chefkoch.de](http://design.chefkoch.de)
     docker run --rm -v $(pwd):/app -w="/app" node npm install|update
 
 ### Usage Requirements
+
+* npm
 * Sass
 
 Install the design patterns and add them in anyway you see fit to
@@ -27,11 +29,13 @@ your build pipeline.
     npm install chefkoch-design-system --save-dev
 
 **Integration in the pipeline, example with gulp and gulp-sass**
+
     sass({
         includePaths: ['node_modules/chefkoch-design-system/patterns/']
     })
 
 **Import the desired pattern in your sass file**
+
 Ein Pattern aus dem Design-System muss erst per scss eingebunden werden:
 
     @import 'button/button'
