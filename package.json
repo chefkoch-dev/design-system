@@ -14,9 +14,9 @@
     "gulp-autoprefixer": "^5.0.0",
     "gulp-if": "^2.0.2",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.4",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-stylelint": "^7.0.0",
-    "stylelint": "^9.9.0"
+    "stylelint": "^9.10.1"
   },
   "files": [
     "components",
