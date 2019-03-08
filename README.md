@@ -5,7 +5,7 @@ This repository contains the Chefkoch Design System (DSY).
 Its patterns and documentation are built with
 [Astrum](http://astrum.nodividestudio.com/).
 
-Showcase: [http://design.chefkoch.de](https://design.chefkoch.de)
+Showcase: [https://design.chefkoch.de](https://design.chefkoch.de)
 
 ## Contents
 * [Installation & Usage](#installation--usage)
