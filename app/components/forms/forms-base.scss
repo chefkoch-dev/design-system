@@ -1,0 +1,57 @@
+$stdFormHeight: $unit * 5;
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: $unit * 2;
+}
+
+
+/* search form
+-------------------------- */
+
+.ds-search-form {
+    display: flex;
+    height: $stdFormHeight;
+
+    .ds-input {
+        border-radius: $unit 0 0 $unit;
+        border-right: 0;
+        flex-grow: 1;
+        height: 100%;
+        margin: 0;
+        width: auto;
+    }
+
+    .ds-select {
+        border-radius: 0;
+        border-right: 0;
+        height: 100%;
+    }
+
+    button {
+        border-radius: 0 $unit $unit 0;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: $stdFormHeight;
+
+        i {
+            margin: 0;
+        }
+    }
+}
+
+.ds-input:focus + .ds-select-box {
+    .ds-select {
+        border-color: $color-corporate-green-dark;
+    }
+}
+

@@ -326,12 +326,20 @@
                 {
                     "group": "forms",
                     "name": "checkboxes",
-                    "title": "Checkboxen"
+                    "title": "Checkboxen",
+                    "width": "half"
                 },
                 {
                     "group": "forms",
                     "name": "radiobuttons",
-                    "title": "Radiobuttons"
+                    "title": "Radiobuttons",
+                    "width": "half"
+                },
+                {
+                    "group": "forms",
+                    "name": "select",
+                    "title": "Select",
+                    "width": "half"
                 },
                 {
                     "group": "forms",
