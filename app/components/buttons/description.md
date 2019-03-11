@@ -1,4 +1,5 @@
 Buttons haben eine Höhe und Mindestbreite von 40px, um die Mindestanforderungen für Klickflächen auf mobilen Geräten zu gewärleisten.
+Der Text der Buttons ist in einem `<span>` gewrapped.
 
 ### Code  
 Auch wenn Buttons mit Hilfe von der Klasse `.ds-btn` als `<button>`, `<a>` oder `<input type="button">` gebaut werden können, sollte semantisch immer die korrekte Auszeichnung verwendet werden. Die semantisch korrekte Auszeichnung ist `<button>`.
