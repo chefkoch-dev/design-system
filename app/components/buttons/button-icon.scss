@@ -1,0 +1,40 @@
+.ds-btn-icon {
+    /* stylelint-disable all */
+    i.material-icons {
+        font-size: 20px;
+    }
+    /* stylelint-enable all */
+}
+
+.ds-btn-icon-l {
+    padding-left: $unit * 1.5;
+
+    i {
+        margin-right: $unit;
+    }
+
+    &.ds-btn-tertiary {
+        padding: 0;
+
+        i {
+            margin-right: $unit / 2;
+        }
+    }
+}
+
+.ds-btn-icon-r {
+    padding-right: $unit * 1.5;
+
+    i {
+        margin-left: $unit;
+    }
+
+    &.ds-btn-tertiary {
+        padding: 0;
+
+        i {
+            margin-left: $unit / 2;
+        }
+    }
+}
+

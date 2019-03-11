@@ -8,7 +8,7 @@
     "client_url": "http://www.chefkoch.de",
     "creators": [
         {
-            "name": "Team Geist & Team Funkytown Avengers",
+            "name": "Team Funkytown Avengers",
             "url": "http://www.chefkoch.de"
         }
     ],
@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v3.8.2",
+            "library_title": "v4.0.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -346,38 +346,31 @@
             "components": [
                 {
                     "group": "buttons",
-                    "name": "standard",
-                    "title": "Standard Button"
+                    "name": "primary",
+                    "title": "Primary Button",
+                    "width": "half"
                 },
                 {
                     "group": "buttons",
-                    "name": "big",
-                    "title": "Big Button"
+                    "name": "secondary",
+                    "title": "Secondary Button",
+                    "width": "half"
                 },
                 {
                     "group": "buttons",
-                    "name": "wide",
-                    "title": "Wide Button"
+                    "name": "tertiary",
+                    "title": "Tertiary Button",
+                    "width": "half"
                 },
                 {
                     "group": "buttons",
-                    "name": "variations",
-                    "title": "Button Variationen"
+                    "name": "icon",
+                    "title": "Icon Button"
                 },
                 {
                     "group": "buttons",
                     "name": "deactivated",
                     "title": "Inaktiv / Deaktiviert"
-                },
-                {
-                    "group": "buttons",
-                    "name": "light",
-                    "title": "Light Button"
-                },
-                {
-                    "group": "buttons",
-                    "name": "text",
-                    "title": "Text Button"
                 }
             ]
         },

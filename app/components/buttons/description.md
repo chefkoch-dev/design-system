@@ -1,28 +1,25 @@
-⚠ Will be modified in future
+Buttons haben eine Höhe und Mindestbreite von 40px, um die Mindestanforderungen für Klickflächen auf mobilen Geräten zu gewärleisten.
 
 ### Code  
-Auch wenn Buttons mithilfe von der Klasse `.ds-button` als `<button>`, `<a>` oder `<input type="button">` gebaut werden können, sollte semantisch immer die korrekte Auszeichnung verwendet werden.
+Auch wenn Buttons mit Hilfe von der Klasse `.ds-btn` als `<button>`, `<a>` oder `<input type="button">` gebaut werden können, sollte semantisch immer die korrekte Auszeichnung verwendet werden. Die semantisch korrekte Auszeichnung ist `<button>`.
 
 ### Usecases  
 Buttons gibt es für mehrere usecases:
-`standard`, `info`, `warning`, `danger` & `light`
+`primary`, `secondary` & `tertiary`
 
 ### Utilities  
-Für standard button:  
-`.ds-button--bigboss` macht die Buttonfläche insgesamt größer. (siehe Buttons / Big Button)  
-`.ds-button--wide` macht die Buttonfläche breiter. (siehe Buttons / Wide Button)  
-`.ds-button--light` Invertiert den Button und gibt ihm eine Border (siehe Buttons / Light Button)  
-
-Für alle Buttons:  
-`.ds-button-deactivated` setzt den Button inaktiv. (siehe Buttons / Inaktiv/Deaktiviert)
+#### Für alle Buttons:  
+- `.ds-btn-icon` für Buttons mit Icon (siehe [Buttons/Icon Button](#group-buttons-component-icon))  
+- `.ds-btn-inactive` setzt den Button inaktiv. (siehe [Buttons/Inaktiv/Deaktiviert](#group-buttons-component-deactivated))
 
 ### Styles  
- geerbt von Copy Text
+Helvetica Neue Regular, allcaps  
+F 14px / L 40px / M 16
 
-### Usage  
+### Usage (Basis für alle Button Varianten) 
     
     Via Shortlink
-    @import "~chefkoch-design-system/components/buttons";
+    @import "~chefkoch-design-system/components/button";
     
     Original Location
-    @import "~chefkoch-design-system/app/components/buttons/buttons";
+    @import "~chefkoch-design-system/app/components/buttons/settings.button";
