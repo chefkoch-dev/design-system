@@ -316,17 +316,20 @@
                 {
                     "group": "buttons",
                     "name": "primary",
-                    "title": "Primary Button"
+                    "title": "Primary Button",
+                    "width": "half"
                 },
                 {
                     "group": "buttons",
                     "name": "secondary",
-                    "title": "Secondary Button"
+                    "title": "Secondary Button",
+                    "width": "half"
                 },
                 {
                     "group": "buttons",
                     "name": "tertiary",
-                    "title": "Tertiary Button"
+                    "title": "Tertiary Button",
+                    "width": "half"
                 },
                 {
                     "group": "buttons",
