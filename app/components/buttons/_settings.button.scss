@@ -1,5 +1,6 @@
 .ds-btn-box {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .ds-btn + .ds-btn {
@@ -30,9 +31,9 @@
     align-items: center;
     justify-content: center;
     font-size: $fontsize-small;
-    height: $unit * 5;
+    min-height: $unit * 5;
     letter-spacing: 0.5px;
-    line-height: $lineheight-base;
+    line-height: $lineheight-small;
     margin-bottom: $unit * 2;
     min-width: $unit * 5;
     padding: 0 $unit * 2;
