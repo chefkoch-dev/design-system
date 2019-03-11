@@ -9,7 +9,7 @@
         pointer-events: none;
         position: absolute;
         right: $unit;
-        top: calc(50% - 12px);
+        top: $unit;
     }
 }
 
@@ -19,6 +19,7 @@
     border: 1px solid $color-grey-medium;
     font-size: inherit;
     height: $stdFormHeight;
+    margin-bottom: $unit * 2;
     padding: 0 $unit * 4 0 $unit * 2;
     width: 100%;
 

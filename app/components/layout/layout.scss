@@ -58,3 +58,9 @@
         display: none;
     }
 }
+
+.ds-from-m {
+    @include media-breakpoint-to(s) {
+        display: none;
+    }
+}

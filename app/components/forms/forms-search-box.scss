@@ -1,0 +1,56 @@
+/* search-box
+-------------------------- */
+
+.ds-search-box {
+    display: flex;
+    height: $stdFormHeight;
+
+    &:hover {
+        input,
+        select {
+            border-color: $color-corporate-green-dark;
+        }
+    }
+
+    .ds-input {
+        border-radius: $unit 0 0 $unit;
+        border-right: 0;
+        flex-grow: 1;
+        height: 100%;
+        margin: 0;
+        width: auto;
+
+        /* stylelint-disable all */
+        &:hover {
+            + .ds-select-box select {
+                border-color: $color-corporate-green-dark;
+            }
+        }
+        /* stylelint-enable all */
+    }
+
+    .ds-select {
+        border-radius: 0;
+        border-right: 0;
+        height: 100%;
+    }
+
+    button {
+        border-radius: 0 $unit $unit 0;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: $stdFormHeight;
+
+        i {
+            margin: 0;
+        }
+    }
+}
+
+.ds-input:focus + .ds-select-box {
+    .ds-select {
+        border-color: $color-corporate-green-dark;
+    }
+}
