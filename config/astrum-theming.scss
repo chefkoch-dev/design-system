@@ -9,9 +9,41 @@ html {
     min-width: 320px;
 }
 
-@media only screen and (min-width: 960px) and (max-width: 1024px) {
-    .ndpl-header {
-        display: block;
+.ndpl-header {
+    @media only screen and (max-width: 1024px) {
+        display: flex;
+    }
+
+    @media only screen and (max-width: 599px) {
+        flex-direction: column;
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 1024px) {
+        flex-direction: row;
+    }
+}
+
+.ndpl-header__logo {
+    float: none;
+    align-self: flex-start;
+
+    @media only screen and (max-width: 599px) {
+        margin-bottom: $unit;
+    }
+}
+
+.ndpl-header__title {
+    @media only screen and (max-width: 1024px) {
+        display: flex;
+        align-items: baseline;
+
+        small {
+            margin-left: $unit;
+        }
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 1024px) {
+        margin-left: $unit * 2;
     }
 }
 
