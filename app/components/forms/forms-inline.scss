@@ -1,7 +1,7 @@
 /* search-box
 -------------------------- */
 
-.ds-search-box {
+.ds-inline-form {
     display: flex;
     height: $stdFormHeight;
 
@@ -19,9 +19,11 @@
         height: 100%;
         margin: 0;
         width: auto;
+        min-width: 0;
 
         /* stylelint-disable all */
-        &:hover {
+        &:hover,
+        &:focus {
             + .ds-select-box select {
                 border-color: $color-corporate-green-dark;
             }
@@ -37,20 +39,6 @@
 
     button {
         border-radius: 0 $unit $unit 0;
-        justify-content: center;
-        height: 100%;
         margin: 0;
-        padding: 0;
-        width: $stdFormHeight;
-
-        i {
-            margin: 0;
-        }
-    }
-}
-
-.ds-input:focus + .ds-select-box {
-    .ds-select {
-        border-color: $color-corporate-green-dark;
     }
 }

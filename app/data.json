@@ -343,8 +343,8 @@
                 },
                 {
                     "group": "forms",
-                    "name": "search-box",
-                    "title": "Search-Box"
+                    "name": "inline-form",
+                    "title": "Inline-Form"
                 }
             ]
         },
