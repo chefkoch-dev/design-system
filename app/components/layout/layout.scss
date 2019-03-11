@@ -1,0 +1,60 @@
+.ds-box {
+    margin-bottom: $unit * 4;
+    position: relative;
+}
+
+.ds-hr {
+    border: 0;
+    border-bottom: 1px solid $color-grey-light;
+    margin: 0;
+    padding-top: $unit * 4;
+    width: 100%;
+
+    /* stylelint-disable all */
+    .ad--top &,
+    .ad--bottom & {
+        margin: 0 auto;
+        width: calc(100% - #{$unit * 2});
+
+        @include media-breakpoint-from(xxs) {
+            width: calc(100% - #{$unit * 4});
+        }
+
+        @include media-breakpoint-from(s) {
+            width: calc(#{$screen-s} - #{$unit * 4});
+        }
+
+        @include media-breakpoint-from(m) {
+            width: calc(100% - #{$unit * 5});
+        }
+    }
+
+    .ad & {
+        padding-top: $unit * 2;
+    }
+    /* stylelint-enable all */
+
+    /* direct children of main  only */
+    main > & {
+        margin: 0 auto;
+        width: calc(100% - #{$unit});
+
+        @include media-breakpoint-from(xxs) {
+            width: calc(100% - #{$unit * 2});
+        }
+
+        @include media-breakpoint-from(s) {
+            width: calc(#{$screen-s} - #{$unit * 4});
+        }
+
+        @include media-breakpoint-from(m) {
+            width: calc(100% - #{$unit * 3});
+        }
+    }
+}
+
+.ds-to-s {
+    @include media-breakpoint-from(m) {
+        display: none;
+    }
+}

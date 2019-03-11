@@ -1,5 +1,5 @@
-Headline Links sind.. (wait for it) verlinkte Headlines, ganz genau!  
+Headline Links sind.. (wait for it) verlinkte Headlines, whee!  
 Diese kommen u.a. in Targets (zum Beispiel Carousel / RSEL Liste) vor.  
 
-__Styles__  
+### Styles  
 geerbt von Headings

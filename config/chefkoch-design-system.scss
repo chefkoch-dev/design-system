@@ -15,19 +15,26 @@ $screen-m: 960px + 312px + 48px;
 @import "../app/components/typography/typography";
 
 @import "../app/components/colors/colors";
-@import "../app/components/links/links";
-
-@import "../app/components/buttons/buttons";
-@import "../app/components/icons/icons";
-@import "../app/components/pills/pills";
-@import "../app/components/pagination/pagination";
-
-@import "../app/components/alerts/note";
-@import "../app/components/rating-stars/rating-stars";
-@import "../app/components/tabs/tabs";
-@import "../app/components/forms/forms";
 
 @import "../components/dsy-utilities";
+@import "../components/layout";
+
+@import "../app/components/buttons/buttons";
+@import "../app/components/links/links";
+@import "../app/components/icons/icons";
+@import "../app/components/layout/media-block";
+@import "../app/components/pagination/pagination";
+@import "../app/components/pills/pills";
+@import "../app/components/rating-stars/rating-stars";
+@import "../app/components/recipe/recipe-meta";
+
+@import "../app/components/alerts/note";
+@import "../app/components/tabs/tabs";
+@import "../app/components/forms/forms";
+@import "../app/components/carousel/indicators";
+
 
 // custom astrum UI enhancements
 @import "astrum-theming";
+
+@import "../app/components/utilities/text-truncation-utilities";

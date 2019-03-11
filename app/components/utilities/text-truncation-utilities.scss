@@ -1,0 +1,37 @@
+/**
+ * Truncate by Lines.
+ * To specify how many lines should be truncated, you need to
+ * set .ds-trunc-<number_of_lines> as well.
+ */
+.ds-trunc {
+  /* stylelint-disable */
+  overflow: hidden;
+  display: -webkit-box;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  // Avoid Bug https://bugs.webkit.org/show_bug.cgi?id=45399
+  visibility: visible;
+  word-wrap: break-word;
+  /* stylelint-enable */
+}
+
+.ds-trunc-1 {
+  /* stylelint-disable */
+  /* autoprefixer: ignore next */
+  -webkit-line-clamp: 1;
+  /* stylelint-enable */
+}
+
+.ds-trunc-2 {
+  /* stylelint-disable */
+  /* autoprefixer: ignore next */
+  -webkit-line-clamp: 2;
+  /* stylelint-enable */
+}
+
+.ds-trunc-3 {
+  /* stylelint-disable */
+  /* autoprefixer: ignore next */
+  -webkit-line-clamp: 3;
+  /* stylelint-enable */
+}

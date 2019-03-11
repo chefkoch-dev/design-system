@@ -29,6 +29,12 @@
     max-width: 100%;
 }
 
+.ndpl-content {
+    @media screen and (max-width: 959px) {
+        padding-top: 100px;
+    }
+}
+
 .ndpl-library {
     padding-top: 0;
 }
@@ -45,6 +51,23 @@
 
 .ndpl-page, .ndpl-loading__title, .ndpl-error, .ndpl-info, .ndpl-header, .ndpl-sidebar, .ndpl-intro, .ndpl-library__title, .ndpl-group__description, .ndpl-component__title, .ndpl-component__description, .ndpl-component__label, .ndpl-component__code-toggle, .ndpl-component__color, .ndpl-page, .ndpl-nav__title, .ndpl-sidebar__title {
     font-family: $fontfamily-base;
+    color: $color-black;
+}
+
+.ndpl-library__title {
+    @extend .ds-h1;
+}
+
+.ndpl-component__title {
+    @extend .ds-h2;
+}
+
+.ndpl-group__description,
+.ndpl-component__description {
+    h3 {
+        font-weight: inherit;
+        padding-top: $unit * 2;
+    }
 }
 
 .ndpl-page,
@@ -55,18 +78,28 @@
         font-size: $fontsize-base;
     }
 
+    pre code,
     code {
+        background: #f1efec;
         border: 1px solid $color-grey-medium;
+        border-radius: $unit / 2;
         color: $color-black;
         font-size: $fontsize-small;
+        line-height: $lineheight-small;
     }
 
-    pre {
-        code {
-            background: $color-sand;
-            padding: $unit;
-        }
+    pre code {
+        box-sizing: border-box;
+        overflow-x: scroll;
+        padding: $unit;
+        width: 100%;
     }
+}
+
+.ndpl-page pre code,
+.ndpl-component__description pre code,
+.ndpl-component__code .ndpl-code {
+    opacity: 1;
 }
 
 .ndpl-page {
@@ -141,6 +174,7 @@
     font-size: 10px;
     height: $unit * 2;
     letter-spacing: 0.5px;
+    line-height: 12px;
     margin-bottom: $unit;
     overflow: hidden;
     position: relative;
@@ -209,22 +243,10 @@
 }
 
 .cds-color-wrapper {
-    display: flex;
-    flex-direction: column;
     margin-bottom: $unit * 3;
-
-    @extend .ds-col-xs-12;
-    @extend .ds-col-s-6;
-    @extend .ds-col-m-4;
 }
 
 #group-colors {
-    .ds-grid:first-child {
-        .cds-color-wrapper {
-            @extend .ds-col-m-6;
-        }
-    }
-
     .ndpl-component__sample {
         code {
             border: 1px solid $color-grey-medium;
@@ -257,6 +279,51 @@
     margin-bottom: $unit;
 }
 
+/* Container hints
+----------------------------------- */
+
+#group-typography,
+#group-links,
+#group-buttons,
+#group-pagination {
+    .ndpl-component__container {
+        background: $color-white;
+        border-radius: $unit;
+        position: relative;
+
+        &:before {
+            color: $color-grey-dark;
+            display: block;
+            font-size: 12px;
+            position: absolute;
+            top: 5px;
+            right: 6px;
+        }
+    }
+
+    div[class*="component__sample"] {
+        background: transparent;
+        z-index: 1;
+    }
+}
+
+#group-typography,
+#group-links,
+#group-pagination {
+    .ndpl-component__container {
+        &:before {
+            transition: opacity 0.3s ease;
+            opacity: 1;
+        }
+
+        &:hover {
+            &:before {
+                opacity: 0;
+            }
+        }
+    }
+}
+
 /* Typography enhancements
 ----------------------------------- */
 
@@ -277,13 +344,20 @@
 
     div[class*="component__sample"] {
         &:before {
+            background: url("../app/images/baseline-grid-16px.png") repeat 36px 36px;
             content: '';
             display: block;
+            height: 100%;
             opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
             transition: opacity 0.3s ease;
+            width: 100%;
+            z-index: -1;
         }
 
-        h1, h2, h3, h4, h5, p, small {
+        h1, h2, h3, h4, h5, p, small, .ds-text-small {
             background-color: transparent;
             transition: background-color 0.3s ease 0.15s;
         }
@@ -293,18 +367,11 @@
         &:hover {
             div[class*="component__sample"] {
                 &:before {
-                    background: url("../app/images/baseline-grid-16px.png") repeat 36px 36px;
-                    height: 100%;
                     opacity: 1;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    z-index: -1;
                 }
 
-                h1, h2, h3, h4, h5, p, small {
-                    background-color: rgba($color-grey-light, 0.5);
+                h1, h2, h3, h4, h5, p, small, .ds-text-small {
+                    background-color: rgba(#d9d5d0, 0.35);
                 }
             }
         }
@@ -426,7 +493,6 @@ td {
 /* Magic Margins
 ----------------------------------- */
 
-#group-margins,
 #group-typography,
 #group-pagination {
     .ndpl-component__container {
@@ -444,6 +510,17 @@ td {
         transition: opacity 0.3s ease 0.15s;
     }
 
+    .margin-helper,
+    .margin-helper-2 {
+        background-image: linear-gradient(135deg, rgba(255, 165, 0, 0.1) 25%, rgba(255, 165, 0, 0.3) 25%, rgba(255, 165, 0, 0.3) 50%, rgba(255, 165, 0, 0.1) 50%, rgba(255, 165, 0, 0.1) 75%, rgba(255, 165, 0, 0.3) 75%, rgba(255, 165, 0, 0.3) 100%);
+        background-size: 22.63px 22.63px;
+    }
+
+    .padding-helper {
+        background-image: linear-gradient(135deg, rgba(97, 143, 48, 0.1) 25%, rgba(97, 143, 48, 0.3) 25%, rgba(97, 143, 48, 0.3) 50%, rgba(97, 143, 48, 0.1) 50%, rgba(97, 143, 48, 0.1) 75%, rgba(97, 143, 48, 0.3) 75%, rgba(97, 143, 48, 0.3) 100%);
+        background-size: 22.63px 22.63px;
+    }
+
     hr {
         border: 0;
         border-top: 1px solid $color-grey-light;
@@ -451,22 +528,14 @@ td {
     }
 
     &:hover {
-        .padding-helper {
-            background-image: linear-gradient(135deg, rgba(97, 143, 48, 0.1) 25%, rgba(97, 143, 48, 0.3) 25%, rgba(97, 143, 48, 0.3) 50%, rgba(97, 143, 48, 0.1) 50%, rgba(97, 143, 48, 0.1) 75%, rgba(97, 143, 48, 0.3) 75%, rgba(97, 143, 48, 0.3) 100%);
-            background-size: 22.63px 22.63px;
-            opacity: 1;
-        }
-
+        .padding-helper,
         .margin-helper,
         .margin-helper-2 {
-            background-image: linear-gradient(135deg, rgba(255, 165, 0, 0.1) 25%, rgba(255, 165, 0, 0.3) 25%, rgba(255, 165, 0, 0.3) 50%, rgba(255, 165, 0, 0.1) 50%, rgba(255, 165, 0, 0.1) 75%, rgba(255, 165, 0, 0.3) 75%, rgba(255, 165, 0, 0.3) 100%);
-            background-size: 22.63px 22.63px;
             opacity: 1;
         }
     }
 }
 
-#group-margins,
 #group-typography {
     .margin-helper {
         height: $unit * 4;
@@ -477,7 +546,6 @@ td {
     }
 }
 
-#group-margins,
 #group-pagination {
     .margin-box {
         height: 160px;
@@ -493,21 +561,6 @@ td {
         top: $unit * 2;
         width: calc(100% - #{$unit * 4});
     }
-
-    #group-margins-component-content {
-        .content-helper-1 {
-            left: $unit * 2;
-            top: $unit * 2;
-            width: 33%;
-        }
-
-        .content-helper-2 {
-            margin-left: calc(33% + #{$unit * 4});
-            top: $unit * 2;
-            left: auto;
-            width: calc(66% - 42px);
-        }
-    }
 }
 
 #group-typography {
@@ -519,12 +572,6 @@ td {
         margin-top: -($unit * 2);
     }
 
-    .padding-helper {
-        height: 100%;
-    }
-}
-
-#group-margins {
     .padding-helper {
         height: 100%;
     }
@@ -550,6 +597,109 @@ td {
     }
 }
 
+#group-layout-component-bereich {
+    .ndpl-component__container {
+        display: none;
+    }
+}
+
+/*
+#group-layout {
+    .dsy-helper-ignore-this {
+        background: rgba($color-grey-medium, 0.4);
+    }
+}
+
+#group-layout-component-statischer-bereich,
+#group-layout-component-visueller-bereich {
+    .dsy-helper-ignore-this {
+        margin: 4px;
+    }
+
+    .dsy-helper-ignore-this,
+    .dsy-helper-ignore-this-1 {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .dsy-helper-ignore-this-1,
+    .dsy-helper-ignore-this-2 ,
+    .dsy-helper-ignore-this-3 {
+        background: rgba($color-grey-medium, 0.25);
+    }
+
+    .dsy-helper-ignore-this-1 {
+        margin: 4px;
+
+        .dsy-helper-ignore-this-2 {
+            height: 100px;
+        }
+    }
+
+    .dsy-helper-ignore-this-2 {
+        margin-bottom: 4px;
+
+        .dsy-helper-ignore-this {
+            margin-bottom: 4px;
+            margin-top: 4px;
+            padding: 0 12px;
+        }
+
+        .dsy-helper-ignore-this-2 {
+            margin-left: 0;
+        }
+    }
+
+    .dsy-helper-ignore-this-3 {
+        border: 1px solid #999;
+        margin-bottom: 4px;
+    }
+
+    .ds-col-m-6 {
+        .dsy-helper-ignore-this-1 {
+            .dsy-helper-ignore-this-2 {
+                @include media-breakpoint-from(s) {
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+*/
+
+#group-layout {
+    .ds-mb.dsy-helper-ignore-this {
+        background: rgba($color-grey-medium, 0.25);
+    }
+
+    .ds-mb.dsy-helper-ignore-this-2 {
+        @include ds-fd-col;
+        @include ds-mb-padding("top", 1.5);
+
+        @include media-breakpoint-from(xs) {
+            @include ds-fd-col;
+            @include ds-mb-padding("left", 1.5);
+        }
+
+        @include media-breakpoint-from(s) {
+            @include ds-fd-row;
+            @include ds-mb-padding("left", 2);
+        }
+
+        @include media-breakpoint-from(m) {
+            @include ds-fd-col;
+            @include ds-mb-padding("top", 2);
+        }
+    }
+
+    .ds-mb-left.dsy-helper-ignore-this {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
 /* other
 ----------------------------------- */
 
@@ -567,7 +717,7 @@ td {
     }
 }
 
-/* Hide Code Samples
+/* Code Samples
 ----------------------------------- */
 
 #group-margins,
@@ -576,6 +726,44 @@ td {
     .ndpl-component__code,
     .ndpl-component__code-toggle {
         display: none;
+    }
+}
+
+#group-margins-component-elemente {
+    .ndpl-component__container,
+    .ndpl-component__sample-hidden {
+        display: none;
+    }
+}
+.ndpl-component__code .ndpl-code {
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.ndpl-component__code .ndpl-code {
+    display: block;
+}
+
+#group-utilities-component-text-truncation-utilities {
+    .ndpl-component__sample p {
+        max-width: 200px
+    }
+}
+
+#group-carousel-component-indicators {
+    .slides-container {
+        height: 300px;
+        position: relative;
+        width: 400px;
+
+        img {
+            border-radius: $unit;
+        }
+    }
+
+    .ds-carousel-indicators {
+        position: absolute;
+        top: calc(50% - 20px);
     }
 }
 
