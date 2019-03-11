@@ -9,6 +9,8 @@ html {
     min-width: 320px;
 }
 
+/* Astrum header / nav mobile */
+
 .ndpl-header {
     @media only screen and (max-width: 1024px) {
         display: flex;
@@ -20,6 +22,10 @@ html {
 
     @media only screen and (min-width: 600px) and (max-width: 1024px) {
         flex-direction: row;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        display: none;
     }
 }
 
@@ -47,56 +53,70 @@ html {
     }
 }
 
-@media only screen and (min-width: 1025px) {
-    .ndpl-header {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 960px) and (max-width: 1024px) {
-    .loaded .ndpl-sidebar {
+.loaded .ndpl-sidebar {
+    @media only screen and (min-width: 960px) and (max-width: 1024px) {
         left: -264px;
+    }
 
-        &.open {
+    @media only screen and (min-width: 1025px) {
+        left: 0;
+    }
+
+    &.open {
+        padding: 0;
+
+        @media only screen and (min-width: 960px) and (max-width: 1024px) {
             left: 0;
             width: 100%;
         }
     }
 }
 
-@media only screen and (min-width: 1025px) {
-    .loaded .ndpl-sidebar {
-        left: 0;
-    }
-}
-
-@media only screen and (min-width: 960px) and (max-width: 1024px) {
-    .ndpl-nav-handle {
+.ndpl-nav-handle {
+    @media only screen and (min-width: 960px) and (max-width: 1024px) {
         display: block;
     }
-}
 
-@media only screen and (min-width: 1025px) {
-    .ndpl-nav-handle {
+    @media only screen and (min-width: 1025px) {
         display: none;
     }
 }
 
-@media only screen and (min-width: 960px) and (max-width: 1024px) {
-    .ndpl-sidebar__header {
-        display: none;
+.ndpl-nav {
+    @media only screen and (max-width: 599px) {
+        padding-top: $unit * 14;
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 1024px) {
+        padding-top: $unit * 10;
     }
 }
 
-@media only screen and (min-width: 1025px) {
-    .ndpl-sidebar__header {
+/* Astrum Sidebar / nav desktop */
+
+.ndpl-sidebar__header {
+    @media only screen and (min-width: 960px) and (max-width: 1024px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 1025px) {
         display: block;
     }
 }
+
+.ndpl-sidebar__logo {
+    max-width: 100%;
+}
+
+/* Astrum page wrapper */
 
 .ndpl-page {
     width: 100%;
     max-width: 100%;
+
+    small {
+        display: inline-block;
+    }
 }
 
 .ndpl-content {
@@ -105,9 +125,7 @@ html {
     }
 }
 
-.ndpl-sidebar__logo {
-    max-width: 100%;
-}
+/* Astrum Content parts */
 
 @media only screen and (max-width: 1024px) {
     .ndpl-library__title, .ndpl-component__title, .ndpl-group__description, .ndpl-component__description {
@@ -233,12 +251,6 @@ html {
 .ndpl-component__description pre code,
 .ndpl-component__code .ndpl-code {
     opacity: 1;
-}
-
-.ndpl-page {
-    small {
-        display: inline-block;
-    }
 }
 
 /* Breakpoints enhancements
