@@ -9,8 +9,7 @@
   "devDependencies": {
     "astrum": "^1.9.5",
     "browser-sync": "^2.26.3",
-    "chefkoch-stylelint-config": "^1.0.2",
-    "extend": "^3.0.2",
+    "chefkoch-stylelint-config": "^1.0.3",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-if": "^2.0.2",
