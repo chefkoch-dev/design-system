@@ -12,6 +12,11 @@
     justify-content: center;
     outline: none;
     width: ($unit * 5);
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    }
 }
 
 @mixin carouselNextButton() {
