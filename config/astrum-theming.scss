@@ -5,8 +5,138 @@
 
 /* stylelint-disable  */
 
+html {
+    min-width: 320px;
+}
+
+/* Astrum header / nav mobile */
+
+.ndpl-header {
+    @media only screen and (max-width: 1024px) {
+        display: flex;
+    }
+
+    @media only screen and (max-width: 599px) {
+        flex-direction: column;
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 1024px) {
+        flex-direction: row;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        display: none;
+    }
+}
+
+.ndpl-header__logo {
+    float: none;
+    align-self: flex-start;
+
+    @media only screen and (max-width: 599px) {
+        margin-bottom: $unit;
+    }
+}
+
+.ndpl-header__title {
+    @media only screen and (max-width: 1024px) {
+        display: flex;
+        align-items: baseline;
+
+        small {
+            margin-left: $unit;
+        }
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 1024px) {
+        margin-left: $unit * 2;
+    }
+}
+
+.loaded .ndpl-sidebar {
+    @media only screen and (min-width: 960px) and (max-width: 1024px) {
+        left: -264px;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        left: 0;
+    }
+
+    &.open {
+        padding: 0;
+
+        @media only screen and (min-width: 960px) and (max-width: 1024px) {
+            left: 0;
+            width: 100%;
+        }
+    }
+}
+
+.ndpl-nav-handle {
+    @media only screen and (min-width: 960px) and (max-width: 1024px) {
+        display: block;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        display: none;
+    }
+}
+
+.ndpl-nav {
+    @media only screen and (max-width: 599px) {
+        padding-top: $unit * 14;
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 1024px) {
+        padding-top: $unit * 10;
+    }
+}
+
+/* Astrum Sidebar / nav desktop */
+
+.ndpl-sidebar__header {
+    @media only screen and (min-width: 960px) and (max-width: 1024px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        display: block;
+    }
+}
+
 .ndpl-sidebar__logo {
     max-width: 100%;
+}
+
+/* Astrum page wrapper */
+
+.ndpl-page {
+    width: 100%;
+    max-width: 100%;
+
+    small {
+        display: inline-block;
+    }
+}
+
+.ndpl-content {
+    @media screen and (max-width: 1024px) {
+        padding: 100px 0 0;
+    }
+}
+
+/* Astrum Content parts */
+
+@media only screen and (max-width: 1024px) {
+    .ndpl-library__title, .ndpl-component__title, .ndpl-group__description, .ndpl-component__description {
+        padding: 0 $unit * 1.5;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .ndpl-library__title, .ndpl-component__title, .ndpl-group__description, .ndpl-component__description {
+        padding: 0;
+    }
 }
 
 .note-container-example {
@@ -14,24 +144,45 @@
     padding: 20px 0;
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (max-width: 1024px) {
+    .ndpl-component__sample {
+        border-radius: 0;
+        padding: 36px $unit * 1.5;
+    }
+
+    .ndpl-component__sample--disabled-code {
+        border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1024px) {
+    .ndpl-component__code-toggle {
+        border-radius: 0;
+    }
+
+    .ndpl-components {
+        .ndpl-component--half:nth-of-type(2n+1) {
+            .ndpl-component__title, .ndpl-component__description {
+                padding-right: 0;
+            }
+        }
+
+        .ndpl-component--half:nth-of-type(2n+2) {
+            .ndpl-component__title, .ndpl-component__description {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) {
     .ndpl-component__sample {
         border-radius: $unit $unit 0 0;
+        padding: 36px;
     }
 
     .ndpl-component__sample--disabled-code {
         border-radius: $unit;
-    }
-}
-
-.ndpl-page {
-    width: 100%;
-    max-width: 100%;
-}
-
-.ndpl-content {
-    @media screen and (max-width: 959px) {
-        padding-top: 100px;
     }
 }
 
@@ -100,12 +251,6 @@
 .ndpl-component__description pre code,
 .ndpl-component__code .ndpl-code {
     opacity: 1;
-}
-
-.ndpl-page {
-    small {
-        display: inline-block;
-    }
 }
 
 /* Breakpoints enhancements
@@ -181,6 +326,14 @@
     text-align: center;
 }
 
+/* Layout Bereiche enhancements
+----------------------------------- */
+
+#group-layout {
+    .ndpl-component__sample svg {
+        max-height: 500px;
+    }
+}
 
 /* Colours enhancements
 ----------------------------------- */
@@ -240,8 +393,11 @@
 #group-pagination {
     .ndpl-component__container {
         background: $color-white;
-        border-radius: $unit;
         position: relative;
+
+        @media screen and (min-width: 1025px) {
+            border-radius: $unit;
+        }
 
         &:before {
             color: $color-grey-dark;
@@ -336,7 +492,7 @@
 #group-buttons {
     .ndpl-component__container {
         &:before {
-            content: 'Hover over or click the Buttons to see hover and focus states.';
+            content: 'Hover & click to see interactive states.';
         }
     }
 }
@@ -469,71 +625,6 @@ td {
     }
 }
 
-/*
-#group-layout {
-    .dsy-helper-ignore-this {
-        background: rgba($color-grey-medium, 0.4);
-    }
-}
-
-#group-layout-component-statischer-bereich,
-#group-layout-component-visueller-bereich {
-    .dsy-helper-ignore-this {
-        margin: 4px;
-    }
-
-    .dsy-helper-ignore-this,
-    .dsy-helper-ignore-this-1 {
-        font-size: 12px;
-        text-transform: uppercase;
-    }
-
-    .dsy-helper-ignore-this-1,
-    .dsy-helper-ignore-this-2 ,
-    .dsy-helper-ignore-this-3 {
-        background: rgba($color-grey-medium, 0.25);
-    }
-
-    .dsy-helper-ignore-this-1 {
-        margin: 4px;
-
-        .dsy-helper-ignore-this-2 {
-            height: 100px;
-        }
-    }
-
-    .dsy-helper-ignore-this-2 {
-        margin-bottom: 4px;
-
-        .dsy-helper-ignore-this {
-            margin-bottom: 4px;
-            margin-top: 4px;
-            padding: 0 12px;
-        }
-
-        .dsy-helper-ignore-this-2 {
-            margin-left: 0;
-        }
-    }
-
-    .dsy-helper-ignore-this-3 {
-        border: 1px solid #999;
-        margin-bottom: 4px;
-    }
-
-    .ds-col-m-6 {
-        .dsy-helper-ignore-this-1 {
-            .dsy-helper-ignore-this-2 {
-                @include media-breakpoint-from(s) {
-                    float: left;
-                }
-            }
-        }
-    }
-}
-
-*/
-
 #group-layout {
     .ds-mb.dsy-helper-ignore-this {
         background: rgba($color-grey-medium, 0.25);
@@ -609,6 +700,9 @@ td {
 .ndpl-component__code .ndpl-code {
     display: block;
 }
+
+/* Slider example
+----------------------------------- */
 
 #group-utilities-component-text-truncation-utilities {
     .ndpl-component__sample p {

@@ -1,0 +1,11 @@
+.ds-btn-tertiary {
+    color: $color-corporate-green-dark;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+        span {
+            text-decoration: underline;
+        }
+    }
+}

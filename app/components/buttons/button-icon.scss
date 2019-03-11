@@ -1,0 +1,36 @@
+.ds-btn-icon {
+    padding: 0 $unit * 1.5;
+
+    /* stylelint-disable all */
+    i.material-icons {
+        font-size: 20px;
+    }
+    /* stylelint-enable all */
+
+    /* icon left */
+    i + span {
+        margin-left: $unit;
+    }
+
+    /* icon right */
+    > span:first-child {
+        margin-right: $unit;
+    }
+
+    /* tertiary */
+    &.ds-btn-tertiary {
+        padding: 0;
+    }
+
+    &:not(.ds-btn-tertiary) {
+        /* icon left */
+        i + span {
+            padding-right: $unit / 2;
+        }
+
+        /* icon right */
+        > span:first-child {
+            padding-left: $unit / 2;
+        }
+    }
+}

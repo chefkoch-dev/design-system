@@ -1,2 +1,0 @@
-Der light button grenzt sich insofern von den anderen Buttons ab, als dass er visuell lediglich eine Border und keinen Hintergrund besitzt.  
-Auch der deaktivierte Status grenzt sich von dem Standard ab.

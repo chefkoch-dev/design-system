@@ -1,0 +1,6 @@
+.ds-btn-secondary {
+    @include btn-shadow;
+
+    border: 1px solid $color-corporate-green;
+    color: $color-corporate-green-dark;
+}
