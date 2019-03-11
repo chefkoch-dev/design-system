@@ -1,4 +1,6 @@
 .ds-btn-primary {
+    @include btn-shadow;
+
     background-color: $color-corporate-green;
     color: $color-text-inverted;
 

@@ -1,11 +1,3 @@
-.ds-btn-icon {
-    /* stylelint-disable all */
-    i.material-icons {
-        font-size: 20px;
-    }
-    /* stylelint-enable all */
-}
-
 .ds-btn-icon-l {
     padding-left: $unit * 1.5;
 
@@ -38,3 +30,16 @@
     }
 }
 
+.ds-btn-icon {
+    /* stylelint-disable all */
+    i.material-icons {
+        font-size: 20px;
+    }
+    /* stylelint-enable all */
+
+    /* icon only button */
+
+    &:not(.ds-btn-icon-l):not(.ds-btn-icon-r) {
+        padding: 0 $unit * 1.5;
+    }
+}
