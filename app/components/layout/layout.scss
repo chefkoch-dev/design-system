@@ -53,6 +53,12 @@
     }
 }
 
+.ds-to-xs {
+    @include media-breakpoint-from(s) {
+        display: none;
+    }
+}
+
 .ds-to-s {
     @include media-breakpoint-from(m) {
         display: none;
