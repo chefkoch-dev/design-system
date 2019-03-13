@@ -1,3 +1,5 @@
+$btn-base-value: $unit * 5;
+
 .ds-btn-box {
     display: flex;
     flex-wrap: wrap;
@@ -31,11 +33,10 @@
     align-items: center;
     justify-content: center;
     font-size: $fontsize-small;
-    min-height: $unit * 5;
+    min-height: $btn-base-value;
     letter-spacing: 0.5px;
-    line-height: $unit * 5;
-    margin-bottom: 0;
-    min-width: $unit * 5;
+    line-height: $btn-base-value;
+    min-width: $btn-base-value;
     padding: 0 $unit * 2;
     text-transform: uppercase;
 }
