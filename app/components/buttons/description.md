@@ -1,4 +1,4 @@
-Buttons haben eine Höhe und Mindestbreite von 40px, um die Mindestanforderungen für Klickflächen auf mobilen Geräten zu gewärleisten.
+Buttons haben eine Höhe und Mindestbreite von 40px, um die Mindestanforderungen für Klickflächen auf mobilen Geräten zu gewärleisten. Buttons sollten _immer_ einzeilig sein.
 Der Text der Buttons ist in einem `<span>` gewrapped.
 
 ### Code  
