@@ -82,6 +82,10 @@ $container-m-min: $screen-m;
 	}
 }
 
+[class*="ds-col-"] {
+	width: 100%;
+}
+
 [class*="ds-col-xs"] {
 	box-sizing: border-box;
 	flex: 0 1 auto; //grow shrink basis
