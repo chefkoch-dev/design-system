@@ -95,8 +95,13 @@
             "components": [
                 {
                     "group": "grid",
-                    "name": "grid",
-                    "title": "Grid"
+                    "name": "grid-base",
+                    "title": "Grid Base"
+                },
+                {
+                    "group": "grid",
+                    "name": "grid-offset",
+                    "title": "Grid Offset"
                 }
             ]
         },

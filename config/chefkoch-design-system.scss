@@ -11,6 +11,7 @@ $screen-m: 960px + 312px + 48px;
 @import "../app/components/breakpoints/breakpoints";
 // grid using mediaqueries
 @import "../app/components/grid/flexbox-grid";
+@import "../app/components/grid/flexbox-grid-offset";
 // typography's settings using base vars
 @import "../app/components/typography/typography";
 
