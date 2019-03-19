@@ -1,0 +1,44 @@
+/* search-box
+-------------------------- */
+
+.ds-inline-form {
+    display: flex;
+    height: $stdFormHeight;
+
+    &:hover {
+        input,
+        select {
+            border-color: $color-corporate-green-dark;
+        }
+    }
+
+    .ds-input {
+        border-radius: $unit 0 0 $unit;
+        border-right: 0;
+        flex-grow: 1;
+        height: 100%;
+        margin: 0;
+        width: auto;
+        min-width: 0;
+
+        /* stylelint-disable all */
+        &:hover,
+        &:focus {
+            + .ds-select-box select {
+                border-color: $color-corporate-green-dark;
+            }
+        }
+        /* stylelint-enable all */
+    }
+
+    .ds-select {
+        border-radius: 0;
+        border-right: 0;
+        height: 100%;
+    }
+
+    button {
+        border-radius: 0 $unit $unit 0;
+        margin: 0;
+    }
+}

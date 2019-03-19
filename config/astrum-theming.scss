@@ -392,6 +392,7 @@ html {
 ----------------------------------- */
 
 #group-typography,
+#group-forms,
 #group-links,
 #group-buttons,
 #group-pagination {
@@ -420,6 +421,7 @@ html {
 }
 
 #group-typography,
+#group-forms,
 #group-links,
 #group-pagination {
     .ndpl-component__container {
@@ -487,6 +489,92 @@ html {
                 }
             }
         }
+    }
+}
+
+/* Forms enhancements
+----------------------------------- */
+
+#group-forms {
+    .ndpl-component__container {
+        &:before {
+            content: 'Click into the Fields to see focus states.';
+        }
+    }
+
+    .ds-show-form-structure {
+        outline: 1px solid #bbb;
+        padding-top: 24px;
+        position: relative;
+
+        &:before {
+            content: "foo";
+            color: #bbb;
+            display: block;
+            font-size: 12px;
+            position: absolute;
+            left: 2px;
+            top: -4px;
+        }
+
+        legend {
+            position: absolute;
+            left: 0;
+            top: 16px;
+        }
+    }
+
+    form.ds-show-form-structure  {
+        &:before {
+            content: "form";
+        }
+    }
+
+    fieldset.ds-show-form-structure  {
+        padding-top: 64px;
+
+        &:before {
+            content: "fieldset";
+        }
+    }
+
+    legend.ds-show-form-structure  {
+        font-weight: normal;
+        margin: 8px 4px 0;
+        padding: 0;
+        width: calc(100% - 8px);
+
+        &:before {
+            content: "legend";
+        }
+    }
+
+    .ds-grid.ds-row.ds-show-form-structure  {
+        &:before {
+            content: "ds-grid ds-row";
+        }
+
+        .ds-show-form-structure  {
+            &:before {
+                content: "ds-col-x-y";
+            }
+
+            .ds-show-form-structure {
+                margin: 0 4px;
+                width: calc(100% - 8px);
+
+                &:before {
+                    content: "input";
+                }
+            }
+        }
+
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid $color-grey-light;
+        margin: 32px auto;
     }
 }
 
@@ -705,7 +793,7 @@ td {
     display: block;
 }
 
-/* Slider example
+/* Text Truncation enhancements
 ----------------------------------- */
 
 #group-utilities-component-text-truncation-utilities {
@@ -714,6 +802,8 @@ td {
     }
 }
 
+/* Slider example
+----------------------------------- */
 #group-carousel-component-indicators {
     .slides-container {
         height: 300px;
@@ -728,6 +818,12 @@ td {
     .ds-carousel-indicators {
         position: absolute;
         top: calc(50% - 20px);
+    }
+}
+
+#group-carousel-component-indicators-amp {
+    .ndpl-component__container {
+        display: none;
     }
 }
 

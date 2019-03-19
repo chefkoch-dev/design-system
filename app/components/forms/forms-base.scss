@@ -1,0 +1,14 @@
+$stdFormHeight: $unit * 5;
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: $unit * 2;
+}
+

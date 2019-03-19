@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v4.2.0",
+            "library_title": "v4.3.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -311,6 +311,45 @@
                     "group": "utilities",
                     "name": "breakpoint-utilities",
                     "title": "Breakpoint Utilities"
+                }
+            ]
+        },
+        {
+            "name": "forms",
+            "title": "Formulare",
+            "components": [
+                {
+                    "group": "forms",
+                    "name": "structure",
+                    "title": "Struktur"
+                },
+                {
+                    "group": "forms",
+                    "name": "input",
+                    "title": "Input Felder"
+                },
+                {
+                    "group": "forms",
+                    "name": "checkboxes",
+                    "title": "Checkboxen",
+                    "width": "half"
+                },
+                {
+                    "group": "forms",
+                    "name": "radiobuttons",
+                    "title": "Radiobuttons",
+                    "width": "half"
+                },
+                {
+                    "group": "forms",
+                    "name": "select",
+                    "title": "Select",
+                    "width": "half"
+                },
+                {
+                    "group": "forms",
+                    "name": "inline-form",
+                    "title": "Inline-Form"
                 }
             ]
         },
