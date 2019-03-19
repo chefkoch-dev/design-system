@@ -9,3 +9,11 @@ Um diese 2–3 Elemente als Inline-Formular anzuzeigen, ist es erforderlich, das
 ### Utilities
 
 Es besteht die Möglichkeit, einzelne Elemente mit den Utility-Klassen `.ds-to-s` oder `.ds-from-m` für entsprechende Viewports auszublenden.
+
+### Usage 
+    
+    Via Shortlink
+    @import "~chefkoch-design-system/components/forms-inline";
+    
+    Original Location
+    @import "~chefkoch-design-system/app/components/forms/forms-inline";
