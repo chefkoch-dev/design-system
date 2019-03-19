@@ -219,6 +219,10 @@ html {
         font-weight: inherit;
         padding-top: $unit * 2;
     }
+
+    img {
+        margin-bottom: -2px;
+    }
 }
 
 .ndpl-page,
