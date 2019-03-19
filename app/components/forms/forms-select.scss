@@ -30,3 +30,8 @@
         outline: 0;
     }
 }
+
+/* hide UI arrow in select boxes in IE */
+select::-ms-expand {
+    display: none;
+}
