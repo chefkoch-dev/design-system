@@ -5,6 +5,8 @@
 }
 
 .ds-social-item {
+    @include btn-shadow;
+
     background-size: 24px;
     border-radius: 50%;
     height: $unit * 5;

@@ -42,18 +42,6 @@ $btn-base-value: $unit * 5;
     text-transform: uppercase;
 }
 
-@mixin btn-shadow {
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
-
-    &:hover {
-        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
-    }
-
-    &:focus {
-        box-shadow: none;
-    }
-}
-
 .ds-btn {
     @include btn-reset;
     @include btn-base;

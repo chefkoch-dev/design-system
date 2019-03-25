@@ -20,7 +20,13 @@ $screen-m: 960px + 312px + 48px;
 @import "../components/dsy-utilities";
 @import "../components/layout";
 
-@import "../app/components/buttons/buttons";
+@import "../components/button";
+@import "../components/button-primary";
+@import "../components/button-secondary";
+@import "../components/button-tertiary";
+@import "../components/button-icon";
+@import "../components/button-inactive";
+
 
 @import "../app/components/links/links";
 @import "../app/components/icons/icons";
@@ -37,8 +43,8 @@ $screen-m: 960px + 312px + 48px;
 @import "../app/components/forms/forms-cb-rb";
 @import "../app/components/forms/forms-select";
 @import "../app/components/forms/forms-inline";
-@import "../app/components/social-media/social-media-buttons";
-@import "../app/components/social-media/amp-social-share";
+@import "../components/social-media-buttons";
+@import "../components/amp-social-share";
 @import "../app/components/carousel/indicators";
 
 
