@@ -1,13 +1,5 @@
-.ds-social-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+@import "settings.social-media";
 
 .ds-social-item {
     background-size: 24px;
-    border-radius: 50%;
-    height: $unit * 5;
-    margin: 0 $unit;
-    width: $unit * 5;
 }
