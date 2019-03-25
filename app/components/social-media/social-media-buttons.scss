@@ -1,0 +1,36 @@
+.ds-social-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ds-social-item {
+    border-radius: 50%;
+    background: $color-black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $unit * 5;
+    margin: 0 $unit;
+    width: $unit * 5;
+
+    &.ds-pinterest {
+        background: #bd081c;
+    }
+
+    &.ds-facebook {
+        background: #3b5998;
+    }
+
+    &.ds-instagram {
+        background: #125688;
+    }
+
+    &.ds-twitter {
+        background: #1da1f2;
+    }
+
+    &.ds-whatsapp {
+        background: #25d366;
+    }
+}
