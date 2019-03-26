@@ -460,12 +460,14 @@
                 {
                     "group": "pills",
                     "name": "tags",
-                    "title": "Tags Pill"
+                    "title": "Tags Pill",
+                    "width": "half"
                 },
                 {
                     "group": "pills",
                     "name": "filter",
-                    "title": "Filter Pill"
+                    "title": "Filter Pill",
+                    "width": "half"
                 }
             ]
         },
