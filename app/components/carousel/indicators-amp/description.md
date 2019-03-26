@@ -1,4 +1,4 @@
-Dieses Element ist aktuell nur mit AMP zu benutzen! Es styled die Slider-Indikatoren im Chefkoch Design.
+Amp Indicators sind nur mit AMP zu benutzen! Es styled die Slider-Indikatoren im Chefkoch Design.
 
 ### Usage
 

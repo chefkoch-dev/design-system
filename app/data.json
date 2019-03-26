@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v4.4.0",
+            "library_title": "v4.4.1",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -412,12 +412,14 @@
                 {
                     "group": "links",
                     "name": "copy",
-                    "title": "Copy Links"
+                    "title": "Copy Links",
+                    "width": "half"
                 },
                 {
                     "group": "links",
                     "name": "headline",
-                    "title": "Headline Links"
+                    "title": "Headline Links",
+                    "width": "half"
                 }
             ]
         },
@@ -428,12 +430,14 @@
                 {
                     "group": "carousel",
                     "name": "indicators",
-                    "title": "Indicators"
+                    "title": "Indicators",
+                    "width": "half"
                 },
                 {
                     "group": "carousel",
                     "name": "indicators-amp",
                     "title": "AMP Indicators",
+                    "width": "half",
                     "options": {
                         "disable_code_sample": true
                     }
@@ -458,12 +462,14 @@
                 {
                     "group": "pills",
                     "name": "tags",
-                    "title": "Tags Pill"
+                    "title": "Tags Pill",
+                    "width": "half"
                 },
                 {
                     "group": "pills",
                     "name": "filter",
-                    "title": "Filter Pill"
+                    "title": "Filter Pill",
+                    "width": "half"
                 }
             ]
         },
