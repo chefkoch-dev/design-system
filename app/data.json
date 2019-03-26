@@ -412,12 +412,14 @@
                 {
                     "group": "links",
                     "name": "copy",
-                    "title": "Copy Links"
+                    "title": "Copy Links",
+                    "width": "half"
                 },
                 {
                     "group": "links",
                     "name": "headline",
-                    "title": "Headline Links"
+                    "title": "Headline Links",
+                    "width": "half"
                 }
             ]
         },
