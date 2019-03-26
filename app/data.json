@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v4.3.2",
+            "library_title": "v4.4.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -384,6 +384,24 @@
                     "group": "buttons",
                     "name": "deactivated",
                     "title": "Inaktiv / Deaktiviert"
+                }
+            ]
+        },
+        {
+            "name": "social-media",
+            "title": "Social-Media",
+            "components": [
+                {
+                    "group": "social-media",
+                    "name": "social-media-buttons",
+                    "title": "Social-Media-Buttons",
+                    "width": "half"
+                },
+                {
+                    "group": "social-media",
+                    "name": "amp-social-share",
+                    "title": "AMP-Social-Share",
+                    "width": "half"
                 }
             ]
         },
