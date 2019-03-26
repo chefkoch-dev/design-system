@@ -428,12 +428,14 @@
                 {
                     "group": "carousel",
                     "name": "indicators",
-                    "title": "Indicators"
+                    "title": "Indicators",
+                    "width": "half"
                 },
                 {
                     "group": "carousel",
                     "name": "indicators-amp",
                     "title": "AMP Indicators",
+                    "width": "half",
                     "options": {
                         "disable_code_sample": true
                     }
