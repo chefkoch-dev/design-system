@@ -277,16 +277,13 @@ html {
 /* Grid enhancements
 ----------------------------------- */
 
-#group-grid {
+#group-grid-component-grid-base {
     .ndpl-component__sample {
         padding-left: 0;
         padding-right: 0;
         text-align: center;
 
         .ds-container {
-            background: #eee;
-            padding-top: $unit;
-
             // for presentation purposes only
             &.ds-grid-xxs {
                 @include media-breakpoint-to(m) {
@@ -315,6 +312,14 @@ html {
     }
 }
 
+#group-grid-component-grid-base,
+#group-grid-component-grid-offset {
+    .ds-container {
+        background: #eee;
+        padding-top: $unit;
+    }
+}
+
 .ds-box-row {
     background: $color-corporate-green;
     border: 1px solid $color-corporate-green;
@@ -328,6 +333,21 @@ html {
     overflow: hidden;
     position: relative;
     text-align: center;
+}
+
+#group-grid-component-grid-float {
+    .ndpl-component__container {
+        img {
+            margin-bottom: -2px;
+        }
+
+        span {
+            background-color: $color-sand;
+            border-radius: $unit;
+            display: block;
+            padding: $unit;
+        }
+    }
 }
 
 /* Layout Bereiche enhancements
