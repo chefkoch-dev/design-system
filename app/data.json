@@ -100,6 +100,11 @@
                 },
                 {
                     "group": "grid",
+                    "name": "grid-float",
+                    "title": "Grid Float"
+                },
+                {
+                    "group": "grid",
                     "name": "grid-offset",
                     "title": "Grid Offset"
                 }
