@@ -24,9 +24,9 @@
 }
 
 .ds-to-s {
-     @include media-breakpoint-from(m) {
-         display: none;
-     }
+    @include media-breakpoint-from(m) {
+        display: none;
+    }
 }
 
 .ds-from-s {
