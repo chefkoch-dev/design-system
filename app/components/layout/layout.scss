@@ -24,7 +24,13 @@
 }
 
 .ds-to-s {
-    @include media-breakpoint-from(m) {
+     @include media-breakpoint-from(m) {
+         display: none;
+     }
+}
+
+.ds-from-s {
+    @include media-breakpoint-to(xs) {
         display: none;
     }
 }
