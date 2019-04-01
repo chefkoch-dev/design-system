@@ -3,6 +3,7 @@ $btn-base-value: $unit * 5;
 .ds-btn-box {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .ds-btn + .ds-btn {
