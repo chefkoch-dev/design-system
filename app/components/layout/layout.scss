@@ -29,6 +29,12 @@
     }
 }
 
+.ds-from-s {
+    @include media-breakpoint-to(xs) {
+        display: none;
+    }
+}
+
 .ds-from-m {
     @include media-breakpoint-to(s) {
         display: none;
