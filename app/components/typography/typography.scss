@@ -74,3 +74,9 @@ h5,
     font: $font-tiny;
     letter-spacing: 0.5px;
 }
+
+aside.ds-box {
+    p:not(:last-of-type) {
+        margin-bottom: $unit;
+    }
+}

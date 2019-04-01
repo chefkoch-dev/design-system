@@ -666,7 +666,8 @@ td {
     &:hover {
         .padding-helper,
         .margin-helper,
-        .margin-helper-2 {
+        .margin-helper-2,
+        .margin-helper-3 {
             opacity: 1;
         }
     }
@@ -679,6 +680,10 @@ td {
 
     .margin-helper-2 {
         height: $unit * 2;
+    }
+
+    .margin-helper-3 {
+        height: $unit;
     }
 }
 
@@ -706,6 +711,10 @@ td {
 
     .margin-helper-2 {
         margin-top: -($unit * 2);
+    }
+
+    .margin-helper-3 {
+        margin-top: -($unit);
     }
 
     .padding-helper {
