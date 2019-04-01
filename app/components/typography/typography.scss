@@ -33,38 +33,27 @@ ul {
 h1,
 .ds-h1 {
     font: $font-h1;
-    margin-bottom: $unit * 4;
-}
-
-h1 + .ds-sub-h1 {
-    // will be deleted in future
-    font: $font-subheading-1;
-    margin-bottom: $unit * 2;
-    margin-top: -($unit * 4);
 }
 
 h2,
 .ds-h2 {
     font: $font-h2;
-    margin-bottom: $unit * 4;
 }
 
 h3,
 .ds-h3 {
     font: $font-h3;
-    margin-bottom: $unit * 2;
 }
 
 h4,
 .ds-h4 {
     font: $font-h4;
-    margin-bottom: $unit * 2;
 }
 
 h5,
 .ds-h5 {
     font: $font-h5;
-    margin: 0;
+    margin-bottom: $unit;
 }
 
 .ds-h7-top,
@@ -84,4 +73,10 @@ h5,
     color: $color-grey-dark;
     font: $font-tiny;
     letter-spacing: 0.5px;
+}
+
+aside.ds-box {
+    p:not(:last-of-type) {
+        margin-bottom: $unit;
+    }
 }
