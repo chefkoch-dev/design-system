@@ -382,6 +382,12 @@
                 },
                 {
                     "group": "buttons",
+                    "name": "btn-box",
+                    "title": "Button Box Wrapper",
+                    "width": "half"
+                },
+                {
+                    "group": "buttons",
                     "name": "icon",
                     "title": "Icon Button"
                 },
