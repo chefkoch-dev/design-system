@@ -639,13 +639,15 @@ td {
 .ndpl-component__container {
     .margin-helper,
     .margin-helper-2,
-    .padding-helper {
+    .margin-helper-3,
+    .padding-helper-3 {
         opacity: 0;
         transition: opacity 0.3s ease 0.15s;
     }
 
     .margin-helper,
-    .margin-helper-2 {
+    .margin-helper-2,
+    .margin-helper-3 {
         background-image: linear-gradient(135deg, rgba(255, 165, 0, 0.1) 25%, rgba(255, 165, 0, 0.3) 25%, rgba(255, 165, 0, 0.3) 50%, rgba(255, 165, 0, 0.1) 50%, rgba(255, 165, 0, 0.1) 75%, rgba(255, 165, 0, 0.3) 75%, rgba(255, 165, 0, 0.3) 100%);
         background-size: 22.63px 22.63px;
     }
