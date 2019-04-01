@@ -17,4 +17,8 @@
         border-color: $color-corporate-green-dark;
         outline: 0;
     }
+
+    &::placeholder {
+        color: $color-grey-medium;
+    }
 }
