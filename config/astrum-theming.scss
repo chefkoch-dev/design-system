@@ -219,8 +219,12 @@ html {
         font-weight: inherit;
         padding-top: $unit * 2;
     }
+}
 
-    img {
+.ndpl-group__description,
+.ndpl-component__description,
+#group-images .ndpl-component__sample {
+    img[src*=".svg"] {
         margin-bottom: -2px;
     }
 }
