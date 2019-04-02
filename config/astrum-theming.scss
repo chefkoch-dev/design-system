@@ -412,6 +412,15 @@ html {
     margin-bottom: $unit;
 }
 
+/* Images enhancements
+----------------------------------- */
+
+#group-images {
+    img {
+        @include ds-border-radius;
+    }
+}
+
 /* Container hints
 ----------------------------------- */
 
