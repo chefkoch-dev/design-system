@@ -603,12 +603,6 @@ html {
         }
 
     }
-
-    hr {
-        border: 0;
-        border-top: 1px solid $color-grey-light;
-        margin: 32px auto;
-    }
 }
 
 /* Button enhancements
@@ -668,12 +662,6 @@ td {
     .padding-helper {
         background-image: linear-gradient(135deg, rgba(97, 143, 48, 0.1) 25%, rgba(97, 143, 48, 0.3) 25%, rgba(97, 143, 48, 0.3) 50%, rgba(97, 143, 48, 0.1) 50%, rgba(97, 143, 48, 0.1) 75%, rgba(97, 143, 48, 0.3) 75%, rgba(97, 143, 48, 0.3) 100%);
         background-size: 22.63px 22.63px;
-    }
-
-    hr {
-        border: 0;
-        border-top: 1px solid $color-grey-light;
-        margin: 0;
     }
 
     &:hover {
