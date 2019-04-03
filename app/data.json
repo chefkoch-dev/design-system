@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v4.5.2",
+            "library_title": "v4.6.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -238,6 +238,24 @@
                     "group": "colors",
                     "name": "background",
                     "title": "Background"
+                }
+            ]
+        },
+        {
+            "name": "images",
+            "title": "Images",
+            "components": [
+                {
+                    "group": "images",
+                    "name": "1zu1",
+                    "title": "1:1",
+                    "width": "half"
+                },
+                {
+                    "group": "images",
+                    "name": "3zu2",
+                    "title": "3:2",
+                    "width": "half"
                 }
             ]
         },

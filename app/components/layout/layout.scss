@@ -1,3 +1,6 @@
+/* Layout
+----------------------------------- */
+
 .ds-box {
     margin-bottom: $unit * 4;
     position: relative;
@@ -16,6 +19,20 @@
     }
     /* stylelint-enable all */
 }
+
+/* Images
+----------------------------------- */
+
+@mixin ds-border-radius {
+    border-radius: $unit;
+}
+
+figure {
+    margin: 0;
+}
+
+/* Breakpoint Utilities
+----------------------------------- */
 
 .ds-to-xs {
     @include media-breakpoint-from(s) {
