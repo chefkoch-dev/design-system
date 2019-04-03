@@ -167,11 +167,6 @@
                     "options": {
                         "disable_code_sample": true
                     }
-                },
-                {
-                    "group": "layout",
-                    "name": "media-block",
-                    "title": "Media-Block"
                 }
             ]
         },
@@ -334,6 +329,29 @@
                     "group": "utilities",
                     "name": "breakpoint-utilities",
                     "title": "Breakpoint Utilities"
+                }
+            ]
+        },
+        {
+            "name": "media-block",
+            "title": "Media-Block",
+            "components": [
+                {
+                    "group": "media-block",
+                    "name": "media-block-static",
+                    "title": "Statischer Media-Block",
+                    "width": "half"
+                },
+                {
+                    "group": "media-block",
+                    "name": "media-block-dynamic",
+                    "title": "Dynamischer Media-Block",
+                    "width": "half"
+                },
+                {
+                    "group": "media-block",
+                    "name": "media-block-enhanced",
+                    "title": "Media-Block Enhanced"
                 }
             ]
         },
