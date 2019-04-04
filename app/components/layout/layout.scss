@@ -1,6 +1,11 @@
 /* Layout
 ----------------------------------- */
 
+main.ds-container {
+    background: $color-bg-content;
+    padding-top: $unit * 4;
+}
+
 .ds-box {
     margin-bottom: $unit * 4;
     position: relative;
