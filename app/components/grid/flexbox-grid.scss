@@ -95,8 +95,8 @@ $container-m-min: $screen-m;
 [class*="ds-col-"] {
 	width: 100%;
 
-	img:not([src*=".svg"]) {
-		width: 100%;
+	img {
+		max-width: 100%;
 	}
 }
 
