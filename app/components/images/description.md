@@ -8,7 +8,7 @@ Es werden je Bild 3 Auflösungen angeboten: standard, @2x, @3x.
 
 ### Bildbreite
 
-Bilder innerhalb einer Gridklasse, deren source __nicht__ auf `.svg` endet, sind standardmäßig 100% breit (entsprechend der Gridklasse).
+Bilder innerhalb einer Gridklasse sind standardmäßig maximal 100% breit (entsprechend der Gridklasse). Damit wird verhindert, dass ein zu großes Bild das Gridlayout zerschießt, oder dass das Bild rechts aus dem Gridcontainer raushängt.
 
 ### Border-Radius
 
