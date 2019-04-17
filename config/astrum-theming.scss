@@ -765,7 +765,7 @@ td {
     }
 }
 
-/* other
+/* helpers
 ----------------------------------- */
 
 .content-box-wrapper {
@@ -779,6 +779,21 @@ td {
     &.margin-box {
         padding: 0;
     }
+}
+
+.grid-float-helper-red {
+    background-image: linear-gradient(135deg, rgba(214, 1, 1, 0.1) 25%, rgba(214, 1, 1, 0.3) 25%, rgba(214, 1, 1, 0.3) 50%, rgba(214, 1, 1, 0.1) 50%, rgba(214, 1, 1, 0.1) 75%, rgba(214, 1, 1, 0.3) 75%, rgba(214, 1, 1, 0.3) 100%);
+    background-size: 22.63px 22.63px;
+}
+
+.grid-float-helper-green {
+    background-image: linear-gradient(135deg, rgba(74, 222, 98, 0.1) 25%, rgba(74, 222, 98, 0.3) 25%, rgba(74, 222, 98, 0.3) 50%, rgba(74, 222, 98, 0.1) 50%, rgba(74, 222, 98, 0.1) 75%, rgba(74, 222, 98, 0.3) 75%, rgba(74, 222, 98, 0.3) 100%);
+    background-size: 22.63px 22.63px;
+}
+
+.grid-float-helper-blue {
+    background-image: linear-gradient(135deg, rgba(74, 167, 222, 0.1) 25%, rgba(74, 167, 222, 0.3) 25%, rgba(74, 167, 222, 0.3) 50%, rgba(74, 167, 222, 0.1) 50%, rgba(74, 167, 222, 0.1) 75%, rgba(74, 167, 222, 0.3) 75%, rgba(74, 167, 222, 0.3) 100%);
+    background-size: 22.63px 22.63px;
 }
 
 /* Code Samples
