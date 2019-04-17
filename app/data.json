@@ -459,14 +459,12 @@
                 {
                     "group": "links",
                     "name": "copy",
-                    "title": "Copy Links",
-                    "width": "half"
+                    "title": "Copy Links"
                 },
                 {
                     "group": "links",
                     "name": "headline",
-                    "title": "Headline Links",
-                    "width": "half"
+                    "title": "Headline Links"
                 }
             ]
         },

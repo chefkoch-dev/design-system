@@ -1,7 +1,106 @@
-<h1><a href="#" class="ds-heading-link">Heading Level 1 Link</a></h1>
+<div class="ds-box">
+    <h2><a href="#" class="ds-heading-link">Heading Level 2 Link</a></h2>
 
-<h2><a href="#" class="ds-heading-link">Heading Level 2 Link</a></h2>
+    <hr class="ds-hr" />
+</div>
 
-<h3><a href="#" class="ds-heading-link">Heading Level 3 Link</a></h3>
+<div class="ds-box">
+    <h4><img src="./app/images/yes.svg"> Do<br/>
+        <span class="ds-h7">a.ds-heading-link in h2</span>
+    </h4>
 
-<h4><a href="#" class="ds-heading-link">Heading Level 4 Link</a></h4>
+<small>
+<pre>
+&lt;h2&gt;
+    &lt;a href="#" class="ds-heading-link"&gt;Headline&lt;/a&gt;
+&lt;/h2&gt;
+</pre>
+</small>
+
+    <h2>
+        <a href="#" class="ds-heading-link">Headline</a>
+    </h2>
+
+    <hr class="ds-hr" />
+</div>
+
+<div class="ds-box">
+    <h4><img src="./app/images/yes.svg"> Do<br/>
+        <span class="ds-h7">h2 in a.ds-heading-link</span>
+    </h4>
+
+<small>
+<pre>
+&lt;a href="#" class="ds-heading-link"&gt;
+    &lt;h2&gt;Headline&lt;/h2&gt;
+&lt;/a&gt;
+</pre>
+</small>
+
+    <a href="#" class="ds-heading-link">
+        <h2>Headline</h2>
+    </a>
+
+    <hr class="ds-hr" />
+</div>
+
+<div class="ds-box ds-grid ds-row">
+    <h4 class="ds-col-xs-12 ds-col-s-12 ds-col-m-12">
+        <img src="./app/images/no.svg"> Don't<br/>
+        <span class="ds-h7">h2 / Bilder / andere Inhalte in a.ds-heading-link</span>
+    </h4>
+
+    <div class="ds-col-xs-12 ds-col-s-6 ds-col-m-6">
+<small>
+<pre>
+&lt;a href="#" class="ds-heading-link"&gt;
+    &lt;img src="#" /&gt;
+    &lt;h2&gt;Headline&lt;/h2&gt;
+    &lt;p&gt;some text&lt;/p&gt;
+&lt;/a&gt;
+</pre>
+</small>
+
+        <a href="#" class="ds-heading-link">
+            <img src="https://img.chefkoch-cdn.de/rezepte/1153541221572701/bilder/1130636/crop-600x400/caprese-bacon-ciabatta-sandwich.jpg" width="200">
+            <h2>Headline</h2>
+            <p>some text</p>
+        </a>
+    </div>
+
+    <div class="ds-col-xs-12 ds-col-s-6 ds-col-m-6">
+        <small>Auch wenn ein Media-Block Modul als Teaser verwendet wird, darf die Klasse <code>.ds-heading-link</code> nicht als Wrapper eingesetzt werden, da wir Texte in verlinkten Teasern nicht hovern.</small>
+    </div>
+
+    <hr class="ds-hr" />
+</div>
+
+<div class="ds-box">
+    <h4><img src="./app/images/no.svg"> Don't<br/>
+        <span class="ds-h7">h2 / a / andere Inhalte in div.ds-heading-link</span>
+    </h4>
+
+<small>
+<pre>
+&lt;div class="ds-heading-link"&gt;
+    &lt;a href="#"&gt;
+        &lt;h2&gt;Headline&lt;/h2&gt;
+        &lt;p&gt;some text&lt;/p&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+</pre>
+</small>
+
+    <div class="ds-heading-link">
+        <a href="#">
+            <h2>Headline</h2>
+            <p>some text</p>
+        </a>
+    </div>
+
+    <hr class="ds-hr" />
+</div>
+
+
+
+
