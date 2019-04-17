@@ -465,6 +465,11 @@
                     "group": "links",
                     "name": "headline",
                     "title": "Headline Links"
+                },
+                {
+                    "group": "links",
+                    "name": "target",
+                    "title": "Target Links"
                 }
             ]
         },

@@ -413,6 +413,7 @@ html {
 .content-box,
 #group-images img,
 #group-media-block img,
+#group-links img,
 #group-grid-component-grid-float .ndpl-component__container span,
 .ndpl-component__color:first-of-type:last-of-type,
 #group-carousel-component-indicators .slides-container img {
@@ -840,6 +841,7 @@ td {
 .ndpl-component__container {
     pre {
         margin-top: 0;
+        overflow-x: scroll;
     }
 }
 
