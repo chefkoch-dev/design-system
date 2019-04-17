@@ -821,9 +821,9 @@ td {
 ----------------------------------- */
 #group-carousel-component-indicators {
     .slides-container {
-        height: 300px;
+        height: auto;
         position: relative;
-        width: 400px;
+        max-width: 400px;
     }
 
     .ds-carousel-indicators {
