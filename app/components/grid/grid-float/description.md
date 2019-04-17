@@ -22,8 +22,11 @@ Wird im HTML ein Kontext Element (welches standardmäßig nicht floated) als all
 #### &bdquo;Ich will das aber so.&rdquo;
 Okay. Importiere einfach zusätzlich folgende Styles
     
-    Enthalten in
-    @import "~chefkoch-design-system/components/flexbox-grid";
+    Via Shortlink
+    @import "~chefkoch-design-system/components/flexbox-grid-rebel";
+    
+    Original Location
+    @import "~chefkoch-design-system/app/components/grid/flexbox-grid-rebel";
 
 setze auf dieses einzelne Kontext Element folgendes Klasse: `.ds-grid-rebel` und entferne die Offset-Klasse.  
 Um alle eventualitäten auszuschließen, gib dem nächsten Kontext Element die Klasse `.ds-grid-rebel-sibling`.
