@@ -25,6 +25,11 @@
         box-sizing: border-box;
         word-break: break-word;
     }
+
+    // amps scrollable-carousel-container has white-space: nowrap !important; so we need to overwrite this for our .ds-mb content
+    amp-carousel & {
+        white-space: normal;
+    }
 }
 
 .ds-mb-row {
