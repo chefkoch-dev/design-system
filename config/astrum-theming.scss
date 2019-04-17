@@ -413,6 +413,7 @@ html {
 .content-box,
 #group-images img,
 #group-media-block img,
+#group-links img,
 #group-grid-component-grid-float .ndpl-component__container span,
 .ndpl-component__color:first-of-type:last-of-type,
 #group-carousel-component-indicators .slides-container img {
@@ -820,9 +821,9 @@ td {
 ----------------------------------- */
 #group-carousel-component-indicators {
     .slides-container {
-        height: 300px;
+        height: auto;
         position: relative;
-        width: 400px;
+        max-width: 400px;
     }
 
     .ds-carousel-indicators {
@@ -834,6 +835,13 @@ td {
 #group-carousel-component-indicators-amp {
     .ndpl-component__container {
         display: none;
+    }
+}
+
+.ndpl-component__container {
+    pre {
+        margin-top: 0;
+        overflow-x: scroll;
     }
 }
 

@@ -1,5 +1,4 @@
-Headline Links sind.. (wait for it) verlinkte Headlines, whee!  
-Diese kommen u.a. in Targets (zum Beispiel Carousel / RSEL Liste) vor.  
+Verlinkte Headlines kommen u.a. in Teasern/Targets (zum Beispiel Carousel / Kachel / Liste) vor. Ausschließlich die Headlines werden mit der Klasse `.ds-heading-link` ausgezeichnet. 
 
 ### Styles  
-geerbt von Headings
+Basis geerbt von Headings

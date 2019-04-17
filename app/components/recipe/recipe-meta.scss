@@ -9,7 +9,6 @@
         display: inline-flex;
         align-items: center;
         height: $unit * 2;
-        margin-bottom: $unit;
         margin-right: $unit;
 
         @include media-breakpoint-from(s) {
