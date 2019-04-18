@@ -5,7 +5,7 @@
 ** from 960px (viewport) .ndpl-content width
 ** because sidebar on the left & padding
 */
-$screen-m: 960px + 312px + 48px;
+//$screen-m: 960px + 312px + 48px;
 
 // mediaqueries using base vars
 @import "../app/components/breakpoints/breakpoints";

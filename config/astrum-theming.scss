@@ -219,6 +219,10 @@ html {
         font-weight: inherit;
         padding-top: $unit * 2;
     }
+
+    p:last-child {
+        margin-bottom: $unit * 2;
+    }
 }
 
 .ndpl-group__description,
@@ -318,22 +322,23 @@ html {
 
 #group-grid-component-grid-base,
 #group-grid-component-grid-offset {
-    .ds-container {
-        background: #eee;
-        padding-top: $unit;
+    .ds-grid {
+        background: $color-white;
+    }
+
+    .grid-float-helper-red {
+        margin: $unit / 2 0;
     }
 }
 
 .ds-box-row {
-    background: $color-corporate-green;
-    border: 1px solid $color-corporate-green;
+    background: darken($color-sand, 3%);
     box-sizing: border-box;
-    color: $color-white;
+    color: $color-black;
     font-size: 10px;
     height: $unit * 2;
     letter-spacing: 0.5px;
     line-height: 12px;
-    margin-bottom: $unit;
     overflow: hidden;
     position: relative;
     text-align: center;
