@@ -26,10 +26,16 @@
     }
 
     .ds-mb-left {
-        padding-right: $unit;
+        @include media-breakpoint-to(xxs) {
+            padding-right: 6px;
+        }
 
         @include media-breakpoint-between(xs, s) {
             padding-right: 0;
+        }
+
+        @include media-breakpoint-from(m) {
+            padding-right: $unit;
         }
     }
 
@@ -38,15 +44,17 @@
         flex-direction: column;
         justify-content: space-between;
 
-        padding-left: $unit;
+        @include media-breakpoint-to(xxs) {
+            padding-left: 6px;
+        }
 
         @include media-breakpoint-between(xs, s) {
             padding-left: 0;
         }
-    }
 
-    img {
-        display: block;
+        @include media-breakpoint-from(m) {
+            padding-left: $unit;
+        }
     }
 
     + .ds-ri-item {
@@ -61,14 +69,16 @@
 .ds-ri-img {
     img {
         @include ds-border-radius;
+        display: block;
         width: 100%;
     }
 }
 
 .ds-ri-logo {
-    img {
-        @include media-breakpoint-between(xs, s) {
-            margin: 0 auto;
-        }
+    display: flex;
+    justify-content: flex-start;
+
+    @include media-breakpoint-between(xs, s) {
+        justify-content: center;
     }
 }
