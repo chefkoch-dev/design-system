@@ -33,6 +33,7 @@ $screen-m: 960px + 312px + 48px;
 
 @import "../app/components/alerts/note";
 @import "../app/components/tabs/tabs";
+@import "../app/components/recipe/recipe-integration";
 @import "../app/components/forms/forms-base";
 @import "../app/components/forms/forms-input";
 @import "../app/components/forms/forms-cb-rb";
