@@ -36,7 +36,7 @@ $container-m-min: $screen-m;
 		width: 100%;
 	}
 
-	@include media-breakpoint-only(s) {
+	@include media-breakpoint-from(s) {
 		// container is fluid till 600px
 		max-width: $container-s-min;
 	}
@@ -201,7 +201,7 @@ $container-m-min: $screen-m;
 }
 
 // 480 - 599
-@include media-breakpoint-only(xs) {
+@include media-breakpoint-from(xs) {
 	.ds-col-xs-1 {
 		flex-basis: 8.33333333%;
 		max-width: 8.33333333%;
@@ -264,7 +264,7 @@ $container-m-min: $screen-m;
 }
 
 // 600 - 959
-@include media-breakpoint-only(s) {
+@include media-breakpoint-from(s) {
 	.ds-col-s-1 {
 		flex-basis: 8.33333333%;
 		max-width: 8.33333333%;
