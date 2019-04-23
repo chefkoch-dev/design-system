@@ -12,6 +12,7 @@ $screen-m: 960px + 312px + 48px;
 // grid using mediaqueries
 @import "../app/components/grid/flexbox-grid";
 @import "../app/components/grid/flexbox-grid-offset";
+@import "../app/components/grid/flexbox-grid-rebel";
 // typography's settings using base vars
 @import "../app/components/typography/typography";
 
@@ -24,7 +25,7 @@ $screen-m: 960px + 312px + 48px;
 
 @import "../app/components/links/links";
 @import "../app/components/icons/icons";
-@import "../app/components/layout/media-block";
+@import "../app/components/media-block/media-block";
 @import "../app/components/pagination/pagination";
 @import "../app/components/pills/pills";
 @import "../app/components/rating-stars/rating-stars";

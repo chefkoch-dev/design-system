@@ -75,6 +75,13 @@ h5,
     letter-spacing: 0.5px;
 }
 
+/* copy text */
+
+// reset margin-bottom to 0 if the last child of a container is a paragraph
+p:last-child {
+    margin-bottom: 0;
+}
+
 aside.ds-box {
     p:not(:last-of-type) {
         margin-bottom: $unit;

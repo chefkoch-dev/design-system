@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v4.6.0",
+            "library_title": "v4.9.2",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -167,11 +167,6 @@
                     "options": {
                         "disable_code_sample": true
                     }
-                },
-                {
-                    "group": "layout",
-                    "name": "media-block",
-                    "title": "Media-Block"
                 }
             ]
         },
@@ -338,6 +333,29 @@
             ]
         },
         {
+            "name": "media-block",
+            "title": "Media-Block",
+            "components": [
+                {
+                    "group": "media-block",
+                    "name": "media-block-static",
+                    "title": "Statischer Media-Block",
+                    "width": "half"
+                },
+                {
+                    "group": "media-block",
+                    "name": "media-block-dynamic",
+                    "title": "Dynamischer Media-Block",
+                    "width": "half"
+                },
+                {
+                    "group": "media-block",
+                    "name": "media-block-enhanced",
+                    "title": "Media-Block Enhanced"
+                }
+            ]
+        },
+        {
             "name": "forms",
             "title": "Formulare",
             "components": [
@@ -441,14 +459,17 @@
                 {
                     "group": "links",
                     "name": "copy",
-                    "title": "Copy Links",
-                    "width": "half"
+                    "title": "Copy Links"
                 },
                 {
                     "group": "links",
                     "name": "headline",
-                    "title": "Headline Links",
-                    "width": "half"
+                    "title": "Headline Links"
+                },
+                {
+                    "group": "links",
+                    "name": "target",
+                    "title": "Target Links"
                 }
             ]
         },

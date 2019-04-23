@@ -182,7 +182,7 @@ html {
     }
 
     .ndpl-component__sample--disabled-code {
-        border-radius: $unit;
+        @include ds-border-radius;
     }
 }
 
@@ -347,7 +347,6 @@ html {
 
         span {
             background-color: $color-sand;
-            border-radius: $unit;
             display: block;
             padding: $unit;
         }
@@ -365,10 +364,6 @@ html {
 
 /* Colours enhancements
 ----------------------------------- */
-
-.ndpl-component__color:first-of-type:last-of-type {
-    border-radius: $unit;
-}
 
 .ndpl-component__color-container {
     width: 100%;
@@ -412,13 +407,17 @@ html {
     margin-bottom: $unit;
 }
 
-/* Images enhancements
+/* Border-Radius
 ----------------------------------- */
 
-#group-images {
-    img {
-        @include ds-border-radius;
-    }
+.content-box,
+#group-images img,
+#group-media-block img,
+#group-links img,
+#group-grid-component-grid-float .ndpl-component__container span,
+.ndpl-component__color:first-of-type:last-of-type,
+#group-carousel-component-indicators .slides-container img {
+    @include ds-border-radius;
 }
 
 /* Container hints
@@ -434,7 +433,7 @@ html {
         position: relative;
 
         @media screen and (min-width: 1025px) {
-            border-radius: $unit;
+            @include ds-border-radius;
         }
 
         &:before {
@@ -749,39 +748,24 @@ td {
     }
 }
 
-#group-layout {
-    .ds-mb.dsy-helper-ignore-this {
-        background: rgba($color-grey-medium, 0.25);
-    }
+/* media-block
+----------------------------------- */
 
+#group-media-block {
     .ds-mb.dsy-helper-ignore-this-2 {
-        @include ds-fd-col;
-        @include ds-mb-padding("top", 1.5);
-
-        @include media-breakpoint-from(xs) {
-            @include ds-fd-col;
-            @include ds-mb-padding("left", 1.5);
-        }
-
-        @include media-breakpoint-from(s) {
+        @include media-breakpoint-to(xs) {
             @include ds-fd-row;
             @include ds-mb-padding("left", 2);
         }
 
-        @include media-breakpoint-from(m) {
+        @include media-breakpoint-from(s) {
             @include ds-fd-col;
             @include ds-mb-padding("top", 2);
         }
     }
-
-    .ds-mb-left.dsy-helper-ignore-this {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-    }
 }
 
-/* other
+/* helpers
 ----------------------------------- */
 
 .content-box-wrapper {
@@ -789,13 +773,27 @@ td {
 }
 
 .content-box {
-    border-radius: 8px;
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     padding: $unit * 2;
 
     &.margin-box {
         padding: 0;
     }
+}
+
+.grid-float-helper-red {
+    background-image: linear-gradient(135deg, rgba(214, 1, 1, 0.1) 25%, rgba(214, 1, 1, 0.3) 25%, rgba(214, 1, 1, 0.3) 50%, rgba(214, 1, 1, 0.1) 50%, rgba(214, 1, 1, 0.1) 75%, rgba(214, 1, 1, 0.3) 75%, rgba(214, 1, 1, 0.3) 100%);
+    background-size: 22.63px 22.63px;
+}
+
+.grid-float-helper-green {
+    background-image: linear-gradient(135deg, rgba(74, 222, 98, 0.1) 25%, rgba(74, 222, 98, 0.3) 25%, rgba(74, 222, 98, 0.3) 50%, rgba(74, 222, 98, 0.1) 50%, rgba(74, 222, 98, 0.1) 75%, rgba(74, 222, 98, 0.3) 75%, rgba(74, 222, 98, 0.3) 100%);
+    background-size: 22.63px 22.63px;
+}
+
+.grid-float-helper-blue {
+    background-image: linear-gradient(135deg, rgba(74, 167, 222, 0.1) 25%, rgba(74, 167, 222, 0.3) 25%, rgba(74, 167, 222, 0.3) 50%, rgba(74, 167, 222, 0.1) 50%, rgba(74, 167, 222, 0.1) 75%, rgba(74, 167, 222, 0.3) 75%, rgba(74, 167, 222, 0.3) 100%);
+    background-size: 22.63px 22.63px;
 }
 
 /* Code Samples
@@ -838,13 +836,9 @@ td {
 ----------------------------------- */
 #group-carousel-component-indicators {
     .slides-container {
-        height: 300px;
+        height: auto;
         position: relative;
-        width: 400px;
-
-        img {
-            border-radius: $unit;
-        }
+        max-width: 400px;
     }
 
     .ds-carousel-indicators {
@@ -856,6 +850,13 @@ td {
 #group-carousel-component-indicators-amp {
     .ndpl-component__container {
         display: none;
+    }
+}
+
+.ndpl-component__container {
+    pre {
+        margin-top: 0;
+        overflow-x: scroll;
     }
 }
 
