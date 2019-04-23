@@ -860,4 +860,16 @@ td {
     }
 }
 
+/* Recipe Integration
+----------------------------------- */
+
+#group-recipe-component-recipe-integration {
+    .ds-grid {
+        @include media-breakpoint-to(s) {
+            margin: 0 auto;
+            max-width: 584px;
+        }
+    }
+}
+
 /* stylelint-enable */
