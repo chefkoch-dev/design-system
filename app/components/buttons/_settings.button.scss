@@ -7,7 +7,7 @@ $btn-base-value: $unit * 5;
 }
 
 .ds-btn + .ds-btn {
-    margin-left: $unit * 2;
+    margin-left: $unit;
 }
 
 @mixin btn-reset {
