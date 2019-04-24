@@ -26,16 +26,10 @@
     }
 
     .ds-mb-left {
-        @include media-breakpoint-to(xxs) {
-            padding-right: 6px;
-        }
+        padding-right: $unit / 2;
 
         @include media-breakpoint-between(xs, s) {
             padding-right: 0;
-        }
-
-        @include media-breakpoint-from(m) {
-            padding-right: $unit;
         }
     }
 
@@ -44,16 +38,10 @@
         flex-direction: column;
         justify-content: space-between;
 
-        @include media-breakpoint-to(xxs) {
-            padding-left: 6px;
-        }
+        padding-left: $unit / 2;
 
         @include media-breakpoint-between(xs, s) {
             padding-left: 0;
-        }
-
-        @include media-breakpoint-from(m) {
-            padding-left: $unit;
         }
     }
 
