@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v4.6.2",
+            "library_title": "v4.10.1",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -459,14 +459,17 @@
                 {
                     "group": "links",
                     "name": "copy",
-                    "title": "Copy Links",
-                    "width": "half"
+                    "title": "Copy Links"
                 },
                 {
                     "group": "links",
                     "name": "headline",
-                    "title": "Headline Links",
-                    "width": "half"
+                    "title": "Headline Links"
+                },
+                {
+                    "group": "links",
+                    "name": "target",
+                    "title": "Target Links"
                 }
             ]
         },
@@ -539,6 +542,11 @@
                     "group": "recipe",
                     "name": "recipe-meta",
                     "title": "Recipe Meta"
+                },
+                {
+                    "group": "recipe",
+                    "name": "recipe-integration",
+                    "title": "Recipe Integration"
                 }
             ]
         },

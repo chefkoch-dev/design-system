@@ -1,0 +1,13 @@
+/* make use of documented dsy-grid-float reset for special items on top of the content
+** http://localhost:3001/#group-grid-component-grid-float
+*/
+
+@include media-breakpoint-from(m) {
+    .ds-grid-rebel {
+        float: right;
+    }
+
+    .ds-grid-rebel-sibling {
+        clear: right;
+    }
+}

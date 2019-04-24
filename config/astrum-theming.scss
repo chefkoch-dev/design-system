@@ -413,6 +413,7 @@ html {
 .content-box,
 #group-images img,
 #group-media-block img,
+#group-links img,
 #group-grid-component-grid-float .ndpl-component__container span,
 .ndpl-component__color:first-of-type:last-of-type,
 #group-carousel-component-indicators .slides-container img {
@@ -764,7 +765,7 @@ td {
     }
 }
 
-/* other
+/* helpers
 ----------------------------------- */
 
 .content-box-wrapper {
@@ -778,6 +779,21 @@ td {
     &.margin-box {
         padding: 0;
     }
+}
+
+.grid-float-helper-red {
+    background-image: linear-gradient(135deg, rgba(214, 1, 1, 0.1) 25%, rgba(214, 1, 1, 0.3) 25%, rgba(214, 1, 1, 0.3) 50%, rgba(214, 1, 1, 0.1) 50%, rgba(214, 1, 1, 0.1) 75%, rgba(214, 1, 1, 0.3) 75%, rgba(214, 1, 1, 0.3) 100%);
+    background-size: 22.63px 22.63px;
+}
+
+.grid-float-helper-green {
+    background-image: linear-gradient(135deg, rgba(74, 222, 98, 0.1) 25%, rgba(74, 222, 98, 0.3) 25%, rgba(74, 222, 98, 0.3) 50%, rgba(74, 222, 98, 0.1) 50%, rgba(74, 222, 98, 0.1) 75%, rgba(74, 222, 98, 0.3) 75%, rgba(74, 222, 98, 0.3) 100%);
+    background-size: 22.63px 22.63px;
+}
+
+.grid-float-helper-blue {
+    background-image: linear-gradient(135deg, rgba(74, 167, 222, 0.1) 25%, rgba(74, 167, 222, 0.3) 25%, rgba(74, 167, 222, 0.3) 50%, rgba(74, 167, 222, 0.1) 50%, rgba(74, 167, 222, 0.1) 75%, rgba(74, 167, 222, 0.3) 75%, rgba(74, 167, 222, 0.3) 100%);
+    background-size: 22.63px 22.63px;
 }
 
 /* Code Samples
@@ -820,9 +836,9 @@ td {
 ----------------------------------- */
 #group-carousel-component-indicators {
     .slides-container {
-        height: 300px;
+        height: auto;
         position: relative;
-        width: 400px;
+        max-width: 400px;
     }
 
     .ds-carousel-indicators {
@@ -834,6 +850,25 @@ td {
 #group-carousel-component-indicators-amp {
     .ndpl-component__container {
         display: none;
+    }
+}
+
+.ndpl-component__container {
+    pre {
+        margin-top: 0;
+        overflow-x: scroll;
+    }
+}
+
+/* Recipe Integration
+----------------------------------- */
+
+#group-recipe-component-recipe-integration {
+    .ds-grid {
+        @include media-breakpoint-to(s) {
+            margin: 0 auto;
+            max-width: 584px;
+        }
     }
 }
 

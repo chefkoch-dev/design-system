@@ -8,13 +8,7 @@
 
 @mixin ds-mb-padding($direction, $unitMultiplier) {
     > .ds-mb-right {
-        @if $direction == "left" {
-            padding: 0 0 0 $unit * $unitMultiplier;
-        }
-
-        @if $direction == "top" {
-            padding: $unit * $unitMultiplier 0 0;
-        }
+        padding-#{$direction}: $unit * $unitMultiplier;
     }
 }
 
@@ -25,6 +19,13 @@
         box-sizing: border-box;
         word-break: break-word;
     }
+
+    /* stylelint-disable */
+    // amps scrollable-carousel-container has white-space: nowrap !important; so we need to overwrite this for our .ds-mb content
+    amp-carousel & {
+        white-space: normal;
+    }
+    /* stylelint-enable */
 }
 
 .ds-mb-row {
