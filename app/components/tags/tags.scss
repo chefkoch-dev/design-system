@@ -1,0 +1,83 @@
+@mixin tag-green {
+    background: $color-corporate-green;
+    color: $color-text-inverted;
+}
+
+@mixin tag-green-dark {
+    background: $color-corporate-green-dark;
+    border-color: $color-corporate-green-dark;
+    color: $color-text-inverted;
+}
+
+.ds-tag {
+    background: $color-white;
+    border: 1px solid $color-corporate-green;
+    border-radius: $unit * 4;
+    color: $color-text;
+    display: flex;
+    font-size: $fontsize-small;
+    line-height: $lineheight-small;
+    padding: 5px $unit; // 32px height
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* firefox only */
+    @supports (-moz-appearance:none) {
+        padding: 4px $unit 6px;
+    }
+
+    &:hover,
+    &:focus {
+        @include tag-green-dark;
+    }
+}
+
+.ds-tag-active {
+    @include tag-green;
+    padding: 5px ($unit / 2) 5px $unit;
+
+    /* firefox only */
+    @supports (-moz-appearance:none) {
+        padding: 4px ($unit / 2) 6px $unit;
+    }
+
+    &:hover,
+    &:focus {
+        @include tag-green-dark;
+    }
+
+    // material-icons
+    i {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        margin-left: 3px; // this will make 8 in the end
+
+        /* firefox only */
+        @supports (-moz-appearance:none) {
+            margin-top: 1px;
+        }
+    }
+}
+
+
+.ds-tags-carousel {
+    position: relative;
+
+    // let the slider begin and end on the browser window without the grid padding/margin
+    margin: -18px (-$unit) 14px -6px;
+
+    @include media-breakpoint-from(xxs) {
+        margin: -18px (-$unit * 2) 14px -14px;
+    }
+
+    @include media-breakpoint-from(s) {
+        margin: -10px 0 0;
+    }
+
+    // position tags and hide carousel scrollbar
+    > div:first-child {
+        padding: 10px 2px 30px 0;
+    }
+}
