@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v4.9.2",
+            "library_title": "v4.10.3",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -542,6 +542,11 @@
                     "group": "recipe",
                     "name": "recipe-meta",
                     "title": "Recipe Meta"
+                },
+                {
+                    "group": "recipe",
+                    "name": "recipe-integration",
+                    "title": "Recipe Integration"
                 }
             ]
         },
