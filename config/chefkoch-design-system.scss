@@ -25,6 +25,7 @@ $screen-m: 960px + 312px + 48px;
 @import "../app/components/icons/icons";
 @import "../app/components/pagination/pagination";
 @import "../app/components/pills/pills";
+@import "../app/components/tags/tags";
 @import "../app/components/recipe/recipe-meta";
 @import "../app/components/recipe/recipe-integration";
 @import "../app/components/rating-stars/rating-stars";
@@ -37,6 +38,7 @@ $screen-m: 960px + 312px + 48px;
 @import "../app/components/social-media/social-media-buttons";
 @import "../app/components/social-media/amp-social-share";
 @import "../app/components/carousel/indicators";
+@import "../app/components/carousel/indicators-amp";
 
 @import "../app/components/alerts/note";
 @import "../app/components/tabs/tabs";

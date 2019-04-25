@@ -506,6 +506,22 @@
             ]
         },
         {
+            "name": "tags",
+            "title": "Tags",
+            "components": [
+                {
+                    "group": "tags",
+                    "name": "Tags",
+                    "title": "Tags (Link)"
+                },
+                {
+                    "group": "tags",
+                    "name": "filter",
+                    "title": "Tags (Filter)"
+                }
+            ]
+        },
+        {
             "name": "pills",
             "title": "Pills",
             "components": [

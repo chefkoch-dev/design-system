@@ -872,4 +872,35 @@ td {
     }
 }
 
+.ndpl-component__description {
+    p:last-child {
+        margin-bottom: $unit * 2;
+    }
+}
+
+/* Tags */
+
+#group-tags-component-Tags {
+    .ndpl-component__sample {
+        @include media-breakpoint-to(xs) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .i-amphtml-scrollable-carousel-container {
+        overflow-x: auto!important;
+        overflow-y: hidden!important;
+        white-space: nowrap!important;
+    }
+
+    .amp-carousel-button {
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        visibility: visible;
+    }
+}
+
 /* stylelint-enable */
