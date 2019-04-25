@@ -34,10 +34,6 @@
     }
 
     .ds-mb-right {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
         padding-left: $unit / 2;
 
         @include media-breakpoint-between(xs, s) {
@@ -62,11 +58,9 @@
     }
 }
 
-.ds-ri-logo {
-    display: flex;
-    justify-content: flex-start;
-
-    @include media-breakpoint-between(xs, s) {
+@include media-breakpoint-between(xs, s) {
+    .ds-ri-logo {
+        display: flex;
         justify-content: center;
     }
 }
