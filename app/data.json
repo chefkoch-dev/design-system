@@ -522,24 +522,6 @@
             ]
         },
         {
-            "name": "pills",
-            "title": "Pills",
-            "components": [
-                {
-                    "group": "pills",
-                    "name": "tags",
-                    "title": "Tags Pill",
-                    "width": "half"
-                },
-                {
-                    "group": "pills",
-                    "name": "filter",
-                    "title": "Filter Pill",
-                    "width": "half"
-                }
-            ]
-        },
-        {
             "name": "rating-stars",
             "title": "Rating Stars",
             "components": [
