@@ -9,6 +9,38 @@
     color: $color-text-inverted;
 }
 
+.ds-tags-carousel {
+    position: relative;
+
+    // some heavy repositioning for the carousel an its buttons
+    margin: -12px -$unit 20px;
+
+    @include media-breakpoint-from(xxs) {
+        margin: -12px (-$unit * 2) 20px;
+    }
+
+    @include media-breakpoint-from(s) {
+        margin: -12px 0 20px;
+    }
+
+    // position tags and hide carousel scrollbar
+    > div:first-child {
+        padding: 12px 0 32px;
+    }
+
+    @include media-breakpoint-to(xs) {
+        .ds-tag {
+            &:first-of-type {
+                margin-left: $unit;
+            }
+
+            &:last-of-type {
+                margin-right: $unit;
+            }
+        }
+    }
+}
+
 .ds-tag {
     background: $color-white;
     border: 1px solid $color-corporate-green;
@@ -58,26 +90,5 @@
         @supports (-moz-appearance:none) {
             margin-top: 1px;
         }
-    }
-}
-
-
-.ds-tags-carousel {
-    position: relative;
-
-    // let the slider begin and end on the browser window without the grid padding/margin
-    margin: -18px (-$unit) 14px -6px;
-
-    @include media-breakpoint-from(xxs) {
-        margin: -18px (-$unit * 2) 14px -14px;
-    }
-
-    @include media-breakpoint-from(s) {
-        margin: -10px 0 0;
-    }
-
-    // position tags and hide carousel scrollbar
-    > div:first-child {
-        padding: 10px 2px 30px 0;
     }
 }
