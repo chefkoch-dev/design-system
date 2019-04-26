@@ -9,6 +9,13 @@
     color: $color-text-inverted;
 }
 
+/* stylelint-disable at-rule-blacklist */
+.ds-tags {
+    @extend .ds-list-cloud;
+    @extend .ds-list-plain;
+}
+/* stylelint-enable at-rule-blacklist */
+
 .ds-tags-carousel {
     position: relative;
 
