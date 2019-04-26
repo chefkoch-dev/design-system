@@ -28,17 +28,23 @@
         padding: 12px 0 32px;
     }
 
+    /* stylelint-disable all */
     @include media-breakpoint-to(xs) {
-        .ds-tag {
-            &:first-of-type {
-                margin-left: $unit;
+        .amp-carousel-slide {
+            &:first-child {
+                .ds-tag {
+                    margin-left: $unit;
+                }
             }
 
-            &:last-of-type {
-                margin-right: $unit;
+            &:last-child {
+                .ds-tag {
+                    margin-right: $unit;
+                }
             }
         }
     }
+    /* stylelint-enable all */
 }
 
 .ds-tag {
