@@ -20,7 +20,7 @@
     position: relative;
 
     // some heavy repositioning for the carousel an its buttons
-    margin: -12px -$unit 20px;
+    margin: -12px (-$unit) 20px;
 
     @include media-breakpoint-from(xxs) {
         margin: -12px (-$unit * 2) 20px;
