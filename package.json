@@ -16,6 +16,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-stylelint": "^7.0.0",
+    "node-sass": "^4.12.0",
     "stylelint": "^9.10.1"
   },
   "files": [
