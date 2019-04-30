@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v4.9.1",
+            "library_title": "v5.0.3",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -506,20 +506,18 @@
             ]
         },
         {
-            "name": "pills",
-            "title": "Pills",
+            "name": "tags",
+            "title": "Tags",
             "components": [
                 {
-                    "group": "pills",
+                    "group": "tags",
                     "name": "tags",
-                    "title": "Tags Pill",
-                    "width": "half"
+                    "title": "Tags (Link)"
                 },
                 {
-                    "group": "pills",
+                    "group": "tags",
                     "name": "filter",
-                    "title": "Filter Pill",
-                    "width": "half"
+                    "title": "Tags (Filter)"
                 }
             ]
         },
@@ -542,6 +540,11 @@
                     "group": "recipe",
                     "name": "recipe-meta",
                     "title": "Recipe Meta"
+                },
+                {
+                    "group": "recipe",
+                    "name": "recipe-integration",
+                    "title": "Recipe Integration"
                 }
             ]
         },

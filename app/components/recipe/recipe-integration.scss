@@ -1,0 +1,66 @@
+.ds-ri {
+    @include media-breakpoint-between(xs, s) {
+        display: flex;
+        margin: 0 (-$unit);
+    }
+}
+
+.ds-ri-item {
+    @include ds-fd-row;
+
+    @include media-breakpoint-between(xs, s) {
+        @include ds-fd-col;
+        @include ds-mb-padding("top", 1);
+        flex-basis: 33.33333333%;
+        max-width: 33.33333333%;
+        padding: 0 $unit;
+    }
+
+    .ds-mb-left,
+    .ds-mb-right {
+        width: 50%;
+
+        @include media-breakpoint-between(xs, s) {
+            width: 100%;
+        }
+    }
+
+    .ds-mb-left {
+        padding-right: $unit / 2;
+
+        @include media-breakpoint-between(xs, s) {
+            padding-right: 0;
+        }
+    }
+
+    .ds-mb-right {
+        padding-left: $unit / 2;
+
+        @include media-breakpoint-between(xs, s) {
+            padding-left: 0;
+        }
+    }
+
+    + .ds-ri-item {
+        margin-top: $unit * 2;
+
+        @include media-breakpoint-between(xs, s) {
+            margin-top: 0;
+        }
+    }
+}
+
+.ds-ri-img {
+    img {
+        @include ds-border-radius;
+        display: block;
+        width: 100%;
+    }
+}
+
+@include media-breakpoint-between(xs, s) {
+    .ds-ri-logo {
+        display: flex;
+        justify-content: center;
+    }
+}
