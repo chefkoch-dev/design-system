@@ -256,7 +256,7 @@ html {
 
 .ndpl-page, .ndpl-loading__title, .ndpl-error, .ndpl-info, .ndpl-header, .ndpl-sidebar, .ndpl-intro, .ndpl-library__title, .ndpl-group__description, .ndpl-component__title, .ndpl-component__description, .ndpl-component__label, .ndpl-component__code-toggle, .ndpl-component__color, .ndpl-page, .ndpl-nav__title, .ndpl-sidebar__title {
     font-family: $fontfamily-base;
-    color: $color-black;
+    color: $color-text;
 }
 
 .ndpl-library__title {
@@ -301,7 +301,7 @@ html {
         background: #f1efec;
         border: 1px solid $color-grey-medium;
         border-radius: $unit / 2;
-        color: $color-black;
+        color: $color-text;
         font-size: $fontsize-small;
         line-height: $lineheight-small;
     }
@@ -324,7 +324,7 @@ html {
     code {
         border: 1px solid $color-grey-medium;
         border-radius: $unit / 2;
-        color: $color-black;
+        color: $color-text;
         display: inline-block;
         font-size: $fontsize-small;
         margin-bottom: $unit;
