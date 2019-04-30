@@ -9,7 +9,57 @@ html {
     min-width: 320px;
 }
 
-/* Astrum header / nav mobile */
+/* useful helpers
+----------------------------------- */
+
+// stripes
+
+@mixin bg-stripes($color) {
+    background-image: linear-gradient(135deg, rgba($color, 0.1) 25%, rgba($color, 0.3) 25%, rgba($color, 0.3) 50%, rgba($color, 0.1) 50%, rgba($color, 0.1) 75%, rgba($color, 0.3) 75%, rgba($color, 0.3) 100%);
+    background-size: 22.63px 22.63px;
+}
+
+.bg-stripes-red {
+    @include bg-stripes(#d60101);
+}
+
+.bg-stripes-green {
+    @include bg-stripes(#4ade62);
+}
+
+.bg-stripes-blue {
+    @include bg-stripes(#136BDE);
+}
+
+// border-radius
+
+.content-box,
+#group-images img,
+#group-media-block img,
+#group-links img,
+#group-grid-component-grid-float .ndpl-component__container span,
+.ndpl-component__color:first-of-type:last-of-type,
+#group-carousel-component-indicators .slides-container img {
+    @include ds-border-radius;
+}
+
+// content boxes
+
+.content-box-wrapper {
+    margin-bottom: $unit * 2
+}
+
+.content-box {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    padding: $unit * 2;
+
+    &.margin-box {
+        padding: 0;
+    }
+}
+
+/* Astrum header / nav mobile
+----------------------------------- */
 
 .ndpl-header {
     @media only screen and (max-width: 1024px) {
@@ -92,7 +142,8 @@ html {
     }
 }
 
-/* Astrum Sidebar / nav desktop */
+/* Astrum Sidebar / nav desktop
+----------------------------------- */
 
 .ndpl-sidebar__header {
     @media only screen and (min-width: 960px) and (max-width: 1024px) {
@@ -108,7 +159,8 @@ html {
     max-width: 100%;
 }
 
-/* Astrum page wrapper */
+/* Astrum page wrapper
+----------------------------------- */
 
 .ndpl-page {
     width: 100%;
@@ -125,16 +177,15 @@ html {
     }
 }
 
-/* Astrum Content parts */
+/* Astrum margins, paddings, borders
+----------------------------------- */
 
-@media only screen and (max-width: 1024px) {
-    .ndpl-library__title, .ndpl-component__title, .ndpl-group__description, .ndpl-component__description {
+.ndpl-library__title, .ndpl-component__title, .ndpl-group__description, .ndpl-component__description {
+    @media only screen and (max-width: 1024px) {
         padding: 0 $unit * 1.5;
     }
-}
 
-@media only screen and (min-width: 1025px) {
-    .ndpl-library__title, .ndpl-component__title, .ndpl-group__description, .ndpl-component__description {
+    @media only screen and (min-width: 1025px) {
         padding: 0;
     }
 }
@@ -195,6 +246,9 @@ html {
     padding-top: 60px;
 }
 
+/* Astrum typography
+----------------------------------- */
+
 .ndpl-page, .ndpl-intro, .ndpl-group__description, .ndpl-component__description {
     font-weight: normal;
     line-height: 1.5;
@@ -221,14 +275,6 @@ html {
     }
 }
 
-.ndpl-group__description,
-.ndpl-component__description,
-#group-images .ndpl-component__sample {
-    img[src*=".svg"] {
-        margin-bottom: -2px;
-    }
-}
-
 .ndpl-page,
 .ndpl-group__description,
 .ndpl-component__description {
@@ -236,7 +282,20 @@ html {
     li {
         font-size: $fontsize-base;
     }
+}
 
+.ndpl-component__description {
+    p:last-child {
+        margin-bottom: $unit * 2;
+    }
+}
+
+/* Astrum Description & Samples - code & pre
+----------------------------------- */
+
+.ndpl-page,
+.ndpl-group__description,
+.ndpl-component__description {
     pre code,
     code {
         background: #f1efec;
@@ -261,24 +320,205 @@ html {
     opacity: 1;
 }
 
-/* Breakpoints enhancements
+.ndpl-component__sample {
+    code {
+        border: 1px solid $color-grey-medium;
+        border-radius: $unit / 2;
+        color: $color-black;
+        display: inline-block;
+        font-size: $fontsize-small;
+        margin-bottom: $unit;
+        padding: $unit;
+    }
+}
+
+.ndpl-component__container {
+    pre {
+        margin-top: 0;
+        overflow-x: scroll;
+    }
+}
+
+/* Astrum HTML Code Sample
 ----------------------------------- */
 
-#group-breakpoints {
-    .ndpl-component__sample {
-        code {
-            border: 1px solid $color-grey-medium;
-            border-radius: $unit / 2;
-            color: $color-black;
-            display: inline-block;
-            font-size: $fontsize-small;
-            margin-bottom: $unit;
-            padding: $unit;
+#group-layout-component-bereich {
+    .ndpl-component__container {
+        display: none;
+    }
+}
+
+#group-margins,
+#group-colors,
+#group-shadows {
+    .ndpl-component__code,
+    .ndpl-component__code-toggle {
+        display: none;
+    }
+}
+
+#group-margins-component-elemente {
+    .ndpl-component__container,
+    .ndpl-component__sample-hidden {
+        display: none;
+    }
+}
+
+.ndpl-component__code .ndpl-code {
+    display: block;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+/* Astrum Description & Samples - images
+----------------------------------- */
+
+.ndpl-group__description,
+.ndpl-component__description,
+#group-images .ndpl-component__sample {
+    img[src*=".svg"] {
+        margin-bottom: -2px;
+    }
+}
+
+/* Astrum Magic Margins
+----------------------------------- */
+
+.ndpl-component__container {
+    .margin-helper,
+    .margin-helper-2,
+    .margin-helper-3,
+    .padding-helper-3 {
+        opacity: 0;
+        transition: opacity 0.3s ease 0.15s;
+    }
+
+    .margin-helper,
+    .margin-helper-2,
+    .margin-helper-3 {
+        @include bg-stripes(#FFA500);
+    }
+
+    .padding-helper {
+        @include bg-stripes(#618F30);
+    }
+
+    &:hover {
+        .padding-helper,
+        .margin-helper,
+        .margin-helper-2,
+        .margin-helper-3 {
+            opacity: 1;
         }
     }
 }
 
-/* Grid enhancements
+#group-typography {
+    .margin-helper {
+        height: $unit * 4;
+        margin-top: -($unit * 4);
+    }
+
+    .margin-helper-2 {
+        height: $unit * 2;
+        margin-top: -($unit * 2);
+    }
+
+    .margin-helper-3 {
+        height: $unit;
+        margin-top: -($unit);
+    }
+}
+
+/* Container hints base
+----------------------------------- */
+
+#group-typography,
+#group-forms,
+#group-links,
+#group-buttons,
+#group-pagination {
+    .ndpl-component__container {
+        background: $color-white;
+        position: relative;
+
+        @media screen and (min-width: 1025px) {
+            @include ds-border-radius;
+        }
+
+        &:before {
+            color: $color-grey-dark;
+            display: block;
+            font-size: 12px;
+            position: absolute;
+            top: 5px;
+            right: 6px;
+        }
+    }
+
+    div[class*="component__sample"] {
+        background: transparent;
+        z-index: 1;
+    }
+}
+
+#group-typography,
+#group-forms,
+#group-links,
+#group-pagination {
+    .ndpl-component__container {
+        &:before {
+            transition: opacity 0.3s ease;
+            opacity: 1;
+        }
+
+        &:hover {
+            &:before {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+// typography
+
+#group-typography {
+    .ndpl-component__container {
+        &:before {
+            content: 'Hover over this container to see the baseline grid and margins.';
+        }
+
+        &:hover {
+            div[class*="component__sample"] {
+                &:before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+// links
+
+#group-links {
+    .ndpl-component__container {
+        &:before {
+            content: 'Hover over the Links to see them in action.';
+        }
+    }
+}
+
+// buttons
+
+#group-buttons {
+    .ndpl-component__container {
+        &:before {
+            content: 'Hover & click to see interactive states.';
+        }
+    }
+}
+
+/* Grid
 ----------------------------------- */
 
 #group-grid-component-grid-base {
@@ -353,7 +593,7 @@ html {
     }
 }
 
-/* Layout Bereiche enhancements
+/* Layout
 ----------------------------------- */
 
 #group-layout {
@@ -362,7 +602,7 @@ html {
     }
 }
 
-/* Colours enhancements
+/* Colours
 ----------------------------------- */
 
 .ndpl-component__color-container {
@@ -374,117 +614,27 @@ html {
     margin-bottom: $unit * 3;
 }
 
-#group-colors {
-    .ndpl-component__sample {
-        code {
-            border: 1px solid $color-grey-medium;
-            border-radius: $unit / 2;
-            color: $color-black;
-            display: inline-block;
-            font-size: $fontsize-small;
-            margin-bottom: $unit;
-            padding: $unit;
-        }
-
-        small {
-            color: $color-grey-dark;
-
-            code {
-                display: inline-block;
-                font-size: $fontsize-small;
-            }
-        }
-    }
-}
-
 .ndpl-component__color {
     @include media-breakpoint-to(m) {
         padding: ($unit * 6) 0;
     }
+
+    &:first-of-type {
+        margin-bottom: $unit;
+    }
 }
 
-.ndpl-component__color:first-of-type {
-    margin-bottom: $unit;
-}
-
-/* Border-Radius
+/* Typography
 ----------------------------------- */
-
-.content-box,
-#group-images img,
-#group-media-block img,
-#group-links img,
-#group-grid-component-grid-float .ndpl-component__container span,
-.ndpl-component__color:first-of-type:last-of-type,
-#group-carousel-component-indicators .slides-container img {
-    @include ds-border-radius;
-}
-
-/* Container hints
------------------------------------ */
-
-#group-typography,
-#group-forms,
-#group-links,
-#group-buttons,
-#group-pagination {
-    .ndpl-component__container {
-        background: $color-white;
-        position: relative;
-
-        @media screen and (min-width: 1025px) {
-            @include ds-border-radius;
-        }
-
-        &:before {
-            color: $color-grey-dark;
-            display: block;
-            font-size: 12px;
-            position: absolute;
-            top: 5px;
-            right: 6px;
-        }
-    }
-
-    div[class*="component__sample"] {
-        background: transparent;
-        z-index: 1;
-    }
-}
-
-#group-typography,
-#group-forms,
-#group-links,
-#group-pagination {
-    .ndpl-component__container {
-        &:before {
-            transition: opacity 0.3s ease;
-            opacity: 1;
-        }
-
-        &:hover {
-            &:before {
-                opacity: 0;
-            }
-        }
-    }
-}
-
-/* Typography enhancements
------------------------------------ */
-
-#group-links {
-    .ndpl-component__container {
-        &:before {
-            content: 'Hover over the Links to see them in action.';
-        }
-    }
-}
 
 #group-typography {
     .ndpl-component__container {
-        &:before {
-            content: 'Hover over this container to see the Baseline Grid.';
+        &:hover {
+            div[class*="component__sample"] {
+                h1, h2, h3, h4, h5, p, small, .ds-text-small {
+                    background-color: rgba(#d9d5d0, 0.35);
+                }
+            }
         }
     }
 
@@ -508,23 +658,9 @@ html {
             transition: background-color 0.3s ease 0.15s;
         }
     }
-
-    .ndpl-component__container {
-        &:hover {
-            div[class*="component__sample"] {
-                &:before {
-                    opacity: 1;
-                }
-
-                h1, h2, h3, h4, h5, p, small, .ds-text-small {
-                    background-color: rgba(#d9d5d0, 0.35);
-                }
-            }
-        }
-    }
 }
 
-/* Forms enhancements
+/* Forms
 ----------------------------------- */
 
 #group-forms {
@@ -604,18 +740,6 @@ html {
     }
 }
 
-/* Button enhancements
------------------------------------ */
-
-#group-buttons {
-    .ndpl-component__container {
-        &:before {
-            content: 'Hover & click to see interactive states.';
-        }
-    }
-}
-
-
 /* Tables
 ----------------------------------- */
 
@@ -627,125 +751,6 @@ th {
 
 td {
     border-top: 1px solid $color-grey-light;
-}
-
-
-/* Magic Margins
------------------------------------ */
-
-#group-typography,
-#group-pagination {
-    .ndpl-component__container {
-        &:before {
-            content: 'Hover over this container to see the margins.';
-        }
-    }
-}
-
-.ndpl-component__container {
-    .margin-helper,
-    .margin-helper-2,
-    .margin-helper-3,
-    .padding-helper-3 {
-        opacity: 0;
-        transition: opacity 0.3s ease 0.15s;
-    }
-
-    .margin-helper,
-    .margin-helper-2,
-    .margin-helper-3 {
-        background-image: linear-gradient(135deg, rgba(255, 165, 0, 0.1) 25%, rgba(255, 165, 0, 0.3) 25%, rgba(255, 165, 0, 0.3) 50%, rgba(255, 165, 0, 0.1) 50%, rgba(255, 165, 0, 0.1) 75%, rgba(255, 165, 0, 0.3) 75%, rgba(255, 165, 0, 0.3) 100%);
-        background-size: 22.63px 22.63px;
-    }
-
-    .padding-helper {
-        background-image: linear-gradient(135deg, rgba(97, 143, 48, 0.1) 25%, rgba(97, 143, 48, 0.3) 25%, rgba(97, 143, 48, 0.3) 50%, rgba(97, 143, 48, 0.1) 50%, rgba(97, 143, 48, 0.1) 75%, rgba(97, 143, 48, 0.3) 75%, rgba(97, 143, 48, 0.3) 100%);
-        background-size: 22.63px 22.63px;
-    }
-
-    &:hover {
-        .padding-helper,
-        .margin-helper,
-        .margin-helper-2,
-        .margin-helper-3 {
-            opacity: 1;
-        }
-    }
-}
-
-#group-typography {
-    .margin-helper {
-        height: $unit * 4;
-    }
-
-    .margin-helper-2 {
-        height: $unit * 2;
-    }
-
-    .margin-helper-3 {
-        height: $unit;
-    }
-}
-
-#group-pagination {
-    .margin-box {
-        height: 160px;
-        position: relative;
-    }
-
-    .content-helper {
-        background: $color-white;
-        height: 128px;
-        opacity: 1;
-        position: absolute;
-        left: $unit * 2;
-        top: $unit * 2;
-        width: calc(100% - #{$unit * 4});
-    }
-}
-
-#group-typography {
-    .margin-helper {
-        margin-top: -($unit * 4);
-    }
-
-    .margin-helper-2 {
-        margin-top: -($unit * 2);
-    }
-
-    .margin-helper-3 {
-        margin-top: -($unit);
-    }
-
-    .padding-helper {
-        height: 100%;
-    }
-}
-
-#group-pagination {
-    ul {
-        position: relative;
-    }
-
-    .padding-helper {
-        height: $unit * 4;
-        position: absolute;
-        width: 100%;
-    }
-
-    .padding-helper-1 {
-        top: 0;
-    }
-
-    .padding-helper-2 {
-        bottom: 0;
-    }
-}
-
-#group-layout-component-bereich {
-    .ndpl-component__container {
-        display: none;
-    }
 }
 
 /* media-block
@@ -765,64 +770,6 @@ td {
     }
 }
 
-/* helpers
------------------------------------ */
-
-.content-box-wrapper {
-    margin-bottom: $unit * 2
-}
-
-.content-box {
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-    padding: $unit * 2;
-
-    &.margin-box {
-        padding: 0;
-    }
-}
-
-.grid-float-helper-red {
-    background-image: linear-gradient(135deg, rgba(214, 1, 1, 0.1) 25%, rgba(214, 1, 1, 0.3) 25%, rgba(214, 1, 1, 0.3) 50%, rgba(214, 1, 1, 0.1) 50%, rgba(214, 1, 1, 0.1) 75%, rgba(214, 1, 1, 0.3) 75%, rgba(214, 1, 1, 0.3) 100%);
-    background-size: 22.63px 22.63px;
-}
-
-.grid-float-helper-green {
-    background-image: linear-gradient(135deg, rgba(74, 222, 98, 0.1) 25%, rgba(74, 222, 98, 0.3) 25%, rgba(74, 222, 98, 0.3) 50%, rgba(74, 222, 98, 0.1) 50%, rgba(74, 222, 98, 0.1) 75%, rgba(74, 222, 98, 0.3) 75%, rgba(74, 222, 98, 0.3) 100%);
-    background-size: 22.63px 22.63px;
-}
-
-.grid-float-helper-blue {
-    background-image: linear-gradient(135deg, rgba(74, 167, 222, 0.1) 25%, rgba(74, 167, 222, 0.3) 25%, rgba(74, 167, 222, 0.3) 50%, rgba(74, 167, 222, 0.1) 50%, rgba(74, 167, 222, 0.1) 75%, rgba(74, 167, 222, 0.3) 75%, rgba(74, 167, 222, 0.3) 100%);
-    background-size: 22.63px 22.63px;
-}
-
-/* Code Samples
------------------------------------ */
-
-#group-margins,
-#group-colors,
-#group-shadows {
-    .ndpl-component__code,
-    .ndpl-component__code-toggle {
-        display: none;
-    }
-}
-
-#group-margins-component-elemente {
-    .ndpl-component__container,
-    .ndpl-component__sample-hidden {
-        display: none;
-    }
-}
-.ndpl-component__code .ndpl-code {
-    max-height: 500px;
-    overflow: scroll;
-}
-
-.ndpl-component__code .ndpl-code {
-    display: block;
-}
-
 /* Text Truncation enhancements
 ----------------------------------- */
 
@@ -834,6 +781,7 @@ td {
 
 /* Slider example
 ----------------------------------- */
+
 #group-carousel-component-indicators {
     .slides-container {
         height: auto;
@@ -853,13 +801,6 @@ td {
     }
 }
 
-.ndpl-component__container {
-    pre {
-        margin-top: 0;
-        overflow-x: scroll;
-    }
-}
-
 /* Recipe Integration
 ----------------------------------- */
 
@@ -872,13 +813,8 @@ td {
     }
 }
 
-.ndpl-component__description {
-    p:last-child {
-        margin-bottom: $unit * 2;
-    }
-}
-
-/* Tags */
+/* Tags
+----------------------------------- */
 
 #group-tags-component-tags {
     .ndpl-component__sample {
