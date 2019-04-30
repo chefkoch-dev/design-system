@@ -43,7 +43,7 @@ $container-m-min: $screen-m;
 
 	@include media-breakpoint-from(m) {
 		padding: 0 $gutter-half-big;
-		width: $container-m-min;
+		max-width: $container-m-min;
 	}
 }
 
