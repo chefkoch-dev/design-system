@@ -860,4 +860,47 @@ td {
     }
 }
 
+/* Recipe Integration
+----------------------------------- */
+
+#group-recipe-component-recipe-integration {
+    .ds-grid {
+        @include media-breakpoint-to(s) {
+            margin: 0 auto;
+            max-width: 584px;
+        }
+    }
+}
+
+.ndpl-component__description {
+    p:last-child {
+        margin-bottom: $unit * 2;
+    }
+}
+
+/* Tags */
+
+#group-tags-component-tags {
+    .ndpl-component__sample {
+        @include media-breakpoint-to(xs) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .i-amphtml-scrollable-carousel-container {
+        overflow-x: auto!important;
+        overflow-y: hidden!important;
+        white-space: nowrap!important;
+    }
+
+    .amp-carousel-button {
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        visibility: visible;
+    }
+}
+
 /* stylelint-enable */

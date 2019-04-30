@@ -15,24 +15,20 @@ $screen-m: 960px + 312px + 48px;
 @import "../app/components/grid/flexbox-grid-rebel";
 // typography's settings using base vars
 @import "../app/components/typography/typography";
-
+@import "../components/dsy-utilities";
+@import "../app/components/utilities/text-truncation-utilities";
 @import "../app/components/colors/colors";
 
-@import "../components/dsy-utilities";
 @import "../components/layout";
-
-@import "../app/components/buttons/buttons";
-
+@import "../app/components/media-block/media-block";
 @import "../app/components/links/links";
 @import "../app/components/icons/icons";
-@import "../app/components/media-block/media-block";
 @import "../app/components/pagination/pagination";
-@import "../app/components/pills/pills";
-@import "../app/components/rating-stars/rating-stars";
+@import "../app/components/tags/tags";
 @import "../app/components/recipe/recipe-meta";
-
-@import "../app/components/alerts/note";
-@import "../app/components/tabs/tabs";
+@import "../app/components/recipe/recipe-integration";
+@import "../app/components/rating-stars/rating-stars";
+@import "../app/components/buttons/buttons";
 @import "../app/components/forms/forms-base";
 @import "../app/components/forms/forms-input";
 @import "../app/components/forms/forms-cb-rb";
@@ -41,9 +37,12 @@ $screen-m: 960px + 312px + 48px;
 @import "../app/components/social-media/social-media-buttons";
 @import "../app/components/social-media/amp-social-share";
 @import "../app/components/carousel/indicators";
+@import "../app/components/carousel/indicators-amp";
+
+@import "../app/components/alerts/note";
+@import "../app/components/tabs/tabs";
 
 
 // custom astrum UI enhancements
 @import "astrum-theming";
 
-@import "../app/components/utilities/text-truncation-utilities";

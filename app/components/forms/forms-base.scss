@@ -12,3 +12,10 @@ legend {
     margin-bottom: $unit * 2;
 }
 
+input,
+select,
+label,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
