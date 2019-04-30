@@ -5,6 +5,11 @@
 
 /* stylelint-disable  */
 
+@mixin bg-stripes($color) {
+    background-image: linear-gradient(135deg, rgba($color, 0.1) 25%, rgba($color, 0.3) 25%, rgba($color, 0.3) 50%, rgba($color, 0.1) 50%, rgba($color, 0.1) 75%, rgba($color, 0.3) 75%, rgba($color, 0.3) 100%);
+    background-size: 22.63px 22.63px;
+}
+
 html {
     min-width: 320px;
 }
@@ -289,34 +294,6 @@ html {
     .ndpl-component__sample {
         padding-left: 0;
         padding-right: 0;
-        text-align: center;
-
-        .ds-container {
-            // for presentation purposes only
-            &.ds-grid-xxs {
-                @include media-breakpoint-to(m) {
-                    padding: 0 $gutter-half-small;
-                    padding-top: $unit;
-
-                    [class*="col-xs"] {
-                        padding-right: $gutter-half-small;
-                        padding-left: $gutter-half-small;
-                    }
-                }
-            }
-
-            &.ds-grid-xs {
-                @include media-breakpoint-between(xs,m) {
-                    padding: 0 $gutter-half-std;
-                    padding-top: $unit;
-
-                    [class*="col-xs"] {
-                        padding-right: $gutter-half-std;
-                        padding-left: $gutter-half-std;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -326,7 +303,7 @@ html {
         background: $color-white;
     }
 
-    .grid-float-helper-red {
+    .bg-stripes-red {
         margin: $unit / 2 0;
     }
 }
@@ -786,19 +763,16 @@ td {
     }
 }
 
-.grid-float-helper-red {
-    background-image: linear-gradient(135deg, rgba(214, 1, 1, 0.1) 25%, rgba(214, 1, 1, 0.3) 25%, rgba(214, 1, 1, 0.3) 50%, rgba(214, 1, 1, 0.1) 50%, rgba(214, 1, 1, 0.1) 75%, rgba(214, 1, 1, 0.3) 75%, rgba(214, 1, 1, 0.3) 100%);
-    background-size: 22.63px 22.63px;
+.bg-stripes-red {
+    @include bg-stripes(#d60101);
 }
 
-.grid-float-helper-green {
-    background-image: linear-gradient(135deg, rgba(74, 222, 98, 0.1) 25%, rgba(74, 222, 98, 0.3) 25%, rgba(74, 222, 98, 0.3) 50%, rgba(74, 222, 98, 0.1) 50%, rgba(74, 222, 98, 0.1) 75%, rgba(74, 222, 98, 0.3) 75%, rgba(74, 222, 98, 0.3) 100%);
-    background-size: 22.63px 22.63px;
+.bg-stripes-green {
+    @include bg-stripes(#4ade62);
 }
 
-.grid-float-helper-blue {
-    background-image: linear-gradient(135deg, rgba(74, 167, 222, 0.1) 25%, rgba(74, 167, 222, 0.3) 25%, rgba(74, 167, 222, 0.3) 50%, rgba(74, 167, 222, 0.1) 50%, rgba(74, 167, 222, 0.1) 75%, rgba(74, 167, 222, 0.3) 75%, rgba(74, 167, 222, 0.3) 100%);
-    background-size: 22.63px 22.63px;
+.bg-stripes-blue {
+    @include bg-stripes(#136BDE);
 }
 
 /* Code Samples
