@@ -620,6 +620,18 @@ html {
     }
 }
 
+#group-colors {
+    .ndpl-component__sample {
+        code {
+            margin-bottom: $unit * 2;
+        }
+
+        code + p {
+            margin-bottom: $unit;
+        }
+    }
+}
+
 /* Typography
 ----------------------------------- */
 
