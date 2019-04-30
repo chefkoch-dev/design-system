@@ -45,6 +45,10 @@
         flex-wrap: wrap;
     }
 
+    li {
+        margin: 0 2.5px;
+    }
+
     i {
         font-size: 26px;
     }
@@ -54,8 +58,6 @@
 --------------------------------------------- */
 
 .ds-page-item {
-    margin: 0 2.5px;
-
     &.ds-disabled {
         @extend %pagination-item-box;
         color: $color-grey-light;
