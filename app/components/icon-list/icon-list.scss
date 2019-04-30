@@ -1,0 +1,29 @@
+.ds-icon-list {
+    @extend .ds-list-plain; // stylelint-disable-line at-rule-blacklist
+
+    li + li {
+        margin-top: $unit * 2;
+    }
+
+    a {
+        @extend .ds-target-link; // stylelint-disable-line at-rule-blacklist
+        display: flex;
+        align-items: flex-start;
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+
+            span {
+                color: $color-corporate-green-dark;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    i {
+        color: $color-corporate-green;
+        font-size: 20px;
+        margin: 3px $unit 0 0;
+    }
+}
