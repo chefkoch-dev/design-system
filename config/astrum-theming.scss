@@ -610,10 +610,6 @@ html {
     margin: 0;
 }
 
-.cds-color-wrapper {
-    margin-bottom: $unit * 3;
-}
-
 .ndpl-component__color {
     @include media-breakpoint-to(m) {
         padding: ($unit * 6) 0;
