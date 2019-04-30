@@ -35,11 +35,11 @@
 --------------------------------------------- */
 
 .ds-pagination {
+    @extend .ds-list-plain;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0;
-    padding: ($unit * 4) 0 0;
 
     @media screen and (max-width: 414px) {
         flex-wrap: wrap;
@@ -54,7 +54,6 @@
 --------------------------------------------- */
 
 .ds-page-item {
-    list-style-type: none;
     margin: 0 2.5px;
 
     &.ds-disabled {
