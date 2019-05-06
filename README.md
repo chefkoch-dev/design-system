@@ -31,18 +31,17 @@ your build pipeline.
 **Integration in the pipeline, example with gulp and gulp-sass**
 
     sass({
-        includePaths: ['node_modules/chefkoch-design-system/patterns/']
+        includePaths: ['node_modules/chefkoch-design-system/components/']
     })
 
-**Import the desired pattern in your sass file**
+**Import the desired pattern(s) in your sass file**
 
-Ein Pattern aus dem Design-System muss erst per scss eingebunden werden:
-
-    @import 'button/button'
+    @import "~chefkoch-design-system/components/button";
+    @import "~chefkoch-design-system/components/button-primary";
 
 **Use the imported component in your markup**
 
-    <button class="ds-button ds-button--standard">Button-Element als Button</button>
+    <button class="ds-btn ds-btn-primary">Primary Button</button>
 
 
 ## Contributing
