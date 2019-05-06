@@ -107,6 +107,11 @@
                     "group": "grid",
                     "name": "grid-offset",
                     "title": "Grid Offset"
+                },
+                {
+                    "group": "grid",
+                    "name": "baseline-grid",
+                    "title": "Baseline Grid"
                 }
             ]
         },
