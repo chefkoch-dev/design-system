@@ -529,8 +529,7 @@ html {
     }
 }
 
-#group-grid-component-grid-base,
-#group-grid-component-grid-offset {
+#group-grid-component-grid-base {
     .ds-grid {
         background: $color-bg-content;
         padding-bottom: $unit;
@@ -538,6 +537,12 @@ html {
         &:last-child {
             padding-bottom: 0;
         }
+    }
+}
+
+#group-grid-component-grid-offset {
+    [class^="ds-col"] {
+        background: $color-bg-content;
     }
 }
 
