@@ -3,6 +3,8 @@ Tags können entweder als Link fungieren oder als Filter des Contents.
 ### Darstellung & Code
 Sie können als Liste in der Kontextspalte oder als (AMP-)Carousel im Content dargestellt werden.
 
+⚠ Die Tags bedienen sich per `@extend` der Styles der ds-utility Klasse `.ds-list-plain`. Bei der Darstellung als Liste statt Carousel werden zusätzlich die Styles der ds-utility Klasse `.ds-list-cloud` hinzugefügt. Daher ist es notwendig, die entsprechenden List Utilities im Projekt zu importieren. Siehe [List Utilities](/#group-utilities-component-list-utilities).
+
 #### Liste
 Die Darstellung als Liste erfordert im Code den Aufbau einer Liste mittels `<ul class="ds-tags">` & `<li>`. Darin befinden sich die einzelnen Tags als `<a class="ds-tag" ...>`.
 
@@ -28,3 +30,7 @@ F 14px / H 32px / M 8
     
     Original Location
     @import "~chefkoch-design-system/app/components/tags/tags";
+    
+    ⚠ Dependencies
+    List-Utilities
+    @import "~chefkoch-design-system/components/list-utilities
