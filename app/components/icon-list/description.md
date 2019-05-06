@@ -1,6 +1,6 @@
 Icon-Lists sind Listen, deren Bullets durch Material-Icons ersetzt werden. 
 
-Die Styles der Icon-List referenzieren via `@extend` die [List Utilities](#group-utilities-component-list-utilities), daher ist es notwendig, diese (falls noch nicht geschenen) ebenfalls im Projekt einzubinden.
+Die Styles der Icon-List referenzieren via `@extend` die [List Utilities](#group-utilities-component-list-utilities), daher ist es notwendig, diese (falls noch nicht geschehen) ebenfalls im Projekt einzubinden.
 
 ### Usage  
     
