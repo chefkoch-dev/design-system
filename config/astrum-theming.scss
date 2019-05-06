@@ -19,6 +19,11 @@ html {
     background-size: 22.63px 22.63px;
 }
 
+@mixin bg-stripes-grey($color) {
+    background-image: linear-gradient(135deg, rgba($color, 0.25) 25%, rgba($color, 0.5) 25%, rgba($color, 0.5) 50%, rgba($color, 0.25) 50%, rgba($color, 0.25) 75%, rgba($color, 0.5) 75%, rgba($color, 0.5) 100%);
+    background-size: 22.63px 22.63px;
+}
+
 .bg-stripes-red {
     @include bg-stripes(#d60101);
 }
@@ -32,18 +37,18 @@ html {
 }
 
 .bg-stripes-grey {
-    @include bg-stripes($color-grey-dark);
+    @include bg-stripes-grey(#CECAC3);
 }
 
 // lines
 
 @mixin baseline {
-    background-image: linear-gradient(0deg, rgba($color-grey-medium, 0.8) 6.25%, transparent 6.25%, transparent 50%, rgba($color-grey-medium, 0.8) 50%, rgba($color-grey-medium, 0.8) 56.25%, transparent 56.25%, transparent 100%);
+    background-image: linear-gradient(0deg, rgba(#CECAC3, 0.8) 6.25%, transparent 6.25%, transparent 50%, rgba(#CECAC3, 0.8) 50%, rgba(#CECAC3, 0.8) 56.25%, transparent 56.25%, transparent 100%);
     background-size: 16px 16px;
     background-position: 0 1px;
 }
 @mixin baseline-small {
-    background-image: linear-gradient(0deg, rgba($color-grey-medium, 1) 6.25%, transparent 6.25%, transparent 25%, rgba($color-grey-medium, 1) 25%, rgba($color-grey-light, 0.6) 31.25%, transparent 31.25%, transparent 50%, rgba($color-grey-medium, 1) 50%, rgba($color-grey-medium, 1) 56.25%, transparent 56.25%, transparent 75%, rgba($color-grey-light, 0.6) 75%, rgba($color-grey-light, 0.6) 81.25%, transparent 81.25%, transparent 100%);
+    background-image: linear-gradient(0deg, rgba(#CECAC3, 1) 6.25%, transparent 6.25%, transparent 25%, rgba(#CECAC3, 1) 25%, rgba(#CECAC3, 0.4) 31.25%, transparent 31.25%, transparent 50%, rgba(#CECAC3, 1) 50%, rgba(#CECAC3, 1) 56.25%, transparent 56.25%, transparent 75%, rgba(#CECAC3, 0.4) 75%, rgba(#CECAC3, 0.4) 81.25%, transparent 81.25%, transparent 100%);
     background-size: 16px 16px;
     background-position: 0 1px;
 }
