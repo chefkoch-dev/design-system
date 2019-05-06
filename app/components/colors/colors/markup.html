@@ -1,5 +1,5 @@
-<div class="ds-grid">
-    <div class="cds-color-wrapper ds-col-xs-12 ds-col-s-6 ds-col-m-6">
+<div class="ds-grid ds-row ds-box">
+    <div class="ds-box ds-col-xs-12 ds-col-s-6 ds-col-m-6">
         <div class="ndpl-component__color-container">
             <div class="ndpl-component__color" style="background-color: #618F30;">
                 <div>#618F30</div>
@@ -8,11 +8,11 @@
         <div class="cds-color-description">
             <h3>Corporate Green</h3>
             <code>$color-corporate-green</code>
-            <p>Fläche (Button), Logo</p>
+            <small>Fläche (Button), Logo</small>
         </div>
     </div>
 
-    <div class="cds-color-wrapper ds-col-xs-12 ds-col-s-6 ds-col-m-6">
+    <div class="ds-box ds-col-xs-12 ds-col-s-6 ds-col-m-6">
         <div class="ndpl-component__color-container">
             <div class="ndpl-component__color" style="background-color: #537A29;">
                 <div>#537A29</div>
@@ -21,13 +21,17 @@
         <div class="cds-color-description">
             <h3>Corporate Green Dark</h3>
             <code>$color-corporate-green-dark</code>
-            <p>Texte (links, Button invertiert)</p>
+            <small>Texte (links, Button)</small>
         </div>
+    </div>
+
+    <div class="ds-col-xs-12 ds-col-s-12 ds-col-m-12">
+        <hr class="ds-hr" />
     </div>
 </div>
 
-<div class="ds-grid">
-    <div class="cds-color-wrapper ds-col-xs-12 ds-col-s-6 ds-col-m-4">
+<div class="ds-grid ds-row ds-box">
+    <div class="ds-box ds-col-xs-12 ds-col-s-6 ds-col-m-4">
         <div class="ndpl-component__color-container">
             <div class="ndpl-component__color" style="background-color: #403B3B;">
                 <div>#403B3B</div>
@@ -36,11 +40,13 @@
         <div class="cds-color-description">
             <h3>Black</h3>
             <code>$color-black</code>
-            <p>Standard Textfarbe</p>
+            <p>Text uses:</p>
+            <code>$color-text</code>
+            <small>Standard Textfarbe</small>
         </div>
     </div>
 
-    <div class="cds-color-wrapper ds-col-xs-12 ds-col-s-6 ds-col-m-4">
+    <div class="ds-box ds-col-xs-12 ds-col-s-6 ds-col-m-4">
         <div class="ndpl-component__color-container">
             <div class="ndpl-component__color" style="background-color: rgb(157, 157, 157);">
                 <div>#9D9D9D</div>
@@ -49,11 +55,11 @@
         <div class="cds-color-description">
             <h3>Grey Dark</h3>
             <code>$color-grey-dark</code>
-            <p>Für kurzen Text & deaktiviert Status</p>
+            <small>Für kurzen Text & deaktiviert Status</small>
         </div>
     </div>
 
-    <div class="cds-color-wrapper ds-col-xs-12 ds-col-s-6 ds-col-m-4">
+    <div class="ds-box ds-col-xs-12 ds-col-s-6 ds-col-m-4">
         <div class="ndpl-component__color-container">
             <div class="ndpl-component__color" style="background-color: rgb(187, 185, 185);">
                 <div>#BBB9B9</div>
@@ -62,11 +68,11 @@
         <div class="cds-color-description">
             <h3>Grey Medium</h3>
             <code>$color-grey-medium</code>
-            <p>Für Icons und Fläche</p>
+            <small>Für Icons und Fläche</small>
         </div>
     </div>
 
-    <div class="cds-color-wrapper ds-col-xs-12 ds-col-s-6 ds-col-m-4">
+    <div class="ds-box ds-col-xs-12 ds-col-s-6 ds-col-m-4">
         <div class="ndpl-component__color-container">
             <div class="ndpl-component__color" style="background-color: rgb(216, 216, 216);">
                 <div class="ndpl-dark-text">#D8D8D8</div>
@@ -75,11 +81,11 @@
         <div class="cds-color-description">
             <h3>Grey Light</h3>
             <code>$color-grey-light</code>
-            <p>Linien, Umrandung etc.</p>
+            <small>Linien, Umrandung etc.</small>
         </div>
     </div>
 
-    <div class="cds-color-wrapper ds-col-xs-12 ds-col-s-6 ds-col-m-4">
+    <div class="ds-box ds-col-xs-12 ds-col-s-6 ds-col-m-4">
         <div class="ndpl-component__color-container">
             <div class="ndpl-component__color ndpl-apply-border ndpl-c-border" style="background-color: #F6F5F2;">
                 <div class="ndpl-dark-text">#F6F5F2</div>
@@ -88,11 +94,13 @@
         <div class="cds-color-description">
             <h3>Background Sand</h3>
             <code>$color-sand</code>
-            <p>Body Background Color</p>
+            <p>Background uses:</p>
+            <code>$color-bg</code>
+            <small>Body Background Color</small>
         </div>
     </div>
 
-    <div class="cds-color-wrapper ds-col-xs-12 ds-col-s-6 ds-col-m-4">
+    <div class="ds-box ds-col-xs-12 ds-col-s-6 ds-col-m-4">
         <div class="ndpl-component__color-container">
             <div class="ndpl-component__color ndpl-apply-border ndpl-c-border" style="background-color: #FFF;">
                 <div class="ndpl-dark-text">#FFF</div>
@@ -101,11 +109,21 @@
         <div class="cds-color-description">
             <h3>Background White</h3>
             <code>$color-white</code>
-            <p>Content Background Color</p>
+            <p>Background uses:</p>
+            <code>$color-bg-content</code>
+            <p>White text uses:</p>
+            <code>$color-text-inverted</code>
+            <small>Content Background Color</small>
         </div>
     </div>
 
-    <div class="cds-color-wrapper ds-col-xs-12 ds-col-s-6 ds-col-m-4">
+    <div class="ds-col-xs-12 ds-col-s-12 ds-col-m-12">
+        <hr class="ds-hr" />
+    </div>
+</div>
+
+<div class="ds-grid ds-row">
+    <div class="ds-box ds-col-xs-12 ds-col-s-6 ds-col-m-3">
         <div class="ndpl-component__color-container">
             <div class="ndpl-component__color" style="background-color: rgb(191, 83, 141);">
                 <div>#BF538D</div>
@@ -114,11 +132,11 @@
         <div class="cds-color-description">
             <h3>Action Color</h3>
             <code>$color-purple</code>
-            <p>Kennzeichnet Aktionen (nur innerhalb des Profilbereichs)</p>
+            <small>Kennzeichnet Aktionen (nur innerhalb des Profilbereichs)</small>
         </div>
     </div>
 
-    <div class="cds-color-wrapper ds-col-xs-12 ds-col-s-6 ds-col-m-4">
+    <div class="ds-box ds-col-xs-12 ds-col-s-6 ds-col-m-3">
         <div class="ndpl-component__color-container">
             <div class="ndpl-component__color" style="background-color: rgb(0, 124, 140);">
                 <div>#007C8C</div>
@@ -127,11 +145,11 @@
         <div class="cds-color-description">
             <h3>Info Blue</h3>
             <code>$color-blue</code>
-            <p>für reine Info-Mitteilungen</p>
+            <small>für reine Info-Mitteilungen</small>
         </div>
     </div>
 
-    <div class="cds-color-wrapper ds-col-xs-12 ds-col-s-6 ds-col-m-4">
+    <div class="ds-box ds-col-xs-12 ds-col-s-6 ds-col-m-3">
         <div class="ndpl-component__color-container">
             <div class="ndpl-component__color" style="background-color: #EBC315;">
                 <div>#EBC315</div>
@@ -140,13 +158,13 @@
         <div class="cds-color-description">
             <h3>Info Yellow</h3>
             <code>$color-yellow</code>
-            <p>für Sterne und Warnungs-Mitteilungen<br/>(nur für minimalen Einsatz da
+            <small>für Sterne und Warnungs-Mitteilungen<br/>(nur für minimalen Einsatz da
                 nicht
-                barrierefrei, Ratio: 1.7)</p>
+                barrierefrei, Ratio: 1.7)</small>
         </div>
     </div>
 
-    <div class="cds-color-wrapper ds-col-xs-12 ds-col-s-6 ds-col-m-4">
+    <div class="ds-box ds-col-xs-12 ds-col-s-6 ds-col-m-3">
     <div class="ndpl-component__color-container">
         <div class="ndpl-component__color" style="background-color: rgb(255, 102, 94);">
             <div>#FF665E</div>
@@ -155,7 +173,7 @@
     <div class="cds-color-description">
         <h3>Info Red</h3>
         <code>$color-red</code>
-        <p>für Error-Mitteilungen / auch für VideoFlag<br/>(nur für minimalen Einsatz da nicht barrierefrei)</p>
+        <small>für Error-Mitteilungen / auch für VideoFlag<br/>(nur für minimalen Einsatz da nicht barrierefrei)</small>
     </div>
 </div>
 </div>

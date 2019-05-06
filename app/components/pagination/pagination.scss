@@ -19,7 +19,7 @@
 }
 
 %pagination-dot-type {
-    color: $color-white;
+    color: $color-text-inverted;
     text-decoration: none;
 }
 
@@ -35,14 +35,18 @@
 --------------------------------------------- */
 
 .ds-pagination {
+    @extend .ds-list-plain;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0;
-    padding: ($unit * 4) 0 0;
 
     @media screen and (max-width: 414px) {
         flex-wrap: wrap;
+    }
+
+    li {
+        margin: 0 2.5px;
     }
 
     i {
@@ -54,9 +58,6 @@
 --------------------------------------------- */
 
 .ds-page-item {
-    list-style-type: none;
-    margin: 0 2.5px;
-
     &.ds-disabled {
         @extend %pagination-item-box;
         color: $color-grey-light;
