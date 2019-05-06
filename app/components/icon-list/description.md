@@ -9,3 +9,7 @@ Die Styles der Icon-List referenzieren via `@extend` die [List Utilities](#group
     
     Original Location
     @import "~chefkoch-design-system/app/components/icon-list/icon-list";
+    
+    ⚠ Dependencies
+    List-Utilities
+    @import "~chefkoch-design-system/components/list-utilities";
