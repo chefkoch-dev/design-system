@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v5.0.4",
+            "library_title": "v5.1.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -329,6 +329,17 @@
                     "group": "utilities",
                     "name": "breakpoint-utilities",
                     "title": "Breakpoint Utilities"
+                }
+            ]
+        },
+        {
+            "name": "icon-list",
+            "title": "Icon List",
+            "components": [
+                {
+                    "group": "icon-list",
+                    "name": "icon-list",
+                    "title": "Icon List"
                 }
             ]
         },
