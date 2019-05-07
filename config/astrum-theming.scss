@@ -34,6 +34,7 @@ html {
 // border-radius
 
 .content-box,
+.content-placeholder-box,
 #group-images img,
 #group-media-block img,
 #group-links img,
@@ -348,7 +349,10 @@ html {
     }
 }
 
-#group-margins,
+#group-margins-component-bereich,
+#group-margins-component-modul,
+#group-margins-component-aside,
+#group-margins-component-komplexes-modul,
 #group-colors,
 #group-shadows {
     .ndpl-component__code,
@@ -388,6 +392,7 @@ html {
     .margin-helper,
     .margin-helper-2,
     .margin-helper-3,
+    .padding-helper,
     .padding-helper-3 {
         opacity: 0;
         transition: opacity 0.3s ease 0.15s;
@@ -397,6 +402,18 @@ html {
     .margin-helper-2,
     .margin-helper-3 {
         @include bg-stripes(#FFA500);
+    }
+
+    .margin-helper {
+        height: $unit * 4;
+    }
+
+    .margin-helper-2 {
+        height: $unit * 2;
+    }
+
+    .margin-helper-3 {
+        height: $unit;
     }
 
     .padding-helper {
@@ -413,19 +430,27 @@ html {
     }
 }
 
+#group-margins-component-ds-box-hr {
+    .margin-helper,
+    .padding-helper {
+        margin-bottom: -($unit * 4);
+    }
+
+    .padding-helper {
+        height: $unit * 4;
+    }
+}
+
 #group-typography {
     .margin-helper {
-        height: $unit * 4;
         margin-top: -($unit * 4);
     }
 
     .margin-helper-2 {
-        height: $unit * 2;
         margin-top: -($unit * 2);
     }
 
     .margin-helper-3 {
-        height: $unit;
         margin-top: -($unit);
     }
 }
@@ -591,6 +616,12 @@ html {
             padding: $unit;
         }
     }
+}
+
+.content-placeholder-box {
+    background-color: $color-sand;
+    display: block;
+    padding: $unit;
 }
 
 /* Layout

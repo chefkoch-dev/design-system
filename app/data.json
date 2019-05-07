@@ -203,6 +203,11 @@
                     "name": "elemente",
                     "title": "Elemente",
                     "width": "half"
+                },
+                {
+                    "group": "margins",
+                    "name": "ds-box-hr",
+                    "title": ".ds-box & hr"
                 }
             ]
         },
