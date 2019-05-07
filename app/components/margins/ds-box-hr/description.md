@@ -3,7 +3,7 @@ Um die oben definierten Abstände immer einzuhalten und eventuelles Bearbeiten z
 ### ds-box
 
 Die Klasse `.ds-box` sichert einen Abstand nach unten (margin) von `32px`, unserem Mindestabstand zwischen Modulen.  
-Diese Klasse wird auf die wrapper-container (`article`, `section` oder `aside`) der Module gesetzt und kann mit den Grid-Klassen kombiniert oder als dessen Kind eingesetzt werden.
+Diese Klasse wird auf die Eltern Container (`article`, `section` oder `aside`) der Module gesetzt und kann mit den Grid-Klassen kombiniert oder als dessen Kind eingesetzt werden.
 
 ### hr
 Optional.  
