@@ -16,7 +16,10 @@ Aufbauend auf die Klassen `.ds-col-[1-12]`, greifen die Styles der Klassen `.ds-
 ### Gutter
 
 Wir unterscheiden 2 verschiedene Gutter:
-Das äußere Gutter (blau), welches auf `.ds-container` liegt. Und das Standard Gutter, also das der Columns (rot), welches jeweils auf den `ds-col...` Klassen liegt. Die Breiten der Gutter werden je nach breakpoint vergrößert oder verkleinert. Dies passiert alles automatisch, du musst dafür nichts tun.
+1. Das äußere Gutter (blau), welches auf `.ds-container` liegt.
+2. Das Standard Gutter, also das der Columns (rot), welches jeweils auf den `ds-col...` Klassen liegt.
+
+Die Breiten der Gutter werden je nach breakpoint vergrößert oder verkleinert. Dies passiert alles automatisch, dafür muss nichts getan werden.
 
 <hr class="ds-hr" />
 <br/>
