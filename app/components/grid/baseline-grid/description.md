@@ -10,8 +10,7 @@ So entstand unsere magic `$unit`.
 ### Vorteile
 
 Egal ob im Konzept oder Design mit Augenmaß gearbeitet wurde, durch ein Baseline Grid haben wir immer folgendes:
-- Konsistenz im Platzieren von Elementen
-- Konsistenz in den Abständen der Elemente
+- Konsistenz im Platzieren von Elementen durch geregelte Abstände
 
 Und vor allem:
 - Ausgeglichene Typografie, besonders zwischen Content und Kontext Spalten
