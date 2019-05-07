@@ -19,6 +19,11 @@ html {
     background-size: 22.63px 22.63px;
 }
 
+@mixin bg-stripes-grey($color) {
+    background-image: linear-gradient(135deg, rgba($color, 0.25) 25%, rgba($color, 0.5) 25%, rgba($color, 0.5) 50%, rgba($color, 0.25) 50%, rgba($color, 0.25) 75%, rgba($color, 0.5) 75%, rgba($color, 0.5) 100%);
+    background-size: 22.63px 22.63px;
+}
+
 .bg-stripes-red {
     @include bg-stripes(#d60101);
 }
@@ -29,6 +34,29 @@ html {
 
 .bg-stripes-blue {
     @include bg-stripes(#136BDE);
+}
+
+.bg-stripes-grey {
+    @include bg-stripes-grey(#CECAC3);
+}
+
+// lines
+
+@mixin baseline {
+    background-image: linear-gradient(0deg, rgba(#CECAC3, 0.8) 6.25%, transparent 6.25%, transparent 50%, rgba(#CECAC3, 0.8) 50%, rgba(#CECAC3, 0.8) 56.25%, transparent 56.25%, transparent 100%);
+    background-size: 16px 16px;
+    background-position: 0 1px;
+}
+@mixin baseline-small {
+    background-image: linear-gradient(0deg, rgba(#CECAC3, 1) 6.25%, transparent 6.25%, transparent 25%, rgba(#CECAC3, 1) 25%, rgba(#CECAC3, 0.4) 31.25%, transparent 31.25%, transparent 50%, rgba(#CECAC3, 1) 50%, rgba(#CECAC3, 1) 56.25%, transparent 56.25%, transparent 75%, rgba(#CECAC3, 0.4) 75%, rgba(#CECAC3, 0.4) 81.25%, transparent 81.25%, transparent 100%);
+    background-size: 16px 16px;
+    background-position: 0 1px;
+}
+
+@mixin baseline-line($size) {
+    background-image: linear-gradient(0deg, rgba(#136BDE, 0.5) 2.08%, transparent 2.08%, transparent 50%, rgba(#136BDE, 0.5) 50%, rgba(#136BDE, 0.5) 52.08%, transparent 52.08%, transparent 100%);
+    background-position: 0 1px;
+    background-size: $size $size;
 }
 
 // border-radius
@@ -615,6 +643,49 @@ html {
     background-color: $color-sand;
     display: block;
     padding: $unit;
+}
+
+#group-grid-component-baseline-grid {
+    .ndpl-component__sample {
+        .show-bl-grid {
+            @include baseline;
+
+            h2 {
+                @include baseline-line(64px);
+            }
+
+            h3,
+            p {
+                @include baseline-line(48px);
+            }
+
+            * {
+                padding-bottom: 1px;
+            }
+
+            h2 + p,
+            h3 + p,
+            h5 + p,
+            p + h5 {
+                margin-top: -1px;
+            }
+        }
+
+        aside {
+            .show-bl-grid {
+                @include baseline-small;
+
+                p,
+                h5 {
+                    @include baseline-line(40px);
+                }
+            }
+        }
+    }
+
+    .ndpl-component__code-toggle {
+        display: none;
+    }
 }
 
 /* Layout
