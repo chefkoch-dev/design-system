@@ -38,7 +38,6 @@ html {
 #group-images img,
 #group-media-block img,
 #group-links img,
-#group-grid-component-grid-float .ndpl-component__container span,
 .ndpl-component__color:first-of-type:last-of-type,
 #group-carousel-component-indicators .slides-container img {
     @include ds-border-radius;
@@ -608,12 +607,6 @@ html {
     .ndpl-component__container {
         img {
             margin-bottom: -2px;
-        }
-
-        span {
-            background-color: $color-sand;
-            display: block;
-            padding: $unit;
         }
     }
 }
