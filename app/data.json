@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v5.1.1",
+            "library_title": "v5.1.2",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -568,6 +568,11 @@
             "name": "icons",
             "title": "Icons",
             "components": [
+                {
+                    "group": "icons",
+                    "name": "material-icons",
+                    "title": "Material Icons"
+                },
                 {
                     "group": "icons",
                     "name": "schmuck-icons",
