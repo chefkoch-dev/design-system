@@ -62,10 +62,10 @@ html {
 // border-radius
 
 .content-box,
+.content-placeholder-box,
 #group-images img,
 #group-media-block img,
 #group-links img,
-#group-grid-component-grid-float .ndpl-component__container span,
 .ndpl-component__color:first-of-type:last-of-type,
 #group-carousel-component-indicators .slides-container img {
     @include ds-border-radius;
@@ -298,7 +298,7 @@ html {
 .ndpl-group__description,
 .ndpl-component__description {
     h3 {
-        font-weight: inherit;
+        font-weight: 500;
         padding-top: $unit * 2;
     }
 }
@@ -376,7 +376,10 @@ html {
     }
 }
 
-#group-margins,
+#group-margins-component-bereich,
+#group-margins-component-modul,
+#group-margins-component-aside,
+#group-margins-component-komplexes-modul,
 #group-colors,
 #group-shadows {
     .ndpl-component__code,
@@ -416,6 +419,7 @@ html {
     .margin-helper,
     .margin-helper-2,
     .margin-helper-3,
+    .padding-helper,
     .padding-helper-3 {
         opacity: 0;
         transition: opacity 0.3s ease 0.15s;
@@ -425,6 +429,18 @@ html {
     .margin-helper-2,
     .margin-helper-3 {
         @include bg-stripes(#FFA500);
+    }
+
+    .margin-helper {
+        height: $unit * 4;
+    }
+
+    .margin-helper-2 {
+        height: $unit * 2;
+    }
+
+    .margin-helper-3 {
+        height: $unit;
     }
 
     .padding-helper {
@@ -441,19 +457,27 @@ html {
     }
 }
 
+#group-margins-component-ds-box-hr {
+    .margin-helper,
+    .padding-helper {
+        margin-bottom: -($unit * 4);
+    }
+
+    .padding-helper {
+        height: $unit * 4;
+    }
+}
+
 #group-typography {
     .margin-helper {
-        height: $unit * 4;
         margin-top: -($unit * 4);
     }
 
     .margin-helper-2 {
-        height: $unit * 2;
         margin-top: -($unit * 2);
     }
 
     .margin-helper-3 {
-        height: $unit;
         margin-top: -($unit);
     }
 }
@@ -612,13 +636,13 @@ html {
         img {
             margin-bottom: -2px;
         }
-
-        span {
-            background-color: $color-sand;
-            display: block;
-            padding: $unit;
-        }
     }
+}
+
+.content-placeholder-box {
+    background-color: $color-sand;
+    display: block;
+    padding: $unit;
 }
 
 #group-grid-component-baseline-grid {
