@@ -270,8 +270,13 @@
             "components": [
                 {
                     "group": "shadows",
-                    "name": "shadows",
-                    "title": "Shadows"
+                    "name": "btn-shadows",
+                    "title": "Button Shadow"
+                },
+                {
+                    "group": "shadows",
+                    "name": "card-shadows",
+                    "title": "Card Shadow"
                 },
                 {
                     "group": "shadows",
@@ -373,6 +378,17 @@
                     "group": "media-block",
                     "name": "media-block-enhanced",
                     "title": "Media-Block Enhanced"
+                }
+            ]
+        },
+        {
+            "name": "card",
+            "title": "Card",
+            "components": [
+                {
+                    "group": "card",
+                    "name": "card",
+                    "title": "Card"
                 }
             ]
         },

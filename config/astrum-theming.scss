@@ -358,6 +358,13 @@ html {
         margin-bottom: $unit;
         padding: $unit;
     }
+
+    small {
+        code {
+            margin-bottom: 0;
+            padding: 0 $unit / 2;
+        }
+    }
 }
 
 .ndpl-component__container {

@@ -1,9 +1,6 @@
 @import "settings.social-media";
 
 .ds-social-item {
-    @include btn-shadow;
-
-    border-radius: 50%;
     background: $color-black;
     display: flex;
     align-items: center;

@@ -21,6 +21,7 @@ $screen-m: 960px + 312px + 48px;
 
 @import "../components/layout";
 @import "../app/components/media-block/media-block";
+@import "../app/components/card/card";
 @import "../app/components/links/links";
 @import "../app/components/icons/icons";
 @import "../app/components/icon-list/icon-list";
@@ -46,3 +47,4 @@ $screen-m: 960px + 312px + 48px;
 
 // custom astrum UI enhancements
 @import "astrum-theming";
+

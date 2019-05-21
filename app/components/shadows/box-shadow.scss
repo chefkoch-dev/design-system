@@ -1,11 +1,16 @@
-@mixin btn-shadow {
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+@mixin ds-box-shadow($opacityResting, $opacityLifted) {
+    box-shadow: 0 0 2px 0 rgba($color-shadow-base, $opacityResting);
 
-    &:hover {
-        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+    &:hover,
+    &:focus {
+        box-shadow: 0 0 8px 0 rgba($color-shadow-base, $opacityLifted);
     }
 
-    &:focus {
+    &:active {
         box-shadow: none;
     }
+}
+
+@mixin ds-btn-shadow {
+    @include ds-box-shadow(0.2, 0.5);
 }

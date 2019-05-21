@@ -51,5 +51,5 @@ $btn-base-value: $unit * 5;
     @include btn-reset;
     @include btn-base;
 
-    transition: background 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
+    //transition: background 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
