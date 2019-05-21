@@ -8,7 +8,7 @@
     "client_url": "http://www.chefkoch.de",
     "creators": [
         {
-            "name": "Team Funkytown Avengers",
+            "name": "Team Funkytown Avengers / Team Zen",
             "url": "http://www.chefkoch.de"
         }
     ],
@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v4.4.0",
+            "library_title": "v5.1.3",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -100,8 +100,18 @@
                 },
                 {
                     "group": "grid",
+                    "name": "grid-float",
+                    "title": "Grid Float"
+                },
+                {
+                    "group": "grid",
                     "name": "grid-offset",
                     "title": "Grid Offset"
+                },
+                {
+                    "group": "grid",
+                    "name": "baseline-grid",
+                    "title": "Baseline Grid"
                 }
             ]
         },
@@ -162,11 +172,6 @@
                     "options": {
                         "disable_code_sample": true
                     }
-                },
-                {
-                    "group": "layout",
-                    "name": "media-block",
-                    "title": "Media-Block"
                 }
             ]
         },
@@ -203,6 +208,11 @@
                     "name": "elemente",
                     "title": "Elemente",
                     "width": "half"
+                },
+                {
+                    "group": "margins",
+                    "name": "ds-box-hr",
+                    "title": ".ds-box & hr"
                 }
             ]
         },
@@ -233,6 +243,24 @@
                     "group": "colors",
                     "name": "background",
                     "title": "Background"
+                }
+            ]
+        },
+        {
+            "name": "images",
+            "title": "Images",
+            "components": [
+                {
+                    "group": "images",
+                    "name": "1zu1",
+                    "title": "1:1",
+                    "width": "half"
+                },
+                {
+                    "group": "images",
+                    "name": "3zu2",
+                    "title": "3:2",
+                    "width": "half"
                 }
             ]
         },
@@ -315,6 +343,40 @@
             ]
         },
         {
+            "name": "icon-list",
+            "title": "Icon List",
+            "components": [
+                {
+                    "group": "icon-list",
+                    "name": "icon-list",
+                    "title": "Icon List"
+                }
+            ]
+        },
+        {
+            "name": "media-block",
+            "title": "Media-Block",
+            "components": [
+                {
+                    "group": "media-block",
+                    "name": "media-block-static",
+                    "title": "Statischer Media-Block",
+                    "width": "half"
+                },
+                {
+                    "group": "media-block",
+                    "name": "media-block-dynamic",
+                    "title": "Dynamischer Media-Block",
+                    "width": "half"
+                },
+                {
+                    "group": "media-block",
+                    "name": "media-block-enhanced",
+                    "title": "Media-Block Enhanced"
+                }
+            ]
+        },
+        {
             "name": "forms",
             "title": "Formulare",
             "components": [
@@ -377,6 +439,12 @@
                 },
                 {
                     "group": "buttons",
+                    "name": "btn-box",
+                    "title": "Button Box Wrapper",
+                    "width": "half"
+                },
+                {
+                    "group": "buttons",
                     "name": "icon",
                     "title": "Icon Button"
                 },
@@ -418,6 +486,11 @@
                     "group": "links",
                     "name": "headline",
                     "title": "Headline Links"
+                },
+                {
+                    "group": "links",
+                    "name": "target",
+                    "title": "Target Links"
                 }
             ]
         },
@@ -428,12 +501,14 @@
                 {
                     "group": "carousel",
                     "name": "indicators",
-                    "title": "Indicators"
+                    "title": "Indicators",
+                    "width": "half"
                 },
                 {
                     "group": "carousel",
                     "name": "indicators-amp",
                     "title": "AMP Indicators",
+                    "width": "half",
                     "options": {
                         "disable_code_sample": true
                     }
@@ -452,18 +527,18 @@
             ]
         },
         {
-            "name": "pills",
-            "title": "Pills",
+            "name": "tags",
+            "title": "Tags",
             "components": [
                 {
-                    "group": "pills",
+                    "group": "tags",
                     "name": "tags",
-                    "title": "Tags Pill"
+                    "title": "Tags (Link)"
                 },
                 {
-                    "group": "pills",
+                    "group": "tags",
                     "name": "filter",
-                    "title": "Filter Pill"
+                    "title": "Tags (Filter)"
                 }
             ]
         },
@@ -486,6 +561,11 @@
                     "group": "recipe",
                     "name": "recipe-meta",
                     "title": "Recipe Meta"
+                },
+                {
+                    "group": "recipe",
+                    "name": "recipe-integration",
+                    "title": "Recipe Integration"
                 }
             ]
         },
@@ -493,6 +573,11 @@
             "name": "icons",
             "title": "Icons",
             "components": [
+                {
+                    "group": "icons",
+                    "name": "material-icons",
+                    "title": "Material Icons"
+                },
                 {
                     "group": "icons",
                     "name": "schmuck-icons",

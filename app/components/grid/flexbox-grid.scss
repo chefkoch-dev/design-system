@@ -82,8 +82,22 @@ $container-m-min: $screen-m;
 	}
 }
 
+.ds-grid-float {
+	@include media-breakpoint-from(m) {
+		float: left;
+	}
+}
+
+.ds-clear {
+	clear: both;
+}
+
 [class*="ds-col-"] {
 	width: 100%;
+
+	img {
+		max-width: 100%;
+	}
 }
 
 [class*="ds-col-xs"] {

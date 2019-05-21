@@ -9,7 +9,85 @@ html {
     min-width: 320px;
 }
 
-/* Astrum header / nav mobile */
+/* useful helpers
+----------------------------------- */
+
+// stripes
+
+@mixin bg-stripes($color) {
+    background-image: linear-gradient(135deg, rgba($color, 0.1) 25%, rgba($color, 0.3) 25%, rgba($color, 0.3) 50%, rgba($color, 0.1) 50%, rgba($color, 0.1) 75%, rgba($color, 0.3) 75%, rgba($color, 0.3) 100%);
+    background-size: 22.63px 22.63px;
+}
+
+@mixin bg-stripes-grey($color) {
+    background-image: linear-gradient(135deg, rgba($color, 0.25) 25%, rgba($color, 0.5) 25%, rgba($color, 0.5) 50%, rgba($color, 0.25) 50%, rgba($color, 0.25) 75%, rgba($color, 0.5) 75%, rgba($color, 0.5) 100%);
+    background-size: 22.63px 22.63px;
+}
+
+.bg-stripes-red {
+    @include bg-stripes(#d60101);
+}
+
+.bg-stripes-green {
+    @include bg-stripes(#4ade62);
+}
+
+.bg-stripes-blue {
+    @include bg-stripes(#136BDE);
+}
+
+.bg-stripes-grey {
+    @include bg-stripes-grey(#CECAC3);
+}
+
+// lines
+
+@mixin baseline {
+    background-image: linear-gradient(0deg, rgba(#CECAC3, 0.8) 6.25%, transparent 6.25%, transparent 50%, rgba(#CECAC3, 0.8) 50%, rgba(#CECAC3, 0.8) 56.25%, transparent 56.25%, transparent 100%);
+    background-size: 16px 16px;
+    background-position: 0 1px;
+}
+@mixin baseline-small {
+    background-image: linear-gradient(0deg, rgba(#CECAC3, 1) 6.25%, transparent 6.25%, transparent 25%, rgba(#CECAC3, 1) 25%, rgba(#CECAC3, 0.4) 31.25%, transparent 31.25%, transparent 50%, rgba(#CECAC3, 1) 50%, rgba(#CECAC3, 1) 56.25%, transparent 56.25%, transparent 75%, rgba(#CECAC3, 0.4) 75%, rgba(#CECAC3, 0.4) 81.25%, transparent 81.25%, transparent 100%);
+    background-size: 16px 16px;
+    background-position: 0 1px;
+}
+
+@mixin baseline-line($size) {
+    background-image: linear-gradient(0deg, rgba(#136BDE, 0.5) 2.08%, transparent 2.08%, transparent 50%, rgba(#136BDE, 0.5) 50%, rgba(#136BDE, 0.5) 52.08%, transparent 52.08%, transparent 100%);
+    background-position: 0 1px;
+    background-size: $size $size;
+}
+
+// border-radius
+
+.content-box,
+.content-placeholder-box,
+#group-images img,
+#group-media-block img,
+#group-links img,
+.ndpl-component__color:first-of-type:last-of-type,
+#group-carousel-component-indicators .slides-container img {
+    @include ds-border-radius;
+}
+
+// content boxes
+
+.content-box-wrapper {
+    margin-bottom: $unit * 2
+}
+
+.content-box {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    padding: $unit * 2;
+
+    &.margin-box {
+        padding: 0;
+    }
+}
+
+/* Astrum header / nav mobile
+----------------------------------- */
 
 .ndpl-header {
     @media only screen and (max-width: 1024px) {
@@ -92,7 +170,8 @@ html {
     }
 }
 
-/* Astrum Sidebar / nav desktop */
+/* Astrum Sidebar / nav desktop
+----------------------------------- */
 
 .ndpl-sidebar__header {
     @media only screen and (min-width: 960px) and (max-width: 1024px) {
@@ -108,7 +187,8 @@ html {
     max-width: 100%;
 }
 
-/* Astrum page wrapper */
+/* Astrum page wrapper
+----------------------------------- */
 
 .ndpl-page {
     width: 100%;
@@ -125,16 +205,15 @@ html {
     }
 }
 
-/* Astrum Content parts */
+/* Astrum margins, paddings, borders
+----------------------------------- */
 
-@media only screen and (max-width: 1024px) {
-    .ndpl-library__title, .ndpl-component__title, .ndpl-group__description, .ndpl-component__description {
+.ndpl-library__title, .ndpl-component__title, .ndpl-group__description, .ndpl-component__description {
+    @media only screen and (max-width: 1024px) {
         padding: 0 $unit * 1.5;
     }
-}
 
-@media only screen and (min-width: 1025px) {
-    .ndpl-library__title, .ndpl-component__title, .ndpl-group__description, .ndpl-component__description {
+    @media only screen and (min-width: 1025px) {
         padding: 0;
     }
 }
@@ -182,7 +261,7 @@ html {
     }
 
     .ndpl-component__sample--disabled-code {
-        border-radius: $unit;
+        @include ds-border-radius;
     }
 }
 
@@ -195,6 +274,9 @@ html {
     padding-top: 60px;
 }
 
+/* Astrum typography
+----------------------------------- */
+
 .ndpl-page, .ndpl-intro, .ndpl-group__description, .ndpl-component__description {
     font-weight: normal;
     line-height: 1.5;
@@ -202,7 +284,7 @@ html {
 
 .ndpl-page, .ndpl-loading__title, .ndpl-error, .ndpl-info, .ndpl-header, .ndpl-sidebar, .ndpl-intro, .ndpl-library__title, .ndpl-group__description, .ndpl-component__title, .ndpl-component__description, .ndpl-component__label, .ndpl-component__code-toggle, .ndpl-component__color, .ndpl-page, .ndpl-nav__title, .ndpl-sidebar__title {
     font-family: $fontfamily-base;
-    color: $color-black;
+    color: $color-text;
 }
 
 .ndpl-library__title {
@@ -216,12 +298,8 @@ html {
 .ndpl-group__description,
 .ndpl-component__description {
     h3 {
-        font-weight: inherit;
+        font-weight: 500;
         padding-top: $unit * 2;
-    }
-
-    img {
-        margin-bottom: -2px;
     }
 }
 
@@ -232,13 +310,26 @@ html {
     li {
         font-size: $fontsize-base;
     }
+}
 
+.ndpl-component__description {
+    p:last-child {
+        margin-bottom: $unit * 2;
+    }
+}
+
+/* Astrum Description & Samples - code & pre
+----------------------------------- */
+
+.ndpl-page,
+.ndpl-group__description,
+.ndpl-component__description {
     pre code,
     code {
         background: #f1efec;
         border: 1px solid $color-grey-medium;
         border-radius: $unit / 2;
-        color: $color-black;
+        color: $color-text;
         font-size: $fontsize-small;
         line-height: $lineheight-small;
     }
@@ -257,138 +348,141 @@ html {
     opacity: 1;
 }
 
-/* Breakpoints enhancements
+.ndpl-component__sample {
+    code {
+        border: 1px solid $color-grey-medium;
+        border-radius: $unit / 2;
+        color: $color-text;
+        display: inline-block;
+        font-size: $fontsize-small;
+        margin-bottom: $unit;
+        padding: $unit;
+    }
+}
+
+.ndpl-component__container {
+    pre {
+        margin-top: 0;
+        overflow-x: scroll;
+    }
+}
+
+/* Astrum HTML Code Sample
 ----------------------------------- */
 
-#group-breakpoints {
-    .ndpl-component__sample {
-        code {
-            border: 1px solid $color-grey-medium;
-            border-radius: $unit / 2;
-            color: $color-black;
-            display: inline-block;
-            font-size: $fontsize-small;
-            margin-bottom: $unit;
-            padding: $unit;
+#group-layout-component-bereich {
+    .ndpl-component__container {
+        display: none;
+    }
+}
+
+#group-margins-component-bereich,
+#group-margins-component-modul,
+#group-margins-component-aside,
+#group-margins-component-komplexes-modul,
+#group-colors,
+#group-shadows {
+    .ndpl-component__code,
+    .ndpl-component__code-toggle {
+        display: none;
+    }
+}
+
+#group-margins-component-elemente {
+    .ndpl-component__container,
+    .ndpl-component__sample-hidden {
+        display: none;
+    }
+}
+
+.ndpl-component__code .ndpl-code {
+    display: block;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+/* Astrum Description & Samples - images
+----------------------------------- */
+
+.ndpl-group__description,
+.ndpl-component__description,
+#group-images .ndpl-component__sample {
+    img[src*=".svg"] {
+        margin-bottom: -2px;
+    }
+}
+
+/* Astrum Magic Margins
+----------------------------------- */
+
+.ndpl-component__container {
+    .margin-helper,
+    .margin-helper-2,
+    .margin-helper-3,
+    .padding-helper,
+    .padding-helper-3 {
+        opacity: 0;
+        transition: opacity 0.3s ease 0.15s;
+    }
+
+    .margin-helper,
+    .margin-helper-2,
+    .margin-helper-3 {
+        @include bg-stripes(#FFA500);
+    }
+
+    .margin-helper {
+        height: $unit * 4;
+    }
+
+    .margin-helper-2 {
+        height: $unit * 2;
+    }
+
+    .margin-helper-3 {
+        height: $unit;
+    }
+
+    .padding-helper {
+        @include bg-stripes(#618F30);
+    }
+
+    &:hover {
+        .padding-helper,
+        .margin-helper,
+        .margin-helper-2,
+        .margin-helper-3 {
+            opacity: 1;
         }
     }
 }
 
-/* Grid enhancements
------------------------------------ */
+#group-margins-component-ds-box-hr {
+    .margin-helper,
+    .padding-helper {
+        margin-bottom: -($unit * 4);
+    }
 
-#group-grid {
-    .ndpl-component__sample {
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center;
-
-        .ds-container {
-            background: #eee;
-            padding-top: $unit;
-
-            // for presentation purposes only
-            &.ds-grid-xxs {
-                @include media-breakpoint-to(m) {
-                    padding: 0 $gutter-half-small;
-                    padding-top: $unit;
-
-                    [class*="col-xs"] {
-                        padding-right: $gutter-half-small;
-                        padding-left: $gutter-half-small;
-                    }
-                }
-            }
-
-            &.ds-grid-xs {
-                @include media-breakpoint-between(xs,m) {
-                    padding: 0 $gutter-half-std;
-                    padding-top: $unit;
-
-                    [class*="col-xs"] {
-                        padding-right: $gutter-half-std;
-                        padding-left: $gutter-half-std;
-                    }
-                }
-            }
-        }
+    .padding-helper {
+        height: $unit * 4;
     }
 }
 
-.ds-box-row {
-    background: $color-corporate-green;
-    border: 1px solid $color-corporate-green;
-    box-sizing: border-box;
-    color: $color-white;
-    font-size: 10px;
-    height: $unit * 2;
-    letter-spacing: 0.5px;
-    line-height: 12px;
-    margin-bottom: $unit;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-}
+#group-typography {
+    .margin-helper {
+        margin-top: -($unit * 4);
+    }
 
-/* Layout Bereiche enhancements
------------------------------------ */
+    .margin-helper-2 {
+        margin-top: -($unit * 2);
+    }
 
-#group-layout {
-    .ndpl-component__sample svg {
-        max-height: 500px;
+    .margin-helper-3 {
+        margin-top: -($unit);
     }
 }
 
-/* Colours enhancements
------------------------------------ */
-
-.ndpl-component__color:first-of-type:last-of-type {
-    border-radius: $unit;
-}
-
-.ndpl-component__color-container {
-    width: 100%;
-    margin: 0;
-}
-
-.cds-color-wrapper {
-    margin-bottom: $unit * 3;
-}
-
-#group-colors {
-    .ndpl-component__sample {
-        code {
-            border: 1px solid $color-grey-medium;
-            border-radius: $unit / 2;
-            color: $color-black;
-            display: inline-block;
-            font-size: $fontsize-small;
-            margin-bottom: $unit;
-            padding: $unit;
-        }
-
-        small {
-            color: $color-grey-dark;
-
-            code {
-                display: inline-block;
-                font-size: $fontsize-small;
-            }
-        }
-    }
-}
-
-.ndpl-component__color {
-    @include media-breakpoint-to(m) {
-        padding: ($unit * 6) 0;
-    }
-}
-
-.ndpl-component__color:first-of-type {
-    margin-bottom: $unit;
-}
-
-/* Container hints
+/* Container hints base
 ----------------------------------- */
 
 #group-typography,
@@ -397,11 +491,11 @@ html {
 #group-buttons,
 #group-pagination {
     .ndpl-component__container {
-        background: $color-white;
+        background: $color-bg-content;
         position: relative;
 
         @media screen and (min-width: 1025px) {
-            border-radius: $unit;
+            @include ds-border-radius;
         }
 
         &:before {
@@ -438,8 +532,25 @@ html {
     }
 }
 
-/* Typography enhancements
------------------------------------ */
+// typography
+
+#group-typography {
+    .ndpl-component__container {
+        &:before {
+            content: 'Hover over this container to see the baseline grid and margins.';
+        }
+
+        &:hover {
+            div[class*="component__sample"] {
+                &:before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+// links
 
 #group-links {
     .ndpl-component__container {
@@ -449,10 +560,184 @@ html {
     }
 }
 
-#group-typography {
+// buttons
+
+#group-buttons {
     .ndpl-component__container {
         &:before {
-            content: 'Hover over this container to see the Baseline Grid.';
+            content: 'Hover & click to see interactive states.';
+        }
+    }
+}
+
+/* Grid
+----------------------------------- */
+
+#group-grid-component-grid-base {
+    .ndpl-component__sample {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+
+        .ds-container {
+            // for presentation purposes only
+            &.ds-grid-xxs {
+                @include media-breakpoint-to(m) {
+                    padding: 0 $gutter-half-small;
+                    padding-top: $unit;
+
+                    [class*="col-xs"] {
+                        padding-right: $gutter-half-small;
+                        padding-left: $gutter-half-small;
+                    }
+                }
+            }
+
+            &.ds-grid-xs {
+                @include media-breakpoint-between(xs,m) {
+                    padding: 0 $gutter-half-std;
+                    padding-top: $unit;
+
+                    [class*="col-xs"] {
+                        padding-right: $gutter-half-std;
+                        padding-left: $gutter-half-std;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#group-grid-component-grid-base,
+#group-grid-component-grid-offset {
+    .ds-container {
+        background: #eee;
+        padding-top: $unit;
+    }
+}
+
+.ds-box-row {
+    background: $color-corporate-green;
+    border: 1px solid $color-corporate-green;
+    box-sizing: border-box;
+    color: $color-text-inverted;
+    font-size: 10px;
+    height: $unit * 2;
+    letter-spacing: 0.5px;
+    line-height: 12px;
+    margin-bottom: $unit;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+#group-grid-component-grid-float {
+    .ndpl-component__container {
+        img {
+            margin-bottom: -2px;
+        }
+    }
+}
+
+.content-placeholder-box {
+    background-color: $color-sand;
+    display: block;
+    padding: $unit;
+}
+
+#group-grid-component-baseline-grid {
+    .ndpl-component__sample {
+        .show-bl-grid {
+            @include baseline;
+
+            h2 {
+                @include baseline-line(64px);
+            }
+
+            h3,
+            p {
+                @include baseline-line(48px);
+            }
+
+            * {
+                padding-bottom: 1px;
+            }
+
+            h2 + p,
+            h3 + p,
+            h5 + p,
+            p + h5 {
+                margin-top: -1px;
+            }
+        }
+
+        aside {
+            .show-bl-grid {
+                @include baseline-small;
+
+                p,
+                h5 {
+                    @include baseline-line(40px);
+                }
+            }
+        }
+    }
+
+    .ndpl-component__code-toggle {
+        display: none;
+    }
+}
+
+/* Layout
+----------------------------------- */
+
+#group-layout {
+    .ndpl-component__sample svg {
+        max-height: 500px;
+    }
+}
+
+/* Colours
+----------------------------------- */
+
+.ndpl-component__color-container {
+    width: 100%;
+    margin: 0;
+}
+
+.ndpl-component__color {
+    @include media-breakpoint-to(m) {
+        padding: ($unit * 6) 0;
+    }
+
+    &:first-of-type {
+        margin-bottom: $unit;
+    }
+}
+
+#group-colors {
+    .ndpl-component__sample {
+        code {
+            margin-bottom: $unit * 2;
+        }
+
+        code + p {
+            margin-bottom: $unit;
+        }
+    }
+}
+
+/* Typography
+----------------------------------- */
+
+#group-typography {
+    .ndpl-component__container {
+        &:hover {
+            div[class*="component__sample"] {
+                h1, h2, h3, h4, h5, p, small, .ds-text-small {
+                    background-color: rgba(#d9d5d0, 0.35);
+                }
+            }
         }
     }
 
@@ -476,23 +761,9 @@ html {
             transition: background-color 0.3s ease 0.15s;
         }
     }
-
-    .ndpl-component__container {
-        &:hover {
-            div[class*="component__sample"] {
-                &:before {
-                    opacity: 1;
-                }
-
-                h1, h2, h3, h4, h5, p, small, .ds-text-small {
-                    background-color: rgba(#d9d5d0, 0.35);
-                }
-            }
-        }
-    }
 }
 
-/* Forms enhancements
+/* Forms
 ----------------------------------- */
 
 #group-forms {
@@ -570,25 +841,7 @@ html {
         }
 
     }
-
-    hr {
-        border: 0;
-        border-top: 1px solid $color-grey-light;
-        margin: 32px auto;
-    }
 }
-
-/* Button enhancements
------------------------------------ */
-
-#group-buttons {
-    .ndpl-component__container {
-        &:before {
-            content: 'Hover & click to see interactive states.';
-        }
-    }
-}
-
 
 /* Tables
 ----------------------------------- */
@@ -603,194 +856,21 @@ td {
     border-top: 1px solid $color-grey-light;
 }
 
-
-/* Magic Margins
+/* media-block
 ----------------------------------- */
 
-#group-typography,
-#group-pagination {
-    .ndpl-component__container {
-        &:before {
-            content: 'Hover over this container to see the margins.';
-        }
-    }
-}
-
-.ndpl-component__container {
-    .margin-helper,
-    .margin-helper-2,
-    .padding-helper {
-        opacity: 0;
-        transition: opacity 0.3s ease 0.15s;
-    }
-
-    .margin-helper,
-    .margin-helper-2 {
-        background-image: linear-gradient(135deg, rgba(255, 165, 0, 0.1) 25%, rgba(255, 165, 0, 0.3) 25%, rgba(255, 165, 0, 0.3) 50%, rgba(255, 165, 0, 0.1) 50%, rgba(255, 165, 0, 0.1) 75%, rgba(255, 165, 0, 0.3) 75%, rgba(255, 165, 0, 0.3) 100%);
-        background-size: 22.63px 22.63px;
-    }
-
-    .padding-helper {
-        background-image: linear-gradient(135deg, rgba(97, 143, 48, 0.1) 25%, rgba(97, 143, 48, 0.3) 25%, rgba(97, 143, 48, 0.3) 50%, rgba(97, 143, 48, 0.1) 50%, rgba(97, 143, 48, 0.1) 75%, rgba(97, 143, 48, 0.3) 75%, rgba(97, 143, 48, 0.3) 100%);
-        background-size: 22.63px 22.63px;
-    }
-
-    hr {
-        border: 0;
-        border-top: 1px solid $color-grey-light;
-        margin: 0;
-    }
-
-    &:hover {
-        .padding-helper,
-        .margin-helper,
-        .margin-helper-2 {
-            opacity: 1;
-        }
-    }
-}
-
-#group-typography {
-    .margin-helper {
-        height: $unit * 4;
-    }
-
-    .margin-helper-2 {
-        height: $unit * 2;
-    }
-}
-
-#group-pagination {
-    .margin-box {
-        height: 160px;
-        position: relative;
-    }
-
-    .content-helper {
-        background: $color-white;
-        height: 128px;
-        opacity: 1;
-        position: absolute;
-        left: $unit * 2;
-        top: $unit * 2;
-        width: calc(100% - #{$unit * 4});
-    }
-}
-
-#group-typography {
-    .margin-helper {
-        margin-top: -($unit * 4);
-    }
-
-    .margin-helper-2 {
-        margin-top: -($unit * 2);
-    }
-
-    .padding-helper {
-        height: 100%;
-    }
-}
-
-#group-pagination {
-    ul {
-        position: relative;
-    }
-
-    .padding-helper {
-        height: $unit * 4;
-        position: absolute;
-        width: 100%;
-    }
-
-    .padding-helper-1 {
-        top: 0;
-    }
-
-    .padding-helper-2 {
-        bottom: 0;
-    }
-}
-
-#group-layout-component-bereich {
-    .ndpl-component__container {
-        display: none;
-    }
-}
-
-#group-layout {
-    .ds-mb.dsy-helper-ignore-this {
-        background: rgba($color-grey-medium, 0.25);
-    }
-
+#group-media-block {
     .ds-mb.dsy-helper-ignore-this-2 {
-        @include ds-fd-col;
-        @include ds-mb-padding("top", 1.5);
-
-        @include media-breakpoint-from(xs) {
-            @include ds-fd-col;
-            @include ds-mb-padding("left", 1.5);
-        }
-
-        @include media-breakpoint-from(s) {
+        @include media-breakpoint-to(xs) {
             @include ds-fd-row;
             @include ds-mb-padding("left", 2);
         }
 
-        @include media-breakpoint-from(m) {
+        @include media-breakpoint-from(s) {
             @include ds-fd-col;
             @include ds-mb-padding("top", 2);
         }
     }
-
-    .ds-mb-left.dsy-helper-ignore-this {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-    }
-}
-
-/* other
------------------------------------ */
-
-.content-box-wrapper {
-    margin-bottom: $unit * 2
-}
-
-.content-box {
-    border-radius: 8px;
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
-    padding: $unit * 2;
-
-    &.margin-box {
-        padding: 0;
-    }
-}
-
-/* Code Samples
------------------------------------ */
-
-#group-margins,
-#group-colors,
-#group-shadows {
-    .ndpl-component__code,
-    .ndpl-component__code-toggle {
-        display: none;
-    }
-}
-
-#group-margins-component-elemente {
-    .ndpl-component__container,
-    .ndpl-component__sample-hidden {
-        display: none;
-    }
-}
-.ndpl-component__code .ndpl-code {
-    max-height: 500px;
-    overflow: scroll;
-}
-
-.ndpl-component__code .ndpl-code {
-    display: block;
 }
 
 /* Text Truncation enhancements
@@ -804,15 +884,12 @@ td {
 
 /* Slider example
 ----------------------------------- */
+
 #group-carousel-component-indicators {
     .slides-container {
-        height: 300px;
+        height: auto;
         position: relative;
-        width: 400px;
-
-        img {
-            border-radius: $unit;
-        }
+        max-width: 400px;
     }
 
     .ds-carousel-indicators {
@@ -824,6 +901,44 @@ td {
 #group-carousel-component-indicators-amp {
     .ndpl-component__container {
         display: none;
+    }
+}
+
+/* Recipe Integration
+----------------------------------- */
+
+#group-recipe-component-recipe-integration {
+    .ds-grid {
+        @include media-breakpoint-to(s) {
+            margin: 0 auto;
+            max-width: 584px;
+        }
+    }
+}
+
+/* Tags
+----------------------------------- */
+
+#group-tags-component-tags {
+    .ndpl-component__sample {
+        @include media-breakpoint-to(xs) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .i-amphtml-scrollable-carousel-container {
+        overflow-x: auto!important;
+        overflow-y: hidden!important;
+        white-space: nowrap!important;
+    }
+
+    .amp-carousel-button {
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        visibility: visible;
     }
 }
 

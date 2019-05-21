@@ -1,12 +1,15 @@
+@import "../app/components/shadows/box-shadow";
+
 $btn-base-value: $unit * 5;
 
 .ds-btn-box {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .ds-btn + .ds-btn {
-    margin-left: $unit * 2;
+    margin-left: $unit;
 }
 
 @mixin btn-reset {
@@ -14,6 +17,8 @@ $btn-base-value: $unit * 5;
     border: 0;
     box-sizing: border-box;
     cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
     text-decoration: none;
 
     // normalize inner #fffspace in Firefox

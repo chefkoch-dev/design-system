@@ -1,2 +1,0 @@
-Unter funktionale Icons verstehen wir solche, die einer klaren Navigation dienen – wie z.B. auf Buttons, vor Menüpunkten, etc.
-Sie sind selbsterklärend und/oder gelernt und könnten somit auch alleine stehen.

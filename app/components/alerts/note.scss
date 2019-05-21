@@ -89,7 +89,7 @@
         &--muted {
             background-color: lighten($color-grey-medium, 15%);
             border-color: lighten($color-grey-medium, 15%);
-            color: $color-black;
+            color: $color-text;
 
             &:active,
             &:focus,

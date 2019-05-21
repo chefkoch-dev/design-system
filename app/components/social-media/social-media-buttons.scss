@@ -1,8 +1,4 @@
-.ds-social-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+@import "settings.social-media";
 
 .ds-social-item {
     @include btn-shadow;
@@ -12,24 +8,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: $unit * 5;
-    margin: 0 $unit;
-    width: $unit * 5;
 
     &.ds-pinterest {
-        background: #bd081c;
+        background: #e60023;
     }
 
     &.ds-facebook {
-        background: #3b5998;
+        background: #32529f;
     }
 
     &.ds-instagram {
-        background: #125688;
+        background: #ec005f;
     }
 
     &.ds-twitter {
         background: #1da1f2;
+    }
+
+    &.ds-youtube {
+        background: #f00;
     }
 
     &.ds-whatsapp {

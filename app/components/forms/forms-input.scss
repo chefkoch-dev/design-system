@@ -3,10 +3,9 @@
 
 .ds-input {
     border: 1px solid $color-grey-medium;
-    color: $color-black;
+    color: $color-text;
     border-radius: $unit;
     box-sizing: border-box;
-    font-size: inherit;
     height: $stdFormHeight;
     margin-bottom: $unit * 2;
     padding: $unit $unit * 1.5;
@@ -16,5 +15,9 @@
     &:focus {
         border-color: $color-corporate-green-dark;
         outline: 0;
+    }
+
+    &::placeholder {
+        color: $color-grey-medium;
     }
 }

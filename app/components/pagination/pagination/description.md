@@ -7,16 +7,16 @@ Die Pagination besteht aus verlinkten vor- und zurück Pfeilen und Seitennummern
 - Die letzte Seite wird nicht angezeigt.
 
 ### Aktives Item  
-- Im Beispiel ist die aktive Seite die Seite 1. Dieser Link wird rund mit Hintergrund `$color-corporate-green` und Schriftfarbe `$color-white` dargestellt. 
+- Das aktive Item wird rund mit Hintergrund in `$color-corporate-green` und Schriftfarbe `$color-text-inverted` dargestellt. 
 - Bei :hover / :focus ändert sich der Hintergrund zu `$color-corporate-green-dark`.
 
 ### Standard Item  
-- Seitennummern Links werden als Text only in der Farbe `$color-grey-medium` dargestellt. 
-- Bei :hover / :focus färbt sich der Text zu `$color-corporate-green-dark` und bekommt eine underline.
+- Seitennummern Links werden als Text only in der Farbe `$color-corporate-green-dark` dargestellt. 
+- Bei :hover / :focus färbt sich der Text zu `$color-text-inverted` und bekommt einen runden Hintergrund in der Farbe `$color-corporate-green-dark`.
 
 ### Pfeile
-- Pfeile werden standardmäßig als Icon only in der Farbe `$color-grey-medium` dargestellt. 
-- Bei :hover / :focus bekommt dieser einen runden Hintergrund, welcher sich einfärbt in `$color-corporate-green-dark`. Die Iconfarbe wird dann `$color-white`.  
+- Pfeile werden standardmäßig als Icon only in der Farbe `$color-corporate-green-dark` dargestellt. 
+- Bei :hover / :focus färbt sich das Icon zu `$color-text-inverted` und bekommt einen runden Hintergrund in der Farbe `$color-corporate-green-dark`. 
 - Ist Seite 1 aktiv, ist der zurück-Pfeil inaktiv. 
 - Ist die letzte Seite aktiv, wird der vor-Pfeil inaktiv. 
 - Inaktive Pfeile sind nicht verlinkt und werden in `$color-grey-light` dargestellt.

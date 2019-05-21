@@ -1,0 +1,107 @@
+@mixin tag-green {
+    background: $color-corporate-green;
+    color: $color-text-inverted;
+}
+
+@mixin tag-green-dark {
+    background: $color-corporate-green-dark;
+    border-color: $color-corporate-green-dark;
+    color: $color-text-inverted;
+}
+
+/* stylelint-disable at-rule-blacklist */
+.ds-tags {
+    @extend .ds-list-cloud;
+    @extend .ds-list-plain;
+}
+/* stylelint-enable at-rule-blacklist */
+
+.ds-tags-carousel {
+    position: relative;
+
+    // some heavy repositioning for the carousel an its buttons
+    margin: -12px (-$unit) 20px;
+
+    @include media-breakpoint-from(xxs) {
+        margin: -12px (-$unit * 2) 20px;
+    }
+
+    @include media-breakpoint-from(s) {
+        margin: -12px 0 20px;
+    }
+
+    // position tags and hide carousel scrollbar
+    > div:first-child {
+        padding: 12px 0 32px;
+    }
+
+    /* stylelint-disable all */
+    @include media-breakpoint-to(xs) {
+        .amp-carousel-slide {
+            &:first-child {
+                .ds-tag {
+                    margin-left: $unit;
+                }
+            }
+
+            &:last-child {
+                .ds-tag {
+                    margin-right: $unit;
+                }
+            }
+        }
+    }
+    /* stylelint-enable all */
+}
+
+.ds-tag {
+    background: $color-bg-content;
+    border: 1px solid $color-corporate-green;
+    border-radius: $unit * 4;
+    color: $color-text;
+    display: flex;
+    font-size: $fontsize-small;
+    line-height: $lineheight-small;
+    padding: 5px $unit; // 32px height
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* firefox only */
+    @supports (-moz-appearance:none) {
+        padding: 4px $unit 6px;
+    }
+
+    &:hover,
+    &:focus {
+        @include tag-green-dark;
+    }
+}
+
+.ds-tag-active {
+    @include tag-green;
+    padding: 5px ($unit / 2) 5px $unit;
+
+    /* firefox only */
+    @supports (-moz-appearance:none) {
+        padding: 4px ($unit / 2) 6px $unit;
+    }
+
+    &:hover,
+    &:focus {
+        @include tag-green-dark;
+    }
+
+    // material-icons
+    i {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        margin-left: 3px; // this will make 8 in the end
+
+        /* firefox only */
+        @supports (-moz-appearance:none) {
+            margin-top: 1px;
+        }
+    }
+}
