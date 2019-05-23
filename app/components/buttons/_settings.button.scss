@@ -47,6 +47,10 @@ $btn-base-value: $unit * 5;
     text-transform: uppercase;
 }
 
+@mixin ds-btn-shadow {
+    @include ds-box-shadow(0.3, 0.5);
+}
+
 .ds-btn {
     @include btn-reset;
     @include btn-base;

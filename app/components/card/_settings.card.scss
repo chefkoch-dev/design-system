@@ -3,5 +3,5 @@
 
 @mixin ds-card-shadow {
     border: 1px solid $color-grey-light;
-    @include ds-box-shadow(0.2, 0.3);
+    @include ds-box-shadow(0.3, 0.5);
 }
