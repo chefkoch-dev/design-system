@@ -45,14 +45,20 @@ figure {
     }
 }
 
+.ds-to-s {
+    @include media-breakpoint-from(m) {
+        display: none;
+    }
+}
+
 .ds-from-xxs {
     @include media-breakpoint-to(xxxs) {
         display: none;
     }
 }
 
-.ds-to-s {
-    @include media-breakpoint-from(m) {
+.ds-from-xs {
+    @include media-breakpoint-to(xxs) {
         display: none;
     }
 }
