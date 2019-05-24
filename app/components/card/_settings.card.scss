@@ -1,5 +1,5 @@
 // .ds-border-radius comes from layout/layout.scss which is included in dsy-base.scss
-@import "../app/components/shadows/box-shadow";
+@import "../shadows/box-shadow";
 
 @mixin ds-card-shadow {
     border: 1px solid $color-grey-light;
