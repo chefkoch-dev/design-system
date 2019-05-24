@@ -1,5 +1,7 @@
 @import "settings.social-media";
 
 .ds-social-item {
+    @include ds-btn-shadow;
+
     background-size: 24px;
 }

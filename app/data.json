@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v5.1.4",
+            "library_title": "v5.2.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -270,8 +270,13 @@
             "components": [
                 {
                     "group": "shadows",
-                    "name": "shadows",
-                    "title": "Shadows"
+                    "name": "btn-shadows",
+                    "title": "Button Shadow"
+                },
+                {
+                    "group": "shadows",
+                    "name": "card-shadows",
+                    "title": "Card Shadow"
                 },
                 {
                     "group": "shadows",
@@ -373,6 +378,17 @@
                     "group": "media-block",
                     "name": "media-block-enhanced",
                     "title": "Media-Block Enhanced"
+                }
+            ]
+        },
+        {
+            "name": "card",
+            "title": "Card",
+            "components": [
+                {
+                    "group": "card",
+                    "name": "card",
+                    "title": "Card"
                 }
             ]
         },

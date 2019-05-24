@@ -35,11 +35,13 @@ $color-purple:          #bf538d; // 4.34 Ratio (AA) to #fff
 /* specified usages
 ----------------------------------- */
 
-$color-text:            $color_black;
+$color-text:            $color-black;
 $color-text-inverted:   $color-white;
 $color-border:          $color-grey-light;
 $color-bg:              $color-sand;
 $color-bg-content:      $color-white;
+
+$color-shadow-base:     #000;
 
 /* BACKUP
 ** old color vars (using new ones)
