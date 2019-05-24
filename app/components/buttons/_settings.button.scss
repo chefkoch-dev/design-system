@@ -54,6 +54,4 @@ $btn-base-value: $unit * 5;
 .ds-btn {
     @include btn-reset;
     @include btn-base;
-
-    //transition: background 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
