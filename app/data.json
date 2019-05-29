@@ -586,18 +586,13 @@
             ]
         },
         {
-            "name": "icons",
-            "title": "Icons",
+            "name": "notice",
+            "title": "Notice",
             "components": [
                 {
-                    "group": "icons",
-                    "name": "material-icons",
-                    "title": "Material Icons"
-                },
-                {
-                    "group": "icons",
-                    "name": "schmuck-icons",
-                    "title": "Schmuck-Icons"
+                    "group": "notice",
+                    "name": "notice",
+                    "title": "Notice"
                 }
             ]
         }
