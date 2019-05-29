@@ -1,5 +1,5 @@
 .ds-notice {
-    @extend .ds-box;
+    @extend .ds-box; // stylelint-disable-line at-rule-blacklist
     display: block;
     text-align: center;
 
