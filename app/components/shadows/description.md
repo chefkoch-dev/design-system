@@ -23,7 +23,7 @@ Der shadow an sich verläuft immer komplett um das Element herum, hat oben jedoc
 Das DSY bietet ein mixin für an, welches resting, lifted und pressed state abdeckt. `@mixin box-shadow($opacityResting, $opacityLifted)`. Die Variablen stehen für opacity Werte (0–1)
 
 - __Resting state__  
-`$opacityResting` beschreibt die Opazität der Farbe im _resting_ state. Fixwert ist `0.3`, kann aber nach Material Design Regeln angepasst werden. Das dazugehörige Blurring ist auf `6px` festgelegt.  
+`$opacityResting` beschreibt die Opazität der Farbe im _resting_ state. Fixwert ist `0.3`, kann aber nach Material Design Regeln angepasst werden. Das dazugehörige Blurring ist auf `4px` festgelegt.  
 - __Lifted state__  
 `$opacityLifted` beschreibt die Opazität der Farbe im _lifted_ state und kann ebenfalls variiert werden, Fixwert ist `0.5`. Das Blurring ist auf `8px` festgelegt.
 - Standardimplementierung wäre `@include ds-box-shadow(0.3, 0.5);`
