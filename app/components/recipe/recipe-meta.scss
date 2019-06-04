@@ -3,6 +3,8 @@
 
 .ds-recipe-meta {
     color: $color-grey-dark;
+    display: flex;
+    font-weight: 500;
     margin-left: -2px;
 
     > span {
