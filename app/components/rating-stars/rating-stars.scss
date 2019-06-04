@@ -42,6 +42,7 @@
 }
 
 .ds-rating-count {
+    font-weight: 500;
     margin-left: $unit;
 
     @include media-breakpoint-to(xs) {
