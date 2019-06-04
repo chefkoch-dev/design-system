@@ -6,7 +6,7 @@ Wir unterscheiden dabei drei states:
 - pressed (:active)
 
 Die Basisfarbe für shadows ist `$color-shadow-base` (schwarz), deren Opazität über den Alpha Kanal geregelt wird.  
-Der shadow an sich verläuft immer komplett um das Element herum, hat oben jedoch etwas weniger Itensität als unten. Die Position des shadows ist daher sowohl im Design als auch im Code `0 1px` (0 vertikale Achse, 1px horizontale Achse). Es wird lediglich das Blurring und die Opazität modifiziert.
+Der shadow an sich verläuft immer komplett um das Element herum. Die Position des shadows ist daher sowohl im Design als auch im Code `0 0` (0 vertikale Achse, 0 horizontale Achse). Es wird lediglich das Blurring und ggf. die Opazität modifiziert.
 
 ### Usage
 
@@ -25,8 +25,8 @@ Das DSY bietet ein mixin für an, welches resting, lifted und pressed state abde
 - __Resting state__  
 `$opacityResting` beschreibt die Opazität der Farbe im _resting_ state. Fixwert ist `0.3`, kann aber nach Material Design Regeln angepasst werden. Das dazugehörige Blurring ist auf `4px` festgelegt.  
 - __Lifted state__  
-`$opacityLifted` beschreibt die Opazität der Farbe im _lifted_ state und kann ebenfalls variiert werden, Fixwert ist `0.5`. Das Blurring ist auf `8px` festgelegt.
-- Standardimplementierung wäre `@include ds-box-shadow(0.3, 0.5);`
+`$opacityLifted` beschreibt die Opazität der Farbe im _lifted_ state und kann ebenfalls variiert werden, Fixwert ist `0.3`. Das Blurring ist auf `8px` festgelegt.
+- Standardimplementierung wäre `@include ds-box-shadow(0.3, 0.3);`
 
 
 - __Pressed state__  
