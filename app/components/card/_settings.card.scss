@@ -2,6 +2,10 @@
 @import "../shadows/box-shadow";
 
 @mixin ds-card-shadow {
-    border: 1px solid $color-grey-light;
+    border: 1px solid transparent;
     @include ds-box-shadow(0.3, 0.5);
+
+    &:active {
+        border-color: $color-grey-light;
+    }
 }
