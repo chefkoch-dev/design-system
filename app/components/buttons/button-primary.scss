@@ -3,10 +3,4 @@
 
     background-color: $color-corporate-green;
     color: $color-text-inverted;
-
-    &:active,
-    &:focus,
-    &:hover {
-        background-color: $color-corporate-green-dark;
-    }
 }
