@@ -15,12 +15,12 @@
         align-items: center;
         font-size: $fontsize-tiny;
         height: $unit * 2;
-        margin-right: $unit;
+        margin-right: $unit / 2;
         padding: $unit / 2 $unit;
         text-transform: uppercase;
 
-        &:last-child {
-            margin-right: 0;
+        @include media-breakpoint-from(m) {
+            margin-right: $unit;
         }
     }
 
