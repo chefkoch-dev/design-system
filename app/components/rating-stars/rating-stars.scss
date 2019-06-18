@@ -10,6 +10,7 @@
 
 .ds-rating {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: $unit * 1.5;
 
     @include media-breakpoint-from(s) {
@@ -41,9 +42,11 @@
     }
 }
 
+.ds-rating-avg,
 .ds-rating-count {
     color: $color-black;
     font-size: $fontsize-small;
     font-weight: 500;
+    line-height: 24px;
     margin-left: $unit;
 }
