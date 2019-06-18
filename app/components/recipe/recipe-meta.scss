@@ -2,20 +2,22 @@
 ----------------------------------- */
 
 .ds-recipe-meta {
-    color: $color-grey-dark;
     display: flex;
     font-weight: 500;
     margin-left: -2px;
 
     > span {
+        @include ds-border-radius;
+
+        background: rgba($color-grey-light, 0.3);
+        color: $color-black;
         display: inline-flex;
         align-items: center;
+        font-size: $fontsize-tiny;
         height: $unit * 2;
         margin-right: $unit;
-
-        @include media-breakpoint-from(s) {
-            margin-right: $unit * 2;
-        }
+        padding: $unit / 2 $unit;
+        text-transform: uppercase;
 
         &:last-child {
             margin-right: 0;
@@ -23,11 +25,7 @@
     }
 
     i {
-        font-size: 18px;
+        font-size: 16px;
         margin-right: $unit / 2;
-
-        @include media-breakpoint-from(s) {
-            font-size: 20px;
-        }
     }
 }
