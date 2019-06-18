@@ -42,11 +42,8 @@
 }
 
 .ds-rating-count {
-    color: $color-grey-dark;
+    color: $color-black;
+    font-size: $fontsize-small;
     font-weight: 500;
     margin-left: $unit;
-
-    @include media-breakpoint-to(xs) {
-        font: $font-small;
-    }
 }
