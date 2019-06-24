@@ -134,11 +134,6 @@ $container-m-min: $screen-m;
 	}
 }
 
-/* Because of different gutter widths, we need to use e.g. xs s and m.
-** It was still possible to use xs only seeing the correct col-width on m-view but with false gutter.
-** Because of this, classes are now limited to their breakpoints to prevent false usage.
-*/
-
 // 0+
 .ds-col-1 {
 	flex-basis: 8.33333333%;
