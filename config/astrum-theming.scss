@@ -585,54 +585,34 @@ html {
         padding-left: 0;
         padding-right: 0;
         text-align: center;
+    }
+}
 
-        .ds-container {
-            // for presentation purposes only
-            &.ds-grid-xxs {
-                @include media-breakpoint-to(m) {
-                    padding: 0 $gutter-half-small;
-                    padding-top: $unit;
+#group-grid-component-grid-base {
+    .ds-grid {
+        background: $color-bg-content;
+        padding-bottom: $unit;
 
-                    [class*="col-xs"] {
-                        padding-right: $gutter-half-small;
-                        padding-left: $gutter-half-small;
-                    }
-                }
-            }
-
-            &.ds-grid-xs {
-                @include media-breakpoint-between(xs,m) {
-                    padding: 0 $gutter-half-std;
-                    padding-top: $unit;
-
-                    [class*="col-xs"] {
-                        padding-right: $gutter-half-std;
-                        padding-left: $gutter-half-std;
-                    }
-                }
-            }
+        &:last-child {
+            padding-bottom: 0;
         }
     }
 }
 
-#group-grid-component-grid-base,
 #group-grid-component-grid-offset {
-    .ds-container {
-        background: #eee;
-        padding-top: $unit;
+    [class^="ds-col"] {
+        background: $color-bg-content;
     }
 }
 
 .ds-box-row {
-    background: $color-corporate-green;
-    border: 1px solid $color-corporate-green;
+    background: $color-bg;
     box-sizing: border-box;
-    color: $color-text-inverted;
+    color: $color-text;
     font-size: 10px;
     height: $unit * 2;
     letter-spacing: 0.5px;
     line-height: 12px;
-    margin-bottom: $unit;
     overflow: hidden;
     position: relative;
     text-align: center;
