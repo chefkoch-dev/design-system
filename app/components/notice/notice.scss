@@ -1,0 +1,22 @@
+.ds-notice {
+    @extend .ds-box; // stylelint-disable-line at-rule-blacklist
+    display: block;
+    text-align: center;
+
+    i {
+        font-size: 36px;
+        margin-bottom: $unit * 2;
+    }
+}
+
+.ds-notice-success {
+    i {
+        color: $color-blue;
+    }
+}
+
+.ds-notice-fail {
+    i {
+        color: $color-red;
+    }
+}

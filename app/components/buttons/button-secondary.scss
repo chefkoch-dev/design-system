@@ -1,7 +1,12 @@
 .ds-btn-secondary {
-    @include btn-shadow;
+    @include ds-btn-shadow;
 
-    border: 1px solid $color-corporate-green;
+    background: $color-bg-content;
+    border: 1px solid transparent;
     color: $color-corporate-green-dark;
     line-height: $btn-base-value - 2px;
+
+    &:active {
+        border-color: $color-grey-light;
+    }
 }

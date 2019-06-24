@@ -1,3 +1,5 @@
+@import "../shadows/box-shadow";
+
 $btn-base-value: $unit * 5;
 
 .ds-btn-box {
@@ -45,21 +47,11 @@ $btn-base-value: $unit * 5;
     text-transform: uppercase;
 }
 
-@mixin btn-shadow {
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
-
-    &:hover {
-        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
-    }
-
-    &:focus {
-        box-shadow: none;
-    }
+@mixin ds-btn-shadow {
+    @include ds-box-shadow(0.3, 0.5);
 }
 
 .ds-btn {
     @include btn-reset;
     @include btn-base;
-
-    transition: background 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
 }

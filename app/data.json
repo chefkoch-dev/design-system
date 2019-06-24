@@ -8,7 +8,7 @@
     "client_url": "http://www.chefkoch.de",
     "creators": [
         {
-            "name": "Team Funkytown Avengers",
+            "name": "Team Funkytown Avengers / Team Zen",
             "url": "http://www.chefkoch.de"
         }
     ],
@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v5.1.0",
+            "library_title": "v5.4.4",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -107,6 +107,11 @@
                     "group": "grid",
                     "name": "grid-offset",
                     "title": "Grid Offset"
+                },
+                {
+                    "group": "grid",
+                    "name": "baseline-grid",
+                    "title": "Baseline Grid"
                 }
             ]
         },
@@ -203,6 +208,11 @@
                     "name": "elemente",
                     "title": "Elemente",
                     "width": "half"
+                },
+                {
+                    "group": "margins",
+                    "name": "ds-box-hr",
+                    "title": ".ds-box & hr"
                 }
             ]
         },
@@ -260,8 +270,13 @@
             "components": [
                 {
                     "group": "shadows",
-                    "name": "shadows",
-                    "title": "Shadows"
+                    "name": "btn-shadows",
+                    "title": "Button Shadow"
+                },
+                {
+                    "group": "shadows",
+                    "name": "card-shadows",
+                    "title": "Card Shadow"
                 },
                 {
                     "group": "shadows",
@@ -293,6 +308,22 @@
                     "group": "typography",
                     "name": "small-text",
                     "title": "Small Text"
+                }
+            ]
+        },
+        {
+            "name": "icons",
+            "title": "Icons",
+            "components": [
+                {
+                    "group": "icons",
+                    "name": "material-icons",
+                    "title": "Material Icons"
+                },
+                {
+                    "group": "icons",
+                    "name": "schmuck-icons",
+                    "title": "Schmuck-Icons"
                 }
             ]
         },
@@ -363,6 +394,17 @@
                     "group": "media-block",
                     "name": "media-block-enhanced",
                     "title": "Media-Block Enhanced"
+                }
+            ]
+        },
+        {
+            "name": "card",
+            "title": "Card",
+            "components": [
+                {
+                    "group": "card",
+                    "name": "card",
+                    "title": "Card"
                 }
             ]
         },
@@ -560,13 +602,13 @@
             ]
         },
         {
-            "name": "icons",
-            "title": "Icons",
+            "name": "notice",
+            "title": "Notice",
             "components": [
                 {
-                    "group": "icons",
-                    "name": "schmuck-icons",
-                    "title": "Schmuck-Icons"
+                    "group": "notice",
+                    "name": "notice",
+                    "title": "Notice"
                 }
             ]
         }

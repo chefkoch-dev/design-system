@@ -1,0 +1,12 @@
+@mixin ds-box-shadow($opacityResting, $opacityLifted) {
+    box-shadow: 0 0 4px 0 rgba($color-shadow-base, $opacityResting);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 0 8px 0 rgba($color-shadow-base, $opacityLifted);
+    }
+
+    &:active {
+        box-shadow: none;
+    }
+}

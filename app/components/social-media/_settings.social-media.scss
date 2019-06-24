@@ -1,3 +1,5 @@
+@import "../shadows/box-shadow";
+
 .ds-social-nav {
     display: flex;
     flex-direction: row;
@@ -5,17 +7,10 @@
 }
 
 .ds-social-item {
+    @include ds-btn-shadow;
+
     border-radius: 50%;
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
     height: $unit * 5;
     margin: 0 $unit;
     width: $unit * 5;
-
-    &:hover {
-        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
-    }
-
-    &:focus {
-        box-shadow: none;
-    }
 }
