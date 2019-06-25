@@ -23,7 +23,9 @@ Der shadow an sich verläuft immer komplett um das Element herum. Die Position d
 Das DSY bietet mixins an, welches resting, lifted und pressed state abdecken. Die Variablen stehen für opacity Werte (0–1).
 - __Für verlinkte Elemente__  
 `@mixin ds-box-shadow($opacityResting, $opacityLifted)` 
+
 - __Für Icons IN verlnkten Elementen__  
+Wird auf den Eltern-Link geschrieben  
 `@mixin ds-icon-shadow($opacityResting, $opacityLifted)`
 
 #### Resting state  

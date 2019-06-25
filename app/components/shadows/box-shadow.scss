@@ -15,10 +15,14 @@ $shadowBlurringLifted: 8px;
 }
 
 @mixin ds-icon-shadow($opacityResting, $opacityLifted) {
-    text-shadow: 0 0 $shadowBlurringResting 0 rgba($color-shadow-base, $opacityResting);
+    i {
+        text-shadow: 0 0 $shadowBlurringResting rgba($color-shadow-base, $opacityResting);
+    }
 
-    &:hover &,
-    &:focus & {
-        text-shadow: 0 0 $shadowBlurringLifted 0 rgba($color-shadow-base, $opacityLifted);
+    &:hover,
+    &:focus {
+        i {
+            text-shadow: 0 0 $shadowBlurringLifted rgba($color-shadow-base, $opacityLifted);
+        }
     }
 }
