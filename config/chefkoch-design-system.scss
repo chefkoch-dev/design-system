@@ -1,12 +1,5 @@
 // base vars
 @import "../components/vars";
-
-/* screen width for DSY site
-** from 960px (viewport) .ndpl-content width
-** because sidebar on the left & padding
-*/
-$screen-m: 960px + 312px + 48px;
-
 // mediaqueries using base vars
 @import "../app/components/breakpoints/breakpoints";
 // grid using mediaqueries
@@ -41,10 +34,6 @@ $screen-m: 960px + 312px + 48px;
 @import "../app/components/carousel/indicators";
 @import "../app/components/carousel/indicators-amp";
 @import "../app/components/notice/notice";
-
-@import "../app/components/alerts/note";
-@import "../app/components/tabs/tabs";
-
 
 // custom astrum UI enhancements
 @import "astrum-theming";

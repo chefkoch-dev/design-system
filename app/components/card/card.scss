@@ -3,7 +3,11 @@
 .ds-card {
     @include ds-border-radius;
     @include ds-card-shadow;
-    padding: $unit * 1.5;
+    padding: $unit;
+
+    @include media-breakpoint-from(xxs) {
+        padding: $unit * 1.5;
+    }
 
     @include media-breakpoint-from(s) {
         padding: $unit * 2;

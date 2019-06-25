@@ -2,12 +2,26 @@
 - 12 Columns sind eine optimale Anzahl an Spalten, um größtmögliche Flexibilität zu gewärleisten. 
 - Während der Content für mobile Viewports alle 12 columns beansprucht, kann ab der m-View eine Aufteilung von bspw. 8:4 stattfinden (8 columns Contentbereich, 4 columns Kontextbereich).
 
-### Benutzung von xs, s und m 
-<small>Stand 3/2019</small>  
+Grundsätzlich verfolgt unser Grid das System von Twitter Bootstrap, bzgl. `min-width` und breakpointabhängigen Klassennamen. Der einzige Unterschied ist jedoch, dass wir mit einer `.ds-col-[1-12]` Klasse beginnen, da unser Breakpoint `xs` bei 480px Viewportbreite beginnt und nicht (wie bei Twitter Bootstrap) bei 0.
 
-Dadurch, dass wir verschiedene Gutter außerhalb und zwischen den Columns haben, ist es leider notwendig mindestens die grid-Klassen (col-xs und col-m) auf die entsprechenden container zu schreiben; auch wenn sich das Verhältnis der columns ansonsten nicht ändert.
+### Benutzung von ds-col
 
-Beispiel: immer volle Breite
+Die Klassen `.ds-col-[1-12]` sind breakpointunabhängig und die __Mindestanforderung__ für den Grid Aufbau.  
+`.ds-col-6` bspw. wird __immer__ 6 colums breit sein. Sofern sich die Breite in keinem Breakpoint ändern wird, sind die Klassen `.ds-col-[1-12]` optimal, da sie auch namentlich an keinem Breakpoint fixiert sind.
 
-- ![do](./app/images/yes.svg) DO: `<div class="ds-col-xs-12 ds-col-m-12">`  
-- ![don't](./app/images/no.svg) DON'T `<div class="ds-col-xs-12">`
+### Benutzung von ds-col-xs, -s und -m 
+
+Aufbauend auf die Klassen `.ds-col-[1-12]`, greifen die Styles der Klassen `.ds-col-xs-[1-12]` ab unserem __xs Breakpoint__, welcher bei seiner definierten Viewportbreite beginnt. Die Klassen `.ds-col-s-[1-12]` greifen ab dem __s Breakpoint__ und die Klassen `.ds-col-m-[1-12]` greifen ab dem __m Breakpoint__
+
+### Gutter
+
+Wir unterscheiden 2 verschiedene Gutter:
+1. Das äußere Gutter (blau), welches auf `.ds-container` liegt.
+2. Das Standard Gutter, also das der Columns (rot), welches jeweils auf den `ds-col...` Klassen liegt.
+
+Die Breiten der Gutter werden je nach breakpoint vergrößert oder verkleinert. Dies passiert alles automatisch, dafür muss nichts getan werden.
+
+<hr class="ds-hr" />
+<br/>
+
+Zieh dein Browserfenster groß und klein, um im nachfolgenden Beispiel die Auswirkungen der Columns und Gutter zu sehen.

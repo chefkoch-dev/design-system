@@ -1,14 +1,17 @@
-.ds-copy-link {
+@mixin ds-copy-link {
     color: $color-corporate-green-dark;
+    font-weight: 500;
     letter-spacing: 0.5px;
-    text-decoration: underline;
+    text-decoration: none;
 
     &:hover,
     &:focus {
-        background: rgba($color-corporate-green, 0.2);
-        color: $color-text;
-        text-decoration: none;
+        text-decoration: underline;
     }
+}
+
+.ds-copy-link {
+    @include ds-copy-link;
 }
 
 /* if the headline is the link */
