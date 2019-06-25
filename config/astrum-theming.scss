@@ -929,4 +929,20 @@ td {
     }
 }
 
+/* Shadows
+----------------------------------- */
+
+#group-shadows-component-icon-shadows {
+    .ndpl-component__sample {
+        a {
+            @include ds-icon-shadow(0.3, 0.3);
+        }
+
+        i {
+            color: $color-white;
+            font-size: 44px;
+        }
+    }
+}
+
 /* stylelint-enable */
