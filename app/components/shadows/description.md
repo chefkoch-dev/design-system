@@ -1,4 +1,4 @@
-Mit `box-shadows` markieren wir Elemente, mit denen der User interagieren kann. Beispiele hierfür sind z.B. Buttons & Cards.  
+Mit Shadows markieren wir Elemente, mit denen der User interagieren kann. Beispiele hierfür sind z.B. Buttons & Cards.  
 
 Wir unterscheiden dabei drei states:
 - resting (base styles)
@@ -20,14 +20,20 @@ Der shadow an sich verläuft immer komplett um das Element herum. Die Position d
 
 
 ### Code  
-Das DSY bietet ein mixin für an, welches resting, lifted und pressed state abdeckt. `@mixin box-shadow($opacityResting, $opacityLifted)`. Die Variablen stehen für opacity Werte (0–1)
+Das DSY bietet mixins an, welches resting, lifted und pressed state abdecken. Die Variablen stehen für opacity Werte (0–1).
+- __Für verlinkte Elemente__  
+`@mixin ds-box-shadow($opacityResting, $opacityLifted)` 
+- __Für Icons IN verlnkten Elementen__  
+`@mixin ds-icon-shadow($opacityResting, $opacityLifted)`
 
-- __Resting state__  
-`$opacityResting` beschreibt die Opazität der Farbe im _resting_ state. Fixwert ist `0.3`, kann aber nach Material Design Regeln angepasst werden. Das dazugehörige Blurring ist auf `4px` festgelegt.  
-- __Lifted state__  
+#### Resting state  
+`$opacityResting` beschreibt die Opazität der Farbe im _resting_ state. Fixwert ist `0.3`, kann aber nach Material Design Regeln angepasst werden. Das dazugehörige Blurring ist auf `2px` festgelegt.  
+
+#### Lifted state
 `$opacityLifted` beschreibt die Opazität der Farbe im _lifted_ state und kann ebenfalls variiert werden, Fixwert ist `0.3`. Das Blurring ist auf `8px` festgelegt.
-- Standardimplementierung wäre `@include ds-box-shadow(0.3, 0.3);`
 
+#### Standardimplementierung
+`@include ds-[type]-shadow(0.3, 0.3);`
 
-- __Pressed state__  
+#### Pressed state
 Im pressed state wird der shadow komplett weggenommen.
