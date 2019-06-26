@@ -3,7 +3,6 @@
 
 .ds-recipe-meta {
     display: flex;
-    font-weight: 500;
     margin-left: -2px;
 
     > span {
@@ -17,7 +16,6 @@
         height: $unit * 2;
         margin-right: $unit / 2;
         padding: $unit / 2 $unit;
-        text-transform: uppercase;
 
         @include media-breakpoint-from(m) {
             margin-right: $unit;
