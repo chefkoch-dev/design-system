@@ -16,3 +16,11 @@
         clear: both;
     }
 }
+
+@mixin ds-or($numberOfClasses: 10) {
+    @for $index from 1 through $numberOfClasses {
+        .ds-or-#{$index} {
+            order: $index;
+        }
+    }
+}
