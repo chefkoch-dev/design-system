@@ -2,7 +2,6 @@
 ----------------------------------- */
 
 .ds-recipe-meta {
-    display: flex;
     margin-left: -2px;
 
     > span {
@@ -14,10 +13,12 @@
         align-items: center;
         font-size: $fontsize-tiny;
         height: $unit * 2;
+        margin-bottom: $unit / 2;
         margin-right: $unit / 2;
         padding: $unit / 2 $unit;
 
         @include media-breakpoint-from(m) {
+            margin-bottom: $unit;
             margin-right: $unit;
         }
     }
