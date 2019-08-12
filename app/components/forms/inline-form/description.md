@@ -5,6 +5,7 @@ Das Inline-Form ist ein einzeiliges Formular, welches maximal 3 Formular Element
 - `<input>`, `<select>`, `<button>`
 
 Um diese 2–3 Elemente als Inline-Formular anzuzeigen, ist es erforderlich, das Eltern-`<form>`-Tag mit der Klasse `.ds-inline-form` auszuzeichnen.
+Soll ein einzelnes Input eines größeren Formulars dieses Design erhalten, kann die Klasse auch auf einem Wrapper-`<div>` liegen.
 
 ### Utilities
 
