@@ -73,6 +73,27 @@
     </div>
 
     <div class="ds-box ds-col-12">
+        <h4>Inline-Form innerhalb komplexerer Form</h4>
+        <form>
+            <input class="ds-input" type="text" name="text"
+                   placeholder="Name (optional)"
+                   autocomplete="off">
+
+            <div class="ds-inline-form">
+                <input class="ds-input" type="text" name="suche"
+                       placeholder="E-Mail"
+                       autocomplete="off">
+
+                <button class="ds-btn ds-btn-primary ds-btn-icon" type="submit">
+                    <i class="material-icons">mail</i>
+                </button>
+            </div>
+        </form>√
+
+        <hr class="ds-hr" />
+    </div>
+
+    <div class="ds-box ds-col-12">
         <h4>Inline-Form Elemente ohne notwendige .ds-inline-form Klasse</h4>
         <form>
             <input class="ds-input" type="text" name="suche"
