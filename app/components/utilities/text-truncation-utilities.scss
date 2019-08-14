@@ -14,24 +14,16 @@
   word-wrap: break-word;
   /* stylelint-enable */
 }
-
-.ds-trunc-1 {
-  /* stylelint-disable */
-  /* autoprefixer: ignore next */
-  -webkit-line-clamp: 1;
-  /* stylelint-enable */
+  
+@mixin ds-trunc($from: 1, $to: 6){
+  @for $i from $from to $to{
+    .ds-trunc-#{$i} {
+      /* stylelint-disable */
+      /* autoprefixer: ignore next */
+      -webkit-line-clamp: #{$i};
+      /* stylelint-enable */
+    }
+  }
 }
 
-.ds-trunc-2 {
-  /* stylelint-disable */
-  /* autoprefixer: ignore next */
-  -webkit-line-clamp: 2;
-  /* stylelint-enable */
-}
-
-.ds-trunc-3 {
-  /* stylelint-disable */
-  /* autoprefixer: ignore next */
-  -webkit-line-clamp: 3;
-  /* stylelint-enable */
-}
+@include ds-trunc();
