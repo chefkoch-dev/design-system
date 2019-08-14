@@ -14,9 +14,9 @@
   word-wrap: break-word;
   /* stylelint-enable */
 }
-  
-@mixin ds-trunc($from: 1, $to: 4){
-  @for $i from $from to $to{
+
+@mixin ds-trunc($from: 1, $to: 4) {
+  @for $i from $from to $to {
     .ds-trunc-#{$i} {
       /* stylelint-disable */
       /* autoprefixer: ignore next */
