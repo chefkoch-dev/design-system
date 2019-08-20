@@ -1,6 +1,10 @@
 /* Layout
 ----------------------------------- */
 
+body {
+    background: $color-bg;
+}
+
 main.ds-container {
     background: $color-bg-content;
     padding-top: $unit * 4;
