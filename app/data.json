@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v7.1.1",
+            "library_title": "v7.2.1",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -449,6 +449,11 @@
                     "group": "forms",
                     "name": "inline-form",
                     "title": "Inline-Form"
+                },
+                {
+                    "group": "forms",
+                    "name": "file",
+                    "title": "Input Type File"
                 }
             ]
         },
