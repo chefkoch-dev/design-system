@@ -5,8 +5,6 @@ Das Modul Recipe Integration bezieht sich auf die __Markenrezepte__ und besteht 
  - Titel: `<h4 class="ds-h5">`
  - Logo: `<img>` oder `<amp-img>`
 
-Die Headline ist eine . Der Titel ist eine .
-
 ### Anzahl
 Es werden immer nur 3 Markenrezepte-Slots angezeigt.
 
