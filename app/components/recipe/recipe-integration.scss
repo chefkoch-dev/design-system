@@ -62,7 +62,7 @@
     }
 }
 
-@include media-breakpoint-only(s) {
+@include media-breakpoint-to(s) {
     .ds-ri-logo {
         display: flex;
         justify-content: center;
