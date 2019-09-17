@@ -50,6 +50,10 @@
     }
 }
 
+.ds-ri-slides-media {
+  margin-bottom: $unit * 1.5;
+}
+
 .ds-ri-img {
     img {
         @include ds-border-radius;
@@ -58,11 +62,9 @@
     }
 }
 
-@include media-breakpoint-only(s) {
-    .ds-ri-logo {
-        display: flex;
-        justify-content: center;
-    }
+.ds-ri-logo {
+    display: flex;
+    justify-content: center;
 }
 
 .ds-ri-slides-text {
