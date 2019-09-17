@@ -62,9 +62,11 @@
     }
 }
 
-.ds-ri-logo {
-    display: flex;
-    justify-content: center;
+@include media-breakpoint-only(s) {
+    .ds-ri-logo {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* stylelint-disable all */
