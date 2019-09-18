@@ -51,23 +51,21 @@
 }
 
 .ds-ri-slider {
-    amp-carousel {
-        // $unit * 1.5 for the gap between image and text
-        // 104px for text and logo
-        padding-bottom: $unit * 1.5 + 104;
+    // $unit * 1.5 for the gap between image and text
+    // 104px for text and logo
+    padding-bottom: $unit * 1.5 + 104;
 
-        .ds-ri-img {
-            margin-bottom: $unit * 1.5;
-        }
+    .ds-ri-img {
+        margin-bottom: $unit * 1.5;
     }
 }
 
 .ds-ri-img {
-  img {
-    @include ds-border-radius;
-    display: block;
-    width: 100%;
-  }
+    img {
+        @include ds-border-radius;
+        display: block;
+        width: 100%;
+    }
 }
 
 @include media-breakpoint-to(s) {
