@@ -30,14 +30,12 @@
         margin: -12px 0 20px;
     }
 
-    // position tags and hide carousel scrollbar
-    > div:first-child {
-        padding: 12px 0 32px;
-    }
-
     /* stylelint-disable all */
-    @include media-breakpoint-to(xs) {
-        .amp-carousel-slide {
+    .amp-carousel-slide {
+        // hide carousel scrollbar
+        padding-bottom: 32px;
+
+        @include media-breakpoint-to(xs) {
             &:first-child {
                 .ds-tag {
                     margin-left: $unit;
