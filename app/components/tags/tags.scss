@@ -33,7 +33,7 @@
     /* stylelint-disable all */
     .amp-carousel-slide {
         // hide carousel scrollbar
-        padding-bottom: 32px;
+        padding: 12px 0 32px;
 
         @include media-breakpoint-to(xs) {
             &:first-child {
