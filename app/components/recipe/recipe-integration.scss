@@ -63,11 +63,11 @@
 }
 
 .ds-ri-img {
-  img {
-    @include ds-border-radius;
-    display: block;
-    width: 100%;
-  }
+    img {
+        @include ds-border-radius;
+        display: block;
+        width: 100%;
+    }
 }
 
 @include media-breakpoint-to(s) {
