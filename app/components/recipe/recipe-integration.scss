@@ -55,6 +55,12 @@
     // 104px for text and logo
     padding-bottom: $unit * 1.5 + 104;
 
+    /* stylelint-disable all */
+    .amp-carousel-button {
+        bottom: ($unit * 1.5 + 104) / 2;
+    }
+    /* stylelint-enable all */
+
     .ds-ri-img {
         margin-bottom: $unit * 1.5;
     }
