@@ -42,11 +42,19 @@
                 }
             }
 
+            /*
             &:last-child {
                 .ds-tag {
                     margin-right: $unit;
                 }
             }
+            */
+        }
+
+        // provide some space to the right because of a bug in amp-carousel.
+        // In some cases the button on the right will not be hidden.
+        &:last-child {
+            margin-right: 60px;
         }
     }
     /* stylelint-enable all */
