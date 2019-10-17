@@ -48,7 +48,14 @@
                 }
             }
         }
-    }
+
+        @include media-breakpoint-from(m) {
+            &:last-child {
+                .ds-tag {
+                    margin-right: 60px;
+                }
+            }
+        }
 
     @include media-breakpoint-to(s) {
         .amp-carousel-button-prev,
