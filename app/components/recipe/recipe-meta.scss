@@ -3,6 +3,7 @@
 
 .ds-recipe-meta {
     margin-left: -2px;
+    margin-bottom: -$unit / 2;
 
     > span {
         @include ds-border-radius;
@@ -21,6 +22,10 @@
             margin-bottom: $unit;
             margin-right: $unit;
         }
+    }
+
+    @include media-breakpoint-from(m) {
+        margin-bottom: -$unit;
     }
 
     i {
