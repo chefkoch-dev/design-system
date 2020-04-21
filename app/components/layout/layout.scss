@@ -12,7 +12,7 @@ main.ds-container {
     body[data-ads-site-type="tablet"] & {
         width: auto;
         max-width: none;
-        margin-right: 200px;
+        margin-right: $skyscraper-width;
     }
 }
 
