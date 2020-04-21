@@ -8,6 +8,12 @@ body {
 main.ds-container {
     background: $color-bg-content;
     padding-top: $unit * 4;
+
+    body[data-ads-site-type="tablet"] & {
+        width: auto;
+        max-width: none;
+        margin-right: 200px;
+    }
 }
 
 .ds-box {
@@ -26,6 +32,7 @@ main.ds-container {
     .ad & {
         padding-top: $unit * 2;
     }
+
     /* stylelint-enable all */
 }
 
