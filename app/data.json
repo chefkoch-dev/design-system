@@ -78,14 +78,6 @@
                     "options": {
                         "disable_code_sample": true
                     }
-                },
-                {
-                    "group": "breakpoints",
-                    "name": "viewports",
-                    "title": "Viewports",
-                    "options": {
-                        "disable_code_sample": true
-                    }
                 }
             ]
         },

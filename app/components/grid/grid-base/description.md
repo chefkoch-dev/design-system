@@ -1,4 +1,4 @@
-- Das Grid besteht aus 12 Columns, 2 Seitenmargins und 11 Gutter, die sich gemäß der [Viewports Tabelle](#group-breakpoints-component-viewports) verhalten.  
+- Das Grid besteht aus 12 Columns, 2 Seitenmargins und 11 Gutter, die sich gemäß der [Material Design Breakpoints](https://material.io/design/layout/responsive-layout-grid.html#breakpoints) verhalten.  
 - 12 Columns sind eine optimale Anzahl an Spalten, um größtmögliche Flexibilität zu gewärleisten. 
 - Während der Content für mobile Viewports alle 12 columns beansprucht, kann ab der m-View eine Aufteilung von bspw. 8:4 stattfinden (8 columns Contentbereich, 4 columns Kontextbereich).
 
