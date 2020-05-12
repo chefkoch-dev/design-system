@@ -12,5 +12,6 @@ $screen-m: 1196px;
 
 $skyscraper-width: 200px;
 
-$content-width: ($screen-m - $skyscraper-width) / 3 * 2 + $unit;
+// 2/3 of the "desktop" screen equals the maximum content size
+$max-content-width: ($screen-m - $skyscraper-width) / 3 * 2 + $unit;
 $screen-tablet: 768px;
