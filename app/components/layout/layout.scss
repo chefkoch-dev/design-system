@@ -8,6 +8,26 @@ body {
 main.ds-container {
     background: $color-bg-content;
     padding-top: $unit * 4;
+    width: auto;
+    max-width: $max-content-width;
+
+    @include media-breakpoint-from(m) {
+        max-width: $screen-m - $skyscraper-width;
+    }
+
+    body[data-ads-site-type="tablet"] & {
+        // center content and skyscraper
+        margin-right: calc(((100vw - (#{$max-content-width} + #{$skyscraper-width})) / 2) + #{$skyscraper-width});
+        // static margin if content is less than $max-content-width
+        @media (max-width: calc(#{$skyscraper-width} + #{$max-content-width})) {
+            margin-right: $skyscraper-width;
+        }
+    }
+
+    body[data-ads-site-type="desktop"] & {
+        // center content and skyscraper
+        margin-right: calc(((100vw - #{$screen-m}) / 2) + #{$skyscraper-width});
+    }
 }
 
 .ds-box {
@@ -26,6 +46,7 @@ main.ds-container {
     .ad & {
         padding-top: $unit * 2;
     }
+
     /* stylelint-enable all */
 }
 
