@@ -8,6 +8,9 @@ $screen-xxxs: 320px;
 $screen-xxs: 360px;
 $screen-xs: 480px;
 $screen-s: 600px;
-$screen-m: 960px !default;
+$screen-m: 1196px;
 
 $skyscraper-width: 200px;
+
+$content-width: ($screen-m - $skyscraper-width) / 3 * 2 + $unit;
+$screen-tablet: 768px;
