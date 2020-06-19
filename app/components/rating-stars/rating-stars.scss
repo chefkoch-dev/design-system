@@ -24,8 +24,8 @@
 
     i {
         color: $color-yellow;
-        font-size: 28px;
-        width: 26px;
+        font-size: 24px;
+        width: 22px;
     }
 
     &.ds-no-rating {
@@ -40,7 +40,7 @@
     color: $color-black;
     font-size: $fontsize-small;
     font-weight: 400;
-    line-height: 28px;
+    line-height: $lineheight-base;
     margin-left: $unit;
 }
 
