@@ -1,4 +1,4 @@
-Secondary Headings stehen in Kombination mit einer Headline. Der Inhalt der Secondary Headings ist zwar informativ und SEO relevant, aber für den User sekundär. Dies wird vorallem durch die font-size und color (`$color-grey-dark`) dargestellt.
+Secondary Headings stehen in Kombination mit einer Headline. Der Inhalt der Secondary Headings ist zwar informativ und SEO relevant, aber für den User sekundär. Dies wird vorallem durch die font-size und color (`$color-chia`) dargestellt.
 
 ### Code  
 Definiert wird die Secondary Heading als `<span class="ds-h7">`. Sie ist immer Bestandteil, des `<h*>`-Tags, und wird im Code immer __nach__ dem Headline Text platziert.

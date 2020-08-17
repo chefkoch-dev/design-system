@@ -2,18 +2,18 @@
     box-shadow: none;
 
     &.ds-btn-primary {
-        background-color: $color-grey-dark;
+        background-color: $color-pepper;
         color: $color-text-inverted;
     }
 
     &.ds-btn-secondary {
-        border-color: $color-grey-dark;
+        border-color: $color-pepper;
     }
 
     &.ds-btn-secondary,
     &.ds-btn-tertiary,
     &.ds-btn-icon {
-        color: $color-grey-dark;
+        color: $color-pepper;
     }
 
     &.ds-btn-primary.ds-btn-icon {

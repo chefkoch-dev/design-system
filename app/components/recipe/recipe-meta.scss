@@ -8,8 +8,8 @@
     > span {
         @include ds-border-radius;
 
-        background: rgba($color-grey-light, 0.3);
-        color: $color-black;
+        background: rgba($color-pepper, 0.3);
+        color: $color-olive;
         display: inline-flex;
         align-items: center;
         font-size: $fontsize-tiny;
