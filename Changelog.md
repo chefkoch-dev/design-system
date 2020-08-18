@@ -19,3 +19,4 @@ $color-yellow-dark --> $color-mirabelle-dark
 
 ###Typography:
 The biggest change is the fontfamily. It changed from Helvetica to Source Sans Pro/Serif. Fontsizes, Fontweights, Lineheight and headings changed as well.
+We added the new fontfamily in the index.html.
