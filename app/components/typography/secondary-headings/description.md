@@ -12,7 +12,7 @@ Wir verwenden für die Secondary Headings `<span>`-Tags, da innerhalb  `<h*>`-Ta
 [Näheres zu Phrasing Content kann hier nachgelesen werden](https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements).
 
 ### Styles  
-Helvetica Neue Regular  
-F 12px / L 20px / M 0
+Source Sans Pro   
+F 14px / L 19px / M 0
   
 <small>F: Fontsize / L: Line-Height / M: Margin (bottom)</small>

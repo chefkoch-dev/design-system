@@ -9,7 +9,7 @@ Small Text im Content (`<main>`) sollte kein Absatz `<p>` sein, sondern `<small>
 Weitere Textauszeichnungen über [ds-utility-Klassen](#group-utilities-component-typography-utilities) möglich.
 
 ### Styles  
-Helvetica Neue Regular  
-F 14px / L 20px / M 0   
+Source Sans Pro
+F 14px / L 19px / M 0   
  
 <small>F: Fontsize / L: Line-Height / M: Margin (bottom)</small>

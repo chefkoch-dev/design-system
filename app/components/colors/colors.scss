@@ -67,16 +67,17 @@ $color-chili-xlight:           #F2D9D9; // chili 15%
 /* sand
 ----------------------------------- */
 
-$color-sand:                   #F3F4F0; //sand
-$color-sand-medium:            #F6F7F4; // sand 75%
-$color-sand-light:             #FAFAF8; // sand 45%
-$color-sand-xlight:            #FDFDFD; // sand 15%
+$color-garlic:                  #F3F4F0; //sand
+$color-garlic-medium:           #F6F7F4; // sand 75%
+$color-garlic-light:            #FAFAF8; // sand 45%
+$color-garlic-xlight:           #FDFDFD; // sand 15%
 
 /* monochrome colours
 ----------------------------------- */
 
-$color-grey-light:           $color-pepper; // for borders
-$color-white:                #fff; // basmati
+$color-grey-light:            $color-pepper; // for borders
+$color-sand:                  $color-garlic; // for borders
+$color-white:                 #fff; // basmati
 
 /* other colours (DEPRECATED)
 ----------------------------------- */

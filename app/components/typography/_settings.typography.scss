@@ -14,6 +14,7 @@ $fontsize-h1: 40px !default;
 $fontsize-h2: 32px !default;
 $fontsize-h3: 24px !default;
 $fontsize-h4: $fontsize-base;
+$fontsize-h5: $fontsize-base;
 
 /* line-heights
 ----------------------------------- */
@@ -26,6 +27,7 @@ $lineheight-h1: 44px !default; //44px
 $lineheight-h2: 36px !default; //32px
 $lineheight-h3: 28px !default;
 $lineheight-h4: $lineheight-base;
+$lineheight-h5: $lineheight-base;
 
 
 /* font: x;
@@ -37,10 +39,11 @@ $font-base: normal #{$fontsize-base}/#{$lineheight-base} $fontfamily-base !defau
 $font-base-bold: bold #{$fontsize-base}/#{$lineheight-base} $fontfamily-base !default;
 $font-small: normal #{$fontsize-small}/#{$lineheight-small} $fontfamily-base !default;
 
-$font-h1: 700 #{$fontsize-h1}/#{$lineheight-h1} $fontfamily-base !default;
-$font-h2: 700 #{$fontsize-h2}/#{$lineheight-h2} $fontfamily-base !default;
-$font-h3: 700 #{$fontsize-h3}/#{$lineheight-h3} $fontfamily-base !default;
-$font-h4: 700 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base !default;
+$font-h1: 600 #{$fontsize-h1}/#{$lineheight-h1} $fontfamily-base !default;
+$font-h2: 600 #{$fontsize-h2}/#{$lineheight-h2} $fontfamily-base !default;
+$font-h3: 600 #{$fontsize-h3}/#{$lineheight-h3} $fontfamily-base !default;
+$font-h4: 600 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base !default;
+$font-h5: 700 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base !default;
 
 
 /* will be deleted
