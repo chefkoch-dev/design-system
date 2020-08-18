@@ -1,4 +1,4 @@
-Secondary Headings stehen in Kombination mit einer Headline. Der Inhalt der Secondary Headings ist zwar informativ und SEO relevant, aber für den User sekundär. Dies wird vorallem durch die font-size und color (`$color-grey-dark`) dargestellt.
+Secondary Headings stehen in Kombination mit einer Headline. Der Inhalt der Secondary Headings ist zwar informativ und SEO relevant, aber für den User sekundär. Dies wird vorallem durch die font-size und color (`$color-chia`) dargestellt.
 
 ### Code  
 Definiert wird die Secondary Heading als `<span class="ds-h7">`. Sie ist immer Bestandteil, des `<h*>`-Tags, und wird im Code immer __nach__ dem Headline Text platziert.
@@ -12,7 +12,7 @@ Wir verwenden für die Secondary Headings `<span>`-Tags, da innerhalb  `<h*>`-Ta
 [Näheres zu Phrasing Content kann hier nachgelesen werden](https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements).
 
 ### Styles  
-Helvetica Neue Regular  
-F 12px / L 20px / M 0
+Source Sans Pro   
+F 14px / L 19px / M 0
   
 <small>F: Fontsize / L: Line-Height / M: Margin (bottom)</small>

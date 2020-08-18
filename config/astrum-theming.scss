@@ -270,7 +270,7 @@ html {
 }
 
 .ndpl-library__group:not(:first-child) {
-    border-top: 1px solid $color-grey-light;
+    border-top: 1px solid $color-pepper;
     padding-top: 60px;
 }
 
@@ -327,7 +327,7 @@ html {
     pre code,
     code {
         background: #f1efec;
-        border: 1px solid $color-grey-medium;
+        border: 1px solid $color-pepper;
         border-radius: $unit / 2;
         color: $color-text;
         font-size: $fontsize-small;
@@ -350,7 +350,7 @@ html {
 
 .ndpl-component__sample {
     code {
-        border: 1px solid $color-grey-medium;
+        border: 1px solid $color-pepper;
         border-radius: $unit / 2;
         color: $color-text;
         display: inline-block;
@@ -506,7 +506,7 @@ html {
         }
 
         &:before {
-            color: $color-grey-dark;
+            color: $color-chia;
             display: block;
             font-size: 12px;
             position: absolute;
@@ -840,7 +840,7 @@ th {
 }
 
 td {
-    border-top: 1px solid $color-grey-light;
+    border-top: 1px solid $color-pepper;
 }
 
 /* media-block

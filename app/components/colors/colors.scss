@@ -4,44 +4,98 @@
 ** Just name it $color-corporate-green instead so that you know what it does but the usage is not implicated.
 */
 
-/* primary green
+/* primary green broccoli
 ----------------------------------- */
 
-$color-corporate-green:         #618f30; // 3.83 Ratio (AA) to #fff
-$color-corporate-green-dark:    #537a29; // 5.01 Ratio (AA) to #fff
+$color-corporate-green:         #3b8047; //broccoli
+$color-corporate-green-dark:    #37713f; // broccoli + 15 olive
+$color-corporate-green-medium:  #6ca075; // broccoli 75%
+$color-corporate-green-light:   #a7c6ac; // broccoli 45%
+$color-corporate-green-xlight:  #e2ece3; // broccoli 15%
+
+/* watermelon red
+----------------------------------- */
+
+$color-watermelon:              #ff6067; //watermelon
+$color-watermelon-dark:         #de565f; // watermelon + 15 olive
+$color-watermelon-medium:       #ff8f90; // watermelon 75%
+$color-watermelon-light:        #fff7fa; // watermelon 45%
+$color-watermelon-xlight:       #ffe7e8; // watermelon 15%
+
+/* olive black
+----------------------------------- */
+
+$color-olive:                   #212018; //olive
+$color-olive-medium:            #595852; // olive 75%
+$color-olive-light:             #9f9a97; // olive 45%
+$color-olive-xlight:            #dededd; // olive 15%
+
+/* chia grey
+----------------------------------- */
+
+$color-chia:                    #666660; //chia
+$color-chia-medium:             #8c8c85; // chia 75%
+$color-chia-light:              #fafaf7; // chia 45%
+$color-chia-xlight:             #e8e8e7; // chia 15%
+
+/* pepper grey
+----------------------------------- */
+
+$color-pepper:                  #a7a7a2; //pepper
+$color-pepper-medium:           #fdfdf9; // pepper 75%
+$color-pepper-light:            #d7d7d5; // pepper 45%
+$color-pepper-xlight:           #f2f2f1; // pepper 15%
+
+/* mirabelle yellow
+----------------------------------- */
+
+$color-mirabelle:               #ffcd12; //mirabelle
+$color-mirabelle-dark:          #def312; // mirabelle dark
+$color-mirabelle-medium:        #ffda4d; // mirabelle 75%
+$color-mirabelle-light:         #ffe894; // mirabelle 45%
+$color-mirabelle-xlight:        #fff8dc; // mirabelle 15%
+
+/* chili red
+----------------------------------- */
+
+$color-chili:                  #a70000; //chili
+$color-chili-dark:             #930403; // chili
+$color-chili-medium:           #fd4040; // chili 75%
+$color-chili-light:            #d78c8c; // chili 45%
+$color-chili-xlight:           #f2d9d9; // chili 15%
+
+/* sand
+----------------------------------- */
+
+$color-garlic:                  #f3f4f0; //sand
+$color-garlic-medium:           #f6f7f4; // sand 75%
+$color-garlic-light:            #fafaf8; // sand 45%
+$color-garlic-xlight:           #fdfdfd; // sand 15%
 
 /* monochrome colours
 ----------------------------------- */
 
-$color-black:                   #403b3b; // 11.01 Ratio (AAA) to #fff
-$color-grey-dark:               #9d9d9d; // 2.71 fails to #fff
-$color-grey-medium:             #bbb9b9; // 1.95 fails to #fff
-$color-grey-light:              #d8d8d8; // for borders
-$color-sand:                    #f6f5f2; // body background
-$color-white:                   #fff;
+$color-grey-light:            $color-pepper; // for borders
+$color-sand:                  $color-garlic; // for borders
+$color-white:                 #fff; // basmati
 
-/* other colours
+/* other colours (DEPRECATED)
 ----------------------------------- */
 
-$color-red:             #ff665e; // 2.87 fails to #fff
-$color-red-dark:        #a9423c;
-$color-yellow:          #ffcd12;
-$color-yellow-dark:     #dbb007;
-$color-blue:            #007c8c; // 4.92 Ratio (AA) to #fff
-$color-blue-dark:       #006a78;
-
-$color-purple:          #bf538d; // 4.34 Ratio (AA) to #fff
+$color-purple:              #bf538d;
+$color-blue:                #007c8c; // 4.92 Ratio (AA) to #fff
+$color-blue-dark:           #006a78;
 
 /* specified usages
 ----------------------------------- */
 
-$color-text:            $color-black;
+$color-text:            $color-olive;
 $color-text-inverted:   $color-white;
-$color-border:          $color-grey-light;
+$color-border:          $color-pepper;
 $color-bg:              $color-white;
 $color-bg-content:      $color-white;
 
-$color-shadow-base:     #000;
+$color-shadow-base:     $color-olive;
 
 /* BACKUP
 ** old color vars (using new ones)
@@ -49,13 +103,13 @@ $color-shadow-base:     #000;
 
 $color-text--corporate-green:   $color-corporate-green-dark;
 
-$color-text--black:             $color-black;
-$color-text--grey:              $color-grey-dark;
-$color-icon--grey:              $color-grey-medium;
-$color-border--grey:            $color-grey-light;
+$color-text--black:             $color-olive;
+$color-text--grey:              $color-chia;
+$color-icon--grey:              $color-pepper;
+$color-border--grey:            $color-pepper;
 $color-background--sand:        $color-sand;
 
 $color-action--purple:          $color-purple;
 $color-info--blue:              $color-blue;
-$color-info--yellow:            $color-yellow;
-$color-info--red:               $color-red;
+$color-info--yellow:            $color-mirabelle;
+$color-info--red:               $color-watermelon;

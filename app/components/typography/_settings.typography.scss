@@ -1,33 +1,34 @@
 /* font-family
 ----------------------------------- */
 
-$fontfamily-base: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+$fontfamily-base: "Source Sans Pro", "Arial", sans-serif;
+$fontfamily-base-serif: "Source Serif Pro", serif;
 
 /* font-sizes
 ----------------------------------- */
 
-$fontsize-base: 16px !default;
+$fontsize-base: 18px !default;
 $fontsize-small: 14px !default;
 $fontsize-tiny: 12px !default;
 
-$fontsize-h1: 32px !default;
-$fontsize-h2: 24px !default;
-$fontsize-h3: 20px !default;
+$fontsize-h1: 40px !default;
+$fontsize-h2: 32px !default;
+$fontsize-h3: 24px !default;
 $fontsize-h4: $fontsize-base;
-$fontsize-h5: $fontsize-small;
+$fontsize-h5: $fontsize-base;
 
 /* line-heights
 ----------------------------------- */
 
 // we use px here so that we can reuse this variable again
-$lineheight-base: 24px !default;
-$lineheight-small: 20px !default;
+$lineheight-base: 27px !default;
+$lineheight-small: 19px !default;
 
-$lineheight-h1: $fontsize-h1 + $unit !default; //40px
-$lineheight-h2: $fontsize-h2 + $unit !default; //32px
-$lineheight-h3: $lineheight-base;
+$lineheight-h1: 44px !default; //44px
+$lineheight-h2: 36px !default; //32px
+$lineheight-h3: 28px !default;
 $lineheight-h4: $lineheight-base;
-$lineheight-h5: $lineheight-small;
+$lineheight-h5: $lineheight-base;
 
 
 /* font: x;
@@ -35,14 +36,21 @@ $lineheight-h5: $lineheight-small;
 // font: font-weight font-size/line-height font-family;
 
 $font-base: normal #{$fontsize-base}/#{$lineheight-base} $fontfamily-base !default;
+// to be used for highlighting passages in introduction texts
+$font-base-bold: bold #{$fontsize-base}/#{$lineheight-base} $fontfamily-base !default;
 $font-small: normal #{$fontsize-small}/#{$lineheight-small} $fontfamily-base !default;
-$font-tiny: normal #{$fontsize-tiny}/#{$lineheight-small} $fontfamily-base !default;
 
-$font-h1: 700 #{$fontsize-h1}/#{$lineheight-h1} $fontfamily-base !default;
-$font-h2: 700 #{$fontsize-h2}/#{$lineheight-h2} $fontfamily-base !default;
-$font-h3: 700 #{$fontsize-h3}/#{$lineheight-h3} $fontfamily-base !default;
-$font-h4: 700 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base !default;
-$font-h5: 700 #{$fontsize-h5}/#{$lineheight-h5} $fontfamily-base !default;
+$font-h1: 600 #{$fontsize-h1}/#{$lineheight-h1} $fontfamily-base-serif !default;
+$font-h2: 600 #{$fontsize-h2}/#{$lineheight-h2} $fontfamily-base-serif !default;
+$font-h3: 600 #{$fontsize-h3}/#{$lineheight-h3} $fontfamily-base-serif !default;
+$font-h4: 600 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base !default;
+$font-h5: 700 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base !default;
+
+$font-h1-sans: 600 #{$fontsize-h1}/#{$lineheight-h1} $fontfamily-base !default;
+$font-h2-sans: 600 #{$fontsize-h2}/#{$lineheight-h2} $fontfamily-base !default;
+$font-h3-sans: 600 #{$fontsize-h3}/#{$lineheight-h3} $fontfamily-base !default;
+$font-h4-serif: 600 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base-serif !default;
+$font-h5-serif: 700 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base-serif !default;
 
 
 /* will be deleted

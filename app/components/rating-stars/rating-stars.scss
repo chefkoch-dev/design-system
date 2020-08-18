@@ -23,21 +23,21 @@
     margin-left: -2px; // for visual alignment on the left
 
     i {
-        color: $color-yellow;
+        color: $color-mirabelle;
         font-size: 24px;
         width: 22px;
     }
 
     &.ds-no-rating {
         i {
-            color: $color-grey-medium;
+            color: $color-pepper;
         }
     }
 }
 
 .ds-rating-avg,
 .ds-rating-count {
-    color: $color-black;
+    color: $color-olive;
     font-size: $fontsize-small;
     font-weight: 400;
     line-height: $lineheight-base;

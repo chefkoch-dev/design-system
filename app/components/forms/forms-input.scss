@@ -2,7 +2,7 @@
 -------------------------- */
 
 .ds-input {
-    border: 1px solid $color-grey-medium;
+    border: 1px solid $color-pepper;
     color: $color-text;
     border-radius: $unit;
     box-sizing: border-box;
@@ -18,6 +18,6 @@
     }
 
     &::placeholder {
-        color: $color-grey-medium;
+        color: $color-pepper;
     }
 }

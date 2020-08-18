@@ -60,13 +60,13 @@
 .ds-page-item {
     &.ds-disabled {
         @extend %pagination-item-box;
-        color: $color-grey-light;
+        color: $color-pepper;
         cursor: default;
     }
 
     &.ds-truncated {
         > span {
-            color: $color-grey-dark;
+            color: $color-chia;
             cursor: default;
             display: block;
             line-height: 34px;
