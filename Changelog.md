@@ -1,0 +1,21 @@
+# Changelog
+
+## V: 8.0.2 - 9.0.0
+
+###Colors:
+The color variable names and codes completely changed.
+On the left side are the old variables - on the right side the new color names.
+```
+$color-black --> $color-olive
+$color-grey-dark --> $color-chia
+$color-grey-medium --> $color-pepper
+$color-grey-light --> $color-pepper
+$color-sand --> $color-garlic
+$color-red --> $color-watermelon
+$color-red-dark --> $color-chili
+$color-yellow --> $color-mirabelle
+$color-yellow-dark --> $color-mirabelle-dark
+```
+
+###Typography:
+The biggest change is the fontfamily. It changed from Helvetica to Source Sans Pro/Serif. Fontsizes, Fontweights, Lineheight and headings changed as well.
