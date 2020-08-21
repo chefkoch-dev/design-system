@@ -76,10 +76,8 @@ Sometimes it could be use full to work with branches and use the code of the bra
 
 ### Tagging
 
-To cut a release (new npm package version) add a tag to master. Use the version number from package.json and tag it with the flowing format:
+Create a release description at github. This will create a tag. Use the version number from package.json and tag it with the flowing format:
 
     v<$VERSION>
-
-Now create a release description at github ;-)
 
 Hint: every commit on master should have a tag! (If not, design.chefkoch.de an the latest npm package are different.)

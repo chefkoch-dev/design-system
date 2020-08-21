@@ -20,3 +20,6 @@ $color-yellow-dark --> $color-mirabelle-dark
 ###Typography:
 The biggest change is the fontfamily. It changed from Helvetica to Source Sans Pro/Serif. Fontsizes, Fontweights, Lineheight and headings changed as well.
 We added the new fontfamily in the index.html.
+Every headline can be written in two different fontfamily types: Sans or Serif.
+The default headlines are styled in Serif. If you want a Sans headline you need to add the modifier "-sans" like ".ds-h2-sans".
+All of the headlines are differently styled now.
