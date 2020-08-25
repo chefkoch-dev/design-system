@@ -1,0 +1,52 @@
+.ds-action-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__wrapper {
+        border-radius: 20px 20px 0 0;
+        background-color: $color-white;
+        padding: 24px 24px 34px;
+        overflow: auto;
+        /* stylelint-disable all */
+        i.material-icons {
+            color: $color-chia;
+            background-color: $color-white;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        /* stylelint-enable all */
+    }
+
+    &--actions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &--buttons {
+        margin: 0 auto;
+    }
+
+    &--action {
+        padding-top: 28px;
+
+        &--wrapper {
+            display: flex;
+            padding-top: 16px;
+        }
+
+        /* stylelint-disable all */
+        i.material-icons {
+            font-size: 25px;
+            margin-right: 32px;
+        }
+        /* stylelint-enable all */
+    }
+}

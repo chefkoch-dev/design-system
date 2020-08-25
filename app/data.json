@@ -613,6 +613,17 @@
                     "title": "Notice"
                 }
             ]
+        },
+        {
+            "name": "action-menu",
+            "title": "Action-Menu",
+            "components": [
+                {
+                    "group": "action-menu",
+                    "name": "action-menu",
+                    "title": "Action-Menu"
+                }
+            ]
         }
     ],
     "version": "1.9.5"
