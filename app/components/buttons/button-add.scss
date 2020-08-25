@@ -1,0 +1,39 @@
+.ds-btn-add {
+    @include ds-btn-shadow;
+
+    background: $color-corporate-green;
+    border-radius: 64px;
+    height: 64px;
+    text-align: center;
+    width: 64px;
+
+    &:hover {
+        background-color: $color-corporate-green-medium;
+        cursor: pointer;
+    }
+
+    // pressed?
+    &:active {
+        background-color: $color-corporate-green-dark;
+    }
+
+    i.material-icons {
+        color: $color-white;
+        font-size: 30px;
+        line-height: 64px;
+    }
+
+    &--desktop {
+        border-radius: 22px;
+        display: flex;
+        height: 100%;
+        width: 100%;
+
+        span {
+            align-items: center;
+            color: $color-white;
+            margin-left: $unit;
+            margin-right: $unit;
+        }
+    }
+}

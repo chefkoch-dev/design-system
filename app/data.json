@@ -486,6 +486,11 @@
                     "group": "buttons",
                     "name": "deactivated",
                     "title": "Inaktiv / Deaktiviert"
+                },
+                {
+                    "group": "buttons",
+                    "name": "add",
+                    "title": "add"
                 }
             ]
         },
