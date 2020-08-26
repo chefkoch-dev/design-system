@@ -3,9 +3,7 @@
 
     background: $color-corporate-green;
     border-radius: 64px;
-    height: 64px;
     text-align: center;
-    width: 64px;
 
     &:hover {
         background-color: $color-corporate-green-medium;
@@ -17,23 +15,30 @@
         background-color: $color-corporate-green-dark;
     }
 
+    /* stylelint-disable all */
     i.material-icons {
-        color: $color-white;
+        color: $color-text-inverted;
         font-size: 30px;
         line-height: 64px;
+    }
+    /* stylelint-enable all */
+
+    &--mobile {
+        height: 64px;
+        width: 64px;
     }
 
     &--desktop {
         border-radius: 22px;
         display: flex;
-        height: 100%;
-        width: 100%;
+        height: 50%;
 
         span {
             align-items: center;
-            color: $color-white;
+            color: $color-text-inverted;
             margin-left: $unit;
             margin-right: $unit;
         }
     }
 }
+
