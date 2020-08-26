@@ -490,7 +490,12 @@
                 {
                     "group": "buttons",
                     "name": "add",
-                    "title": "add"
+                    "title": "Add"
+                },
+                {
+                    "group": "buttons",
+                    "name": "view-toggle",
+                    "title": "View-Toggle"
                 }
             ]
         },

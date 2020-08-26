@@ -1,0 +1,52 @@
+.ds-btn-view-toggle {
+    display: flex;
+    width: 95px;
+
+    &--button {
+        display: flex;
+        width: 50%;
+        /* stylelint-disable all */
+        border: none;
+        /* stylelint-enable all */
+        padding: 0;
+
+        &-left {
+            border-radius: 20px 0 0 20px;
+            border-left: 2px solid $color-corporate-green-light;
+            border-top: 2px solid $color-corporate-green-light;
+            border-bottom: 2px solid $color-corporate-green-light;
+        }
+
+        &-right {
+            border-radius: 0 20px 20px 0;
+            border-right: 2px solid $color-corporate-green-light;
+            border-top: 2px solid $color-corporate-green-light;
+            border-bottom: 2px solid $color-corporate-green-light;
+        }
+    }
+
+    &--icon {
+        &-left {
+            border-radius: 20px 0 0 20px;
+            width: 100%;
+            padding: 8px 3px 8px 6px;
+        }
+
+        &-right {
+            border-radius: 0 20px 20px 0;
+            width: 100%;
+            padding: 5px 8px 5px 5px;
+            font-size: 30px;
+        }
+    }
+
+    &--active {
+        background-color: $color-corporate-green-xlight;
+        color: $color-corporate-green;
+    }
+
+    &--inactive {
+        background-color: $color-white;
+        color: $color-corporate-green-light;
+    }
+}
