@@ -3,7 +3,8 @@
 
     background: $color-corporate-green;
     border-radius: 64px;
-    text-align: center;
+    width: 64px;
+    height: 64px;
 
     &:hover {
         background-color: $color-corporate-green-medium;
@@ -19,26 +20,7 @@
     i.material-icons {
         color: $color-text-inverted;
         font-size: 30px;
-        line-height: 64px;
     }
     /* stylelint-enable all */
-
-    &--mobile {
-        height: 64px;
-        width: 64px;
-    }
-
-    &--desktop {
-        border-radius: 22px;
-        display: flex;
-        height: 50%;
-
-        span {
-            align-items: center;
-            color: $color-text-inverted;
-            margin-left: $unit;
-            margin-right: $unit;
-        }
-    }
 }
 

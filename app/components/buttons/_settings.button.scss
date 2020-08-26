@@ -33,7 +33,7 @@ $btn-base-value: $unit * 5;
 }
 
 @mixin btn-base {
-    border-radius: $unit;
+    border-radius: 2 * $unit + 6;
     display: inline-flex;
     align-items: center;
     justify-content: center;
