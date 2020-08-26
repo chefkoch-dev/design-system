@@ -3,4 +3,14 @@
 
     background-color: $color-corporate-green;
     color: $color-text-inverted;
+
+    &:hover {
+        background-color: $color-corporate-green-medium;
+        cursor: pointer;
+    }
+
+    // pressed?
+    &:active {
+        background-color: $color-corporate-green-dark;
+    }
 }

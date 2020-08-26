@@ -1,0 +1,26 @@
+.ds-btn-add {
+    @include ds-btn-shadow;
+
+    background: $color-corporate-green;
+    border-radius: 64px;
+    width: 64px;
+    height: 64px;
+
+    &:hover {
+        background-color: $color-corporate-green-medium;
+        cursor: pointer;
+    }
+
+    // pressed?
+    &:active {
+        background-color: $color-corporate-green-dark;
+    }
+
+    /* stylelint-disable all */
+    i.material-icons {
+        color: $color-text-inverted;
+        font-size: 30px;
+    }
+    /* stylelint-enable all */
+}
+
