@@ -1,8 +1,8 @@
-Mit Hilfe von Actin Menus lassen sich Aktionen wie beispielsweise im Kochbuch das Verschieben von Rezepten ausführen.
+Mit Hilfe von Action-Menus lassen sich Aktionen wie beispielsweise im Kochbuch das Verschieben von Rezepten ausführen.
 
 ### Info
 Dieses Action Menu ist noch nicht voll funktionsfähig. Es bietet lediglich eine styling Grundlage für
-Action-Menus (zunächst nur die mobile Implementation, desktop folgt). Die Funktionen des Action Menus, d.h. Animationen, Öffnen & Schließen sind nicht Teil des DSY.
+Action-Menus (zunächst nur die mobile Implementation, Desktop folgt). Die Funktionen des Action Menus, d.h. Animationen, Öffnen & Schließen sind nicht Teil des DSY.
 
 ### Icons
 Im Action Menu verwenden wir Material Icons.
