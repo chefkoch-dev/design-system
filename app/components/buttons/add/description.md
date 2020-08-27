@@ -1,5 +1,3 @@
-The add button should be used if the linked functionality adds something. 
-
 ### Usage  
     
     Via Shortlink 

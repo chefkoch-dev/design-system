@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v9.2.4",
+            "library_title": "v9.3.4",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -490,7 +490,12 @@
                 {
                     "group": "buttons",
                     "name": "add",
-                    "title": "add"
+                    "title": "Add"
+                },
+                {
+                    "group": "buttons",
+                    "name": "view-toggle",
+                    "title": "View-Toggle"
                 }
             ]
         },
