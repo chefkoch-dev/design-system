@@ -9,19 +9,17 @@
         border: none;
         /* stylelint-enable all */
         padding: 0;
+        border-top: 2px solid $color-corporate-green-light;
+        border-bottom: 2px solid $color-corporate-green-light;
 
         &-left {
             border-radius: 20px 0 0 20px;
             border-left: 2px solid $color-corporate-green-light;
-            border-top: 2px solid $color-corporate-green-light;
-            border-bottom: 2px solid $color-corporate-green-light;
         }
 
         &-right {
             border-radius: 0 20px 20px 0;
             border-right: 2px solid $color-corporate-green-light;
-            border-top: 2px solid $color-corporate-green-light;
-            border-bottom: 2px solid $color-corporate-green-light;
         }
     }
 
