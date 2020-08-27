@@ -43,3 +43,7 @@ dialog one need to add these styles to "ds-action-menu":
 `
 position: fixed; top: 0; left: 0; z-index: 1000002;
 `
+## V: 9.2.4 - 9.3.4
+
+#### New component added: 
+The View Toggle Button. It can be used to display a card or list view of items.
