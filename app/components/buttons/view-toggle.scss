@@ -1,6 +1,8 @@
 .ds-btn-view-toggle {
     display: flex;
-    width: 95px;
+    width: 96px;
+    height: 44px;
+    //border: 2px solid #a7c6ac;
 
     &--icon {
         border-top: 2px solid $color-corporate-green-light;
@@ -8,7 +10,7 @@
 
         &-left {
             width: 100%;
-            padding: 10px 10px 10px 13px;
+            padding: 8px 10px 8px 13px;
             border-radius: 22px 0 0 22px;
             border-left: 2px solid $color-corporate-green-light;
         }
@@ -16,7 +18,7 @@
         &-right {
             border-radius: 0 22px 22px 0;
             width: 100%;
-            padding: 7px 9px 7px 8px;
+            padding: 5px 9px 5px 8px;
             font-size: 30px;
             border-right: 2px solid $color-corporate-green-light;
         }
