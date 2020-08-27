@@ -47,3 +47,9 @@ position: fixed; top: 0; left: 0; z-index: 1000002;
 
 #### New component added: 
 The View Toggle Button. It can be used to display a card or list view of items.
+
+## V: 9.3.6 - 9.3.7
+
+#### Typography changed: 
+Removal of unused classes: "ds-h*-sans". Added utility class "ds-text-sans" in order to achieve headlines
+in Source Sans Pro.
