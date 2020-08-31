@@ -1,12 +1,20 @@
 .ds-btn-secondary {
-    @include ds-btn-shadow;
 
     background: $color-bg-content;
-    border: 1px solid transparent;
-    color: $color-corporate-green-dark;
+    border: solid 2px $color-corporate-green-light;
+    color: $color-corporate-green;
     line-height: $btn-base-value - 2px;
 
+    &:hover {
+        background-color: $color-corporate-green-xlight;
+        cursor: pointer;
+    }
+
     &:active {
-        border-color: $color-pepper;
+        background-color: $color-corporate-green-light;
+    }
+
+    &--active {
+        background-color: $color-corporate-green-xlight;
     }
 }
