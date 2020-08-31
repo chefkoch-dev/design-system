@@ -53,3 +53,9 @@ The View Toggle Button. It can be used to display a card or list view of items.
 #### Typography changed: 
 Removal of unused classes: "ds-h*-sans". Added utility class "ds-text-sans" in order to achieve headlines
 in Source Sans Pro.
+
+## V: 9.3.9 - 9.3.10
+
+#### Secondary Button changed: 
+Styling of seccondary button changed. It exists a new class ".ds-btn-secondary--active" in order to stay in active mode.
+This can be used if the button triggers a dropdown menu and has to stay in active mode for a short time.
