@@ -1,0 +1,47 @@
+.ds-dropdown-menu {
+    position: absolute;
+    top: 40px;
+    z-index: 1000002;
+
+    &--right {
+        right: 0;
+    }
+
+    &--actions {
+        padding: 22px 19px;
+        border: solid 2px #a7c6ac;
+        border-radius: 20px;
+        background-color: $color-white;
+        min-width: 160px;
+        list-style: none;
+    }
+
+    &--fill {
+        width: 30px;
+        height: 35px;
+        position: absolute;
+        border-left: 2px solid #a7c6ac;
+        background-color: $color-white;
+        z-index: 1000003;
+        top: -18px;
+
+        &-right {
+            right: 0;
+            border-left: 0;
+            border-right: 2px solid #a7c6ac;
+        }
+    }
+
+    &--button {
+        z-index: 1000005;
+        position: relative;
+    }
+
+    &--action {
+        margin-top: 22px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}

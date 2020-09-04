@@ -1,7 +1,7 @@
 .ds-btn-secondary {
 
     background: $color-bg-content;
-    border: solid 2px $color-corporate-green-light;
+    border: solid 2px $color-corporate-green;
     color: $color-corporate-green;
     line-height: $btn-base-value - 2px;
 
@@ -16,5 +16,9 @@
 
     &--active {
         background-color: $color-corporate-green-xlight;
+    }
+
+    &--soft {
+        border: solid 2px $color-corporate-green-light;
     }
 }

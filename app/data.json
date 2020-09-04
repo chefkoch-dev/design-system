@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v9.3.10",
+            "library_title": "v9.3.11",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -625,13 +625,18 @@
             ]
         },
         {
-            "name": "action-menu",
-            "title": "Action-Menu",
+            "name": "menu",
+            "title": "Menu",
             "components": [
                 {
-                    "group": "action-menu",
+                    "group": "menu",
                     "name": "action-menu",
                     "title": "Action-Menu"
+                },
+                {
+                    "group": "menu",
+                    "name": "dropdown-menu",
+                    "title": "Dropdown-Menu"
                 }
             ]
         }

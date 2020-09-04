@@ -57,5 +57,16 @@ in Source Sans Pro.
 ## V: 9.3.9 - 9.3.10
 
 #### Secondary Button changed: 
-Styling of seccondary button changed. It exists a new class ".ds-btn-secondary--active" in order to stay in active mode.
+Styling of the seccondary button changed. It exists a new class ".ds-btn-secondary--active" in order to stay in active mode.
 This can be used if the button triggers a dropdown menu and has to stay in active mode for a short time.
+
+## V: 9.3.10 - 9.3.11
+
+#### Secondary Button changed: 
+Styling of the seccondary button changed. The border color of the default secondary button changed and the fontsize of all buttons changed to 18px.
+Also the class ".ds-btn-secondary--active" was added. With this class one gets the hover state from the secondary
+button as a current state. Plus the class ".ds-btn-secondary--soft" was added in order to change the border color to a lighter green.
+
+### Dropdown Menu added for Desktop:
+A Dropdown Menu was added. With the class ".ds-menu-dropdown" one gets the default dropdown which opens from the left. With
+the classes ".ds-dropdown-menu--right" and ".ds-dropdown-menu--fill-right" one gets a dropdown menu opening from the right.
