@@ -70,3 +70,8 @@ button as a current state. Plus the class ".ds-btn-secondary--soft" was added in
 ### Dropdown Menu added for Desktop:
 A Dropdown Menu was added. With the class ".ds-menu-dropdown" one gets the default dropdown which opens from the left. With
 the classes ".ds-dropdown-menu--right" and ".ds-dropdown-menu--fill-right" one gets a dropdown menu opening from the right.
+
+## V: 9.3.11 - 9.3.12
+
+#### View Toggle Bugfix
+Just a simple bugfix for the view toggle pattern in safari browser.

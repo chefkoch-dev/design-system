@@ -5,11 +5,11 @@
     "project_url": null,
     "copyright_start_year": "2017",
     "client_name": null,
-    "client_url": "http://www.chefkoch.de",
+    "client_url": "https://www.chefkoch.de",
     "creators": [
         {
-            "name": "Team Funkytown Avengers / Team Zen",
-            "url": "http://www.chefkoch.de"
+            "name": "Chefkoch GmbH",
+            "url": "https://www.chefkoch.de"
         }
     ],
     "theme": {
@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v9.3.11",
+            "library_title": "v9.3.12",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
