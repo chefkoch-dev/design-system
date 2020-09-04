@@ -17,4 +17,8 @@
     &--active {
         background-color: $color-corporate-green-xlight;
     }
+
+    &--soft {
+        border: solid 2px $color-corporate-green-light;
+    }
 }
