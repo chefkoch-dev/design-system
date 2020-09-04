@@ -1,4 +1,14 @@
-### Verwendung
+Mit Hilfe von Action-Menus lassen sich Aktionen wie beispielsweise im Kochbuch das Verschieben von Rezepten ausführen.
+
+### Info
+Dieses Action Menu ist noch nicht voll funktionsfähig. Es bietet lediglich eine styling Grundlage für
+Action-Menus. Die Funktionen des Action Menus, d.h. Animationen, Öffnen & Schließen sind nicht Teil des DSY.
+
+### Icons
+Im Action Menu verwenden wir Material Icons.
+
+
+### Usage  
 Bei Verwendung des Action Menus kann alles ab der Klasse "ds-action-menu" aus dem Codebeispiel kopiert werden und mit den entsprechenden
 Daten ausgetauscht werden. Um "ds-action-menu" herum muss dann ein eigener Wrapper mit Animation gebaut werden. In Vue Applikationen verwenden 
 wir das transition Tag. In Kombination zu dem Wrapper kann das "ds-action-menu" dann zum Beispiel um folgende Styles ergänzt werden, damit
@@ -17,4 +27,5 @@ das Action-Menu als Overlay dargestellt wird:
     @import "~chefkoch-design-system/components/action-menu";
     
     Original Location
-    @import "~chefkoch-design-system/app/components/action-menu/action-menu";
+    @import "~chefkoch-design-system/app/components/menu/action-menu";
+  
