@@ -7,6 +7,7 @@ Auch wenn Buttons mit Hilfe von der Klasse `.ds-btn` als `<button>`, `<a>` oder 
 ### Usecases  
 Buttons gibt es für mehrere usecases:
 `primary`, `secondary` & `tertiary`
+Außerdem wird zwischen desktop und mobilen Buttons unterschieden. Die mobilen Buttons sind immer rund und ohne Text.
 
 ### Utilities  
 #### Für alle Buttons:  

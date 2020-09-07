@@ -4,6 +4,19 @@
     background-color: $color-corporate-green;
     color: $color-text-inverted;
 
+    &--mobile {
+        border-radius: 64px;
+        width: 64px;
+        height: 64px;
+
+        /* stylelint-disable all */
+        i.material-icons {
+            color: $color-text-inverted;
+            font-size: 30px;
+        }
+        /* stylelint-enable all */
+    }
+
     &:hover {
         background-color: $color-corporate-green-medium;
         cursor: pointer;
@@ -13,3 +26,4 @@
         background-color: $color-corporate-green-dark;
     }
 }
+

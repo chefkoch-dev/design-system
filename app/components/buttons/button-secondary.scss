@@ -5,6 +5,19 @@
     color: $color-corporate-green;
     line-height: $btn-base-value - 2px;
 
+    &--mobile {
+        border-radius: 64px;
+        width: 64px;
+        height: 64px;
+
+        /* stylelint-disable all */
+        i.material-icons {
+            color: $color-corporate-green-dark;
+            font-size: 30px;
+        }
+        /* stylelint-enable all */
+    }
+
     &:hover {
         background-color: $color-corporate-green-xlight;
         cursor: pointer;

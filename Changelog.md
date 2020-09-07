@@ -75,3 +75,8 @@ the classes ".ds-dropdown-menu--right" and ".ds-dropdown-menu--fill-right" one g
 
 #### View Toggle Bugfix
 Just a simple bugfix for the view toggle pattern in safari browser.
+
+## V: 9.3.13 - 9.4.0
+
+#### Mobile Buttons
+Introduce mobile Buttons for primary, secondary and tertiary. Delete unneccesary add button instead. This button equals the primary mobile button.

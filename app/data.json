@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v9.3.13",
+            "library_title": "v9.4.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -486,11 +486,6 @@
                     "group": "buttons",
                     "name": "deactivated",
                     "title": "Inaktiv / Deaktiviert"
-                },
-                {
-                    "group": "buttons",
-                    "name": "add",
-                    "title": "Add"
                 },
                 {
                     "group": "buttons",
