@@ -1,6 +1,12 @@
 .ds-btn-tertiary {
-    color: $color-corporate-green-dark;
+    color: $color-corporate-green;
     padding: 0;
+
+    /* stylelint-disable all */
+    i.material-icons {
+        color: $color-corporate-green;
+    }
+    /* stylelint-enable all */
 
     &--mobile {
         border-radius: 64px;
@@ -18,8 +24,23 @@
     &:hover,
     &:focus {
         span {
-            text-decoration: underline;
+            color: $color-corporate-green-medium;
         }
+        /* stylelint-disable all */
+        i.material-icons {
+            color: $color-corporate-green-medium;
+        }
+        /* stylelint-enable all */
+    }
+
+    &:active {
+        color: $color-corporate-green-dark;
+
+        /* stylelint-disable all */
+        i.material-icons {
+            color: $color-corporate-green-dark;
+        }
+        /* stylelint-enable all */
     }
 
     + .ds-btn-primary,

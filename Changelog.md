@@ -80,3 +80,10 @@ Just a simple bugfix for the view toggle pattern in safari browser.
 
 #### Mobile Buttons
 Introduce mobile Buttons for primary, secondary and tertiary. Delete unneccesary add button instead. This button equals the primary mobile button.
+
+## V: 9.4.0 - 9.4.1
+
+#### Mobile Buttons inactive
+Inactive mobile buttons added. 
+
+### Fix of styling for dropdownMenu
