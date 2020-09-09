@@ -1,6 +1,6 @@
 @import "../shadows/box-shadow";
 
-$btn-base-value: $unit * 5;
+$btn-base-value: $unit * 5 + 4;
 
 .ds-btn-box {
     display: flex;
@@ -33,12 +33,12 @@ $btn-base-value: $unit * 5;
 }
 
 @mixin btn-base {
-    border-radius: 2 * $unit + 6;
+    border-radius: 24px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     font-size: $fontsize-base;
-    font-weight: bold;
+    font-weight: $fontweight-semi-bold;
     min-height: $btn-base-value;
     letter-spacing: 0.5px;
     line-height: $btn-base-value;

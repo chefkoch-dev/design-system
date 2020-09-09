@@ -87,3 +87,7 @@ Introduce mobile Buttons for primary, secondary and tertiary. Delete unneccesary
 Inactive mobile buttons added. 
 
 ### Fix of styling for dropdownMenu
+
+## V: 9.4.1 - 9.4.2
+
+#### Update buttons fontweight and radius
