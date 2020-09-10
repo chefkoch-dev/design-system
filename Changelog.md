@@ -91,3 +91,7 @@ Inactive mobile buttons added.
 ## V: 9.4.1 - 9.4.2
 
 #### Update buttons fontweight and radius
+
+## V: 9.4.2 - 9.4.3
+
+#### Change import of google sans font to Source Sans Pro
