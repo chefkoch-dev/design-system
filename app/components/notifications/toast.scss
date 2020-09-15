@@ -31,18 +31,4 @@
     &--text {
         margin: 0 0 12px;
     }
-
-    &--revert {
-        background: none;
-        /* stylelint-disable all */
-        border: none;
-        /* stylelint-enable all */
-        font-size: 18px;
-        font-weight: 600;
-        color: $color-corporate-green;
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
 }
