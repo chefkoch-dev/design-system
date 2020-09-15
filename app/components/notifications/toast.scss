@@ -1,0 +1,48 @@
+.ds-notifications-toast {
+    background-color: $color-white;
+    bottom: 12px;
+    border-radius: 12px 0 12px 12px;
+    box-shadow: 0 4px 16px 0 #e8e8e7;
+    left: 50%;
+    padding: 12px 24px;
+    text-align: center;
+    width: 343px;
+
+    @media screen and (min-width: 1195px) {
+        left: 68%;
+    }
+
+    @media screen and (min-width: 767px) and (max-width: 1196px) {
+        left: 47%;
+    }
+
+    /* stylelint-disable all */
+    i.material-icons {
+        font-size: 25px;
+        color: $color-chia;
+        background-color: $color-white;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    /* stylelint-enable all */
+
+    &--text {
+        margin: 0 0 12px;
+    }
+
+    &--revert {
+        background: none;
+        /* stylelint-disable all */
+        border: none;
+        /* stylelint-enable all */
+        font-size: 18px;
+        font-weight: 600;
+        color: $color-corporate-green;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
