@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v9.4.3",
+            "library_title": "v9.5.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -632,6 +632,17 @@
                     "group": "menu",
                     "name": "dropdown-menu",
                     "title": "Dropdown-Menu"
+                }
+            ]
+        },
+        {
+            "name": "notifications",
+            "title": "Notifications",
+            "components": [
+                {
+                    "group": "notifications",
+                    "name": "toast",
+                    "title": "Toast"
                 }
             ]
         }
