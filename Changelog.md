@@ -104,3 +104,7 @@ Implementation of a first notification type: The Toast
 ## V: 9.5.0 - 9.5.1
 
 #### Update secondary Button
+
+## V: 9.5.0 - 9.5.1
+
+#### Fix Button height

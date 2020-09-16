@@ -34,7 +34,9 @@
     }
 
     &:active {
-        color: $color-corporate-green-dark;
+        span {
+            color: $color-corporate-green-dark;
+        }
 
         /* stylelint-disable all */
         i.material-icons {
