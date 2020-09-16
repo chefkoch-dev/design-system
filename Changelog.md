@@ -95,3 +95,8 @@ Inactive mobile buttons added.
 ## V: 9.4.2 - 9.4.3
 
 #### Change import of google sans font to Source Sans Pro
+
+## V: 9.4.3 - 9.5.0
+
+#### Introduce notifications
+Implementation of a first notification type: The Toast
