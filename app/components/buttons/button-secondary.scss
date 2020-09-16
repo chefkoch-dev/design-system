@@ -18,12 +18,14 @@
     }
 
     &:hover {
-        background-color: $color-corporate-green-xlight;
+        border: solid 2px $color-corporate-green-medium;
+        color: $color-corporate-green-medium;
         cursor: pointer;
     }
 
     &:active {
-        background-color: $color-corporate-green-light;
+        border: solid 2px $color-corporate-green-dark;
+        color: $color-corporate-green-dark;
     }
 
     &--active {
