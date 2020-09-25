@@ -112,3 +112,8 @@ Implementation of a first notification type: The Toast
 ## V: 9.5.2 - 9.5.3
 
 #### Fix Button height
+
+## V: 9.5.4 - 9.5.5
+
+#### Add styling for rounded material icons for tertiary button
+
