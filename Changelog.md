@@ -117,3 +117,7 @@ Implementation of a first notification type: The Toast
 
 #### Add styling for rounded material icons for tertiary button
 
+## V: 9.5.5 - 9.6.0
+
+#### Introduce Cancel Button
+

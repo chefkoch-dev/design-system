@@ -1,7 +1,6 @@
-.ds-btn-primary {
-
+.ds-btn-delete {
     min-height: $btn-base-value + 4;
-    background-color: $color-corporate-green;
+    background-color: $color-chili;
     color: $color-text-inverted;
 
     &--mobile {
@@ -18,12 +17,12 @@
     }
 
     &:hover {
-        background-color: $color-corporate-green-medium;
+        background-color: $color-chili-medium;
         cursor: pointer;
     }
 
     &:active {
-        background-color: $color-corporate-green-dark;
+        background-color: $color-chili-dark;
     }
 }
 

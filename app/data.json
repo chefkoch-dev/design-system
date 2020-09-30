@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v9.5.5",
+            "library_title": "v9.6.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -463,6 +463,12 @@
                     "group": "buttons",
                     "name": "secondary",
                     "title": "Secondary Button",
+                    "width": "half"
+                },
+                {
+                    "group": "buttons",
+                    "name": "delete",
+                    "title": "Delete Button",
                     "width": "half"
                 },
                 {
