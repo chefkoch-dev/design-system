@@ -121,3 +121,7 @@ Implementation of a first notification type: The Toast
 
 #### Introduce Cancel Button
 
+## V: 9.6.0 - 9.6.1
+
+#### Bugfix for Inline-Form component
+
