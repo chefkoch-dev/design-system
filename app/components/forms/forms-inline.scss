@@ -40,5 +40,9 @@
     button {
         border-radius: 0 $unit $unit 0;
         margin: 0;
+
+        &.ds-btn-primary {
+            min-height: 40px;
+        }
     }
 }
