@@ -77,6 +77,7 @@
     line-height: $lineheight-small;
     padding: 5px $unit; // 32px height
     text-decoration: none;
+    text-transform: capitalize;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
