@@ -18,6 +18,8 @@ Die Darstellung als Carousel benötigt auf dem Elterncontainer zusätzlich die K
 - Unabhängig von der Platzierung (Content oder Kontext) ist die Schriftgröße immer 14px.
 - Die Höhe der Tags ist festgelegt auf 32px inkl. Border. 
 - Abstände zwischen den Tags (horizontal & vertikal) sind eine `$unit`.
+- Die Worte innerhalb von Tags fangen immer mit Großbuchstaben an. Möchte man kleingeschriebene Worte innerhalb von Tags, muss man manuell ein anderes `text-transform` per CSS Regel setzen.
+
 
 F 14px / H 32px / M 8    
 

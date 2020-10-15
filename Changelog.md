@@ -125,3 +125,8 @@ Implementation of a first notification type: The Toast
 
 #### Bugfix for Inline-Form component
 
+## V: 9.6.1 - 9.7.0
+
+#### Capitalized tags
+Since we manually capitalize the first letter of each word in most tags so far, `.ds-tag` get `text-transform: capitalize;` as CSS rule.
+
