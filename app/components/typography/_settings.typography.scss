@@ -34,24 +34,24 @@ $fontsize-h5-mobile: $fontsize-base;
 ----------------------------------- */
 
 // we use px here so that we can reuse this variable again
-$lineheight-base: 27px !default;
+$lineheight-base: 22px !default;
 $lineheight-small: 19px !default;
 
-$lineheight-h1: 44px !default; //44px
-$lineheight-h2: 36px !default; //32px
+$lineheight-h1: 44px !default;
+$lineheight-h2: 36px !default;
 $lineheight-h3: 28px !default;
 $lineheight-h4: $lineheight-base;
 $lineheight-h5: $lineheight-base;
 
-$lineheight-h1-tablet: 44px !default; //44px
-$lineheight-h2-tablet: 36px !default; //32px
-$lineheight-h3-tablet: 28px !default;
+$lineheight-h1-tablet: 44px !default;
+$lineheight-h2-tablet: 36px !default;
+$lineheight-h3-tablet: 24px !default;
 $lineheight-h4-tablet: $lineheight-base;
 $lineheight-h5-tablet: $lineheight-base;
 
-$lineheight-h1-mobile: 44px !default; //44px
-$lineheight-h2-mobile: 36px !default; //32px
-$lineheight-h3-mobile: 28px !default;
+$lineheight-h1-mobile: 36px !default;
+$lineheight-h2-mobile: 28px !default;
+$lineheight-h3-mobile: 24px !default;
 $lineheight-h4-mobile: $lineheight-base;
 $lineheight-h5-mobile: $lineheight-base;
 
