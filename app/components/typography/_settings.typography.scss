@@ -18,6 +18,18 @@ $fontsize-h3: 24px !default;
 $fontsize-h4: $fontsize-base;
 $fontsize-h5: $fontsize-base;
 
+$fontsize-h1-tablet: 36px !default;
+$fontsize-h2-tablet: 28px !default;
+$fontsize-h3-tablet: 20px !default;
+$fontsize-h4-tablet: $fontsize-base;
+$fontsize-h5-tablet: $fontsize-base;
+
+$fontsize-h1-mobile: 32px !default;
+$fontsize-h2-mobile: 24px !default;
+$fontsize-h3-mobile: 20px !default;
+$fontsize-h4-mobile: $fontsize-base;
+$fontsize-h5-mobile: $fontsize-base;
+
 /* line-heights
 ----------------------------------- */
 
@@ -30,6 +42,18 @@ $lineheight-h2: 36px !default; //32px
 $lineheight-h3: 28px !default;
 $lineheight-h4: $lineheight-base;
 $lineheight-h5: $lineheight-base;
+
+$lineheight-h1-tablet: 44px !default; //44px
+$lineheight-h2-tablet: 36px !default; //32px
+$lineheight-h3-tablet: 28px !default;
+$lineheight-h4-tablet: $lineheight-base;
+$lineheight-h5-tablet: $lineheight-base;
+
+$lineheight-h1-mobile: 44px !default; //44px
+$lineheight-h2-mobile: 36px !default; //32px
+$lineheight-h3-mobile: 28px !default;
+$lineheight-h4-mobile: $lineheight-base;
+$lineheight-h5-mobile: $lineheight-base;
 
 
 /* font: x;
@@ -46,6 +70,18 @@ $font-h2: 600 #{$fontsize-h2}/#{$lineheight-h2} $fontfamily-base-serif !default;
 $font-h3: 600 #{$fontsize-h3}/#{$lineheight-h3} $fontfamily-base-serif !default;
 $font-h4: 600 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base-serif !default;
 $font-h5: 700 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base !default;
+
+$font-h1-tablet: 600 #{$fontsize-h1}/#{$lineheight-h1} $fontfamily-base-serif !default;
+$font-h2-tablet: 600 #{$fontsize-h2}/#{$lineheight-h2} $fontfamily-base-serif !default;
+$font-h3-tablet: 600 #{$fontsize-h3}/#{$lineheight-h3} $fontfamily-base-serif !default;
+$font-h4-tablet: 600 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base-serif !default;
+$font-h5-tablet: 700 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base !default;
+
+$font-h1-mobile: 600 #{$fontsize-h1}/#{$lineheight-h1} $fontfamily-base-serif !default;
+$font-h2-mobile: 600 #{$fontsize-h2}/#{$lineheight-h2} $fontfamily-base-serif !default;
+$font-h3-mobile: 600 #{$fontsize-h3}/#{$lineheight-h3} $fontfamily-base-serif !default;
+$font-h4-mobile: 600 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base-serif !default;
+$font-h5-mobile: 700 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base !default;
 
 /* will be deleted
 ** when RDS gets its makeover
