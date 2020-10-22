@@ -130,3 +130,6 @@ Implementation of a first notification type: The Toast
 #### Capitalized tags
 Since we manually capitalize the first letter of each word in most tags so far, `.ds-tag` get `text-transform: capitalize;` as CSS rule.
 
+## V: 9.7.0 - 9.8.0
+
+#### Use different headline styling for mobile and tablet

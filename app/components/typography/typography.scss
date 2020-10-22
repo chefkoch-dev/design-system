@@ -34,20 +34,64 @@ ul {
 h1,
 .ds-h1 {
     font: $font-h1;
+    letter-spacing: $letter-spacing-h1;
+
+    @include media-breakpoint-only(s) {
+        font: $font-h1-tablet;
+        letter-spacing: $letter-spacing-h1-tablet;
+    }
+
+    @include media-breakpoint-to(xs) {
+        font: $font-h1-mobile;
+        letter-spacing: $letter-spacing-h1-mobile;
+    }
 }
 
 h2,
 .ds-h2 {
     font: $font-h2;
+    letter-spacing: $letter-spacing-h2;
+
+    @include media-breakpoint-only(s) {
+        font: $font-h2-tablet;
+        letter-spacing: $letter-spacing-h2-tablet;
+    }
+
+    @include media-breakpoint-to(xs) {
+        font: $font-h2-mobile;
+        letter-spacing: $letter-spacing-h2-mobile;
+    }
 }
 
 h3,
 .ds-h3 {
     font: $font-h3;
+    letter-spacing: $letter-spacing-h3;
+
+    @include media-breakpoint-only(s) {
+        font: $font-h3-tablet;
+        letter-spacing: $letter-spacing-h3-tablet;
+    }
+
+    @include media-breakpoint-to(xs) {
+        font: $font-h3-mobile;
+        letter-spacing: $letter-spacing-h3-mobile;
+    }
 }
 
 .ds-h4 {
     font: $font-h4;
+    letter-spacing: $letter-spacing-h4;
+
+    @include media-breakpoint-only(s) {
+        font: $font-h4-tablet;
+        letter-spacing: $letter-spacing-h4-tablet;
+    }
+
+    @include media-breakpoint-to(xs) {
+        font: $font-h4-mobile;
+        letter-spacing: $letter-spacing-h4-mobile;
+    }
 }
 
 h5,
@@ -55,6 +99,17 @@ h5,
     font: $font-h5;
     margin-bottom: $unit;
     margin-top: 0;
+    letter-spacing: $letter-spacing-h5;
+
+    @include media-breakpoint-only(s) {
+        font: $font-h5-tablet;
+        letter-spacing: $letter-spacing-h5-tablet;
+    }
+
+    @include media-breakpoint-to(xs) {
+        font: $font-h5-mobile;
+        letter-spacing: $letter-spacing-h5-mobile;
+    }
 }
 
 .ds-h7-top,
