@@ -33,3 +33,31 @@
         color: $color-corporate-green-light;
     }
 }
+
+/* stylelint-disable all */
+.ds-btn-view-toggle:hover .ds-btn-view-toggle--icon-right {
+    border-right: 2px solid $color-corporate-green-medium;
+}
+
+.ds-btn-view-toggle:hover .ds-btn-view-toggle--icon {
+    border-top: 2px solid $color-corporate-green-medium;
+    border-bottom: 2px solid $color-corporate-green-medium;
+}
+
+.ds-btn-view-toggle:hover .ds-btn-view-toggle--inactive {
+    color: $color-corporate-green;
+}
+
+.ds-btn-view-toggle:hover .ds-btn-view-toggle--icon-left {
+    border-left: 2px solid $color-corporate-green-medium;
+}
+
+.ds-btn-view-toggle:hover .ds-btn-view-toggle--icon {
+    border-top: 2px solid $color-corporate-green-medium;
+    border-bottom: 2px solid $color-corporate-green-medium;
+}
+
+.ds-btn-view-toggle:hover .ds-btn-view-toggle--inactive {
+    color: $color-corporate-green;
+}
+/* stylelint-enable all */
