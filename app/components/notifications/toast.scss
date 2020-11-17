@@ -36,6 +36,11 @@
         justify-content: flex-end;
         margin-top: 6px;
         margin-bottom: 6px;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-chia-medium;
+        }
     }
     /* stylelint-enable all */
 
