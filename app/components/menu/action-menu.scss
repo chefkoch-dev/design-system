@@ -35,6 +35,10 @@
         display: flex;
         padding-top: 24px;
 
+        &:first-child {
+            padding-top: 0;
+        }
+
         /* stylelint-disable all */
         i.material-icons {
             font-size: 25px;
