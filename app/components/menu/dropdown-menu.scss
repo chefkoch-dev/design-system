@@ -43,5 +43,10 @@
         &:first-child {
             margin-top: 0;
         }
+
+        &:hover {
+            cursor: pointer;
+            color: $color-corporate-green;
+        }
     }
 }

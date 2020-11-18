@@ -26,6 +26,12 @@
         /* stylelint-enable all */
     }
 
+    &--close {
+        &:hover {
+            color: $color-chia-medium !important;
+        }
+    }
+
     &--actions {
         display: flex;
         flex-direction: column;
