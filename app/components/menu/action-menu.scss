@@ -15,6 +15,7 @@
         background-color: $color-white;
         padding: 16px 16px 48px;
         overflow: auto;
+        position: relative;
         /* stylelint-disable all */
         i.material-icons {
             color: $color-chia;
@@ -27,6 +28,13 @@
     }
 
     &--close {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 16px;
+        margin-top: 16px;
+
         &:hover {
             color: $color-chia-medium !important;
         }
@@ -40,10 +48,6 @@
     &--action {
         display: flex;
         padding-top: 24px;
-
-        &:first-child {
-            padding-top: 0;
-        }
 
         /* stylelint-disable all */
         i.material-icons {
