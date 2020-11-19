@@ -19,6 +19,7 @@
     text-align: center;
     width: 343px;
     margin-left: 8px;
+    position: relative;
 
     @media screen and (max-width: 767px) {
         margin: 0 auto;
@@ -32,10 +33,13 @@
         font-size: 25px;
         color: $color-chia;
         background-color: $color-white;
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 6px;
-        margin-bottom: 6px;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 30px;
+        margin-top: 18px;
+
         cursor: pointer;
 
         &:hover {
@@ -45,6 +49,6 @@
     /* stylelint-enable all */
 
     &--text {
-        margin: 0 0 12px;
+        margin: 37px 0 0 12px;
     }
 }
