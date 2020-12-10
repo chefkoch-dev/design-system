@@ -29,8 +29,9 @@
     }
 
     /* stylelint-disable all */
-    i.material-icons {
-        font-size: 25px;
+    i.material-icons,
+    i.chefkoch-icons {
+        font-size: 24px;
         color: $color-chia;
         background-color: $color-white;
         display: block;
