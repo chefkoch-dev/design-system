@@ -17,7 +17,7 @@
         overflow: auto;
         position: relative;
         /* stylelint-disable all */
-        i.material-icons {
+        i.material-icons, i.chefkoch-icons {
             color: $color-chia;
             background-color: $color-white;
             display: flex;
@@ -50,7 +50,7 @@
         padding-top: 24px;
 
         /* stylelint-disable all */
-        i.material-icons {
+        i.material-icons, i.chefkoch-icons {
             font-size: 25px;
             margin-right: 16px;
         }
