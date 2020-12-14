@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v9.8.11",
+            "library_title": "v9.9.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -312,6 +312,11 @@
             "name": "icons",
             "title": "Icons",
             "components": [
+                {
+                    "group": "icons",
+                    "name": "chefkoch-icons",
+                    "title": "Chefkoch Icons"
+                },
                 {
                     "group": "icons",
                     "name": "material-icons",
