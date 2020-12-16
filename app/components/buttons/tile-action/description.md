@@ -1,11 +1,9 @@
-Buttons können mit Icons ausgestattet werden. Hierzu wird zusätzlich die Klasse `.ds-btn-icon` gesetzt.
-
-Steht das Icon links vom Buttontext wird es im Markup vor den Text positioniert. Steht es rechts vom Buttontext, steht es im Markup hinter dem Text.
+Buttons, die zum Auslösen einer Funktionalität dienen und sowohl mit Text als auch mit einem Icon versehen werden. Hierzu wird zusätzlich die Klasse `.ds-btn-tile-action` gesetzt.
 
 ### Usage  
     
     Via Shortlink 
-    @import "~chefkoch-design-system/components/button-icon";
+    @import "~chefkoch-design-system/components/button-tile-action";
     
     Original Location
-    @import "~chefkoch-design-system/app/components/buttons/buttons-icon";
+    @import "~chefkoch-design-system/app/components/buttons/buttons-tile-action";
