@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v9.9.0",
+            "library_title": "v9.10.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -469,6 +469,11 @@
                     "name": "secondary",
                     "title": "Secondary Button",
                     "width": "half"
+                },
+                {
+                    "group": "buttons",
+                    "name": "tile-action",
+                    "title": "Tile Action Button"
                 },
                 {
                     "group": "buttons",
