@@ -661,6 +661,17 @@
                     "title": "Toast"
                 }
             ]
+        },
+        {
+            "name": "spacings",
+            "title": "Spacings",
+            "components": [
+                {
+                    "group": "spacings",
+                    "name": "default",
+                    "title": "Spacings"
+                }
+            ]
         }
     ],
     "version": "1.9.5"
