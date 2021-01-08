@@ -360,6 +360,11 @@
                 },
                 {
                     "group": "utilities",
+                    "name": "spacing-utilities",
+                    "title": "Spacing Utilities"
+                },
+                {
+                    "group": "utilities",
                     "name": "breakpoint-utilities",
                     "title": "Breakpoint Utilities"
                 }
