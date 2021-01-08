@@ -666,6 +666,15 @@
             "name": "spacings",
             "title": "Spacings",
             "components": [
+                {
+                    "group": "spacings",
+                    "name": "vertical",
+                    "title": "Vertikal",
+                    "options": {
+                        "disable_code_sample": true,
+                        "sample_overflow_hidden": true
+                    }
+                }
             ]
         }
     ],
