@@ -945,4 +945,35 @@ td {
     }
 }
 
+/* Spacings
+----------------------------------- */
+
+.ndpl-spacing {
+    height: 80px;
+
+    &__demo {
+        display: inline-flex;
+        width: 120px;
+
+        small {
+            font-size: 14px;
+            line-height: 1;
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        margin-right: 0.5rem;
+        @each $m in $v-spacer-multipliers {
+            &--v-#{$m} {
+                @include v-spacer('height', $m);
+                background-color: $color-corporate-green-light;
+            }
+        }
+    }
+}
+
 /* stylelint-enable */
