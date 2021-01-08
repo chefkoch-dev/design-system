@@ -666,11 +666,6 @@
             "name": "spacings",
             "title": "Spacings",
             "components": [
-                {
-                    "group": "spacings",
-                    "name": "default",
-                    "title": "Spacings"
-                }
             ]
         }
     ],
