@@ -1,0 +1,33 @@
+$v-spacer-unit: $unit / 2 !default; // 4px
+$v-spacer-multipliers: 0, 1, 2, 4, 6, 8, 12, 16;
+
+// cannot dynamically declare variables names in sass, use map below if needed
+$v-spacing-0: 0;                               // 0px;
+$v-spacing-1: $v-spacer-unit * 1 !default;     // 4px;
+$v-spacing-2: $v-spacer-unit * 2 !default;     // 8px;
+$v-spacing-4: $v-spacer-unit * 4 !default;     // 16px;
+$v-spacing-6: $v-spacer-unit * 6 !default;     // 24px;
+$v-spacing-8: $v-spacer-unit * 8 !default;     // 32px;
+$v-spacing-12: $v-spacer-unit * 12 !default;   // 48px;
+$v-spacing-16: $v-spacer-unit * 16 !default;   // 64px;
+
+// map for dynamic use in loops, mixins, etc
+$v-spacings: (
+    0: $v-spacing-0,
+    1: $v-spacing-1,
+    2: $v-spacing-2,
+    4: $v-spacing-4,
+    6: $v-spacing-6,
+    8: $v-spacing-8,
+    12: $v-spacing-12,
+    16: $v-spacing-16,
+) !default;
+
+@mixin v-spacer($attr, $m) {
+    @if not map-has-key($v-spacings, $m) {
+        @warn "'#{$m}' is not a valid spacing multiplier";
+    }
+    @else {
+        #{$attr}: map-get($v-spacings, $m);
+    }
+}
