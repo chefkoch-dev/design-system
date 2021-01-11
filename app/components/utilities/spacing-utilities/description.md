@@ -2,7 +2,7 @@
 
 Responsive Utility Klassen für die Anwendung einheitlicher Spacings. 
 
-FÜr die Anwendung vertikaler Spacings durch Marings oder Paddings stehen Utility Klasssen der Form ``.ds-{property}-{size}`` bzw. ``.ds-{property}-{breakpoint}-{size}`` bereit. ``{property}`` kann enthalten:
+FÜr die Anwendung vertikaler Spacings durch Margins oder Paddings stehen Utility Klasssen der Form ``.ds-{property}-{size}`` bzw. ``.ds-{property}-{breakpoint}-{size}`` bereit. ``{property}`` kann enthalten:
 
 * ``mt`` - margin-top
 * ``mb`` - margin-bottom
