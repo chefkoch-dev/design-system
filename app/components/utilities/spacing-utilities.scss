@@ -1,62 +1,62 @@
 @import "../spacings/spacings";
 
-@each $size in $v-spacer-sizes {
+@each $size in $v-spacings {
     @each $bp in $grid-breakpoints {
         @if $bp != "xxxs" {
             @include media-breakpoint-from($bp) {
                 .ds-mb-#{$bp}-#{$size} {
-                    margin-bottom: map-get($v-spacings, $size) !important;
+                    @include v-spacer("margin-bottom", $size, true);
                 }
 
                 .ds-mt-#{$bp}-#{$size} {
-                    margin-top: map-get($v-spacings, $size) !important;
+                    @include v-spacer("margin-top", $size, true);
                 }
 
                 .ds-mv-#{$bp}-#{$size} {
-                    margin-bottom: map-get($v-spacings, $size) !important;
-                    margin-top: map-get($v-spacings, $size) !important;
-                }
-
-                .ds-pt-#{$bp}-#{$size} {
-                    padding-bottom: map-get($v-spacings, $size) !important;
+                    @include v-spacer("margin-bottom", $size, true);
+                    @include v-spacer("margin-top", $size, true);
                 }
 
                 .ds-pb-#{$bp}-#{$size} {
-                    padding-top: map-get($v-spacings, $size) !important;
+                    @include v-spacer("padding-bottom", $size, true);
+                }
+
+                .ds-pt-#{$bp}-#{$size} {
+                    @include v-spacer("padding-top", $size, true);
                 }
 
                 .ds-pv-#{$bp}-#{$size} {
-                    padding-bottom: map-get($v-spacings, $size) !important;
-                    padding-top: map-get($v-spacings, $size) !important;
+                    @include v-spacer("padding-bottom", $size, true);
+                    @include v-spacer("padding-top", $size, true);
                 }
             }
         }
 
         @else {
             .ds-mb-#{$size} {
-                margin-bottom: map-get($v-spacings, $size) !important;
+                @include v-spacer("margin-bottom", $size, true);
             }
 
             .ds-mt-#{$size} {
-                margin-top: map-get($v-spacings, $size) !important;
+                @include v-spacer("margin-top", $size, true);
             }
 
             .ds-mv-#{$size} {
-                margin-bottom: map-get($v-spacings, $size) !important;
-                margin-top: map-get($v-spacings, $size) !important;
-            }
-
-            .ds-pt-#{$size} {
-                padding-bottom: map-get($v-spacings, $size) !important;
+                @include v-spacer("margin-bottom", $size, true);
+                @include v-spacer("margin-top", $size, true);
             }
 
             .ds-pb-#{$size} {
-                padding-top: map-get($v-spacings, $size) !important;
+                @include v-spacer("padding-bottom", $size, true);
+            }
+
+            .ds-pt-#{$size} {
+                @include v-spacer("padding-top", $size, true);
             }
 
             .ds-pv-#{$size} {
-                padding-bottom: map-get($v-spacings, $size) !important;
-                padding-top: map-get($v-spacings, $size) !important;
+                @include v-spacer("padding-bottom", $size, true);
+                @include v-spacer("padding-top", $size, true);
             }
         }
     }

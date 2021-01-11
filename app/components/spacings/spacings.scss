@@ -23,12 +23,16 @@ $v-spacings: (
     16: $v-spacing-16,
 ) !default;
 
-@mixin v-spacer($attr, $size) {
+@mixin v-spacer($attr, $size, $important: false) {
     @if not map-has-key($v-spacings, $size) {
         @warn "'#{$size}' is not a valid spacing size";
     }
     @else {
-        #{$attr}: map-get($v-spacings, $size);
+        @if $important {
+            #{$attr}: map-get($v-spacings, $size) !important;
+        }
+        @else {
+            #{$attr}: map-get($v-spacings, $size);
+        }
     }
 }
-    
