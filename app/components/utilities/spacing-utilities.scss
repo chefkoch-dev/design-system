@@ -1,7 +1,7 @@
 @import "../spacings/spacings";
 
-@each $size in $v-spacings {
-    @each $bp in $grid-breakpoints {
+@each $size, $sizeVal in $v-spacings {
+    @each $bp, $bpVal in $grid-breakpoints {
         @if $bp != "xxxs" {
             @include media-breakpoint-from($bp) {
                 .ds-mb-#{$bp}-#{$size} {

@@ -967,7 +967,7 @@ td {
         justify-content: center;
         width: 4rem;
         margin-right: 0.5rem;
-        @each $size in $v-spacer-sizes {
+        @each $size, $value in $v-spacings {
             &--v-#{$size} {
                 @include v-spacer('height', $size);
                 background-color: $color-corporate-green-light;
