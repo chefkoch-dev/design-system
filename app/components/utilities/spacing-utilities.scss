@@ -1,5 +1,3 @@
-@import "../spacings/spacings";
-
 @each $size, $sizeVal in $v-spacings {
     @each $bp, $bpVal in $grid-breakpoints {
         @if $bp != "xxxs" {
