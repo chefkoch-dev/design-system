@@ -976,4 +976,20 @@ td {
     }
 }
 
+
+.ndpl-spacing-util-padding {
+    display: inline-block;
+}
+
+.ndpl-spacing-util-margin {
+    line-height: 14px;
+
+    small {
+        display: inline-block;
+        color: white;
+        line-height: 14px;
+        background-color: $color-olive;
+    }
+}
+
 /* stylelint-enable */
