@@ -967,9 +967,9 @@ td {
         justify-content: center;
         width: 4rem;
         margin-right: 0.5rem;
-        @each $m in $v-spacer-multipliers {
-            &--v-#{$m} {
-                @include v-spacer('height', $m);
+        @each $size in $v-spacer-sizes {
+            &--v-#{$size} {
+                @include v-spacer('height', $size);
                 background-color: $color-corporate-green-light;
             }
         }

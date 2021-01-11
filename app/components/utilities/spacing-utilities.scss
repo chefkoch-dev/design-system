@@ -1,64 +1,62 @@
 @import "../spacings/spacings";
 
-@each $m in $v-spacer-multipliers {
-    @debug $m;
-    @each $bp, $val in $grid-breakpoints {
-        @debug $bp;
+@each $size in $v-spacer-sizes {
+    @each $bp in $grid-breakpoints {
         @if $bp != "xxxs" {
             @include media-breakpoint-from($bp) {
-                .ds-mb-#{$bp}-#{$m} {
-                    margin-bottom: map-get($v-spacings, $m) !important;
+                .ds-mb-#{$bp}-#{$size} {
+                    margin-bottom: map-get($v-spacings, $size) !important;
                 }
 
-                .ds-mt-#{$bp}-#{$m} {
-                    margin-top: map-get($v-spacings, $m) !important;
+                .ds-mt-#{$bp}-#{$size} {
+                    margin-top: map-get($v-spacings, $size) !important;
                 }
 
-                .ds-mv-#{$bp}-#{m} {
-                    margin-bottom: map-get($v-spacings, $m) !important;
-                    margin-top: map-get($v-spacings, $m) !important;
+                .ds-mv-#{$bp}-#{$size} {
+                    margin-bottom: map-get($v-spacings, $size) !important;
+                    margin-top: map-get($v-spacings, $size) !important;
                 }
 
-                .ds-pt-#{$bp}-#{$m} {
-                    padding-bottom: map-get($v-spacings, $m) !important;
+                .ds-pt-#{$bp}-#{$size} {
+                    padding-bottom: map-get($v-spacings, $size) !important;
                 }
 
-                .ds-pb-#{$bp}-#{$m} {
-                    padding-top: map-get($v-spacings, $m) !important;
+                .ds-pb-#{$bp}-#{$size} {
+                    padding-top: map-get($v-spacings, $size) !important;
                 }
 
-                .ds-pv-#{$bp}-#{$m} {
-                    padding-bottom: map-get($v-spacings, $m) !important;
-                    padding-top: map-get($v-spacings, $m) !important;
+                .ds-pv-#{$bp}-#{$size} {
+                    padding-bottom: map-get($v-spacings, $size) !important;
+                    padding-top: map-get($v-spacings, $size) !important;
                 }
             }
         }
 
         @else {
-            .ds-mb-#{$m} {
-                margin-bottom: map-get($v-spacings, $m) !important;
+            .ds-mb-#{$size} {
+                margin-bottom: map-get($v-spacings, $size) !important;
             }
 
-            .ds-mt-#{$m} {
-                margin-top: map-get($v-spacings, $m) !important;
+            .ds-mt-#{$size} {
+                margin-top: map-get($v-spacings, $size) !important;
             }
 
-            .ds-mv-#{m} {
-                margin-bottom: map-get($v-spacings, $m) !important;
-                margin-top: map-get($v-spacings, $m) !important;
+            .ds-mv-#{$size} {
+                margin-bottom: map-get($v-spacings, $size) !important;
+                margin-top: map-get($v-spacings, $size) !important;
             }
 
-            .ds-pt-#{$m} {
-                padding-bottom: map-get($v-spacings, $m) !important;
+            .ds-pt-#{$size} {
+                padding-bottom: map-get($v-spacings, $size) !important;
             }
 
-            .ds-pb-#{$m} {
-                padding-top: map-get($v-spacings, $m) !important;
+            .ds-pb-#{$size} {
+                padding-top: map-get($v-spacings, $size) !important;
             }
 
-            .ds-pv-#{$m} {
-                padding-bottom: map-get($v-spacings, $m) !important;
-                padding-top: map-get($v-spacings, $m) !important;
+            .ds-pv-#{$size} {
+                padding-bottom: map-get($v-spacings, $size) !important;
+                padding-top: map-get($v-spacings, $size) !important;
             }
         }
     }
