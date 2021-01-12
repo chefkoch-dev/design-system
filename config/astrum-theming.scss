@@ -170,6 +170,25 @@ html {
     }
 }
 
+/* Deprecated */ 
+
+$deprecated-groups: 'margins';
+
+@each $group in $deprecated-groups {
+    a[href="#group-#{$group}"].ndpl-nsc {
+        text-decoration: line-through;
+        &:hover, &:visited, &:focus {
+            text-decoration: line-through;
+        }
+        &:before {
+            content: "⚠ ";
+        }
+    }
+}
+
+
+
+
 /* Astrum Sidebar / nav desktop
 ----------------------------------- */
 
@@ -942,6 +961,53 @@ td {
             color: $color-white;
             font-size: 44px;
         }
+    }
+}
+
+/* Spacings
+----------------------------------- */
+
+.ndpl-spacing {
+    height: 80px;
+
+    &__demo {
+        display: inline-flex;
+        width: 120px;
+
+        small {
+            font-size: 14px;
+            line-height: 1;
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        margin-right: 0.5rem;
+        @each $size, $value in $v-spacings {
+            &--v-#{$size} {
+                @include v-spacer('height', $size);
+                background-color: $color-corporate-green-light;
+            }
+        }
+    }
+}
+
+
+.ndpl-spacing-util-padding {
+    display: inline-block;
+}
+
+.ndpl-spacing-util-margin {
+    line-height: 14px;
+
+    small {
+        display: inline-block;
+        color: white;
+        line-height: 14px;
+        background-color: $color-olive;
     }
 }
 

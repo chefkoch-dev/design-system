@@ -1,3 +1,9 @@
+*Deprecated since v9.11.0*
+
+**Diese Doku ist veraltet. Abstände werden ab Version v9.11.0 im Abschnitt [Spacings](#group-spacings) beschrieben.**
+
+---
+
 ⚠ Grafiken werden noch ausgetauscht
 
 Wir nutzen strukturierte und konsistente Abstände auf allen Chefkoch Seiten.  

@@ -137,3 +137,9 @@ Since we manually capitalize the first letter of each word in most tags so far, 
 ## V: 9.8.0 - 9.8.1
 
 #### Increase node-sass package
+
+## V: 9.10.2 - 9.11.0
+
+### Add vertical spacing variables
+### Introduce utility classes vor vertical margins and paddings
+

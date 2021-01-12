@@ -1,0 +1,61 @@
+@each $size, $sizeVal in $v-spacings {
+    @each $bp, $bpVal in $grid-breakpoints {
+        @if $bp != "xxxs" {
+            @include media-breakpoint-from($bp) {
+                .ds-mb-#{$bp}-#{$size} {
+                    @include v-spacer("margin-bottom", $size, true);
+                }
+
+                .ds-mt-#{$bp}-#{$size} {
+                    @include v-spacer("margin-top", $size, true);
+                }
+
+                .ds-mv-#{$bp}-#{$size} {
+                    @include v-spacer("margin-bottom", $size, true);
+                    @include v-spacer("margin-top", $size, true);
+                }
+
+                .ds-pb-#{$bp}-#{$size} {
+                    @include v-spacer("padding-bottom", $size, true);
+                }
+
+                .ds-pt-#{$bp}-#{$size} {
+                    @include v-spacer("padding-top", $size, true);
+                }
+
+                .ds-pv-#{$bp}-#{$size} {
+                    @include v-spacer("padding-bottom", $size, true);
+                    @include v-spacer("padding-top", $size, true);
+                }
+            }
+        }
+
+        @else {
+            .ds-mb-#{$size} {
+                @include v-spacer("margin-bottom", $size, true);
+            }
+
+            .ds-mt-#{$size} {
+                @include v-spacer("margin-top", $size, true);
+            }
+
+            .ds-mv-#{$size} {
+                @include v-spacer("margin-bottom", $size, true);
+                @include v-spacer("margin-top", $size, true);
+            }
+
+            .ds-pb-#{$size} {
+                @include v-spacer("padding-bottom", $size, true);
+            }
+
+            .ds-pt-#{$size} {
+                @include v-spacer("padding-top", $size, true);
+            }
+
+            .ds-pv-#{$size} {
+                @include v-spacer("padding-bottom", $size, true);
+                @include v-spacer("padding-top", $size, true);
+            }
+        }
+    }
+}

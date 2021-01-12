@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v9.10.2",
+            "library_title": "v9.11.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -360,6 +360,11 @@
                 },
                 {
                     "group": "utilities",
+                    "name": "spacing-utilities",
+                    "title": "Spacing Utilities"
+                },
+                {
+                    "group": "utilities",
                     "name": "breakpoint-utilities",
                     "title": "Breakpoint Utilities"
                 }
@@ -668,8 +673,20 @@
             "components": [
                 {
                     "group": "spacings",
-                    "name": "default",
-                    "title": "Spacings"
+                    "name": "vertical",
+                    "title": "Vertikal",
+                    "options": {
+                        "disable_code_sample": true,
+                        "sample_overflow_hidden": true
+                    }
+                },
+                {
+                    "group": "spacings",
+                    "name": "utilities",
+                    "title": "Utilities",
+                    "options": {
+                        "disable_code_sample": true
+                    }
                 }
             ]
         }
