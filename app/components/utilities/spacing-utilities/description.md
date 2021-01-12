@@ -21,6 +21,7 @@ FÜr die Anwendung vertikaler Spacings durch Margins oder Paddings stehen Utilit
 ``{size}`` kann die Werte `0,1,2,4,6,8,12,16` enthalten. (siehe auch [Vertical Spacings](#group-spacings-component-vertical)).
 
 Da diese Klassen die Variablen und Mixins aus der Spacings Komponente verwenden, muss die `spacings` Komponente im Projekt importiert werden.
+
 ### Usage  
     
     Via Shortlink
@@ -32,6 +33,8 @@ Da diese Klassen die Variablen und Mixins aus der Spacings Komponente verwenden,
     ⚠ Dependencies
     Spacings
     @import "~chefkoch-design-system/components/spacings
+
+**Hinweis**: Es ist zu beachten, dass die Einbindung eine Hohe Anzahl an Klassen (Anzahl Sizes x Anzahl Breakpoints x 6 = 240) erzeugt. Dies erzeugt eine Datenmenge von zusätzlich ~12KB.
 
 <hr class="ds-hr" />
 <br/>
