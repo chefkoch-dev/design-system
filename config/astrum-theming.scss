@@ -170,6 +170,25 @@ html {
     }
 }
 
+/* Deprecated */ 
+
+$deprecated-groups: 'margins';
+
+@each $group in $deprecated-groups {
+    a[href="#group-#{$group}"].ndpl-nsc {
+        text-decoration: line-through;
+        &:hover, &:visited, &:focus {
+            text-decoration: line-through;
+        }
+        &:before {
+            content: "⚠ ";
+        }
+    }
+}
+
+
+
+
 /* Astrum Sidebar / nav desktop
 ----------------------------------- */
 
