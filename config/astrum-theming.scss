@@ -172,7 +172,7 @@ html {
 
 /* Deprecated */ 
 
-$deprecated-groups: 'margins';
+$deprecated-groups: 'margins', 'typography-component-secondary-headings';
 
 @each $group in $deprecated-groups {
     a[href="#group-#{$group}"].ndpl-nsc {
