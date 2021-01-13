@@ -8,4 +8,4 @@ Optische Auszeichnungen über die [ds-utility-Klassen](#group-utilities-componen
 ### Styles  
 Source Serif Pro / Source Sans Pro (in combination with `.ds-text-sans` )
 
-<small>F: Fontsize / L: Line-Height / M: Margin (bottom)</small>
+<small>F: Fontsize / L: Line-Height / LS: Letter-Spacing / M: Margin (bottom)</small>
