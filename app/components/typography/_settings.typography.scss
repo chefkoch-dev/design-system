@@ -106,26 +106,7 @@ $font-h3-mobile: 600 #{$fontsize-h3-mobile}/#{$lineheight-h3-mobile} $fontfamily
 $font-h4-mobile: 600 #{$fontsize-h4-mobile}/#{$lineheight-h4-mobile} $fontfamily-base-serif !default;
 $font-h5-mobile: 700 #{$fontsize-h4-mobile}/#{$lineheight-h4-mobile} $fontfamily-base !default;
 
-/* will be deleted
-** when RDS gets its makeover
------------------------------------ */
 
-$font-subheading-1: normal #{$fontsize-h3}/#{$unit * 4} $fontfamily-base !default;
-
-
-/* deprecated?
------------------------------------ */
-
-// will this be used?
-$fontfamily-serif: "Georgia", "Times", "Times New Roman", serif;
-$fontsize-marginalia: 10px !default;
-
-$fontweight-thin: 100;
-$fontweight-extra-light: 200;
-$fontweight-light: 300;
 $fontweight-normal: 400;
-$fontweight-medium: 500;
 $fontweight-semi-bold: 600;
 $fontweight-bold: 700;
-$fontweight-extra-bold: 800;
-$fontweight-black: 900;
