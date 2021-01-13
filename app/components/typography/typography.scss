@@ -112,6 +112,16 @@ h5,
     }
 }
 
+/* category
+----------------------------------- */
+.ds-text-category {
+    color: $color-olive;
+    font-size: $fontsize-cat;
+    line-height: $lineheight-cat;
+    letter-spacing: $letter-spacing-cat;
+    text-transform: uppercase;
+}
+
 .ds-h7-top,
 .ds-h7-btm {
     display: flex;
