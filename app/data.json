@@ -303,6 +303,11 @@
                 },
                 {
                     "group": "typography",
+                    "name": "category",
+                    "title": "Category Text"
+                },
+                {
+                    "group": "typography",
                     "name": "small-text",
                     "title": "Small Text"
                 }
