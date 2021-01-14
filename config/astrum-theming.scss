@@ -170,9 +170,11 @@ html {
     }
 }
 
-/* Deprecated */ 
+/* Deprecated */  
 
-$deprecated-groups: 'margins', 'typography-component-secondary-headings';
+$deprecated-groups: 'margins', 
+    'typography-component-secondary-headings', 
+    'typography-component-small-text';
 
 @each $group in $deprecated-groups {
     a[href="#group-#{$group}"].ndpl-nsc {
@@ -181,6 +183,7 @@ $deprecated-groups: 'margins', 'typography-component-secondary-headings';
             text-decoration: line-through;
         }
         &:before {
+            color: red;
             content: "⚠ ";
         }
     }
