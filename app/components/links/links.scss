@@ -23,6 +23,12 @@
     text-underline-offset: 3px;
 }
 
+/* style caption link */
+.ds-caption-link {
+    @include ds-base-link;
+    text-underline-offset: 2px;
+}
+
 /* if the headline is the link */
 
 a.ds-heading-link {

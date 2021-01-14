@@ -308,6 +308,11 @@
                 },
                 {
                     "group": "typography",
+                    "name": "caption",
+                    "title": "Caption Text"
+                },
+                {
+                    "group": "typography",
                     "name": "small-text",
                     "title": "Small Text"
                 }
