@@ -90,6 +90,7 @@ $font-base: normal #{$fontsize-base}/#{$lineheight-base} $fontfamily-base !defau
 // to be used for highlighting passages in introduction texts
 $font-base-bold: bold #{$fontsize-base}/#{$lineheight-base} $fontfamily-base !default;
 $font-small: normal #{$fontsize-small}/#{$lineheight-small} $fontfamily-base !default;
+$font-category: normal #{$fontsize-category}/#{$lineheight-category} $fontfamily-base !default;
 
 $font-h1: 600 #{$fontsize-h1}/#{$lineheight-h1} $fontfamily-base-serif !default;
 $font-h2: 600 #{$fontsize-h2}/#{$lineheight-h2} $fontfamily-base-serif !default;

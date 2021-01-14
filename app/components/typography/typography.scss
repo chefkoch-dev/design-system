@@ -119,8 +119,7 @@ h5,
 ----------------------------------- */
 .ds-text-category {
     color: $color-olive;
-    font-size: $fontsize-category;
-    line-height: $lineheight-category;
+    $font: $font-category;
     letter-spacing: $letter-spacing-category;
     text-transform: uppercase;
 }
