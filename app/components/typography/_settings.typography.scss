@@ -11,7 +11,7 @@ $fontfamily-base-serif: "Source Serif Pro", serif;
 $fontsize-base: 18px !default;
 $fontsize-small: 14px !default;
 $fontsize-tiny: 12px !default;
-$fontsize-cat: 16px !default;
+$fontsize-category: 16px !default;
 
 $fontsize-h1: 40px !default;
 $fontsize-h2: 32px !default;
@@ -37,7 +37,7 @@ $fontsize-h5-mobile: $fontsize-base;
 // we use px here so that we can reuse this variable again
 $lineheight-base: 27px !default;
 $lineheight-small: 19px !default;
-$lineheight-cat: 20px !default;
+$lineheight-category: 20px !default;
 
 $lineheight-h1: 44px !default;
 $lineheight-h2: 36px !default;
@@ -62,7 +62,7 @@ $lineheight-h5-mobile: $lineheight-base;
 ----------------------------------- */
 
 $letter-spacing-default: 0.06px !default;
-$letter-spacing-cat: 1.66px !default;
+$letter-spacing-category: 1.66px !default;
 
 $letter-spacing-h1: $letter-spacing-default;
 $letter-spacing-h2: $letter-spacing-default;
