@@ -559,6 +559,11 @@
                 },
                 {
                     "group": "links",
+                    "name": "caption",
+                    "title": "Caption Links"
+                },
+                {
+                    "group": "links",
                     "name": "headline",
                     "title": "Headline Links"
                 },
