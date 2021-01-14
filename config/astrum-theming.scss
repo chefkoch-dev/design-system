@@ -184,6 +184,11 @@ $deprecated-groups: 'margins', 'typography-component-secondary-headings';
             content: "⚠ ";
         }
     }
+    #group-#{$group} {
+        & > .ndpl-library__title, & > .ndpl-component__title {
+            text-decoration: line-through;
+        }
+    }
 }
 
 
