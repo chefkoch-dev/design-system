@@ -17,6 +17,12 @@
     @include ds-copy-link;
 }
 
+/* style category link */
+.ds-category-link {
+    @include ds-base-link;
+    text-underline-offset: 3px;
+}
+
 /* if the headline is the link */
 
 a.ds-heading-link {

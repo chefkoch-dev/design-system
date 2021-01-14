@@ -549,6 +549,11 @@
                 },
                 {
                     "group": "links",
+                    "name": "category",
+                    "title": "Category Links"
+                },
+                {
+                    "group": "links",
                     "name": "headline",
                     "title": "Headline Links"
                 },
