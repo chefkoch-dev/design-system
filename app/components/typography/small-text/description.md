@@ -1,3 +1,9 @@
+*Deprecated since v9.12.0*
+
+**Diese Doku ist veraltet. Ab Version 9.12.0 sollte anstelle `.ds-text-small` die Klasse `.ds-text-caption` verwendet werden. Siehe dazu auch [Caption Text](#group-typography-component-caption).**
+
+---
+
 Small Text ist für die Sidebar und für kurze, eher unwichtige und / oder rechtlich verpflichtende Texte / Labels gedacht. Zum Beispiel Ad Label.
 
 ### Code  
