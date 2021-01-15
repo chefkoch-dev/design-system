@@ -158,7 +158,7 @@ Since we manually capitalize the first letter of each word in most tags so far, 
 
 ### Links
 * Update copy link styles
-* Add mixin *ds-base-link*
+* Add mixin `ds-base-link`
 * Add Caption Link styles 
 * Add Category Link styles
  
