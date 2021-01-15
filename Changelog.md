@@ -166,4 +166,5 @@ Since we manually capitalize the first letter of each word in most tags so far, 
 ### Utils
 
 ### Deprecations
-* Class `.ds-text-small` and `.ds-text-italic`
+* Class `.ds-text-small`. Use `.ds-text-caption` instead.
+* Class `.ds-text-italic` as there is no italic variation in the new design
