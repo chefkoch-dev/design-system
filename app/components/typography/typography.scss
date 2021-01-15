@@ -118,6 +118,7 @@ h5,
 /* category
 ----------------------------------- */
 .ds-text-category {
+    display: block;
     color: $color-olive;
     $font: $font-category;
     letter-spacing: $letter-spacing-category;
@@ -127,6 +128,7 @@ h5,
 /* caption
 ----------------------------------- */
 .ds-text-caption {
+    display: block;
     color: $color-chia;
     font: $font-small;
 }
