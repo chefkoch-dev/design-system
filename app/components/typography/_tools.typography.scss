@@ -1,6 +1,6 @@
 @import "settings.typography";
 
-/* headings and em functions are deprecated since v9.12.0, will be released in future versions */
+/* headings and em functions are deprecated since v9.12.0, will be removed in future versions */
 // Create all specified heading styles in one go.
 @function headings($from: "all", $to: "") {
     @if $from == $to {

@@ -1,7 +1,7 @@
 /* typography utilities
 ----------------------------------- */
 
-/* 
+/*
     .ds-text-small are deprecated since v9.12.0, will be removed in future versions
     small might be replaced by .ds-text-caption
 */
@@ -21,10 +21,11 @@ small,
     text-align: right;
 }
 
-/* 
-    .ds-text-italic are deprecated since v9.12.0, 
+/*
+    .ds-text-italic are deprecated since v9.12.0,
     because italic text is not part of the new design
 */
+
 .ds-text-italic {
     font-style: italic;
 }
