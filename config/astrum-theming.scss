@@ -183,7 +183,7 @@ $deprecated-groups: 'margins',
             text-decoration: line-through;
         }
         &:before {
-            color: red;
+            color: $color-chili;
             content: "⚠ ";
         }
     }
@@ -194,7 +194,13 @@ $deprecated-groups: 'margins',
     }
 }
 
-
+.ndpl-deprecated {
+    color: $color-chili;
+    &:before {
+        color: $color-chili;
+        content: "⚠ ";
+    }  
+}
 
 
 /* Astrum Sidebar / nav desktop
