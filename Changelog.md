@@ -162,3 +162,8 @@ Since we manually capitalize the first letter of each word in most tags so far, 
 * Add Caption Link styles 
 * Add Category Link styles
  
+
+### Utils
+
+### Deprecations
+* Class `.ds-text-small` and `.ds-text-italic`
