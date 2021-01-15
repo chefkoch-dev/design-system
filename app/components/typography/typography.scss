@@ -96,7 +96,7 @@ h4,
 }
 
 
-/* h5 and .ds-h5* are deprecated since v9.12.0, will be released in future versions */
+/* h5 and .ds-h5* are deprecated since v9.12.0, will be removed in future versions */
 h5,
 .ds-h5 {
     font: $font-h5;
@@ -133,7 +133,7 @@ h5,
     font: $font-small;
 }
 
-/* ds-h7* classes are deprecated since v9.12.0, will be released in future versions */
+/* ds-h7* classes are deprecated since v9.12.0, will be removed in future versions */
 .ds-h7-top,
 .ds-h7-btm {
     display: flex;
