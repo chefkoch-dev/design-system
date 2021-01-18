@@ -1,0 +1,1 @@
+Für die Anwendung der Farben auf Text oder als Hintergrund stehen [Color Utility](#group-utilities-component-color-utilities) Klassen zur Verfügung.
