@@ -52,5 +52,5 @@ Da die Klassen durch die `$colors` Variable generiert werden, muss die `colors` 
     @import "~chefkoch-design-system/app/components/utilities/color-utilities";
 
     ⚠ Dependencies
-    Spacings
-    @import "~chefkoch-design-system/components/colors
+    Colors
+    @import "~chefkoch-design-system/components/colors";
