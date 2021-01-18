@@ -1,9 +1,9 @@
 @each $key, $val in $colors {
-    .ds-text-#{key} {
+    .ds-text-#{$key} {
         color: $val;
     }
 
-    .ds-bg-#{key} {
+    .ds-bg-#{$key} {
         background-color: $val;
     }
 }
