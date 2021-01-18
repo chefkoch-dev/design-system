@@ -1,3 +1,9 @@
+*Deprecated since v9.12.0*
+
+**Secondary Headings und die dazugehörigen Klassen werden in zukünftigen Versionen entfernt werden.**
+
+---
+
 Secondary Headings stehen in Kombination mit einer Headline. Der Inhalt der Secondary Headings ist zwar informativ und SEO relevant, aber für den User sekundär. Dies wird vorallem durch die font-size und color (`$color-chia`) dargestellt.
 
 ### Code  

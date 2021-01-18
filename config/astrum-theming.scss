@@ -170,9 +170,11 @@ html {
     }
 }
 
-/* Deprecated */ 
+/* Deprecated */  
 
-$deprecated-groups: 'margins';
+$deprecated-groups: 'margins', 
+    'typography-component-secondary-headings', 
+    'typography-component-small-text';
 
 @each $group in $deprecated-groups {
     a[href="#group-#{$group}"].ndpl-nsc {
@@ -181,12 +183,24 @@ $deprecated-groups: 'margins';
             text-decoration: line-through;
         }
         &:before {
+            color: $color-chili;
             content: "⚠ ";
+        }
+    }
+    #group-#{$group} {
+        & > .ndpl-library__title, & > .ndpl-component__title {
+            text-decoration: line-through;
         }
     }
 }
 
-
+.ndpl-deprecated {
+    color: $color-chili;
+    &:before {
+        color: $color-chili;
+        content: "⚠ ";
+    }  
+}
 
 
 /* Astrum Sidebar / nav desktop

@@ -143,3 +143,28 @@ Since we manually capitalize the first letter of each word in most tags so far, 
 ### Add vertical spacing variables
 ### Introduce utility classes vor vertical margins and paddings
 
+## V: 9.11.0 - 9.12.0
+
+### Typography
+* Add variables and styles for Category Text (`.ds-text-category`)
+* Add Category Styles
+* Remove unused variables `$font-subheading-1, $fontfamily-serif, $fontsize-marginalia, $fontweight-thin, $fontweight-extra-light, $fontweight-light, $fontweight-medium, $fontweight-extra-bold, $fontweight-black`
+
+#### Deprecations: 
+* Secondary Headings Docs and Styles (`.ds-h7, .ds-h7-top, .ds-h7-btm`)
+* Heading 5 Styles  (`h5, .ds-h5`)
+* Functions `headings` and `em`
+* Small Text Docs
+
+### Links
+* Update copy link styles
+* Add mixin `ds-base-link`
+* Add Caption Link styles 
+* Add Category Link styles
+ 
+
+### Utils
+
+### Deprecations
+* Class `.ds-text-small`. Use `.ds-text-caption` instead.
+* Class `.ds-text-italic` as there is no italic variation in the new design

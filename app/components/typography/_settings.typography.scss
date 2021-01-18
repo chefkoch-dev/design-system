@@ -1,6 +1,6 @@
 /* font-family
 ----------------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900|Source+Serif+Pro:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Source+Serif+Pro:400,600");
 
 $fontfamily-base: "Source Sans Pro", "Arial", sans-serif;
 $fontfamily-base-serif: "Source Serif Pro", serif;
@@ -11,6 +11,7 @@ $fontfamily-base-serif: "Source Serif Pro", serif;
 $fontsize-base: 18px !default;
 $fontsize-small: 14px !default;
 $fontsize-tiny: 12px !default;
+$fontsize-category: 16px !default;
 
 $fontsize-h1: 40px !default;
 $fontsize-h2: 32px !default;
@@ -36,6 +37,7 @@ $fontsize-h5-mobile: $fontsize-base;
 // we use px here so that we can reuse this variable again
 $lineheight-base: 27px !default;
 $lineheight-small: 19px !default;
+$lineheight-category: 20px !default;
 
 $lineheight-h1: 44px !default;
 $lineheight-h2: 36px !default;
@@ -60,6 +62,7 @@ $lineheight-h5-mobile: $lineheight-base;
 ----------------------------------- */
 
 $letter-spacing-default: 0.06px !default;
+$letter-spacing-category: 1.66px !default;
 
 $letter-spacing-h1: $letter-spacing-default;
 $letter-spacing-h2: $letter-spacing-default;
@@ -87,45 +90,27 @@ $font-base: normal #{$fontsize-base}/#{$lineheight-base} $fontfamily-base !defau
 // to be used for highlighting passages in introduction texts
 $font-base-bold: bold #{$fontsize-base}/#{$lineheight-base} $fontfamily-base !default;
 $font-small: normal #{$fontsize-small}/#{$lineheight-small} $fontfamily-base !default;
+$font-category: normal #{$fontsize-category}/#{$lineheight-category} $fontfamily-base !default;
 
 $font-h1: 600 #{$fontsize-h1}/#{$lineheight-h1} $fontfamily-base-serif !default;
 $font-h2: 600 #{$fontsize-h2}/#{$lineheight-h2} $fontfamily-base-serif !default;
 $font-h3: 600 #{$fontsize-h3}/#{$lineheight-h3} $fontfamily-base-serif !default;
 $font-h4: 600 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base-serif !default;
-$font-h5: 700 #{$fontsize-h4}/#{$lineheight-h4} $fontfamily-base !default;
+$font-h5: 600 #{$fontsize-h5}/#{$lineheight-h5} $fontfamily-base-serif !default;
 
 $font-h1-tablet: 600 #{$fontsize-h1-tablet}/#{$lineheight-h1-tablet} $fontfamily-base-serif !default;
 $font-h2-tablet: 600 #{$fontsize-h2-tablet}/#{$lineheight-h2-tablet} $fontfamily-base-serif !default;
 $font-h3-tablet: 600 #{$fontsize-h3-tablet}/#{$lineheight-h3-tablet} $fontfamily-base-serif !default;
 $font-h4-tablet: 600 #{$fontsize-h4-tablet}/#{$lineheight-h4-tablet} $fontfamily-base-serif !default;
-$font-h5-tablet: 700 #{$fontsize-h4-tablet}/#{$lineheight-h4-tablet} $fontfamily-base !default;
+$font-h5-tablet: 600 #{$fontsize-h5-tablet}/#{$lineheight-h5-tablet} $fontfamily-base-serif !default;
 
 $font-h1-mobile: 600 #{$fontsize-h1-mobile}/#{$lineheight-h1-mobile} $fontfamily-base-serif !default;
 $font-h2-mobile: 600 #{$fontsize-h2-mobile}/#{$lineheight-h2-mobile} $fontfamily-base-serif !default;
 $font-h3-mobile: 600 #{$fontsize-h3-mobile}/#{$lineheight-h3-mobile} $fontfamily-base-serif !default;
 $font-h4-mobile: 600 #{$fontsize-h4-mobile}/#{$lineheight-h4-mobile} $fontfamily-base-serif !default;
-$font-h5-mobile: 700 #{$fontsize-h4-mobile}/#{$lineheight-h4-mobile} $fontfamily-base !default;
-
-/* will be deleted
-** when RDS gets its makeover
------------------------------------ */
-
-$font-subheading-1: normal #{$fontsize-h3}/#{$unit * 4} $fontfamily-base !default;
+$font-h5-mobile: 600 #{$fontsize-h5-mobile}/#{$lineheight-h5-mobile} $fontfamily-base-serif !default;
 
 
-/* deprecated?
------------------------------------ */
-
-// will this be used?
-$fontfamily-serif: "Georgia", "Times", "Times New Roman", serif;
-$fontsize-marginalia: 10px !default;
-
-$fontweight-thin: 100;
-$fontweight-extra-light: 200;
-$fontweight-light: 300;
 $fontweight-normal: 400;
-$fontweight-medium: 500;
 $fontweight-semi-bold: 600;
 $fontweight-bold: 700;
-$fontweight-extra-bold: 800;
-$fontweight-black: 900;

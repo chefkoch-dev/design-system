@@ -1,5 +1,6 @@
 @import "settings.typography";
 
+/* headings and em functions are deprecated since v9.12.0, will be removed in future versions */
 // Create all specified heading styles in one go.
 @function headings($from: "all", $to: "") {
     @if $from == $to {
@@ -17,6 +18,3 @@
 @function em($targetSize, $baseSize: 16px) {
     @return $targetSize / $baseSize + em;
 }
-
-// TODO: REM
-//http://codepen.io/soophie/pen/jrEwdX

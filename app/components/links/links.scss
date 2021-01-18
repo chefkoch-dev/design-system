@@ -1,17 +1,32 @@
-@mixin ds-copy-link {
-    color: $color-corporate-green-dark;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    text-decoration: none;
+@mixin ds-base-link {
+    color: $color-corporate-green;
+    text-decoration: underline;
 
     &:hover,
     &:focus {
-        text-decoration: underline;
+        text-decoration: none;
     }
+}
+
+@mixin ds-copy-link {
+    @include ds-base-link;
+    text-underline-offset: 4px;
 }
 
 .ds-copy-link {
     @include ds-copy-link;
+}
+
+/* style category link */
+.ds-category-link {
+    @include ds-base-link;
+    text-underline-offset: 3px;
+}
+
+/* style caption link */
+.ds-caption-link {
+    @include ds-base-link;
+    text-underline-offset: 2px;
 }
 
 /* if the headline is the link */
