@@ -96,6 +96,47 @@ $color-bg-content:      $color-white;
 
 $color-shadow-base:     $color-olive;
 
+/* Color map */
+$colors: (
+    corporate-green: $color-corporate-green,
+    corporate-green-dark: $color-corporate-green-dark,
+    corporate-green-medium: $color-corporate-green-medium,
+    corporate-green-light: $color-corporate-green-light,
+    corporate-green-xlight: $color-corporate-green-xlight,
+    watermelon: $color-watermelon,
+    watermelon-dark: $color-watermelon-dark,
+    watermelon-medium: $color-watermelon-medium,
+    watermelon-light: $color-watermelon-light,
+    watermelon-xlight: $color-watermelon-xlight,
+    olive: $color-olive,
+    olive-medium: $color-olive-medium,
+    olive-light: $color-olive-light,
+    olive-xlight: $color-olive-xlight,
+    chia: $color-chia,
+    chia-medium: $color-chia-medium,
+    chia-light: $color-chia-light,
+    chia-xlight: $color-chia-xlight,
+    pepper: $color-pepper,
+    pepper-medium: $color-pepper-medium,
+    pepper-light: $color-pepper-light,
+    pepper-xlight: $color-pepper-xlight,
+    mirabelle: $color-mirabelle,
+    mirabelle-medium: $color-mirabelle-medium,
+    mirabelle-light: $color-mirabelle-light,
+    mirabelle-xlight: $color-mirabelle-xlight,
+    chili: $color-chili,
+    chili-dark: $color-chili-dark,
+    chili-medium: $color-chili-medium,
+    chili-light: $color-chili-light,
+    chili-xlight: $color-chili-xlight,
+    garlic: $color-garlic,
+    garlic-medium: $color-garlic-medium,
+    garlic-light: $color-garlic-light,
+    garlic-xlight: $color-garlic-xlight,
+    white: $color-white,
+);
+
+
 /* BACKUP
 ** old color vars (using new ones)
 ----------------------------------- */
