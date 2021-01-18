@@ -355,6 +355,11 @@
                 },
                 {
                     "group": "utilities",
+                    "name": "color-utilities",
+                    "title": "Color Utilities"
+                },
+                {
+                    "group": "utilities",
                     "name": "list-utilities",
                     "title": "List Utilities"
                 },
