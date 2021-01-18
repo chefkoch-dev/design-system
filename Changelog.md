@@ -162,10 +162,11 @@ Since we manually capitalize the first letter of each word in most tags so far, 
 * Add Caption Link styles 
 * Add Category Link styles
  
-
-### Utils
-* Add classes for styling text and background of type `.ds-text-{color}` and `.ds-bg-{color}`. For example `.ds-text-watermelon` or `.ds-bg-olive`.
-
 ### Deprecations
 * Class `.ds-text-small`. Use `.ds-text-caption` instead.
 * Class `.ds-text-italic` as there is no italic variation in the new design
+
+## V: 9.12.0 - 9.13.0
+
+### Utils
+* Add classes for styling text and background of type `.ds-text-{color}` and `.ds-bg-{color}`. For example `.ds-text-watermelon` or `.ds-bg-olive`.

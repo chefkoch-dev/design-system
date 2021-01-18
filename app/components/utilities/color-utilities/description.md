@@ -1,4 +1,4 @@
-*since v9.12.0*
+*since v9.13.0*
 
 Color Utilities zum Setzen von Text- und Hintegrundfarbe.
 
