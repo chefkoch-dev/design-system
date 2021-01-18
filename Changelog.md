@@ -164,6 +164,7 @@ Since we manually capitalize the first letter of each word in most tags so far, 
  
 
 ### Utils
+* Add classes for styling text and background of type `.ds-text-{color}` and `.ds-bg-{color}`. For example `.ds-text-watermelon` or `.ds-bg-olive`.
 
 ### Deprecations
 * Class `.ds-text-small`. Use `.ds-text-caption` instead.
