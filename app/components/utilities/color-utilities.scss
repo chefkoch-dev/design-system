@@ -1,0 +1,9 @@
+@each $key, $val in $colors {
+    .ds-text-#{key} {
+        color: $val;
+    }
+
+    .ds-bg-#{key} {
+        background-color: $val;
+    }
+}
