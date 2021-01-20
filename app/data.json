@@ -576,6 +576,11 @@
                     "group": "links",
                     "name": "target",
                     "title": "Target Links"
+                },
+                {
+                    "group": "links",
+                    "name": "teaser-link",
+                    "title": "Teaser Link"
                 }
             ]
         },
