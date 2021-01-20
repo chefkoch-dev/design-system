@@ -1,0 +1,118 @@
+.ds-recipe-card-wrapper {
+    margin-bottom: $v-spacing-4;
+
+    @include media-breakpoint-from(m) {
+        margin-bottom: $v-spacing-6;
+    }
+}
+
+.ds-recipe-card {
+    position: relative;
+
+    &__image {
+        border-radius: 16px;
+        max-width: 100%;
+        padding-bottom: 125%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        background-color: $color-garlic;
+        margin-bottom: 6px;
+    }
+
+    &__headline {
+        line-height: 22px;
+        margin-bottom: 0;
+    }
+
+    &__button {
+        padding: 0 !important;
+        background-color: $color-white !important;
+        color: $color-corporate-green;
+        border-radius: 40px !important;
+        width: 40px;
+        height: 40px;
+
+        &--active {
+            border: 2px solid $color-corporate-green-light !important;
+            background-color: $color-corporate-green-xlight !important;
+        }
+    }
+
+    &__action-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+
+    &__private-recipe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 8px;
+        margin-left: 8px;
+        background-color: $color-white;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+
+        &-icon {
+            margin-left: 0;
+            color: $color-pepper;
+            line-height: 40px;
+            font-size: 24px;
+        }
+    }
+
+
+    &__meta {
+        display: flex;
+        flex-direction: row;
+        margin-top: 6px;
+        line-height: 18px;
+
+        &-icon {
+            display: flex;
+            font-size: 18px;
+            line-height: 18px;
+            color: $color-corporate-green-light;
+            margin-left: $unit;
+
+            &--first {
+                margin-left: 0;
+            }
+        }
+
+        &-text {
+            margin-left: 2px;
+        }
+    }
+
+    &__note {
+        text-align: left;
+        display: flex;
+        margin-top: 8px;
+
+        &:hover {
+            cursor: pointer;
+
+            .ds-recipe-card__note-icon {
+                color: $color-corporate-green;
+            }
+
+            .ds-recipe-card__note-text {
+                color: $color-olive;
+            }
+        }
+
+        &-icon {
+            color: $color-chia;
+            font-size: 18px;
+            line-height: 18px;
+            cursor: pointer;
+        }
+    }
+}
