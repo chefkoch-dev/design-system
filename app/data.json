@@ -698,6 +698,17 @@
             ]
         },
         {
+            "name": "recipe-card",
+            "title": "Recipe Card",
+            "components": [
+                {
+                    "group": "recipe-card",
+                    "name": "default",
+                    "title": "Recipe Card"
+                }
+            ]
+        },
+        {
             "name": "spacings",
             "title": "Spacings",
             "components": [
