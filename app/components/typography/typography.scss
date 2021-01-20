@@ -120,7 +120,7 @@ h5,
 .ds-text-category {
     display: block;
     color: $color-olive;
-    $font: $font-category;
+    font: $font-category;
     letter-spacing: $letter-spacing-category;
     text-transform: uppercase;
 }
