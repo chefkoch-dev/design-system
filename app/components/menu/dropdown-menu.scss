@@ -48,10 +48,26 @@
         &:first-child {
             margin-top: 0;
         }
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-olive;
 
         &:hover {
             cursor: pointer;
             color: $color-corporate-green;
+        }
+    }
+
+    &__icon {
+        margin-right: 15px;
+        color: $color-chia;
+
+        :hover > & {
+            color: $color-chia-medium;
         }
     }
 }
