@@ -12,7 +12,7 @@
         right: 0;
     }
 
-    &--actions {
+    &__actions {
         padding: 22px 19px;
         border: solid 2px #a7c6ac;
         border-radius: 20px;
@@ -42,7 +42,7 @@
         position: relative;
     }
 
-    &--action {
+    &__item {
         margin-top: 22px;
 
         &:first-child {
