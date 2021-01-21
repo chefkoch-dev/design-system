@@ -54,3 +54,8 @@ $btn-base-value: $unit * 5;
     @include btn-reset;
     @include btn-base;
 }
+
+.ds-btn--icon-only {
+    border-radius: 50%;
+    padding: 0;
+}
