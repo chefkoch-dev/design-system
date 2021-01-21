@@ -19,6 +19,10 @@
         background-color: $color-white;
         min-width: 160px;
         list-style: none;
+
+        &--no-wrap {
+            white-space: nowrap;
+        }
     }
 
     &--fill {
