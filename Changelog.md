@@ -170,3 +170,21 @@ Since we manually capitalize the first letter of each word in most tags so far, 
 
 ### Utils
 * Add classes for styling text and background of type `.ds-text-{color}` and `.ds-bg-{color}`. For example `.ds-text-watermelon` or `.ds-bg-olive`.
+
+## V: 9.13.0 - 9.14.0
+
+## Typography
+* Fix typo in font attribute for category text
+* Correct letter-spacing for captions 
+#### Deprecations:
+* Aside style in Copy Text Docs
+
+### Links
+* Simplify Link styles and update links docs
+* Rename mixin `ds-base-link` in `ds-text-link`
+* Replace `.ds-category-link` with `.ds-text-link`
+* Replace `.ds-caption-link`with `.ds-text-link`
+
+#### Deprecations:
+* Class `.ds-copy-link`. Use`.ds-text-link` instead.
+* Mixin `ds-copy-link`. Use mixin `ds-text-link` instead.

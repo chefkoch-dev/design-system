@@ -1,4 +1,4 @@
-@mixin ds-base-link {
+@mixin ds-text-link {
     color: $color-corporate-green;
     text-decoration: underline;
 
@@ -6,27 +6,21 @@
     &:focus {
         text-decoration: none;
     }
+    text-underline-offset: 0.2em;
 }
 
+.ds-text-link {
+    @include ds-text-link;
+}
+
+/* class .ds-copy-link and mixin ds-copy-link are deprecated since v9.14.0, will be removed in future versions */
+
 @mixin ds-copy-link {
-    @include ds-base-link;
-    text-underline-offset: 4px;
+    @include ds-text-link;
 }
 
 .ds-copy-link {
     @include ds-copy-link;
-}
-
-/* style category link */
-.ds-category-link {
-    @include ds-base-link;
-    text-underline-offset: 3px;
-}
-
-/* style caption link */
-.ds-caption-link {
-    @include ds-base-link;
-    text-underline-offset: 2px;
 }
 
 /* if the headline is the link */
