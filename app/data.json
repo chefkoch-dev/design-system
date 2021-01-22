@@ -720,7 +720,12 @@
                 {
                     "group": "recipe-card",
                     "name": "default",
-                    "title": "Recipe Card"
+                    "title": "Standard"
+                },
+                {
+                    "group": "recipe-card",
+                    "name": "cookbook",
+                    "title": "Kochbuch"
                 }
             ]
         },
