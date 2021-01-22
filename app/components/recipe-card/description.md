@@ -1,5 +1,6 @@
 *since v9.15.0*
 
+Eine Recipe Card wird zur Darstellung von Rezepten in unterschiedlichen Kontexten verwendet. Je nach Verwendung stehen in der oberen rechten Ecke ein Bookmark Button (z.B. Suchergebnisseiten) oder ein Action Menu zur Verfügung (z.B. im Kochbuch). Beispiele für die möglichen Darstellungen finden sich unten wieder. 
 ### Usage  
     
     Via Shortlink
