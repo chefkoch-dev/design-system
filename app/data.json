@@ -698,6 +698,22 @@
             ]
         },
         {
+            "name": "recipe-info",
+            "title": "Recipe Info",
+            "components": [
+                {
+                    "group": "recipe-info",
+                    "name": "rating",
+                    "title": "Rating"
+                },
+                {
+                    "group": "recipe-info",
+                    "name": "meta",
+                    "title": "Meta"
+                }
+            ]
+        },
+        {
             "name": "recipe-card",
             "title": "Recipe Card",
             "components": [
