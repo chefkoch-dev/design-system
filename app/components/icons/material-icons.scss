@@ -1,0 +1,6 @@
+// RI-1083: set size and with to all icons per default to 24px to avoid cls
+/* stylelint-disable all */
+.material-icons {
+    width: 1em;
+}
+/* stylelint-enable all */
