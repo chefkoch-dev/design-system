@@ -87,29 +87,8 @@
         }
     }
 
-
     &__meta {
-        display: flex;
-        flex-direction: row;
         margin-top: 6px;
-        line-height: 18px;
-
-        &-icon {
-            display: flex;
-            font-size: 18px;
-            line-height: 18px;
-            color: $color-corporate-green-light;
-            margin-left: $unit;
-
-            &--first {
-                margin-left: 0;
-            }
-        }
-
-        &-text {
-            line-height: 18px;
-            margin-left: 2px;
-        }
     }
 
     &__note {
