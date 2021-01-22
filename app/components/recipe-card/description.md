@@ -11,6 +11,7 @@
     Dependencies
     @import "~chefkoch-design-system/components/dsy-base";
     @import "~chefkoch-design-system/components/button";
+    @import "~chefkoch-design-system/components/color-utilities";
     @import "~chefkoch-design-system/components/dropdown-menu";
     @import "~chefkoch-design-system/components/icons";
     @import "~chefkoch-design-system/components/teaser-link";
