@@ -224,3 +224,6 @@ This release mainly introduces the Recipe Card component. Along with this, other
 
 ### Teaser Link
 * New component with hover behaviour for Links containing images and headlines (e.g. Recipe Card)
+
+### Typography Utilities
+* Added class `.ds-text-semi-bold`
