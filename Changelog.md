@@ -170,3 +170,12 @@ Since we manually capitalize the first letter of each word in most tags so far, 
 
 ### Utils
 * Add classes for styling text and background of type `.ds-text-{color}` and `.ds-bg-{color}`. For example `.ds-text-watermelon` or `.ds-bg-olive`.
+
+## V: 9.13.0 - 9.14.0
+
+### ...
+
+## V: 9.14.0 - 9.14.1
+
+### Material icons
+All material icons have a fixed font-size and width by default to avoid content layout shift (cls)
