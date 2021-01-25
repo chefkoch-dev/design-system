@@ -201,10 +201,10 @@ This release mainly introduces the Recipe Card component. Along with this, other
 * Use this component for Rating and Meta Infos. Please see the examples
 
 ### Rating Stars
-
 #### Deprecations
 * Rating Stars docs are deprecated
 * `.ds-rating` and related classes and mixins are deprecated. Please see Recipe Info
+
 ### Recipe
 #### Deprecations
 * Recipe Meta docs are deprecated
@@ -220,6 +220,7 @@ This release mainly introduces the Recipe Card component. Along with this, other
 ### Icons
 * The icons component imports css for `.chefkoch-icons`
 * Example code is updated
+
 ### Links
 * Target links should be replace with Teaser link for new Cards and Teaser
 #### Deprecations:
