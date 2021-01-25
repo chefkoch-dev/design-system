@@ -1,0 +1,23 @@
+.ds-teaser-link {
+    $root: &;
+    color: inherit;
+    text-decoration: none;
+
+    &__headline {
+        transition: color 0.8s ease-out;
+
+        #{$root}:hover & {
+            color: $color-corporate-green;
+            transition: color 0.4s ease-in-out;
+        }
+    }
+
+    &__image {
+        transition: background-size 0.8s ease-out;
+
+        #{$root}:hover & {
+            background-size: 110% 110%;
+            transition: background-size 0.4s ease-in-out;
+        }
+    }
+}

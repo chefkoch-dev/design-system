@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v9.14.0",
+            "library_title": "v9.15.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -693,6 +693,38 @@
             ]
         },
         {
+            "name": "recipe-info",
+            "title": "Recipe Info",
+            "components": [
+                {
+                    "group": "recipe-info",
+                    "name": "rating",
+                    "title": "Rating"
+                },
+                {
+                    "group": "recipe-info",
+                    "name": "meta",
+                    "title": "Meta"
+                }
+            ]
+        },
+        {
+            "name": "recipe-card",
+            "title": "Recipe Card",
+            "components": [
+                {
+                    "group": "recipe-card",
+                    "name": "default",
+                    "title": "Standard"
+                },
+                {
+                    "group": "recipe-card",
+                    "name": "cookbook",
+                    "title": "Kochbuch"
+                }
+            ]
+        },
+        {
             "name": "spacings",
             "title": "Spacings",
             "components": [
@@ -712,6 +744,17 @@
                     "options": {
                         "disable_code_sample": true
                     }
+                }
+            ]
+        },
+        {
+            "name": "teaser-link",
+            "title": "Teaser Link",
+            "components": [
+                {            
+                    "group": "teaser-link",
+                    "name": "recipe-card",
+                    "title": "Recipe Card"
                 }
             ]
         }

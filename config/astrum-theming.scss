@@ -172,7 +172,11 @@ html {
 
 /* Deprecated */  
 
-$deprecated-groups: 'margins', 
+$deprecated-groups: 
+    'links-component-target',
+    'margins',
+    'rating-stars',
+    'recipe-component-recipe-meta',
     'typography-component-secondary-headings', 
     'typography-component-small-text';
 

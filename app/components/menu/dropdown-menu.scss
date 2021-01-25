@@ -3,17 +3,25 @@
     top: 38px;
     z-index: 1000002;
 
+    &.ds-is-hidden {
+        display: none;
+    }
+
     &--right {
         right: 0;
     }
 
-    &--actions {
+    &__actions {
         padding: 22px 19px;
         border: solid 2px #a7c6ac;
         border-radius: 20px;
         background-color: $color-white;
         min-width: 160px;
         list-style: none;
+
+        &--no-wrap {
+            white-space: nowrap;
+        }
     }
 
     &--fill {
@@ -37,16 +45,32 @@
         position: relative;
     }
 
-    &--action {
+    &__item {
         margin-top: 22px;
 
         &:first-child {
             margin-top: 0;
         }
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-olive;
 
         &:hover {
             cursor: pointer;
             color: $color-corporate-green;
+        }
+    }
+
+    &__icon {
+        margin-right: 15px;
+        color: $color-chia;
+
+        :hover > & {
+            color: $color-chia-medium;
         }
     }
 }

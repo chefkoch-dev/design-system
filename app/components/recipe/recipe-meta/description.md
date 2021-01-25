@@ -1,3 +1,9 @@
+*Deprecated since v9.15.0*
+
+**Diese Doku ist veraltet. Meta Infos und deren Anwendung sind ab Version v9.15.0 im Abschnitt [Recipe Info](#group-recipe-info-component-meta) dokumentiert.**
+
+---
+
 Recipe Meta ist eine Komponente bezogen auf ein Rezept und steht in Kombination mit der Rezept Headline, den Rating Stars und dem Ausschnitt des Rezepttexts.
 Inhalte dieser Komponente sind die Zubereitungszeit, der Schwierigkeitsgrad und das Erstelldatum innerhalb eines `<small>`-Tags.
 

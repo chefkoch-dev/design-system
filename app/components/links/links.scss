@@ -48,6 +48,8 @@ a {
     }
 }
 
+/* class .ds-target-link, .ds-mb and mixin ds-target-link are deprecated since v9.15.0 and will be removed in future versions */
+
 /* target links e.g. media-block-module as teaser */
 
 @mixin ds-target-link {
