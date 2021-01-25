@@ -212,6 +212,9 @@ This release mainly introduces the Recipe Card component. Along with this, other
 
 ### Dropdown Menu
 * Added state classe `.ds-is-hidden` for hiding dropdown menu
+* Added `.dropdown-menu__action` and `.dropdown-menu__icon` for items with icon
+* Renamed `.dropdown-menu--actions` in `.dropdown-menu__actions`
+* Renamed `.dropdown-menu--action` in `.dropdown-menu__item`
 * Updated docs
 
 ### Icons
