@@ -576,11 +576,6 @@
                     "group": "links",
                     "name": "target",
                     "title": "Target Links"
-                },
-                {
-                    "group": "links",
-                    "name": "teaser-link",
-                    "title": "Teaser Link"
                 }
             ]
         },
@@ -749,6 +744,17 @@
                     "options": {
                         "disable_code_sample": true
                     }
+                }
+            ]
+        },
+        {
+            "name": "teaser-link",
+            "title": "Teaser Link",
+            "components": [
+                {            
+                    "group": "teaser-link",
+                    "name": "recipe-card",
+                    "title": "Recipe Card"
                 }
             ]
         }
