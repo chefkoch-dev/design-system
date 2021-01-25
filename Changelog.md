@@ -188,3 +188,39 @@ Since we manually capitalize the first letter of each word in most tags so far, 
 #### Deprecations:
 * Class `.ds-copy-link`. Use`.ds-text-link` instead.
 * Mixin `ds-copy-link`. Use mixin `ds-text-link` instead.
+
+## V: 9.14.0 - 9.15.0
+This release mainly introduces the Recipe Card component. Along with this, other components are added (e.g. Teaser Link, Recipe Info), updated or deprecated (e.g. `.ds-recipe-meta`)
+
+### Recipe Card
+* This component is newly introduced
+* Docs and markup examples are added
+
+### Recipe Info
+* Newly added component for recipe related infos
+* Use this component for Rating and Meta Infos. Please see the examples
+
+### Rating Stars
+
+#### Deprecations
+* Rating Stars docs are deprecated
+* `.ds-rating` and related classes and mixins are deprecated. Please see Recipe Info
+### Recipe
+#### Deprecations
+* Recipe Meta docs are deprecated
+* class `.ds-recipe-meta` is deprecated. Please see Recipe Info
+
+### Dropdown Menu
+* Added state classe `.ds-is-hidden` for hiding dropdown menu
+* Updated docs
+
+### Icons
+* The icons component imports css for `.chefkoch-icons`
+* Example code is updated
+### Links
+* Target links should be replace with Teaser link for new Cards and Teaser
+#### Deprecations:
+* Classes `.ds-tarket-link`, `.ds-mb` and mixin `ds-target-link`. Please use `.ds-teaser-link`.
+
+### Teaser Link
+* New component with hover behaviour for Links containing images and headlines (e.g. Recipe Card)
