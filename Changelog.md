@@ -173,7 +173,7 @@ Since we manually capitalize the first letter of each word in most tags so far, 
 
 ## V: 9.13.0 - 9.14.0
 
-## Typography
+### Typography
 * Fix typo in font attribute for category text
 * Correct letter-spacing for captions 
 #### Deprecations:
