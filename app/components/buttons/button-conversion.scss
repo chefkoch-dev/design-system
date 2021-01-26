@@ -1,0 +1,28 @@
+.ds-btn-conversion {
+    min-height: $btn-base-value + 4;
+    background-color: $color-watermelon;
+    color: $color-text-inverted;
+
+    &--mobile {
+        border-radius: 64px;
+        width: 64px;
+        height: 64px;
+
+        /* stylelint-disable all */
+        i.material-icons, i.chefkoch-icons {
+            color: $color-text-inverted;
+            font-size: 30px;
+        }
+        /* stylelint-enable all */
+    }
+
+    &:hover {
+        background-color: $color-watermelon-medium;
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: $color-watermelon-dark;
+    }
+}
+
