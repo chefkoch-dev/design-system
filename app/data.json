@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v9.16.3",
+            "library_title": "v9.16.4",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -757,7 +757,7 @@
             "name": "teaser-link",
             "title": "Teaser Link",
             "components": [
-                {            
+                {
                     "group": "teaser-link",
                     "name": "recipe-card",
                     "title": "Recipe Card"

@@ -3,6 +3,10 @@
     top: 38px;
     z-index: 1000002;
 
+    &.ds-dropdown-menu--big-button {
+        top: 42px;
+    }
+
     &.ds-is-hidden {
         display: none;
     }
