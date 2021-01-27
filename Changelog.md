@@ -246,3 +246,8 @@ This release mainly introduces the Recipe Card component. Along with this, other
 
 ### Recipe Card
 * Docs and Markup are updated
+
+## V: 9.16.2 - 9.16.3
+
+### Include CK Icons
+* Fix include of ck icons
