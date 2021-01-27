@@ -251,3 +251,9 @@ This release mainly introduces the Recipe Card component. Along with this, other
 
 ### Include CK Icons
 * Fix include of ck icons
+
+## V: 9.16.3 - 9.16.4
+
+### Safari Button and Dropdown Fix
+* Fix ds-btn for Safari, needs margin: 0
+* Adds modifier to DropdownMenu for use with bigger buttons

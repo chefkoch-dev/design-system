@@ -44,6 +44,7 @@ $btn-base-value: $unit * 5;
     line-height: $btn-base-value;
     min-width: $btn-base-value;
     padding: 0 $unit * 2;
+    margin: 0;
 }
 
 @mixin ds-btn-shadow {
