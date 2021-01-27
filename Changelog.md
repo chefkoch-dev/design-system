@@ -241,3 +241,8 @@ This release mainly introduces the Recipe Card component. Along with this, other
 
 ### Teaser Link
 * Fixed shortlink
+
+## V: 9.16.1 - 9.16.2
+
+### Recipe Card
+* Docs and Markup are updated
