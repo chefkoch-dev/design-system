@@ -1,11 +1,3 @@
-.ds-recipe-card-wrapper {
-    margin-bottom: $v-spacing-4;
-
-    @include media-breakpoint-from(m) {
-        margin-bottom: $v-spacing-6;
-    }
-}
-
 .ds-recipe-card {
     position: relative;
 

@@ -257,3 +257,9 @@ This release mainly introduces the Recipe Card component. Along with this, other
 ### Safari Button and Dropdown Fix
 * Fix ds-btn for Safari, needs margin: 0
 * Adds modifier to DropdownMenu for use with bigger buttons
+
+## V: 9.16.4 - 9.16.5
+
+### Recipe Card
+* Removes class `.ds-recipe-card-wrapper`, because wrapping elements should take care of correct margin-bottom.
+* Updates markup examples without `.ds-recipe-card-wrapper`;
