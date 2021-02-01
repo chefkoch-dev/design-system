@@ -10,6 +10,13 @@
         background-size: 100% 100%;
         background-color: $color-garlic;
         margin-bottom: 6px;
+        position: relative;
+        overflow: hidden;
+
+        > img {
+            position: absolute;
+            width: 100%;
+        }
     }
 
     &__rating {
