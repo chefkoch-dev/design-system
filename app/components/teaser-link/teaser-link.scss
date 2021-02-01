@@ -13,21 +13,12 @@
     }
 
     &__image {
-        transition: background-size 0.8s ease-out;
+        transition: transform 0.8s ease-out;
+        transform: translateZ(0);
 
         #{$root}:hover & {
-            background-size: 110% 110%;
-            transition: background-size 0.4s ease-in-out;
-        }
-
-        > img {
-            transition: transform 0.8s ease-out;
-            transform: translateZ(0);
-
-            #{$root}:hover & {
-                transition: transform 0.4s ease-in-out;
-                transform: scale(1.1);
-            }
+            transition: transform 0.4s ease-in-out;
+            transform: scale(1.1);
         }
     }
 }
