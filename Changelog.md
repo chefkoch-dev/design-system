@@ -267,8 +267,9 @@ This release mainly introduces the Recipe Card component. Along with this, other
 ## V: 9.16.5 - 9.17.0
 
 ### Recipe Card
-* Rename class `.ds-recipe-card__image` to `.ds-recipe-card__image-wrap`, because class `.ds-recipe-card__image` is now used on nested image
+* Rename class `.ds-recipe-card__image` to `.ds-recipe-card__image-wrap`, because class `.ds-recipe-card__image` is now used on nested image.
 * Move `.ds-teaser-link__image` class to img Tag holding class `.ds-recipe-card__image`
 
 ### Teaser Link
-* Zoom effect on hover is applied to img tag holding the image, not background image anymore
+* Zoom effect on hover is applied to img tag holding the image, not background image anymore. Move class `.ds-recipe-teaser__image` to child element (e.g. an img tag)
+* Adds class `.ds-teaser-link__image-wrap`. Use this class as container for image with class `.ds-recipe-teaser__image`.
