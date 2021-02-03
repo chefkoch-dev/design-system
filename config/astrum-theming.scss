@@ -1029,4 +1029,14 @@ td {
     }
 }
 
+// similad to main.ds-container
+.ndpl-container-main {
+    width: auto;
+    max-width: $max-content-width;
+
+    @include media-breakpoint-from(m) {
+        max-width: $screen-m - $skyscraper-width;
+    }
+}
+
 /* stylelint-enable */
