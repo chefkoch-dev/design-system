@@ -9,6 +9,7 @@
         margin-bottom: 6px;
         position: relative;
         overflow: hidden;
+        will-change: transform;
     }
 
     &__image {
