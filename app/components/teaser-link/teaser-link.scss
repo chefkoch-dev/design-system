@@ -12,7 +12,15 @@
         }
     }
 
+    &__image-wrap {
+        position: relative;
+        overflow: hidden;
+        will-change: transform;
+    }
+
     &__image {
+        position: absolute;
+        width: 100%;
         transition: transform 0.8s ease-out;
         transform: translateZ(0);
 

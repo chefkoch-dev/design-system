@@ -7,14 +7,6 @@
         padding-bottom: 125%;
         background-color: $color-garlic;
         margin-bottom: 6px;
-        position: relative;
-        overflow: hidden;
-        will-change: transform;
-    }
-
-    &__image {
-        position: absolute;
-        width: 100%;
     }
 
     &__rating {
