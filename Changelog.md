@@ -273,3 +273,7 @@ This release mainly introduces the Recipe Card component. Along with this, other
 ### Teaser Link
 * Zoom effect on hover is applied to img tag holding the image, not background image anymore. Move class `.ds-recipe-teaser__image` to child element (e.g. an img tag)
 * Adds class `.ds-teaser-link__image-wrap`. Use this class as container for image with class `.ds-recipe-teaser__image`.
+
+## V: 9.17.0 - 9.17.1
+
+Adds file `globals.scss` holding all relevant variables, mixins and functions of DSY. Import through `components/globals`.
