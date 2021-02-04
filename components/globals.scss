@@ -1,0 +1,11 @@
+/*
+  It offers a simple way import the variables and tools used within the DSY
+  This file can only contain vars, mixins and functions so that the consumer of this file
+  can be sure that no additional CSS code is generated when imported
+*/
+
+@import "vars";
+@import "breakpoints";
+@import "colors";
+@import "spacings";
+@import "../app/components/typography/settings.typography";
