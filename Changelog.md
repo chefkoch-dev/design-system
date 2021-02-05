@@ -277,3 +277,7 @@ This release mainly introduces the Recipe Card component. Along with this, other
 ## V: 9.17.0 - 9.17.1
 
 Adds file `globals.scss` holding all relevant variables, mixins and functions of DSY. Import through `components/globals`.
+
+## V: 9.17.1 - 9.17.2
+
+Fixes a the problem, when recipe cards are used in a slider, absolute positioned buttons disappear while sliding.
