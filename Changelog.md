@@ -281,3 +281,8 @@ Adds file `globals.scss` holding all relevant variables, mixins and functions of
 ## V: 9.17.1 - 9.17.2
 
 Fixes a the problem, when recipe cards are used in a slider, absolute positioned buttons disappear while sliding.
+
+
+## V: 9.17.2 - 9.18.0
+### Recipe Card
+* Introduces modifier class `.ds-recipe-card__action--transform` in order to apply transform fix introduced in 9.17.2
