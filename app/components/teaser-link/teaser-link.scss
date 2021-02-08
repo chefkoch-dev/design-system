@@ -21,6 +21,7 @@
     &__image {
         position: absolute;
         width: 100%;
+        height: auto;
         transition: transform 0.8s ease-out;
         transform: translateZ(0);
 

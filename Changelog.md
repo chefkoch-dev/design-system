@@ -286,3 +286,7 @@ Fixes a the problem, when recipe cards are used in a slider, absolute positioned
 ## V: 9.17.2 - 9.18.0
 ### Recipe Card
 * Introduces modifier class `.ds-recipe-card__action--transform` in order to apply transform fix introduced in 9.17.2
+
+## V: 9.18.1 - 9.18.1
+### Teaser Link
+Optimises CSS in order to prevent wrong scaling when image dimension are set on img attribute
