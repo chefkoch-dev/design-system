@@ -289,4 +289,4 @@ Fixes a the problem, when recipe cards are used in a slider, absolute positioned
 
 ## V: 9.18.1 - 9.18.1
 ### Teaser Link
-Optimises CSS in order to prevents wrong scaling when image dimension are set on img attribute
+Optimises CSS in order to prevent wrong scaling when image dimension are set on img attribute
