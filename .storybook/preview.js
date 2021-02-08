@@ -1,3 +1,5 @@
+import prettier from 'prettier'
+import HTMLParser from 'prettier/parser-html'
 
 const customViewports = {
   mobile1: {
@@ -39,6 +41,14 @@ export const parameters = {
   viewport: {
     viewports: customViewports,
   },
+  docs: {
+    transformSource: (src, storyContext) => {
+      return  prettier.format(storyContext.storyFn().outerHTML, {
+        parser: 'html',
+        plugins: [HTMLParser]
+      });
+    }
+  }
 }
 
 
