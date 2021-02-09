@@ -1,9 +1,5 @@
 @import "settings.button";
 
-@mixin ds-btn-shadow {
-  @include ds-box-shadow(0.3, 0.5);
-}
-
 @mixin btn-reset {
     background: transparent;
     border: 0;
