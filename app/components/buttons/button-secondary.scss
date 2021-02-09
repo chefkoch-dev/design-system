@@ -1,26 +1,12 @@
-.ds-btn-secondary {
+.ds-btn--secondary {
 
     background: $color-bg-content;
     border: solid 2px $color-corporate-green;
     color: $color-corporate-green;
 
-    &--mobile {
-        border-radius: 64px;
-        width: 64px;
-        height: 64px;
-
-        /* stylelint-disable all */
-        i.material-icons, i.chefkoch-icons {
-            color: $color-corporate-green-dark;
-            font-size: 30px;
-        }
-        /* stylelint-enable all */
-    }
-
     &:hover {
         border: solid 2px $color-corporate-green-medium;
         color: $color-corporate-green-medium;
-        cursor: pointer;
     }
 
     &:active {

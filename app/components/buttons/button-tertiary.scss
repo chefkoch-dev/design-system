@@ -1,4 +1,4 @@
-.ds-btn-tertiary {
+.ds-btn--tertiary {
     color: $color-corporate-green;
     padding: 0;
 
@@ -7,19 +7,6 @@
         color: $color-corporate-green;
     }
     /* stylelint-enable all */
-
-    &--mobile {
-        border-radius: 64px;
-        width: 64px;
-        height: 64px;
-
-        /* stylelint-disable all */
-        i.material-icons, i.material-icons-round, i.chefkoch-icons {
-            color: $color-corporate-green-dark;
-            font-size: 30px;
-        }
-        /* stylelint-enable all */
-    }
 
     &:hover,
     &:focus {
