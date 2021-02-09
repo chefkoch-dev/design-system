@@ -481,14 +481,12 @@
                 {
                     "group": "buttons",
                     "name": "primary",
-                    "title": "Primary Button",
-                    "width": "half"
+                    "title": "Primary Button"
                 },
                 {
                     "group": "buttons",
                     "name": "secondary",
-                    "title": "Secondary Button",
-                    "width": "half"
+                    "title": "Secondary Button"
                 },
                 {
                     "group": "buttons",
@@ -503,20 +501,17 @@
                 {
                     "group": "buttons",
                     "name": "conversion",
-                    "title": "Conversion Button",
-                    "width": "half"
+                    "title": "Conversion Button"
                 },
                 {
                     "group": "buttons",
                     "name": "tertiary",
-                    "title": "Tertiary Button",
-                    "width": "half"
+                    "title": "Tertiary Button"
                 },
                 {
                     "group": "buttons",
                     "name": "btn-box",
-                    "title": "Button Box Wrapper",
-                    "width": "half"
+                    "title": "Button Box Wrapper"
                 },
                 {
                     "group": "buttons",
