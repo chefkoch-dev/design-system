@@ -497,9 +497,8 @@
                 },
                 {
                     "group": "buttons",
-                    "name": "delete",
-                    "title": "Delete Button",
-                    "width": "half"
+                    "name": "danger",
+                    "title": "Danger Button"
                 },
                 {
                     "group": "buttons",
