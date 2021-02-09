@@ -1,62 +1,7 @@
-@import "../shadows/box-shadow";
-
-$btn-base-value: $unit * 5;
-
-.ds-btn-box {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: flex-end;
-}
-
-.ds-btn + .ds-btn {
-    margin-left: $unit;
-}
-
-@mixin btn-reset {
-    background: transparent;
-    border: 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: inherit;
-    text-decoration: none;
-
-    // normalize inner #fffspace in Firefox
-    &::-moz-focus-inner {
-        padding: 0;
-        border: 0;
-    }
-
-    &:focus {
-        outline: none;
-    }
-}
-
-@mixin btn-base {
-    border-radius: 24px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: $fontsize-base;
-    font-weight: $fontweight-semi-bold;
-    min-height: $btn-base-value;
-    letter-spacing: 0.5px;
-    line-height: $btn-base-value;
-    min-width: $btn-base-value;
-    padding: 0 $unit * 2;
-    margin: 0;
-}
-
-@mixin ds-btn-shadow {
-    @include ds-box-shadow(0.3, 0.5);
-}
-
-.ds-btn {
-    @include btn-reset;
-    @include btn-base;
-}
-
-.ds-btn--icon-only {
-    border-radius: 50%;
-    padding: 0;
-}
+// variables for regular btns
+$btn-min-height: 44px !default;
+$btn-min-width: 44px !default;
+$btn-font-size: $fontsize-base !default;
+$btn-font-weight: $fontweight-semi-bold !default;
+$btn-border-radius: $unit * 3 !default;
+$btn-horizontal-padding: $unit * 2 !default;

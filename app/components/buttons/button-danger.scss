@@ -1,0 +1,14 @@
+.ds-btn--danger {
+    background-color: $color-chili;
+    color: $color-text-inverted;
+
+    &:hover {
+        background-color: $color-chili-medium;
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: $color-chili-dark;
+    }
+}
+
