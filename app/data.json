@@ -490,13 +490,8 @@
                 },
                 {
                     "group": "buttons",
-                    "name": "tile-action",
-                    "title": "Tile Action Button"
-                },
-                {
-                    "group": "buttons",
-                    "name": "danger",
-                    "title": "Danger Button"
+                    "name": "tertiary",
+                    "title": "Tertiary Button"
                 },
                 {
                     "group": "buttons",
@@ -505,8 +500,8 @@
                 },
                 {
                     "group": "buttons",
-                    "name": "tertiary",
-                    "title": "Tertiary Button"
+                    "name": "danger",
+                    "title": "Danger Button"
                 },
                 {
                     "group": "buttons",
@@ -520,8 +515,8 @@
                 },
                 {
                     "group": "buttons",
-                    "name": "deactivated",
-                    "title": "Inaktiv / Deaktiviert"
+                    "name": "tile-action",
+                    "title": "Tile Action Button"
                 },
                 {
                     "group": "buttons",
