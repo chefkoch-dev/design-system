@@ -1,6 +1,6 @@
-.ds-btn-tile-action {
+.ds-tile-action-btn {
 
-    min-height: $btn-base-value + 4;
+    min-height: $btn-min-height;
     //min-width: 328px;
     background-color: $color-corporate-green-light;
     color: $color-text-inverted;
