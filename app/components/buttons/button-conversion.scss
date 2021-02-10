@@ -2,12 +2,18 @@
     background-color: $color-watermelon;
     color: $color-text-inverted;
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: $color-watermelon-medium;
-        cursor: pointer;
     }
 
     &:active {
         background-color: $color-watermelon-dark;
+    }
+
+    &.ds-is-disabled,
+    &:disabled,
+    &[disabled] {
+        background-color: $color-pepper;
     }
 }

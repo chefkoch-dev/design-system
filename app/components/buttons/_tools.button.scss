@@ -20,6 +20,7 @@
     }
 }
 
+// base mixin, which all buttons have in common
 @mixin btn-base {
     display: inline-flex;
     align-items: center;
@@ -30,26 +31,16 @@
     &:hover {
         cursor: pointer;
     }
-}
 
-@mixin btn {
-    border-radius: $btn-border-radius;
-    white-space: nowrap;
-    font-size: $btn-font-size;
-    font-weight: $btn-font-weight;
-    min-height: $btn-min-height;
-    min-width: $btn-min-width;
-    padding-left: $btn-horizontal-padding;
-    padding-right: $btn-horizontal-padding;
-
-    &__icon {
-        color: inherit;
+    &.ds-is-disabled,
+    &:disabled,
+    &[disabled] {
+        cursor: not-allowed;
     }
 }
 
-@mixin btn-icon {
-    border-radius: 50%;
-    padding: 0;
-    width: $unit * 5;
-    height: $unit * 5;
+@mixin btn-transitions {
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-property: color, border-color, background-color;
 }

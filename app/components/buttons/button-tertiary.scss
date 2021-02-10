@@ -1,39 +1,35 @@
 .ds-btn--tertiary {
     color: $color-corporate-green;
-    padding: 0;
-
-    /* stylelint-disable all */
-    i.material-icons, i.material-icons-round, i.chefkoch-icons {
-        color: $color-corporate-green;
-    }
-    /* stylelint-enable all */
+    padding-left: 0;
+    padding-right: 0;
+    border-width: 0;
 
     &:hover,
     &:focus {
-        span {
-            color: $color-corporate-green-medium;
-        }
-        /* stylelint-disable all */
-        i.material-icons, i.material-icons-round, i.chefkoch-icons {
-            color: $color-corporate-green-medium;
-        }
-        /* stylelint-enable all */
+        color: $color-corporate-green-medium;
     }
 
     &:active {
-        span {
-            color: $color-corporate-green-dark;
-        }
-
-        /* stylelint-disable all */
-        i.material-icons, i.material-icons-round, i.chefkoch-icons {
-            color: $color-corporate-green-dark;
-        }
-        /* stylelint-enable all */
+        color: $color-corporate-green-dark;
     }
 
-    + .ds-btn-primary,
-    + .ds-btn-tertiary {
-        margin-left: $unit * 3;
+    &.ds-is-disabled,
+    &:disabled,
+    &[disabled] {
+        color: $color-pepper;
+    }
+}
+
+// Additional Button modifier, only to be used within tertiary button
+.ds-btn {
+    &__icon {
+        &--trailing {
+            margin-left: $btn-icon-horizontal-margin;
+        }
+    }
+
+    &--flat {
+        min-height: auto;
+        line-height: inherit;
     }
 }

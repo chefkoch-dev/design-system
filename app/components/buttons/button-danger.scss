@@ -2,13 +2,18 @@
     background-color: $color-chili;
     color: $color-text-inverted;
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: $color-chili-medium;
-        cursor: pointer;
     }
 
     &:active {
         background-color: $color-chili-dark;
     }
-}
 
+    &.ds-is-disabled,
+    &:disabled,
+    &[disabled] {
+        background-color: $color-pepper;
+    }
+}

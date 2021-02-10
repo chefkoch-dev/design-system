@@ -4,7 +4,26 @@
 .ds-btn {
     @include btn-reset;
     @include btn-base;
-    @include btn;
+    @include btn-transitions;
+
+    border-radius: $btn-border-radius;
+    white-space: nowrap;
+    font-size: $btn-font-size;
+    font-weight: $btn-font-weight;
+    min-height: $btn-min-height;
+    min-width: $btn-min-width;
+    padding-left: $btn-horizontal-padding;
+    padding-right: $btn-horizontal-padding;
+    border: $btn-border-width solid transparent;
+    line-height: $btn-line-height;
+
+    &__icon {
+        color: inherit;
+
+        &--leading {
+            margin-right: $btn-icon-horizontal-margin;
+        }
+    }
 
     &--icon-only {
         border-radius: 50%;
