@@ -1,31 +1,16 @@
-.ds-notifications-toast--container {
-    bottom: 0;
-    height: 20px;
-    width: 100%;
-    left: 0;
-    right: 0;
-
-    @media (min-width: 1196px) {
-        margin: 0 auto;
-    }
-}
-
 .ds-notifications-toast {
     background-color: $color-white;
-    bottom: 12px;
     border-radius: 12px 0 12px 12px;
     box-shadow: 0 4px 16px 0 rgba(33, 32, 24, 0.15);
     padding: 12px 24px;
     text-align: center;
-    width: 343px;
-    margin-left: 8px;
+    max-width: 343px;
+    width: 100%;
     position: relative;
+    box-sizing: border-box;
 
     @media screen and (max-width: 767px) {
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        width: 320px;
+        max-width: 100%;
     }
 
     /* stylelint-disable all */
