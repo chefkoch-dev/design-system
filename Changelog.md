@@ -290,3 +290,7 @@ Fixes a the problem, when recipe cards are used in a slider, absolute positioned
 ## V: 9.18.1 - 9.18.1
 ### Teaser Link
 Optimises CSS in order to prevent wrong scaling when image dimension are set on img attribute
+
+## V: 9.19.0 - 9.19.0
+### Notification - Toast
+Remove unnecessary container in toast and fix styling.
