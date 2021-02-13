@@ -10,24 +10,49 @@
     white-space: nowrap;
     font-size: $btn-font-size;
     font-weight: $btn-font-weight;
-    min-height: $btn-min-height;
-    min-width: $btn-min-width;
+    height: $btn-size-default-height;
+    line-height: $btn-size-default-height;
+    min-width: $btn-size-default-min-width;
+
     padding-left: $btn-horizontal-padding;
     padding-right: $btn-horizontal-padding;
     border: $btn-border-width solid transparent;
-    line-height: $btn-line-height;
 
     &__icon {
         color: inherit;
+        line-height: 1;
+        font-size: $btn-icon-font-size;
 
         &--leading {
             margin-right: $btn-icon-horizontal-margin;
         }
+
+        &--trailing {
+            margin-left: $btn-icon-horizontal-margin;
+        }
     }
 
-    &--icon-only {
+    &--fluid {
+        width: 100%;
+    }
+
+    &--space-between {
+        justify-content: space-between;
+    }
+
+    &--size-s {
+        height: $btn-size-s-height;
+
+        &.ds-btn--circle {
+            width: $btn-size-s-height;
+        }
+    }
+
+    &--circle {
         border-radius: 50%;
         padding-left: 0;
         padding-right: 0;
+        min-width: 0;
+        width: $btn-size-default-height;
     }
 }
