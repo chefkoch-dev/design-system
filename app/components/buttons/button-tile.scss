@@ -1,0 +1,72 @@
+.ds-btn--tile {
+    background-color: $color-corporate-green-light;
+    color: $color-text-inverted;
+    width: 100%;
+
+    &:hover {
+        background-color: $color-corporate-green-medium;
+    }
+
+    &:active {
+        background-color: $color-corporate-green-light;
+    }
+
+    .ds-btn__icon {
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+
+.ds-btn--tile-action {
+    border-radius: 8px;
+    height: $btn-size-m-height;
+    justify-content: space-between;
+
+    .ds-btn__icon {
+        font-size: 28px;
+    }
+
+    &:hover {
+        .ds-btn__icon {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.ds-btn--tile-list {
+    border-radius: 16px;
+    height: $btn-size-l-height;
+
+    .ds-btn__icon {
+        font-size: 64px;
+    }
+
+    &:hover {
+        .ds-btn__icon {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.ds-btn--tile-card {
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+
+    .ds-btn__icon {
+        font-size: 120px;
+        position: absolute;
+        top: 50%;
+        top:50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        transition: transform 0.3s ease-in-out;
+        transition-property: font-size;
+    }
+
+    &:hover {
+        .ds-btn__icon {
+            font-size: 150px;
+        }
+    }
+}
