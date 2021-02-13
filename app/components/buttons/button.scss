@@ -56,3 +56,13 @@
         width: $btn-size-default-height;
     }
 }
+
+.ds-btn-box {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+
+    &--space-between {
+        justify-content: space-between;
+    }
+}
