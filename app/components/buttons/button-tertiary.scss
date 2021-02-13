@@ -22,14 +22,8 @@
 
 // Additional Button modifier, only to be used within tertiary button
 .ds-btn {
-    &__icon {
-        &--trailing {
-            margin-left: $btn-icon-horizontal-margin;
-        }
-    }
-
     &--flat {
-        min-height: auto;
+        height: auto;
         line-height: inherit;
     }
 }
