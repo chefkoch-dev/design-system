@@ -18,12 +18,12 @@
 
 
 .ds-btn--tile-action {
-    border-radius: 8px;
+    border-radius: $btn-tile-action-border-radius;
     height: $btn-size-m-height;
     justify-content: space-between;
 
     .ds-btn__icon {
-        font-size: 28px;
+        font-size: $btn-tile-action-icon-font-size;
     }
 
     &:hover {
@@ -34,11 +34,11 @@
 }
 
 .ds-btn--tile-list {
-    border-radius: 16px;
+    border-radius: $btn-tile-list-border-radius;
     height: $btn-size-l-height;
 
     .ds-btn__icon {
-        font-size: 64px;
+        font-size: $btn-tile-list-icon-font-size;
     }
 
     &:hover {
@@ -49,12 +49,13 @@
 }
 
 .ds-btn--tile-card {
+    border-radius: $btn-tile-list-border-radius;
     position: relative;
     padding-bottom: 56.25%;
     width: 100%;
 
     .ds-btn__icon {
-        font-size: 120px;
+        font-size: $btn-tile-card-icon-font-size;
         position: absolute;
         top: 50%;
         top: 50%;
@@ -66,7 +67,7 @@
 
     &:hover {
         .ds-btn__icon {
-            font-size: 150px;
+            font-size: $btn-tile-card-icon-font-size-hover;
         }
     }
 }
