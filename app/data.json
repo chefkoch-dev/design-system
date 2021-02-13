@@ -510,8 +510,8 @@
                 },
                 {
                     "group": "buttons",
-                    "name": "icon",
-                    "title": "Icon Button"
+                    "name": "menu",
+                    "title": "Menu Buttons"
                 },
                 {
                     "group": "buttons",
