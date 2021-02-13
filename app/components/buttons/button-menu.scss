@@ -1,0 +1,26 @@
+.ds-btn--dual-color {
+    background-color: $color-bg-content;
+    color: $color-corporate-green;
+    border-color: $color-corporate-green-light;
+
+    &:hover,
+    &:focus {
+        border-color: $color-corporate-green;
+    }
+
+    &:active {
+        border-color: $color-corporate-green-dark;
+        color: $color-corporate-green-dark;
+    }
+
+    &.ds-is-disabled,
+    &:disabled,
+    &[disabled] {
+        border-color: $color-pepper;
+        color: $color-pepper;
+    }
+
+    &.ds-is-active {
+        background-color: $color-corporate-green-xlight;
+    }
+}
