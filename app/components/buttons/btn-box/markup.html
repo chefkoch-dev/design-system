@@ -1,25 +1,28 @@
-<h3>Aligned with .ds-btn-box container</h3>
+<div class="ds-grid ds-row">
+    <div class="ds-col-12 ds-box">
+        <h4>Ausrichtung mit .ds-btn-box</h4>
 
-<div class="ds-btn-box ds-box">
-    <button class="ds-btn ds-btn--primary">
-        <span>Button 1</span>
-    </button>
-    <button class="ds-btn ds-btn--secondary">
-        <span>Button 2</span>
-    </button>
+        <div class="ds-btn-box">
+            <button class="ds-btn ds-btn--primary">
+                <span class="ds-btn__label">Button 1</span>
+            </button>
+            <button class="ds-btn ds-btn--secondary">
+                <span class="ds-btn__label">Button 2</span>
+            </button>
+        </div>
+    </div>
 
-    <hr class="ds-hr" />
-</div>
+    <div class="ds-col-12 ds-box">
+        <h4>Ausrichtung mit zusätzlicher Klasse .ds-btn-box--space-between</h4>
 
-<h3><img src="./app/images/no.svg"> Don't</h3>
-<small>2 Buttons ohne .ds-btn-box als parent</small>
-<br/>
-
-<div class="ds-text-right">
-    <button class="ds-btn ds-btn-primary">
-        <span>Button 1</span>
-    </button>
-    <button class="ds-btn ds-btn-secondary">
-        <span>Button 2</span>
-    </button>
+        <div class="ds-btn-box ds-btn-box--space-between">
+            <button class="ds-btn ds-btn--tertiary">
+                <i class="ds-btn__icon ds-btn__icon--leading chefkoch-icons">arrow_left</i>
+                <span class="ds-btn__label">Zurück</span>
+            </button>
+            <button class="ds-btn ds-btn--primary">
+                <span class="ds-btn__label">Weiter</span>
+            </button>
+        </div>
+    </div>
 </div>

@@ -1,9 +1,23 @@
+*updated in v10.0.0*
+
 Der Secondary Button steht neben dem Primary Button für alle weiteren CTA's.
 
+### Modifier
+* `.ds-btn--secondary` wenn Label vorhanden
+* `.ds-btn--secondary` und `.ds-btn--circle` für Icon Only
+
+### Darstellungsformen
+Der Secondary Button kann nur mit Label, mit Label und vorangestelltem Icon oder nur mit Icon auftreten. Wird der Button nur mit Icon verwendet, muss zusätzlich die Klasse `.ds-btn--circle` verwendet werden.
+
+### Disabled
+Der Button erhält das Styling für disabled per `disabled` Attribut. Explizit kann der Style durch die State-Klasse `.ds-is-disabled` erzeugt werden.
 ### Usage  
     
     Via Shortlink 
     @import "~chefkoch-design-system/components/button-secondary";
     
     Original Location
-    @import "~chefkoch-design-system/app/components/buttons/buttons-secondary";
+    @import "~chefkoch-design-system/app/components/buttons/button-secondary";
+
+    Dependencies
+    @import "~chefkoch-design-system/components/icons";
