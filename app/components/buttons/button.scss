@@ -36,31 +36,12 @@
         width: 100%;
     }
 
-    &--space-between {
-        justify-content: space-between;
-    }
-
     &--size-s {
         height: $btn-size-s-height;
 
         &.ds-btn--circle {
             width: $btn-size-s-height;
         }
-    }
-
-    &--size-m {
-        border-radius: 8px;
-        height: $btn-tile-action-height;
-    }
-
-    &--size-l {
-        border-radius: 16px;
-        height: $btn-tile-list-height;
-    }
-
-    &--card {
-        padding-bottom: 56.25%;
-        width: 100%;
     }
 
     &--circle {
