@@ -18,7 +18,7 @@
 
 .ds-btn--tile-action {
     border-radius: $btn-tile-action-border-radius;
-    height: $btn-size-m-height;
+    height: $btn-tile-action-height;
     justify-content: space-between;
 
     .ds-btn__icon {
@@ -34,7 +34,7 @@
 
 .ds-btn--tile-list {
     border-radius: $btn-tile-list-border-radius;
-    height: $btn-size-l-height;
+    height: $btn-tile-list-height;
 
     .ds-btn__icon {
         font-size: $btn-tile-list-icon-font-size;

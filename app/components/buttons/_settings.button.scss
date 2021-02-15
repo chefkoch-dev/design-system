@@ -3,8 +3,7 @@ $btn-border-width: 2px !default;
 $btn-size-default-height: 40px + $btn-border-width * 2 !default; // 44px
 $btn-size-default-min-width: $btn-size-default-height !default; // 44px
 $btn-size-s-height: 40px !default;
-$btn-size-m-height: 48px !default;
-$btn-size-l-height: 64px !default;
+
 $btn-font-size: $fontsize-base !default;
 $btn-icon-font-size: $unit * 3 !default;
 $btn-font-weight: $fontweight-semi-bold !default;
@@ -15,8 +14,10 @@ $btn-icon-horizontal-margin: $unit !default;
 // tile related variables
 $btn-tile-action-border-radius: $unit !default;
 $btn-tile-action-icon-font-size: 28px !default;
+$btn-tile-action-height: 48px !default;
 $btn-tile-list-border-radius: $unit * 2 !default;
 $btn-tile-list-icon-font-size: $unit * 8 !default;
+$btn-tile-list-height: 64px !default;
 $btn-tile-card-border-radius: $unit * 3 !default;
 $btn-tile-card-icon-font-size: 120px !default;
 $btn-tile-card-icon-font-size-hover: 150px !default;
