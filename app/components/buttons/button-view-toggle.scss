@@ -1,0 +1,47 @@
+.ds-btn--view-toggle {
+    padding: 0;
+    border: 0;
+
+    .ds-btn__icon {
+        border-top: 2px solid $color-corporate-green-light;
+        border-bottom: 2px solid $color-corporate-green-light;
+        font-size: 24px;
+        line-height: 40px;
+        padding: 0 11px;
+        background-color: $color-white;
+        color: $color-corporate-green-light;
+
+        &--left {
+            width: 100%;
+            border-radius: 22px 0 0 22px;
+            border-left: 2px solid $color-corporate-green-light;
+        }
+
+        &--right {
+            border-radius: 0 22px 22px 0;
+            width: 100%;
+            border-right: 2px solid $color-corporate-green-light;
+        }
+
+        &.ds-is-active {
+            background-color: $color-corporate-green-xlight;
+            color: $color-corporate-green;
+        }
+    }
+
+    &:hover {
+        .ds-btn__icon {
+            border-top-color: $color-corporate-green-medium;
+            border-bottom-color: $color-corporate-green-medium;
+            color: $color-corporate-green;
+
+            &--right {
+                border-right-color: $color-corporate-green-medium;
+            }
+
+            &--left {
+                border-left-color: $color-corporate-green-medium;
+            }
+        }
+    }
+}
