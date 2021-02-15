@@ -21,7 +21,7 @@
 }
 
 // base mixin, which all buttons have in common
-@mixin btn-base {
+@mixin btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;

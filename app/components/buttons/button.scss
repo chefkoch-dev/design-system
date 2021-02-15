@@ -3,7 +3,7 @@
 
 .ds-btn {
     @include btn-reset;
-    @include btn-base;
+    @include btn;
     @include btn-transitions;
 
     border-radius: $btn-border-radius;
