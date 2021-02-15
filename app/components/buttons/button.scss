@@ -66,3 +66,7 @@
         justify-content: space-between;
     }
 }
+
+.ds-btn + .ds-btn {
+    margin-left: $unit;
+}
