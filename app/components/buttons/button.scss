@@ -48,6 +48,21 @@
         }
     }
 
+    &--size-m {
+        border-radius: 8px;
+        height: $btn-tile-action-height;
+    }
+
+    &--size-l {
+        border-radius: 16px;
+        height: $btn-tile-list-height;
+    }
+
+    &--card {
+        padding-bottom: 56.25%;
+        width: 100%;
+    }
+
     &--circle {
         border-radius: 50%;
         padding-left: 0;
