@@ -294,3 +294,38 @@ Optimises CSS in order to prevent wrong scaling when image dimension are set on 
 ## V: 9.18.1 - 9.19.0
 ### Notification - Toast
 Remove unnecessary container in toast and fix styling.
+
+## V: 9.19.0 - 10.0.0
+
+Version 10.0.0 contains major update to buttons and related styles
+### General 
+* Added state classes `.ds-is-active`, `.ds-is-disabled`
+* Docs that need more description are marked with __⚠️ NEEDS DESCRIPTION__
+### Buttons
+* Added:
+  * Modifier class `.ds-btn-box--space-between` 
+  * Styles for Tile Action List and Tile Action Card Buttons
+  * Styles for menu buttons, using icon only
+  * Shortlink to all buttons `component\buttons`
+
+* Updated:
+  * `.ds-btn-primary` is now called `.ds-btn--primary`
+  * `.ds-btn-secondary` is now called `.ds-btn--secondary`
+  * `.ds-btn-tertiary` is now called `.ds-btn--tertiary`
+  * `.ds-btn-delete` is now called `.ds-btn--danger`
+  * `.ds-btn-conversion` is now called `.ds-btn--conversion`
+  * `.ds-btn-view-toggle` is now called `.ds-btn--view-toggle`, also related classes have been updated, please see markup for View Toggle button
+  * `.ds-btn-tile-action` has to be replace with `.ds-btn--tile .ds-btn--tile-action .ds-btn--fluid` 
+  * `@mixin btn-base` is now named `@mixin btn`
+  * component `components/tile-action-button` is now named `components/button-tile-action`
+  * component `components/button-icon` has been removed, icons in buttons are styled as en element of the block class `.ds-btn`
+  * `.ds-icon--icon-only` is renamed to `.ds-icon--circle`
+  * component `components/button-inactive` was removed, disabled styles are now part of the styles of each button, if you need to set disabled styling to a button, use class `.ds-is-disabled`
+  * Inline Forms in order to work with new buttons
+
+* Removed without replacement: 
+  * `@mixin ds-btn-shadow`
+  * class `.ds-btn-primary--mobile`
+  * class `.ds-btn-secondary--mobile`
+  * class `.ds-btn-tertiary--mobile`
+  
