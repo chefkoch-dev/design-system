@@ -306,7 +306,7 @@ Version 10.0.0 contains major update to buttons and related styles
   * Modifier class `.ds-btn-box--space-between` 
   * Styles for Tile Action List and Tile Action Card Buttons
   * Styles for menu buttons, using icon only
-  * Shortlink to all buttons `component\buttons`
+  * Component `app/component/buttons/buttons` and shortlink `component/buttons` for importing all buttons 
 
 * Updated:
   * `.ds-btn-primary` is now called `.ds-btn--primary`
