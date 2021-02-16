@@ -319,7 +319,7 @@ Version 10.0.0 contains major update to buttons and related styles
   * `@mixin btn-base` is now named `@mixin btn`
   * component `components/tile-action-button` is now named `components/button-tile-action`
   * component `components/button-icon` has been removed, icons in buttons are styled as en element of the block class `.ds-btn`
-  * `.ds-icon--icon-only` is renamed to `.ds-icon--circle`
+  * `.ds-icon--icon-only` is renamed to `.ds-icon--round`
   * component `components/button-inactive` was removed, disabled styles are now part of the styles of each button, if you need to set disabled styling to a button, use class `.ds-is-disabled`
   * Inline Forms in order to work with new buttons
 

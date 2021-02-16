@@ -39,12 +39,12 @@
     &--size-s {
         height: $btn-size-s-height;
 
-        &.ds-btn--circle {
+        &.ds-btn--round {
             width: $btn-size-s-height;
         }
     }
 
-    &--circle {
+    &--round {
         border-radius: 50%;
         padding-left: 0;
         padding-right: 0;

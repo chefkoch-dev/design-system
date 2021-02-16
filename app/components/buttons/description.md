@@ -17,7 +17,7 @@ Folgende Modifierklassen verändern die Farbgebung der regulären Buttons:
 
 Darüberhinaus gibt es Varianten von Buttons, die durch folgende Modifierklassen definiert sind:
 
-* `.ds-btn--dual-color` immer in Verbindung mit `.ds-btn--circle` (siehe [Menü Buttons](#group-buttons-component-menu))
+* `.ds-btn--dual-color` immer in Verbindung mit `.ds-btn--round` (siehe [Menü Buttons](#group-buttons-component-menu))
 * `.ds-btn--tile` in Kombination mit `.ds-btn--tile-action`, `.ds-btn--tile-list` oder `.ds-btn--tile-card` (siehe [Tile Action Buttons](#group-buttons-component-tile-action))
 * `.ds-btn--view-toggle` (siehe [View Toggle](#group-buttons-component-view-toggle))
 
