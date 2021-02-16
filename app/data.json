@@ -731,6 +731,17 @@
             ]
         },
         {
+            "name": "recipe-list-item",
+            "title": "Recipe List Item",
+            "components": [
+                {
+                    "group": "recipe-list-item",
+                    "name": "default",
+                    "title": "Recipe List Item"
+                }
+            ]
+        },
+        {
             "name": "spacings",
             "title": "Spacings",
             "components": [
