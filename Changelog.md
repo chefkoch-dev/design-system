@@ -317,6 +317,7 @@ Version 10.0.0 contains major update to buttons and related styles
   * `.ds-btn-view-toggle` is now called `.ds-btn--view-toggle`, also related classes have been updated, please see markup for View Toggle button
   * `.ds-btn-tile-action` has to be replace with `.ds-btn--tile .ds-btn--tile-action .ds-btn--fluid` 
   * `@mixin btn-base` is now named `@mixin btn`
+  * Instead of `.ds-btn-secondary--active` use `.ds-is-active`
   * component `components/tile-action-button` is now named `components/button-tile-action`
   * component `components/button-icon` has been removed, icons in buttons are styled as en element of the block class `.ds-btn`
   * `.ds-icon--icon-only` is renamed to `.ds-icon--round`
