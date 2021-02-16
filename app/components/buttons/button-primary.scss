@@ -11,7 +11,7 @@
         background-color: $color-corporate-green-dark;
     }
 
-    &.ds-is-disabled,
+    &--disabled,
     &:disabled,
     &[disabled] {
         background-color: $color-pepper;

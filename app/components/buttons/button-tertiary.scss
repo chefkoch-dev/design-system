@@ -13,7 +13,7 @@
         color: $color-corporate-green-dark;
     }
 
-    &.ds-is-disabled,
+    &--disabled,
     &:disabled,
     &[disabled] {
         color: $color-pepper;

@@ -13,14 +13,14 @@
         color: $color-corporate-green-dark;
     }
 
-    &.ds-is-disabled,
+    &--disabled,
     &:disabled,
     &[disabled] {
         border-color: $color-pepper;
         color: $color-pepper;
     }
 
-    &.ds-is-active {
+    &.ds-btn--active {
         background-color: $color-corporate-green-xlight;
     }
 }

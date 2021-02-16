@@ -11,9 +11,9 @@ Buttons, die vor allem In Navigation oder Menüs verwendet werden erhalten eine 
 Menü Buttons werden nur als Icon Buttons verwendet. Ein Label ist nicht vorgesehen
 
 ### Active
-Um ein Button als aktiv (z.B. für die Darstellung eines aktiven Menüpunktes) zu kennzeichnen wird die State Klasse `.ds-is-active` dem Button hinzugefügt.
+Um ein Button als aktiv (z.B. für die Darstellung eines aktiven Menüpunktes) zu kennzeichnen wird die Modifier Klasse `.ds-btn--active` dem Button hinzugefügt.
 ### Disabled
-Der Button erhält das Styling für disabled per `disabled` Attribut. Explizit kann der Style durch die State-Klasse `.ds-is-disabled` erzeugt werden.
+Der Button erhält das Styling für disabled per `disabled` Attribut. Explizit kann der Style durch die Modifier Klasse `.ds-btn--disabled` erzeugt werden.
 
 ### Usage  
     

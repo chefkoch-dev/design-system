@@ -6,7 +6,7 @@ Das View-Toggle dient zum Wechseln zwischen einer Kachel und Listenansicht.
 * `.ds-btn--view-toggle`
 
 ### Active
-Um ein Icon innerhalb des View Toggle Button als aktiv zu kennzeichnen, muss die State Klasse `.ds-is-active` auf dem jeweils aktiven Icon gesetzt werden.
+Um ein Icon innerhalb des View Toggle Button als aktiv zu kennzeichnen, muss die Klasse `.ds-btn__icon--active` auf dem jeweils aktiven Icon gesetzt werden.
 
 ### Usage  
     

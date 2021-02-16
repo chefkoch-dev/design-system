@@ -12,7 +12,7 @@ In allen Fällen hat der Tertiary Button kein horizontales Padding.<br>
 __Hinweis__: Der Tertiary Button ist der einzige Button der regulären Button, der auch mit nachgestelltem Icon verwendet wird. Eine Verwendung des Tertiary Buttons nur mit Icon ist nicht vorgesehen.
 
 ### Disabled
-Der Button erhält das Styling für disabled per `disabled` Attribut. Explizit kann der Style durch die State-Klasse `.ds-is-disabled` erzeugt werden.
+Der Button erhält das Styling für disabled per `disabled` Attribut. Explizit kann der Style durch die Modifier-Klasse `.ds-btn--disabled` erzeugt werden.
 
 ### Usage  
     

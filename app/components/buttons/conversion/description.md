@@ -10,7 +10,7 @@ __⚠️ NEEDS DESCRIPTION__
 Der Conversion Button kann nur mit Label, mit Label und vorangestelltem Icon oder nur mit Icon auftreten. Wird der Button nur mit Icon verwendet, muss zusätzlich die Klasse `.ds-btn--round` verwendet werden.
 
 ### Disabled
-Der Button erhält das Styling für disabled per `disabled` Attribut. Explizit kann der Style durch die State-Klasse `.ds-is-disabled` erzeugt werden.
+Der Button erhält das Styling für disabled per `disabled` Attribut. Explizit kann der Style durch die Modifier Klasse `.ds-btn--disabled` erzeugt werden.
 
 ### Usage  
     

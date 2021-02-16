@@ -299,8 +299,14 @@ Remove unnecessary container in toast and fix styling.
 
 Version 10.0.0 contains major update to buttons and related styles
 ### General 
-* Added state classes `.ds-is-active`, `.ds-is-disabled`
 * Docs that need more description are marked with __⚠️ NEEDS DESCRIPTION__
+
+### Recipe Card
+* Replace `.ds-is-disabled` with `.ds-recipe-card__button--active` for setting `.ds-recipe-card__button` in active state
+
+### Dropdown Menu
+* Replace `.ds-is-hidden` with `.ds-dropdown-menu--hidden` for hiding dropdown menu
+
 ### Buttons
 * Added:
   * Modifier class `.ds-btn-box--space-between` 
@@ -317,11 +323,11 @@ Version 10.0.0 contains major update to buttons and related styles
   * `.ds-btn-view-toggle` is now called `.ds-btn--view-toggle`, also related classes have been updated, please see markup for View Toggle button
   * `.ds-btn-tile-action` has to be replace with `.ds-btn--tile .ds-btn--tile-action .ds-btn--fluid` 
   * `@mixin btn-base` is now named `@mixin btn`
-  * Instead of `.ds-btn-secondary--active` use `.ds-is-active`
+  * Instead of `.ds-btn-secondary--active` use `.ds-btn--active`
   * component `components/tile-action-button` is now named `components/button-tile-action`
   * component `components/button-icon` has been removed, icons in buttons are styled as en element of the block class `.ds-btn`
   * `.ds-icon--icon-only` is renamed to `.ds-icon--round`
-  * component `components/button-inactive` was removed, disabled styles are now part of the styles of each button, if you need to set disabled styling to a button, use class `.ds-is-disabled`
+  * component `components/button-inactive` was removed, disabled styles are now part of the styles of each button, if you need to set disabled styling to a button, use class `.ds-btn--disabled`
   * Inline Forms in order to work with new buttons
 
 * Removed without replacement: 

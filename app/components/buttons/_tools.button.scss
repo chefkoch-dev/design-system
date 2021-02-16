@@ -32,7 +32,7 @@
         cursor: pointer;
     }
 
-    &.ds-is-disabled,
+    &--disabled,
     &:disabled,
     &[disabled] {
         cursor: not-allowed;
