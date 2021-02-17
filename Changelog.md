@@ -336,3 +336,7 @@ Version 10.0.0 contains major update to buttons and related styles
   * class `.ds-btn-secondary--mobile`
   * class `.ds-btn-tertiary--mobile`
   
+## V: 10.0.0 - 10.0.1
+
+### Buttons
+* Sets line-height for `.ds-btn--flat` to a fixed value
