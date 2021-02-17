@@ -1,0 +1,49 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title="Library/RecipeCard" 
+  argTypes={{
+    headline: { control: 'text' },
+  }}
+/>
+
+export const Template = ({ headline, ...args }) => {
+  return `
+    <div class="ds-grid ds-row">
+      <div class="ds-box ds-col-6 ds-col-s-4 ds-col-m-3">
+      <div class="ds-recipe-card">
+          <a class="ds-teaser-link ds-recipe-card__link" href="#"
+            title="Tunesiches und israelisches Gericht aus Tomaten, Paprika, Zwiebeln und Eiern">
+            <div class="ds-recipe-card__image-wrap"></div>
+            <div class="ds-recipe-card__rating">
+              <div class="ds-recipe-info ds-text-caption">
+                <i class="chefkoch-icons ds-recipe-info__icon ds-text-mirabelle">rating_star</i>
+                <span class="ds-recipe-info__text ds-text-semi-bold">4,5/5</span><span class="ds-recipe-info__text ds-recipe-info__text--ml">(2500)</span>
+              </div>
+            </div>
+            <h4 class="ds-recipe-card__headline ds-teaser-link__headline ds-trunc ds-trunc-3 ds-text-sans">${headline}</h4>
+            <div class="ds-recipe-card__meta">
+              <div class="ds-recipe-info ds-text-caption">
+                <i class="chefkoch-icons ds-recipe-info__icon ds-text-corporate-green-light">time</i>
+                <span class="ds-recipe-info__text ds-text-caption">15 Min.</span>
+                <i class="chefkoch-icons ds-recipe-info__icon ds-recipe-info__icon--ml ds-text-corporate-green-light">difficulty_level</i>
+                <span class="ds-recipe-info__text ds-text-caption">normal</span>
+              </div>
+            </div>
+          </a>
+          <div class="ds-recipe-card__action">
+            <button class="ds-recipe-card__button ds-recipe-card__button--save ds-btn ds-btn--icon-only">
+              <i class="chefkoch-icons ds-btn__icon">bookmark_border</i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>`;
+};
+
+<Canvas>
+  <Story name="Standard" args={{
+    headline: 'Shakshuka', 
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
