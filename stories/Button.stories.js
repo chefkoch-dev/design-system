@@ -1,16 +1,19 @@
 import { createButton } from './Button';
+import mdx from './Button.mdx';
 
 export default {
   title: 'Example/Button',
   argTypes: {
     label: { control: 'text' },
-    primary: { control: 'boolean' },
-    backgroundColor: { control: 'color' },
-    size: {
-      control: { type: 'select', options: ['small', 'medium', 'large'] },
+    mode: {
+      control: { type: 'select', options: ['primary', 'secondary', 'tertiary', 'danger', 'conversion'] },
     },
-    onClick: { action: 'onClick' },
   },
+  parameters: {
+    docs: {
+      page: mdx
+    }
+  }
 };
 
 const Template = ({ label, ...args }) => {
@@ -21,23 +24,18 @@ const Template = ({ label, ...args }) => {
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
-  label: 'Button',
+  mode: 'primary',
+  label: 'Button 2',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Button',
+  mode: 'secondary',
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
+export const Tertiary = Template.bind({});
+Tertiary.args = {
   label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+  mode: 'tertiary',
 };
