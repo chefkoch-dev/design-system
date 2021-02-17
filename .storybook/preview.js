@@ -49,7 +49,8 @@ export const parameters = {
   },
   docs: {
     transformSource: (src, storyContext) => {
-      return  prettier.format(storyContext.storyFn().outerHTML, {
+      const source = typeof storyContext.storyFn() === 'object'? storyContext.storyFn().outerHTML : storyContext.storyFn();
+      return  prettier.format(source, {
         parser: 'html',
         plugins: [HTMLParser]
       });
