@@ -1,5 +1,6 @@
 import prettier from 'prettier'
 import HTMLParser from 'prettier/parser-html'
+import '../config/chefkoch-design-system.scss';
 
 const customViewports = {
   mobile1: {
