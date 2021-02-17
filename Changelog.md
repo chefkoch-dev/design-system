@@ -287,10 +287,52 @@ Fixes a the problem, when recipe cards are used in a slider, absolute positioned
 ### Recipe Card
 * Introduces modifier class `.ds-recipe-card__action--transform` in order to apply transform fix introduced in 9.17.2
 
-## V: 9.18.1 - 9.18.1
+## V: 9.18.0 - 9.18.1
 ### Teaser Link
 Optimises CSS in order to prevent wrong scaling when image dimension are set on img attribute
 
-## V: 9.19.0 - 9.19.0
+## V: 9.18.1 - 9.19.0
 ### Notification - Toast
 Remove unnecessary container in toast and fix styling.
+
+## V: 9.19.0 - 10.0.0
+
+Version 10.0.0 contains major update to buttons and related styles
+### General 
+* Docs that need more description are marked with __⚠️ NEEDS DESCRIPTION__
+
+### Recipe Card
+* Replace `.ds-is-disabled` with `.ds-recipe-card__button--active` for setting `.ds-recipe-card__button` in active state
+
+### Dropdown Menu
+* Replace `.ds-is-hidden` with `.ds-dropdown-menu--hidden` for hiding dropdown menu
+
+### Buttons
+* Added:
+  * Modifier class `.ds-btn-box--space-between` 
+  * Styles for Tile Action List and Tile Action Card Buttons
+  * Styles for menu buttons, using icon only
+  * Component `app/component/buttons/buttons` and shortlink `component/buttons` for importing all buttons 
+
+* Updated:
+  * `.ds-btn-primary` is now called `.ds-btn--primary`
+  * `.ds-btn-secondary` is now called `.ds-btn--secondary`
+  * `.ds-btn-tertiary` is now called `.ds-btn--tertiary`
+  * `.ds-btn-delete` is now called `.ds-btn--danger`
+  * `.ds-btn-conversion` is now called `.ds-btn--conversion`
+  * `.ds-btn-view-toggle` is now called `.ds-btn--view-toggle`, also related classes have been updated, please see markup for View Toggle button
+  * `.ds-btn-tile-action` has to be replace with `.ds-btn--tile .ds-btn--tile-action .ds-btn--fluid` 
+  * `@mixin btn-base` is now named `@mixin btn`
+  * Instead of `.ds-btn-secondary--active` use `.ds-btn--active`
+  * component `components/tile-action-button` is now named `components/button-tile-action`
+  * component `components/button-icon` has been removed, icons in buttons are styled as en element of the block class `.ds-btn`
+  * `.ds-icon--icon-only` is renamed to `.ds-icon--round`
+  * component `components/button-inactive` was removed, disabled styles are now part of the styles of each button, if you need to set disabled styling to a button, use class `.ds-btn--disabled`
+  * Inline Forms in order to work with new buttons
+
+* Removed without replacement: 
+  * `@mixin ds-btn-shadow`
+  * class `.ds-btn-primary--mobile`
+  * class `.ds-btn-secondary--mobile`
+  * class `.ds-btn-tertiary--mobile`
+  

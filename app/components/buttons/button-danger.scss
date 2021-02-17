@@ -1,14 +1,14 @@
-.ds-btn--primary {
-    background-color: $color-corporate-green;
+.ds-btn--danger {
+    background-color: $color-chili;
     color: $color-text-inverted;
 
     &:hover,
     &:focus {
-        background-color: $color-corporate-green-medium;
+        background-color: $color-chili-medium;
     }
 
     &:active {
-        background-color: $color-corporate-green-dark;
+        background-color: $color-chili-dark;
     }
 
     &--disabled,
@@ -16,5 +16,4 @@
     &[disabled] {
         background-color: $color-pepper;
     }
-
 }

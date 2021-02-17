@@ -1,0 +1,68 @@
+@import "settings.button";
+@import "tools.button";
+
+.ds-btn {
+    @include btn-reset;
+    @include btn;
+    @include btn-transitions;
+
+    border-radius: $btn-border-radius;
+    white-space: nowrap;
+    font-size: $btn-font-size;
+    font-weight: $btn-font-weight;
+    height: $btn-size-default-height;
+    line-height: $btn-size-default-height;
+    min-width: $btn-size-default-min-width;
+
+    padding-left: $btn-horizontal-padding;
+    padding-right: $btn-horizontal-padding;
+    border: $btn-border-width solid transparent;
+
+    &__icon {
+        color: inherit;
+        line-height: 1;
+        font-size: $btn-icon-font-size;
+
+        &--leading {
+            margin-right: $btn-icon-horizontal-margin;
+        }
+
+        &--trailing {
+            margin-left: $btn-icon-horizontal-margin;
+        }
+    }
+
+    &--fluid {
+        width: 100%;
+    }
+
+    &--size-s {
+        height: $btn-size-s-height;
+
+        &.ds-btn--round {
+            width: $btn-size-s-height;
+        }
+    }
+
+    &--round {
+        border-radius: 50%;
+        padding-left: 0;
+        padding-right: 0;
+        min-width: 0;
+        width: $btn-size-default-height;
+    }
+}
+
+.ds-btn-box {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+
+    &--space-between {
+        justify-content: space-between;
+    }
+}
+
+.ds-btn + .ds-btn {
+    margin-left: $unit;
+}

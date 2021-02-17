@@ -28,7 +28,7 @@
         width: 40px;
         height: 40px;
 
-        &.ds-is-active {
+        &--active {
             border: 2px solid $color-corporate-green-light;
             background-color: $color-corporate-green-xlight;
         }
@@ -43,8 +43,12 @@
             &:hover {
                 color: $color-watermelon-medium;
             }
+        }
 
-            &.ds-is-disabled {
+        &--disabled {
+            color: $color-pepper;
+
+            &:hover {
                 color: $color-pepper;
             }
         }

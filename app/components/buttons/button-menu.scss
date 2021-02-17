@@ -1,12 +1,11 @@
-.ds-btn--secondary {
-    background: $color-bg-content;
-    border-color: $color-corporate-green;
+.ds-btn--dual-color {
+    background-color: $color-bg-content;
     color: $color-corporate-green;
+    border-color: $color-corporate-green-light;
 
     &:hover,
     &:focus {
-        border-color: $color-corporate-green-medium;
-        color: $color-corporate-green-medium;
+        border-color: $color-corporate-green;
     }
 
     &:active {
@@ -19,5 +18,9 @@
     &[disabled] {
         border-color: $color-pepper;
         color: $color-pepper;
+    }
+
+    &.ds-btn--active {
+        background-color: $color-corporate-green-xlight;
     }
 }
