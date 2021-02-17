@@ -41,6 +41,11 @@ export const parameters = {
   viewport: {
     viewports: customViewports,
   },
+  options: {
+    storySort: {
+      order: ['Foundation', 'Library', 'Example'],
+    },
+  },
   docs: {
     transformSource: (src, storyContext) => {
       return  prettier.format(storyContext.storyFn().outerHTML, {
