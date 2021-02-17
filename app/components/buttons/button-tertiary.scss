@@ -24,6 +24,6 @@
 .ds-btn {
     &--flat {
         height: auto;
-        line-height: inherit;
+        line-height: $btn-flat-line-height;
     }
 }

@@ -3,6 +3,7 @@ $btn-border-width: 2px !default;
 $btn-size-default-height: 40px + $btn-border-width * 2 !default; // 44px
 $btn-size-default-min-width: $btn-size-default-height !default; // 44px
 $btn-size-s-height: 40px !default;
+$btn-flat-line-height: 28px !default;
 
 $btn-font-size: $fontsize-base !default;
 $btn-icon-font-size: $unit * 3 !default;
