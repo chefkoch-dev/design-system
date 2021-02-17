@@ -1,21 +1,15 @@
-import '../components/button.scss';
+// import '../components/globals.scss';
+// import '../components/button-primary.scss';
+// import '../components/button-secondary.scss';
 
 export const createButton = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
   label,
-  onClick,
+  mode,
 }) => {
   const btn = document.createElement('button');
-  btn.type = 'button';
   btn.innerText = label;
-  btn.addEventListener('click', onClick);
 
-  const mode = primary ? 'ds-btn-primary' : 'ds-btn-secondary';
-  btn.className = ['ds-btn', `ds-btn-${size}`, mode].join(' ');
-
-  btn.style.backgroundColor = backgroundColor;
+  btn.className = ['ds-btn', `ds-btn-${mode}`].join(' ');
 
   return btn;
 };
