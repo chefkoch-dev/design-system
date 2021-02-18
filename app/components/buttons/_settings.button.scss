@@ -1,62 +1,24 @@
-@import "../shadows/box-shadow";
+// variables for regular btns
+$btn-border-width: 2px !default;
+$btn-size-default-height: 40px + $btn-border-width * 2 !default; // 44px
+$btn-size-default-min-width: $btn-size-default-height !default; // 44px
+$btn-size-s-height: 40px !default;
+$btn-flat-line-height: 28px !default;
 
-$btn-base-value: $unit * 5;
+$btn-font-size: $fontsize-base !default;
+$btn-icon-font-size: $unit * 3 !default;
+$btn-font-weight: $fontweight-semi-bold !default;
+$btn-border-radius: $unit * 3 !default;
+$btn-horizontal-padding: $unit * 2 - $btn-border-width !default;
+$btn-icon-horizontal-margin: $unit !default;
 
-.ds-btn-box {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: flex-end;
-}
-
-.ds-btn + .ds-btn {
-    margin-left: $unit;
-}
-
-@mixin btn-reset {
-    background: transparent;
-    border: 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: inherit;
-    text-decoration: none;
-
-    // normalize inner #fffspace in Firefox
-    &::-moz-focus-inner {
-        padding: 0;
-        border: 0;
-    }
-
-    &:focus {
-        outline: none;
-    }
-}
-
-@mixin btn-base {
-    border-radius: 24px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: $fontsize-base;
-    font-weight: $fontweight-semi-bold;
-    min-height: $btn-base-value;
-    letter-spacing: 0.5px;
-    line-height: $btn-base-value;
-    min-width: $btn-base-value;
-    padding: 0 $unit * 2;
-    margin: 0;
-}
-
-@mixin ds-btn-shadow {
-    @include ds-box-shadow(0.3, 0.5);
-}
-
-.ds-btn {
-    @include btn-reset;
-    @include btn-base;
-}
-
-.ds-btn--icon-only {
-    border-radius: 50%;
-    padding: 0;
-}
+// tile related variables
+$btn-tile-action-border-radius: $unit !default;
+$btn-tile-action-icon-font-size: 28px !default;
+$btn-tile-action-height: 48px !default;
+$btn-tile-list-border-radius: $unit * 2 !default;
+$btn-tile-list-icon-font-size: $unit * 8 !default;
+$btn-tile-list-height: 64px !default;
+$btn-tile-card-border-radius: $unit * 3 !default;
+$btn-tile-card-icon-font-size: 120px !default;
+$btn-tile-card-icon-font-size-hover: 150px !default;

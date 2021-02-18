@@ -604,16 +604,6 @@ $deprecated-groups:
     }
 }
 
-// buttons
-
-#group-buttons {
-    .ndpl-component__container {
-        &:before {
-            content: 'Hover & click to see interactive states.';
-        }
-    }
-}
-
 /* Grid
 ----------------------------------- */
 

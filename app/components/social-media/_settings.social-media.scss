@@ -7,8 +7,6 @@
 }
 
 .ds-social-item {
-    @include ds-btn-shadow;
-
     border-radius: 50%;
     height: $unit * 5;
     margin: 0 $unit;

@@ -1,14 +1,54 @@
 <div class="ds-grid ds-row">
-    <div class="ds-col-12">
-        <h4>Button | .ds-btn.ds-btn-conversion</h4>
+    <div class="ds-col-6 ds-box">
+        <h4>Conversion</h4>
+
+        <button class="ds-btn ds-btn--conversion">
+            <span class="ds-btn__label">Button Label</span>
+        </button>
+    </div>
+    <div class="ds-col-6 ds-box">
+        <h4>Conversion Disabled</h4>
+
+        <button class="ds-btn ds-btn--conversion" disabled>
+            <span class="ds-btn__label">Button Label</span>
+        </button>
+    </div>
+</div>
+
+<div class="ds-grid ds-row">
+    <div class="ds-col-6 ds-box">
+        <h4>Conversion mit Icon</h4>
+
+        <button class="ds-btn ds-btn--conversion">
+            <i class="ds-btn__icon ds-btn__icon--leading chefkoch-icons">heart</i>
+            <span class="ds-btn__label">Button Label</span>
+        </button>
     </div>
 
-    <div class="ds-col-12">
-        <button class="ds-btn ds-btn-conversion">
-            <span>Conversion Button</span>
+    <div class="ds-col-6 ds-box">
+        <h4>Conversion mit Icon Disabled</h4>
+
+        <button class="ds-btn ds-btn--conversion" disabled>
+            <i class="ds-btn__icon ds-btn__icon--leading chefkoch-icons">heart</i>
+            <span class="ds-btn__label">Button Label</span>
         </button>
-        <button class="ds-btn ds-btn-conversion ds-btn-conversion--mobile">
-            <i class="material-icons">add</i>
+    </div>
+</div>
+
+<div class="ds-grid ds-row">
+    <div class="ds-col-6 ds-box">
+        <h4>Conversion Icon Only</h4>
+
+        <button class="ds-btn ds-btn--conversion ds-btn--round">
+            <i class="ds-btn__icon chefkoch-icons">heart</span>
+        </button>
+    </div>
+
+    <div class="ds-col-6 ds-box">
+        <h4>Conversion Icon Only Disabled</h4>
+
+        <button class="ds-btn ds-btn--conversion ds-btn--round" disabled>
+            <i class="ds-btn__icon chefkoch-icons">heart</span>
         </button>
     </div>
 </div>

@@ -1,6 +1,4 @@
 @mixin carouselIndicatorBase() {
-    @include ds-btn-shadow;
-
     align-items: center;
     align-content: center;
     background-color: $color-white;

@@ -41,7 +41,8 @@
         border-radius: 0 $unit $unit 0;
         margin: 0;
 
-        &.ds-btn-primary {
+        &.ds-btn--primary {
+            max-height: 40px;
             min-height: 40px;
         }
     }
