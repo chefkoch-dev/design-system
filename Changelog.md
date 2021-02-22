@@ -344,3 +344,9 @@ Version 10.0.0 contains major update to buttons and related styles
 ### Buttons
 * Sets line-height for `.ds-btn--flat` to a fixed value
 * Better grid columns for tile button examples
+
+## V: 10.0.1 - 10.0.2
+
+### Buttons
+* Add missing shortlink to button-danger
+* Update changelog to version v10.0.0
