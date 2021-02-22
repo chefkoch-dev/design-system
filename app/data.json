@@ -522,6 +522,11 @@
                     "group": "buttons",
                     "name": "view-toggle",
                     "title": "View-Toggle"
+                },
+                {
+                    "group": "buttons",
+                    "name": "action-menu",
+                    "title": "Action-Menu Button"
                 }
             ]
         },
