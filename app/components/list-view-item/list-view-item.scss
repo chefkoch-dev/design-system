@@ -3,8 +3,12 @@
 .ds-list-view-item {
     position: relative;
     background-color: $color-white;
-    border-radius: 16px;
     display: flex;
+    border-radius: 8px;
+
+    @include media-breakpoint-from(m) {
+        border-radius: 16px;
+    }
 
     &:hover {
         background-color: $color-garlic-medium;
