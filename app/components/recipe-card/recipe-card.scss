@@ -28,15 +28,6 @@
         width: 40px;
         height: 40px;
 
-        &--active {
-            border: 2px solid $color-corporate-green-light;
-            background-color: $color-corporate-green-xlight;
-        }
-
-        &:hover {
-            color: $color-corporate-green-medium;
-        }
-
         &--save {
             color: $color-watermelon;
 
