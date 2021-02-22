@@ -709,6 +709,33 @@
             ]
         },
         {
+            "name": "recipe-note",
+            "title": "Recipe Note",
+            "components": [
+                {
+                    "group": "recipe-note",
+                    "name": "default",
+                    "title": "Standard"
+                },
+                {
+                    "group": "recipe-note",
+                    "name": "truncated",
+                    "title": "Truncated"
+                }
+            ]
+        },
+        {
+            "name": "recipe-badge",
+            "title": "Recipe Badge",
+            "components": [
+                {
+                    "group": "recipe-badge",
+                    "name": "default",
+                    "title": "Private Recipe"
+                }
+            ]
+        },
+        {
             "name": "recipe-card",
             "title": "Recipe Card",
             "components": [
