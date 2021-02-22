@@ -1,0 +1,23 @@
+.ds-recipe-note {
+    text-align: left;
+    display: flex;
+
+    &:hover {
+        cursor: pointer;
+
+        .ds-recipe-note__icon {
+            color: $color-corporate-green;
+        }
+
+        .ds-recipe-note__text {
+            color: $color-olive;
+        }
+    }
+
+    &__icon {
+        color: $color-chia;
+        font-size: 18px;
+        line-height: 18px;
+        cursor: pointer;
+    }
+}
