@@ -1,3 +1,5 @@
+@import "settings.list-view-item";
+
 .ds-list-view-item {
     position: relative;
     background-color: $color-white;
@@ -17,18 +19,18 @@
 
     &__media {
         .ds-list-view-item--recipe & {
-            flex: 0 0 60px;
+            flex: 0 0 $list-view-item-recipe-image-width-xxxs;
 
-            @include media-breakpoint-from(xs) { // 480px
-                flex: 0 0 84px;
+            @include media-breakpoint-from(xs) {
+                flex-basis: $list-view-item-recipe-image-width-xs;
             }
 
-            @include media-breakpoint-from(s) { // 600px
-                flex: 0 0 108px;
+            @include media-breakpoint-from(s) {
+                flex-basis: $list-view-item-recipe-image-width-s;
             }
 
-            @include media-breakpoint-from(m) { // 
-                flex: 0 0 144px;
+            @include media-breakpoint-from(m) {
+                flex-basis: $list-view-item-recipe-image-width-m;
             }
         }
     }
@@ -44,7 +46,7 @@
         }
 
         .ds-list-view-item--recipe & {
-            padding-bottom: 75%;
+            padding-bottom: percentage(1/$list-view-item-recipe-image-apsect-ratio);
         }
 
         border-radius: 8px;
@@ -129,18 +131,18 @@
         }
 
         .ds-list-view-item--recipe & {
-            max-height: 60*3/4 +px;
+            max-height: $list-view-item-recipe-image-width-xxxs * 1 / $list-view-item-recipe-image-apsect-ratio;
 
             @include media-breakpoint-from(xs) {
-                max-height: 84*3/4 +px;
+                max-height: $list-view-item-recipe-image-width-xs * 1 / $list-view-item-recipe-image-apsect-ratio;
             }
 
             @include media-breakpoint-from(s) {
-                max-height: 108*3/4 +px;
+                max-height: $list-view-item-recipe-image-width-s * 1 / $list-view-item-recipe-image-apsect-ratio;
             }
 
             @include media-breakpoint-from(m) {
-                max-height: 144*3/4 +px;
+                max-height: $list-view-item-recipe-image-width-m * 1 / $list-view-item-recipe-image-apsect-ratio;
             }
         }
     }
@@ -157,7 +159,7 @@
 .ds-list-view-item__column--info {
     .ds-list-view-item--recipe & {
         @include media-breakpoint-from(m) {
-            max-height: 144*3/4 +px;
+            max-height: $list-view-item-recipe-image-width-m * 1 / $list-view-item-recipe-image-apsect-ratio;
         }
     }
 }
