@@ -1,0 +1,26 @@
+.ds-recipe-badge {
+    background-color: $color-white;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    &__icon {
+        margin-left: 0;
+        color: $color-pepper;
+        line-height: 40px;
+        font-size: 24px;
+    }
+
+    &--list-item {
+        @include media-breakpoint-to(xs) {
+            width: 32px;
+            height: 32px;
+
+            .ds-recipe-badge__icon {
+                line-height: 32px;
+                font-size: 18px;
+            }
+        }
+    }
+}
