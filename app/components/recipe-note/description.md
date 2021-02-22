@@ -1,6 +1,8 @@
 *since v11.0.0*
 
-Recipe Note zum Darstellen einer Rezept Notiz.
+Recipe Note zum Darstellen einer Rezept Notiz. 
+
+Die Logik zum Ein- und Ausklappen muss hinzugefügt werden, indem die Klassen für die Textkürzung (`.ds-trunc` in Verbindung mit z.B. `.ds-trunc-3`) hinzugefügt bzw. entfernt werden.
 
 ### Usage
     
