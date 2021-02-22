@@ -725,13 +725,13 @@
             ]
         },
         {
-            "name": "recipe-list-item",
-            "title": "Recipe List Item",
+            "name": "list-view-item",
+            "title": "List View Item",
             "components": [
                 {
-                    "group": "recipe-list-item",
-                    "name": "default",
-                    "title": "Recipe List Item"
+                    "group": "list-view-item",
+                    "name": "recipe",
+                    "title": "Recipe List"
                 }
             ]
         },
