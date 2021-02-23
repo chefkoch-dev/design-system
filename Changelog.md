@@ -321,7 +321,9 @@ Version 10.0.0 contains major update to buttons and related styles
   * `.ds-btn-delete` is now called `.ds-btn--danger`
   * `.ds-btn-conversion` is now called `.ds-btn--conversion`
   * `.ds-btn-view-toggle` is now called `.ds-btn--view-toggle`, also related classes have been updated, please see markup for View Toggle button
-  * `.ds-btn-tile-action` has to be replace with `.ds-btn--tile .ds-btn--tile-action .ds-btn--fluid` 
+  * `.ds-btn-tile-action` has to be replaced with `.ds-btn--tile .ds-btn--tile-action .ds-btn--fluid` 
+  * `.ds-btn-secondary--soft` has been removed and needs to be replace with class `.ds-btn-secondary--soft`
+  * `.ds-btn-icon` class has been removed, make sure to add class `.ds-btn__icon` to all icons within buttons and - depending of the position of the icon - add `.ds-btn__icon--leading` or `.ds-btn__icon--trailing` to the icon
   * `@mixin btn-base` is now named `@mixin btn`
   * Instead of `.ds-btn-secondary--active` use `.ds-btn--active`
   * component `components/tile-action-button` is now named `components/button-tile-action`
@@ -329,6 +331,7 @@ Version 10.0.0 contains major update to buttons and related styles
   * `.ds-icon--icon-only` is renamed to `.ds-icon--round`
   * component `components/button-inactive` was removed, disabled styles are now part of the styles of each button, if you need to set disabled styling to a button, use class `.ds-btn--disabled`
   * Inline Forms in order to work with new buttons
+  * Add class `.ds-btn__label` to all spans within Button `.ds-btn` holding labels
 
 * Removed without replacement: 
   * `@mixin ds-btn-shadow`
@@ -342,8 +345,14 @@ Version 10.0.0 contains major update to buttons and related styles
 * Sets line-height for `.ds-btn--flat` to a fixed value
 * Better grid columns for tile button examples
 
+## V: 10.0.1 - 10.0.2
 
-## V: 10.0.1 - 11.0.0
+### Buttons
+* Add missing shortlink to button-danger
+* Update changelog to version v10.0.0
+* Distance between two buttons is 16px, not 8px
+
+## V: 10.0.2 - 11.0.0
 
 ### Buttons
 * Added
