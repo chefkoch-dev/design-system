@@ -351,3 +351,8 @@ Version 10.0.0 contains major update to buttons and related styles
 * Add missing shortlink to button-danger
 * Update changelog to version v10.0.0
 * Distance between two buttons is 16px, not 8px
+
+## V: 10.0.2 - 10.0.3
+
+### Buttons
+* Use correct styleing for `ds-btn--tile-card`
