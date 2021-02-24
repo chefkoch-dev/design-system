@@ -352,8 +352,12 @@ Version 10.0.0 contains major update to buttons and related styles
 * Update changelog to version v10.0.0
 * Distance between two buttons is 16px, not 8px
 
-## V: 10.0.2 - 11.0.0
+## V: 10.0.2 - 10.0.3
 
+### Buttons
+* Use correct styleing for `ds-btn--tile-card`
+
+## V: 10.0.3 - 11.0.0
 ### Buttons
 * Added
   * Added new Button `.ds-btn--action-menu` used in dropdown menu
