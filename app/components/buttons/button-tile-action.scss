@@ -48,10 +48,11 @@
 }
 
 .ds-btn--tile-card {
-    border-radius: $btn-tile-list-border-radius;
+    border-radius: $btn-tile-card-border-radius;
     position: relative;
     padding-bottom: 56.25%;
     width: 100%;
+    border-width: 0;
 
     .ds-btn__icon {
         font-size: $btn-tile-card-icon-font-size;
