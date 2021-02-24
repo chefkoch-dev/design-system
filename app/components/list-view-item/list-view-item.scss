@@ -1,0 +1,169 @@
+@import "settings.list-view-item";
+
+.ds-list-view-item {
+    position: relative;
+    background-color: $color-white;
+    display: flex;
+    border-radius: 8px;
+
+    @include media-breakpoint-from(m) {
+        border-radius: 16px;
+    }
+
+    &:hover {
+        background-color: $color-garlic-medium;
+    }
+
+    &__link {
+        display: flex;
+        flex: 0 1 auto;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    &__media {
+        .ds-list-view-item--recipe & {
+            flex: 0 0 $list-view-item-recipe-image-width-xxxs;
+
+            @include media-breakpoint-from(xs) {
+                flex-basis: $list-view-item-recipe-image-width-xs;
+            }
+
+            @include media-breakpoint-from(s) {
+                flex-basis: $list-view-item-recipe-image-width-s;
+            }
+
+            @include media-breakpoint-from(m) {
+                flex-basis: $list-view-item-recipe-image-width-m;
+            }
+        }
+    }
+
+    &__image-wrap {
+        background-color: $color-garlic;
+        width: 100%;
+        height: 0;
+        position: relative;
+
+        &--no-image {
+            background-color: $color-corporate-green-xlight;
+        }
+
+        .ds-list-view-item--recipe & {
+            padding-bottom: percentage(1/$list-view-item-recipe-image-apsect-ratio);
+        }
+
+        border-radius: 8px;
+
+        @include media-breakpoint-from(m) {
+            border-radius: 16px;
+        }
+    }
+
+    &__image {
+        border-radius: inherit;
+        width: 100%;
+        height: auto;
+    }
+
+    &__badge {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__body {
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @include media-breakpoint-from(m) {
+            flex: 1;
+            flex-direction: row;
+        }
+    }
+
+    &__column {
+        box-sizing: border-box;
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 4px 0 4px 12px;
+
+        justify-content: center;
+        display: inline-flex;
+        flex-direction: column;
+
+
+        @include media-breakpoint-from(xs) {
+            max-width: 90%;
+        }
+
+        @include media-breakpoint-from(s) {
+            padding-left: 16px;
+        }
+
+        @include media-breakpoint-from(m) {
+            padding: 8px 0 8px 24px;
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+    }
+
+    &__headline {
+        line-height: 22px;
+        margin-bottom: 6px;
+    }
+
+    &__action {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-basis: 56px;
+        max-width: 56px;
+        padding-right: 8px;
+
+
+        @include media-breakpoint-from(m) {
+            flex-basis: 80px;
+            max-width: 80px;
+        }
+
+        .ds-list-view-item--recipe & {
+            max-height: $list-view-item-recipe-image-width-xxxs * 1 / $list-view-item-recipe-image-apsect-ratio;
+
+            @include media-breakpoint-from(xs) {
+                max-height: $list-view-item-recipe-image-width-xs * 1 / $list-view-item-recipe-image-apsect-ratio;
+            }
+
+            @include media-breakpoint-from(s) {
+                max-height: $list-view-item-recipe-image-width-s * 1 / $list-view-item-recipe-image-apsect-ratio;
+            }
+
+            @include media-breakpoint-from(m) {
+                max-height: $list-view-item-recipe-image-width-m * 1 / $list-view-item-recipe-image-apsect-ratio;
+            }
+        }
+    }
+}
+
+.ds-list-view-item__column--note {
+    @include media-breakpoint-to(s) {
+        .ds-trunc {
+            -webkit-line-clamp: 1;
+        }
+    }
+}
+
+.ds-list-view-item__column--info {
+    .ds-list-view-item--recipe & {
+        @include media-breakpoint-from(m) {
+            max-height: $list-view-item-recipe-image-width-m * 1 / $list-view-item-recipe-image-apsect-ratio;
+        }
+    }
+}

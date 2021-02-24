@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v10.0.3",
+            "library_title": "v11.0.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -522,6 +522,11 @@
                     "group": "buttons",
                     "name": "view-toggle",
                     "title": "View-Toggle"
+                },
+                {
+                    "group": "buttons",
+                    "name": "action-menu",
+                    "title": "Action-Menu Button"
                 }
             ]
         },
@@ -704,6 +709,33 @@
             ]
         },
         {
+            "name": "recipe-note",
+            "title": "Recipe Note",
+            "components": [
+                {
+                    "group": "recipe-note",
+                    "name": "default",
+                    "title": "Standard"
+                },
+                {
+                    "group": "recipe-note",
+                    "name": "truncated",
+                    "title": "Truncated"
+                }
+            ]
+        },
+        {
+            "name": "recipe-badge",
+            "title": "Recipe Badge",
+            "components": [
+                {
+                    "group": "recipe-badge",
+                    "name": "default",
+                    "title": "Private Recipe"
+                }
+            ]
+        },
+        {
             "name": "recipe-card",
             "title": "Recipe Card",
             "components": [
@@ -716,6 +748,17 @@
                     "group": "recipe-card",
                     "name": "cookbook",
                     "title": "Kochbuch"
+                }
+            ]
+        },
+        {
+            "name": "list-view-item",
+            "title": "List View Item",
+            "components": [
+                {
+                    "group": "list-view-item",
+                    "name": "recipe",
+                    "title": "Recipe List"
                 }
             ]
         },
