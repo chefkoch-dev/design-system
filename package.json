@@ -5,17 +5,20 @@
   "repository": "https://github.com/chefkoch-dev/design-system.git",
   "author": "Chefkoch GmbH",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
-    "@storybook/addon-a11y": "^6.1.18",
-    "@storybook/addon-actions": "^6.1.14",
-    "@storybook/addon-essentials": "^6.1.14",
-    "@storybook/addon-links": "^6.1.14",
-    "@storybook/addons": "^6.1.18",
-    "@storybook/html": "^6.1.14",
+    "@storybook/addon-a11y": "^6.2.0-beta.2",
+    "@storybook/addon-actions": "^6.2.0-beta.2",
+    "@storybook/addon-essentials": "^6.2.0-beta.2",
+    "@storybook/addon-links": "^6.2.0-beta.2",
+    "@storybook/addons": "^6.2.0-beta.2",
+    "@storybook/html": "^6.2.0-beta.2",
     "@storybook/preset-scss": "^1.0.3",
-    "@storybook/theming": "^6.1.18",
+    "@storybook/theming": "^6.2.0-beta.2",
+    "@storybook/vue3": "^6.2.0-beta.2",
+    "typescript": "^4.2.2",
+    "vue": "^3.0.5",
+    "vue-loader": "^16.1.2",
     "astrum": "^1.9.5",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.7",
@@ -41,8 +44,10 @@
   "scripts": {
     "astrum": "astrum",
     "stylelint": "stylelint",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "node_modules/@storybook/html/bin/index.js -p 6006 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook",
+    "storybook:vue": "node_modules/@storybook/vue3/bin/index.js -p 6007 -c .storybook-vue",
+    "build-storybook:vue": "build-storybook -c .storybook-vue"
   },
   "publishConfig": {
     "access": "public"

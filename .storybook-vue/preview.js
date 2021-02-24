@@ -1,7 +1,3 @@
-import prettier from 'prettier'
-import HTMLParser from 'prettier/parser-html'
-import '../config/chefkoch-design-system.scss';
-
 const customViewports = {
   mobile1: {
     name: 'Small mobile',
@@ -42,20 +38,4 @@ export const parameters = {
   viewport: {
     viewports: customViewports,
   },
-  options: {
-    storySort: {
-      order: ['Foundation', 'Library', 'Example'],
-    },
-  },
-  docs: {
-    transformSource: (src, storyContext) => {
-      const source = typeof storyContext.storyFn() === 'object' ? storyContext.storyFn().outerHTML : storyContext.storyFn();
-      return prettier.format(source, {
-        parser: 'html',
-        plugins: [HTMLParser]
-      });
-    }
-  }
 }
-
-

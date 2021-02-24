@@ -1,13 +1,12 @@
 module.exports = {
   "stories": [
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
+    "../stories-vue/**/*.stories.mdx",
+    "../stories-vue/**/*.stories.@(js|jsx|ts|tsx)"
   ],
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/preset-scss",
-    '@storybook/addon-a11y',
   ],
   webpackFinal: async config => {
     // //Use loaders to handle scss
