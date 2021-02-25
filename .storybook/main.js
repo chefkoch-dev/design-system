@@ -25,4 +25,11 @@ module.exports = {
 
     return config;
   },
+
+  refs: {
+    vue: {
+      title: 'Vue components',
+      url: 'http://localhost:6007',
+    },
+  },
 }
