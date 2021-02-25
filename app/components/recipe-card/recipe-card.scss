@@ -28,23 +28,18 @@
         width: 40px;
         height: 40px;
 
-        &.ds-is-active {
-            border: 2px solid $color-corporate-green-light;
-            background-color: $color-corporate-green-xlight;
-        }
-
-        &:hover {
-            color: $color-corporate-green-medium;
-        }
-
         &--save {
             color: $color-watermelon;
 
             &:hover {
                 color: $color-watermelon-medium;
             }
+        }
 
-            &.ds-is-disabled {
+        &--disabled {
+            color: $color-pepper;
+
+            &:hover {
                 color: $color-pepper;
             }
         }
@@ -58,6 +53,10 @@
         &--left {
             right: auto;
             left: 8px;
+        }
+
+        &--transform {
+            transform: translate3d(0, 0, 0);
         }
     }
 
@@ -81,27 +80,6 @@
     }
 
     &__note {
-        text-align: left;
-        display: flex;
         margin-top: 8px;
-
-        &:hover {
-            cursor: pointer;
-
-            .ds-recipe-card__note-icon {
-                color: $color-corporate-green;
-            }
-
-            .ds-recipe-card__note-text {
-                color: $color-olive;
-            }
-        }
-
-        &-icon {
-            color: $color-chia;
-            font-size: 18px;
-            line-height: 18px;
-            cursor: pointer;
-        }
     }
 }

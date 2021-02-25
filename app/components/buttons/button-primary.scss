@@ -1,29 +1,20 @@
-.ds-btn-primary {
-
-    min-height: $btn-base-value + 4;
+.ds-btn--primary {
     background-color: $color-corporate-green;
     color: $color-text-inverted;
 
-    &--mobile {
-        border-radius: 64px;
-        width: 64px;
-        height: 64px;
-
-        /* stylelint-disable all */
-        i.material-icons, i.chefkoch-icons {
-            color: $color-text-inverted;
-            font-size: 30px;
-        }
-        /* stylelint-enable all */
-    }
-
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: $color-corporate-green-medium;
-        cursor: pointer;
     }
 
     &:active {
         background-color: $color-corporate-green-dark;
     }
-}
 
+    &--disabled,
+    &:disabled,
+    &[disabled] {
+        background-color: $color-pepper;
+    }
+
+}

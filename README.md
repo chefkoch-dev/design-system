@@ -41,7 +41,7 @@ your build pipeline.
 
 **Use the imported component in your markup**
 
-    <button class="ds-btn ds-btn-primary">Primary Button</button>
+    <button class="ds-btn ds-btn--primary">Primary Button</button>
 
 
 ## Contributing

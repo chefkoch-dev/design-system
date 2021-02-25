@@ -1,0 +1,13 @@
+.ds-btn--action-menu {
+    background-color: $color-white;
+    color: $color-corporate-green;
+
+    &:hover {
+        color: $color-corporate-green-medium;
+    }
+
+    &.ds-btn--active {
+        border: 2px solid $color-corporate-green-light;
+        background-color: $color-corporate-green-xlight;
+    }
+}

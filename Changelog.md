@@ -277,3 +277,118 @@ This release mainly introduces the Recipe Card component. Along with this, other
 ## V: 9.17.0 - 9.17.1
 
 Adds file `globals.scss` holding all relevant variables, mixins and functions of DSY. Import through `components/globals`.
+
+## V: 9.17.1 - 9.17.2
+
+Fixes a the problem, when recipe cards are used in a slider, absolute positioned buttons disappear while sliding.
+
+
+## V: 9.17.2 - 9.18.0
+### Recipe Card
+* Introduces modifier class `.ds-recipe-card__action--transform` in order to apply transform fix introduced in 9.17.2
+
+## V: 9.18.0 - 9.18.1
+### Teaser Link
+Optimises CSS in order to prevent wrong scaling when image dimension are set on img attribute
+
+## V: 9.18.1 - 9.19.0
+### Notification - Toast
+Remove unnecessary container in toast and fix styling.
+
+## V: 9.19.0 - 10.0.0
+
+Version 10.0.0 contains major update to buttons and related styles
+### General 
+* Docs that need more description are marked with __⚠️ NEEDS DESCRIPTION__
+
+### Recipe Card
+* Replace `.ds-is-disabled` with `.ds-recipe-card__button--active` for setting `.ds-recipe-card__button` in active state
+
+### Dropdown Menu
+* Replace `.ds-is-hidden` with `.ds-dropdown-menu--hidden` for hiding dropdown menu
+
+### Buttons
+* Added:
+  * Modifier class `.ds-btn-box--space-between` 
+  * Styles for Tile Action List and Tile Action Card Buttons
+  * Styles for menu buttons, using icon only
+  * Component `app/component/buttons/buttons` and shortlink `component/buttons` for importing all buttons 
+
+* Updated:
+  * `.ds-btn-primary` is now called `.ds-btn--primary`
+  * `.ds-btn-secondary` is now called `.ds-btn--secondary`
+  * `.ds-btn-tertiary` is now called `.ds-btn--tertiary`
+  * `.ds-btn-delete` is now called `.ds-btn--danger`
+  * `.ds-btn-conversion` is now called `.ds-btn--conversion`
+  * `.ds-btn-view-toggle` is now called `.ds-btn--view-toggle`, also related classes have been updated, please see markup for View Toggle button
+  * `.ds-btn-tile-action` has to be replaced with `.ds-btn--tile .ds-btn--tile-action .ds-btn--fluid` 
+  * `.ds-btn-secondary--soft` has been removed and needs to be replace with class `.ds-btn-secondary--soft`
+  * `.ds-btn-icon` class has been removed, make sure to add class `.ds-btn__icon` to all icons within buttons and - depending of the position of the icon - add `.ds-btn__icon--leading` or `.ds-btn__icon--trailing` to the icon
+  * `@mixin btn-base` is now named `@mixin btn`
+  * Instead of `.ds-btn-secondary--active` use `.ds-btn--active`
+  * component `components/tile-action-button` is now named `components/button-tile-action`
+  * component `components/button-icon` has been removed, icons in buttons are styled as en element of the block class `.ds-btn`
+  * `.ds-icon--icon-only` is renamed to `.ds-icon--round`
+  * component `components/button-inactive` was removed, disabled styles are now part of the styles of each button, if you need to set disabled styling to a button, use class `.ds-btn--disabled`
+  * Inline Forms in order to work with new buttons
+  * Add class `.ds-btn__label` to all spans within Button `.ds-btn` holding labels
+
+* Removed without replacement: 
+  * `@mixin ds-btn-shadow`
+  * class `.ds-btn-primary--mobile`
+  * class `.ds-btn-secondary--mobile`
+  * class `.ds-btn-tertiary--mobile`
+  
+## V: 10.0.0 - 10.0.1
+
+### Buttons
+* Sets line-height for `.ds-btn--flat` to a fixed value
+* Better grid columns for tile button examples
+
+## V: 10.0.1 - 10.0.2
+
+### Buttons
+* Add missing shortlink to button-danger
+* Update changelog to version v10.0.0
+* Distance between two buttons is 16px, not 8px
+
+## V: 10.0.2 - 10.0.3
+
+### Buttons
+* Use correct styleing for `ds-btn--tile-card`
+
+## V: 10.0.3 - 11.0.0
+### Buttons
+* Added
+  * Added new Button `.ds-btn--action-menu` used in dropdown menu
+### Dropdown Menu
+Dropdown menu was refactored.
+
+* Updated
+  * The element that used class  `.ds-dropdown-menu` now uses class `.ds-dropdown-menu__actions-wrap`, please change this in your markup
+  * Class `ds-dropdown-menu--button` has been renamed to `.ds-dropdown-menu__button`
+  * Wrap `.ds-dropdown-menu__actions-wrap` and `.ds-dropdwon-menu__button` with one wrapping element using class `.ds-dropdown-menu`
+  * Button for action menu has been refactored and now uses newly introduces button `.ds-btn--action-menu`. Please see example for classes to use. 
+  * For menu opening to right and change of fill effect, please use class `.ds-dropdown-menu__actions-wrap--right`.
+
+* Removed
+  * Class `.ds-dropdown-menu--big-button`, please use `.ds-dropdown-menu__actions-wrap--big-button` on element with class `.ds-dropdown-menu__actions-wrap`
+  * Class `.ds-dropdown-menu--hidden`, please use `.ds-dropdown-menu__actions-wrap--hidden` on element with class `.ds-dropdown-menu__actions-wrap`
+  * Class `.ds-dropdown-menu--fill`, remove elements containing this class. Fill effect is handled with `:before` Pseudoselector
+### List view Item
+* This component is newly introduced (`.ds-list-view-item`) along with its representation for recipes lists (`.ds-list-view-item--recipe`)
+* Docs and markup examples are added
+### Recipe Badge
+* Newly added component for recipe badge used in recipe card or recipe list item, e.g. for private Recipe (`.ds-recipe-badge`)
+* Update any recipe card holding the private badge accordingly
+### Recipe Note
+* Newly added component for recipe note to be used in recipe card and recipe list items (`.ds-recipe-note`)
+* Update any recipe-card holding recipe notes accordingly
+
+### Recipe Card
+* Updated
+  * Please replace markup for recipe note with new component `.ds-recipe-note` (see example markup)
+  * Please replace markup for recipe action button with new button `.ds-btn--action-menu`. 
+* Removed
+  * Class `.ds-recipe-card__button--active`
+  * Class `.ds-recipe-card__note-icon`

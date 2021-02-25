@@ -1,35 +1,73 @@
-.ds-btn-tile-action {
-
-    min-height: $btn-base-value + 4;
-    //min-width: 328px;
+.ds-btn--tile {
     background-color: $color-corporate-green-light;
     color: $color-text-inverted;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
 
     &:hover {
-        cursor: pointer;
-
-        /* stylelint-disable all */
-        i.material-icons, i.chefkoch-icons {
-            transform: scale(1.2);
-        }
-        /* stylelint-enable all */
+        background-color: $color-corporate-green-medium;
     }
 
     &:active {
         background-color: $color-corporate-green-light;
     }
 
-    /* stylelint-disable all */
-    i.material-icons, i.chefkoch-icons {
-        font-size: 28px;
-        transition: all .3s ease-in-out;
+    .ds-btn__icon {
+        transition: transform 0.3s ease-in-out;
     }
-    /* stylelint-enable all */
+}
 
-    > span:first-child {
-        margin-right: $unit * 2;
+
+.ds-btn--tile-action {
+    border-radius: $btn-tile-action-border-radius;
+    height: $btn-tile-action-height;
+    justify-content: space-between;
+
+    .ds-btn__icon {
+        font-size: $btn-tile-action-icon-font-size;
+    }
+
+    &:hover {
+        .ds-btn__icon {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.ds-btn--tile-list {
+    border-radius: $btn-tile-list-border-radius;
+    height: $btn-tile-list-height;
+
+    .ds-btn__icon {
+        font-size: $btn-tile-list-icon-font-size;
+    }
+
+    &:hover {
+        .ds-btn__icon {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.ds-btn--tile-card {
+    border-radius: $btn-tile-card-border-radius;
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+    border-width: 0;
+
+    .ds-btn__icon {
+        font-size: $btn-tile-card-icon-font-size;
+        position: absolute;
+        top: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s ease-in-out;
+        transition-property: font-size;
+    }
+
+    &:hover {
+        .ds-btn__icon {
+            font-size: $btn-tile-card-icon-font-size-hover;
+        }
     }
 }

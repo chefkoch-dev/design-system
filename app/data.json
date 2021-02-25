@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v9.17.1",
+            "library_title": "v11.0.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -481,14 +481,37 @@
                 {
                     "group": "buttons",
                     "name": "primary",
-                    "title": "Primary Button",
-                    "width": "half"
+                    "title": "Primary Button"
                 },
                 {
                     "group": "buttons",
                     "name": "secondary",
-                    "title": "Secondary Button",
-                    "width": "half"
+                    "title": "Secondary Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "tertiary",
+                    "title": "Tertiary Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "conversion",
+                    "title": "Conversion Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "danger",
+                    "title": "Danger Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "btn-box",
+                    "title": "Button Box Wrapper"
+                },
+                {
+                    "group": "buttons",
+                    "name": "menu",
+                    "title": "Menu Buttons"
                 },
                 {
                     "group": "buttons",
@@ -497,42 +520,13 @@
                 },
                 {
                     "group": "buttons",
-                    "name": "delete",
-                    "title": "Delete Button",
-                    "width": "half"
-                },
-                {
-                    "group": "buttons",
-                    "name": "conversion",
-                    "title": "Conversion Button",
-                    "width": "half"
-                },
-                {
-                    "group": "buttons",
-                    "name": "tertiary",
-                    "title": "Tertiary Button",
-                    "width": "half"
-                },
-                {
-                    "group": "buttons",
-                    "name": "btn-box",
-                    "title": "Button Box Wrapper",
-                    "width": "half"
-                },
-                {
-                    "group": "buttons",
-                    "name": "icon",
-                    "title": "Icon Button"
-                },
-                {
-                    "group": "buttons",
-                    "name": "deactivated",
-                    "title": "Inaktiv / Deaktiviert"
-                },
-                {
-                    "group": "buttons",
                     "name": "view-toggle",
                     "title": "View-Toggle"
+                },
+                {
+                    "group": "buttons",
+                    "name": "action-menu",
+                    "title": "Action-Menu Button"
                 }
             ]
         },
@@ -715,6 +709,33 @@
             ]
         },
         {
+            "name": "recipe-note",
+            "title": "Recipe Note",
+            "components": [
+                {
+                    "group": "recipe-note",
+                    "name": "default",
+                    "title": "Standard"
+                },
+                {
+                    "group": "recipe-note",
+                    "name": "truncated",
+                    "title": "Truncated"
+                }
+            ]
+        },
+        {
+            "name": "recipe-badge",
+            "title": "Recipe Badge",
+            "components": [
+                {
+                    "group": "recipe-badge",
+                    "name": "default",
+                    "title": "Private Recipe"
+                }
+            ]
+        },
+        {
             "name": "recipe-card",
             "title": "Recipe Card",
             "components": [
@@ -727,6 +748,17 @@
                     "group": "recipe-card",
                     "name": "cookbook",
                     "title": "Kochbuch"
+                }
+            ]
+        },
+        {
+            "name": "list-view-item",
+            "title": "List View Item",
+            "components": [
+                {
+                    "group": "list-view-item",
+                    "name": "recipe",
+                    "title": "Recipe List"
                 }
             ]
         },
