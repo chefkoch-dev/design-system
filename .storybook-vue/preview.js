@@ -1,3 +1,5 @@
+import '../components/dsy-base.scss';
+
 const customViewports = {
   mobile1: {
     name: 'Small mobile',
