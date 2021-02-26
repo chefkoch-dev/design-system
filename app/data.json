@@ -759,6 +759,11 @@
                     "group": "list-view-item",
                     "name": "recipe",
                     "title": "Recipe List"
+                },
+                {
+                    "group": "list-view-item",
+                    "name": "collection",
+                    "title": "Collection List"
                 }
             ]
         },
