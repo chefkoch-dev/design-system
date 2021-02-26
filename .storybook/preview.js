@@ -3,21 +3,45 @@ import HTMLParser from 'prettier/parser-html'
 import '../config/chefkoch-design-system.scss';
 
 const customViewports = {
-  mobile1: {
-    name: 'Small mobile',
+  bpxxxs: {
+    name: 'Breakpoint xxxs (320px)',
     styles: {
       height: '568px',
       width: '320px',
     },
     type: 'mobile',
   },
-  mobile2: {
-    name: 'Large mobile',
+  bpxxs: {
+    name: 'Breakpoint xxs (360px)',
     styles: {
-      height: '896px',
-      width: '580px',
+      height: '568px',
+      width: '360px',
     },
     type: 'mobile',
+  },
+  bpxs: {
+    name: 'Breakpoint xs (480px)',
+    styles: {
+      height: '568px',
+      width: '480px',
+    },
+    type: 'mobile',
+  },
+  bps: {
+    name: 'Breakpoint s (600px)',
+    styles: {
+      height: '568px',
+      width: '600px',
+    },
+    type: 'mobile',
+  },
+  bpm: {
+    name: 'Breakpoint m (1196px)',
+    styles: {
+      height: '800px',
+      width: '1196px',
+    },
+    type: 'desktop',
   },
   tablet: {
     name: 'Tablet',
