@@ -10,8 +10,10 @@
         border-radius: 16px;
     }
 
-    &:hover {
-        background-color: $color-garlic-medium;
+    &--hover-bg {
+        &:hover {
+            background-color: $color-garlic-medium;
+        }
     }
 
     &__link {
