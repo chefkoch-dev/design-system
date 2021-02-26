@@ -21,24 +21,6 @@
         flex-wrap: nowrap;
     }
 
-    &__media {
-        .ds-list-view-item--recipe & {
-            flex: 0 0 $list-view-item-recipe-image-width-xxxs;
-
-            @include media-breakpoint-from(xs) {
-                flex-basis: $list-view-item-recipe-image-width-xs;
-            }
-
-            @include media-breakpoint-from(s) {
-                flex-basis: $list-view-item-recipe-image-width-s;
-            }
-
-            @include media-breakpoint-from(m) {
-                flex-basis: $list-view-item-recipe-image-width-m;
-            }
-        }
-    }
-
     &__image-wrap {
         background-color: $color-garlic;
         width: 100%;
@@ -47,10 +29,6 @@
 
         &--no-image {
             background-color: $color-corporate-green-xlight;
-        }
-
-        .ds-list-view-item--recipe & {
-            padding-bottom: percentage(1/$list-view-item-recipe-image-apsect-ratio);
         }
 
         border-radius: 8px;
@@ -82,11 +60,7 @@
         height: 100%;
         flex-direction: row;
         flex-wrap: wrap;
-
-        @include media-breakpoint-from(m) {
-            flex: 1;
-            flex-direction: row;
-        }
+        flex: 1;
     }
 
     &__column {
@@ -116,8 +90,7 @@
     }
 
     &__headline {
-        line-height: 22px;
-        margin-bottom: 6px;
+        margin-bottom: 0;
     }
 
     &__action {
@@ -133,22 +106,6 @@
             flex-basis: 80px;
             max-width: 80px;
         }
-
-        .ds-list-view-item--recipe & {
-            max-height: $list-view-item-recipe-image-width-xxxs * 1 / $list-view-item-recipe-image-apsect-ratio;
-
-            @include media-breakpoint-from(xs) {
-                max-height: $list-view-item-recipe-image-width-xs * 1 / $list-view-item-recipe-image-apsect-ratio;
-            }
-
-            @include media-breakpoint-from(s) {
-                max-height: $list-view-item-recipe-image-width-s * 1 / $list-view-item-recipe-image-apsect-ratio;
-            }
-
-            @include media-breakpoint-from(m) {
-                max-height: $list-view-item-recipe-image-width-m * 1 / $list-view-item-recipe-image-apsect-ratio;
-            }
-        }
     }
 }
 
@@ -158,12 +115,4 @@
             -webkit-line-clamp: 1;
         }
     }
-}
-
-.ds-list-view-item__column--info {
-    .ds-list-view-item--recipe & {
-        @include media-breakpoint-from(m) {
-            max-height: $list-view-item-recipe-image-width-m * 1 / $list-view-item-recipe-image-apsect-ratio;
-        }
-    }
-}
+  }
