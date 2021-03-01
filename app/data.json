@@ -709,16 +709,16 @@
             ]
         },
         {
-            "name": "recipe-note",
-            "title": "Recipe Note",
+            "name": "text-toggle",
+            "title": "Text toggle",
             "components": [
                 {
-                    "group": "recipe-note",
+                    "group": "text-toggle",
                     "name": "default",
                     "title": "Standard"
                 },
                 {
-                    "group": "recipe-note",
+                    "group": "text-toggle",
                     "name": "truncated",
                     "title": "Truncated"
                 }

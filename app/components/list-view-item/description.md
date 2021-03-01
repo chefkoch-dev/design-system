@@ -23,6 +23,6 @@ Für ein List View Item muss die Basis-Komponente und die gewünschte Variante (
     @import "~chefkoch-design-system/components/dropdown-menu";
     @import "~chefkoch-design-system/components/icons";
     @import "~chefkoch-design-system/components/teaser-link";
-    @import "~chefkoch-design-system/components/recipe-note";
+    @import "~chefkoch-design-system/components/text-toggle";
     @import "~chefkoch-design-system/components/recipe-info";
     @import "~chefkoch-design-system/components/text-truncation-utilities";
