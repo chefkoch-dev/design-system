@@ -22,35 +22,35 @@
     }
 
     .ds-list-view-item__action {
-      max-height: $list-view-item-collection-image-width-xxxs * 1 / $list-view-item-collection-image-apsect-ratio;
+        max-height: $list-view-item-collection-image-width-xxxs * 1 / $list-view-item-collection-image-apsect-ratio;
 
-      @include media-breakpoint-from(xs) {
-          max-height: $list-view-item-collection-image-width-xs * 1 / $list-view-item-collection-image-apsect-ratio;
-      }
+        @include media-breakpoint-from(xs) {
+            max-height: $list-view-item-collection-image-width-xs * 1 / $list-view-item-collection-image-apsect-ratio;
+        }
 
-      @include media-breakpoint-from(s) {
-          max-height: $list-view-item-collection-image-width-s * 1 / $list-view-item-collection-image-apsect-ratio;
-      }
+        @include media-breakpoint-from(s) {
+            max-height: $list-view-item-collection-image-width-s * 1 / $list-view-item-collection-image-apsect-ratio;
+        }
 
-      @include media-breakpoint-from(m) {
-          max-height: $list-view-item-collection-image-width-m * 1 / $list-view-item-collection-image-apsect-ratio;
-      }
+        @include media-breakpoint-from(m) {
+            max-height: $list-view-item-collection-image-width-m * 1 / $list-view-item-collection-image-apsect-ratio;
+        }
     }
 
     .ds-list-view-item__column--info {
         @include media-breakpoint-to(xs) {
-          padding-top: 0px;
-          padding-bottom: 0px;
+            padding-top: 0;
+            padding-bottom: 0;
         }
         @include media-breakpoint-from(m) {
-          max-height: $list-view-item-collection-image-width-m * 1 / $list-view-item-collection-image-apsect-ratio;
+            max-height: $list-view-item-collection-image-width-m * 1 / $list-view-item-collection-image-apsect-ratio;
         }
     }
 
     .ds-list-view-item__column--note {
-      @include media-breakpoint-to(xs) {
-          display: none;
-      }
+        @include media-breakpoint-to(xs) {
+            display: none;
+        }
     }
 }
 
@@ -58,10 +58,10 @@
     line-height: 18px;
 
     &__collection-info {
-      display: flex;
-      @include media-breakpoint-from(m) {
-        flex-direction: column;
-      }
+        display: flex;
+        @include media-breakpoint-from(m) {
+            flex-direction: column;
+        }
     }
 
     &__visibility {
@@ -74,11 +74,11 @@
         }
 
         &-icon {
-          font-size: 18px;
+            font-size: 18px;
         }
 
         &-text {
-          margin-left: 4px;
+            margin-left: 4px;
         }
     }
 }

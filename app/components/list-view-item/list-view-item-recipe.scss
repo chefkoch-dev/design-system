@@ -44,7 +44,7 @@
 
     .ds-list-view-item__column--info {
         @include media-breakpoint-from(m) {
-          max-height: $list-view-item-recipe-image-width-m * 1 / $list-view-item-recipe-image-apsect-ratio;
+            max-height: $list-view-item-recipe-image-width-m * 1 / $list-view-item-recipe-image-apsect-ratio;
         }
     }
 }
