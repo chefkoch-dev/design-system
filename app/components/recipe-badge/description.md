@@ -7,10 +7,10 @@ Für die Verwendung innerhalb List View Items wird die Modifier Klasse `.ds-reci
 ### Usage
     
     Via Shortlink
-    @import "~chefkoch-design-system/components/recipe-note";
+    @import "~chefkoch-design-system/components/recipe-badge";
   
     Original Location
-    @import "~chefkoch-design-system/app/components/recipe-note/recipe-note";
+    @import "~chefkoch-design-system/app/components/recipe-badge/recipe-badge";
 
     Dependencies
     @import "~chefkoch-design-system/components/dsy-base";
