@@ -8,6 +8,8 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/preset-scss",
     '@storybook/addon-a11y',
+    'storybook-addon-outline',
+    'storybook-mobile'
   ],
   webpackFinal: async config => {
     // //Use loaders to handle scss
