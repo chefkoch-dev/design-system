@@ -14,14 +14,14 @@ export const Template = ({ label, ...args }) => {
   //You can either use a function to create DOM elements or use a plain html string!
   // return `<div>${label}</div>`;
   //return createButton({ label, ...args });
-  return `<button class="ds-btn ds-btn-${args.mode}"><span class="ds-btn__label">${label}</span></button>`;
+  return `<button class="ds-btn ds-btn--${args.mode}"><span class="ds-btn__label">${label}</span></button>`;
 };
 
 export const TemplateIcon = ({ label, ...args }) => {
   //You can either use a function to create DOM elements or use a plain html string!
   // return `<div>${label}</div>`;
   //return createButton({ label, ...args });
-  return `<button class="ds-btn ds-btn-${args.mode}"><i class="chefkoch-icons">heart</i><span class="ds-btn__label">${label}</span></button>`;
+  return `<button class="ds-btn ds-btn--${args.mode}"><i class="ds-btn__icon ds-btn__icon--leading chefkoch-icons">heart</i><span class="ds-btn__label">${label}</span></button>`;
 };
 
 
@@ -29,7 +29,7 @@ export const TemplateIconOnly = ({ ...args }) => {
   //You can either use a function to create DOM elements or use a plain html string!
   // return `<div>${label}</div>`;
   //return createButton({ label, ...args });
-  return `<button class="ds-btn ds-btn-${args.mode}"><i class="chefkoch-icons">heart</i></button>`;
+  return `<button class="ds-btn ds-btn--round ds-btn--${args.mode}"><i class="ds-btn__icon chefkoch-icons">heart</i></button>`;
 };
 
 
@@ -54,18 +54,12 @@ Der Primary Button ist reserviert für die Main-CTA einer Seite, bzw. eines Bere
   }}>
     {Template.bind({})}
   </Story>
-</Canvas>
-
-<Canvas>
   <Story name="with Icon" args={{
     mode: 'primary', 
     label: 'Button'
   }}>
     {TemplateIcon.bind({})}
   </Story>
-</Canvas>
-
-<Canvas>
   <Story name="Icon only" args={{
     mode: 'primary', 
   }}>
