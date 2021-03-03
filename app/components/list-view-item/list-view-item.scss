@@ -23,11 +23,18 @@
         flex-wrap: nowrap;
     }
 
+    &__media {
+        overflow: hidden;
+    }
+
     &__image-wrap {
         background-color: $color-garlic;
         width: 100%;
         height: 0;
         position: relative;
+        overflow: hidden;
+        line-height: $lineheight-small;
+        font-size: $fontsize-small;
 
         &--no-image {
             background-color: $color-corporate-green-xlight;
@@ -44,6 +51,7 @@
         border-radius: inherit;
         width: 100%;
         height: auto;
+        overflow: hidden;
     }
 
     &__badge {
