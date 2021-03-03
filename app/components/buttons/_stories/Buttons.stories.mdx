@@ -1,0 +1,295 @@
+import {  Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title="Library/Buttons" 
+  argTypes={{
+    label: { control: 'text' },
+    mode: {
+      control: { type: 'select', options: ['primary', 'secondary', 'tertiary', 'danger', 'conversion'] },
+    },
+  }}
+/>
+
+export const Template = ({ label, ...args }) => {
+  return `<button class="ds-btn ds-btn--${args.mode}"><span class="ds-btn__label">${label}</span></button>`;
+};
+
+export const TemplateIcon = ({ label, ...args }) => {
+  return `<button class="ds-btn ds-btn--${args.mode}"><i class="ds-btn__icon ds-btn__icon--leading chefkoch-icons">heart</i><span class="ds-btn__label">${label}</span></button>`;
+};
+
+
+export const TemplateIconOnly = ({ ...args }) => {
+  return `<button class="ds-btn ds-btn--round ds-btn--${args.mode}"><i class="ds-btn__icon chefkoch-icons">heart</i></button>`;
+};
+
+## Primary Button
+
+*updated in v10.0.0*
+
+__⚠️ NEEDS DESCRIPTION__
+
+Der Primary Button ist reserviert für die Main-CTA einer Seite, bzw. eines Bereiches.
+
+### Modifier
+* `.ds-btn--primary` wenn Label vorhanden
+* `.ds-btn--primary` und `.ds-btn--round` für Icon Only
+
+### Darstellungsformen
+Der Primary Button kann nur mit Label, mit Label und vorangestelltem Icon oder nur mit Icon auftreten. Wird der Button nur mit Icon verwendet, muss zusätzlich die Klasse `.ds-btn--round` verwendet werden.
+
+### Disabled
+Der Button erhält das Styling für disabled per `disabled` Attribut. Explizit kann der Style durch die Modifier Klasse `.ds-btn--disabled` erzeugt werden.
+
+### Usage  
+    
+    Via Shortlink 
+    @import "~chefkoch-design-system/components/button-primary";
+    
+    Original Location
+    @import "~chefkoch-design-system/app/components/buttons/button-primary";
+
+    Dependencies
+    @import "~chefkoch-design-system/components/icons";
+
+<Canvas>
+  <Story name="Primary Text only" args={{
+    mode: 'primary', 
+    label: 'Button'
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Primary with Icon" args={{
+    mode: 'primary', 
+    label: 'Button'
+  }}>
+    {TemplateIcon.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Primary Icon only" args={{
+    mode: 'primary', 
+  }}>
+    {TemplateIconOnly.bind({})}
+  </Story>
+</Canvas>
+
+
+## Secondary Button
+
+*updated in v10.0.0*
+
+__⚠️ NEEDS DESCRIPTION__
+
+Der Secondary Button steht neben dem Primary Button für alle weiteren CTA's.
+
+### Modifier
+* `.ds-btn--secondary` wenn Label vorhanden
+* `.ds-btn--secondary` und `.ds-btn--round` für Icon Only
+
+### Darstellungsformen
+Der Secondary Button kann nur mit Label, mit Label und vorangestelltem Icon oder nur mit Icon auftreten. Wird der Button nur mit Icon verwendet, muss zusätzlich die Klasse `.ds-btn--round` verwendet werden.
+
+### Disabled
+Der Button erhält das Styling für disabled per `disabled` Attribut. Explizit kann der Style durch die Modifier Klasse `.ds-btn--disabled` erzeugt werden.
+### Usage  
+    
+    Via Shortlink 
+    @import "~chefkoch-design-system/components/button-secondary";
+    
+    Original Location
+    @import "~chefkoch-design-system/app/components/buttons/button-secondary";
+
+    Dependencies
+    @import "~chefkoch-design-system/components/icons";
+
+<Canvas>
+  <Story name="Secondary Text only" args={{
+    mode: 'secondary', 
+    label: 'Button'
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Secondary with Icon" args={{
+    mode: 'secondary', 
+    label: 'Button'
+  }}>
+    {TemplateIcon.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Secondary Icon only" args={{
+    mode: 'secondary', 
+  }}>
+    {TemplateIconOnly.bind({})}
+  </Story>
+</Canvas>
+
+
+## Tertiary Button 
+
+*updated in v10.0.0*
+
+__⚠️ NEEDS DESCRIPTION__
+
+## Modifier
+* `.ds-btn--tertiary`
+* `.ds-btn--tertiary` in Kombination mit `.ds-btn--flat` für die Fälle, in denen der Button nicht die default Button Höhe (44px) haben soll.
+
+## Darstellungsformen
+Der Tertiary Button kann nur mit Label, mit Label und vorangestelltem oder nachgestelltem Icon auftreten.<br />
+Im Gegensatz zu den anderen Textbuttons kann der Tertiary Button auch in flacher Ausprägung (durch die Klasse `.ds-btn--flat`) verwendet werden. Die ohnehin nicht sichtbare Höhe, die durch die Klasse `.ds-btn` gesetzt wird, wird damit entfernt. Der Button wird dadurch als eine Art inline Button verwendet.<br />
+In allen Fällen hat der Tertiary Button kein horizontales Padding.<br />
+__Hinweis__: Der Tertiary Button ist der einzige Button der regulären Button, der auch mit nachgestelltem Icon verwendet wird. Eine Verwendung des Tertiary Buttons nur mit Icon ist nicht vorgesehen.
+
+## Disabled
+Der Button erhält das Styling für disabled per `disabled` Attribut. Explizit kann der Style durch die Modifier-Klasse `.ds-btn--disabled` erzeugt werden.
+
+## Usage  
+    
+    Via Shortlink 
+    @import "~chefkoch-design-system/components/button-tertiary";
+    
+    Original Location
+    @import "~chefkoch-design-system/app/components/buttons/button-tertiary";
+
+    Dependencies
+    @import "~chefkoch-design-system/components/icons";
+
+<Canvas>
+  <Story name="Tertiary Text only" args={{
+    mode: 'tertiary', 
+    label: 'Button'
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Tertiary with Icon" args={{
+    mode: 'tertiary', 
+    label: 'Button'
+  }}>
+    {TemplateIcon.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Tertiary Icon only" args={{
+    mode: 'tertiary', 
+  }}>
+    {TemplateIconOnly.bind({})}
+  </Story>
+</Canvas>
+
+## Conversion Button
+
+*updated in v10.0.0*
+
+__⚠️ NEEDS DESCRIPTION__
+
+### Modifier
+* `.ds-btn--conversion` wenn Label vorhanden
+* `.ds-btn--conversion` und `.ds-btn--round` für Icon Only
+
+### Darstellungsformen
+Der Conversion Button kann nur mit Label, mit Label und vorangestelltem Icon oder nur mit Icon auftreten. Wird der Button nur mit Icon verwendet, muss zusätzlich die Klasse `.ds-btn--round` verwendet werden.
+
+### Disabled
+Der Button erhält das Styling für disabled per `disabled` Attribut. Explizit kann der Style durch die Modifier Klasse `.ds-btn--disabled` erzeugt werden.
+
+### Usage  
+    
+    Via Shortlink 
+    @import "~chefkoch-design-system/components/button-conversion";
+    
+    Original Location
+    @import "~chefkoch-design-system/app/components/buttons/button-conversion";
+
+
+
+<Canvas>
+  <Story name="Conversion Text only" args={{
+    mode: 'conversion', 
+    label: 'Button'
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Conversion with Icon" args={{
+    mode: 'conversion', 
+    label: 'Button'
+  }}>
+    {TemplateIcon.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Conversion Icon only" args={{
+    mode: 'conversion', 
+  }}>
+    {TemplateIconOnly.bind({})}
+  </Story>
+</Canvas>
+
+# Danger Button
+
+*updated in v10.0.0*
+
+__⚠️ NEEDS DESCRIPTION__
+
+Der Danger Button wird für Aktionen verwendet, die dem Nutzer verdeutlichen sollen, dass die Aktion überdacht werden sollte (z.B. Löschen)
+### Modifier
+* `.ds-btn--danger`
+
+### Darstellungsformen
+Der Danger Button wird ausschließlich mit Label eingesetzt.
+
+### Disabled
+Der Button erhält das Styling für disabled per `disabled` Attribut. Explizit kann der Style durch die Modifier Klasse `.ds-btn--disabled` erzeugt werden.
+
+### Usage  
+    
+    Via Shortlink 
+    @import "~chefkoch-design-system/components/button-danger";
+    
+    Original Location
+    @import "~chefkoch-design-system/app/components/buttons/button-danger";
+
+    Dependencies
+    @import "~chefkoch-design-system/components/icons";
+
+<Canvas>
+  <Story name="Danger Text only" args={{
+    mode: 'danger', 
+    label: 'Button'
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Danger with Icon" args={{
+    mode: 'danger', 
+    label: 'Button'
+  }}>
+    {TemplateIcon.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Danger Icon only" args={{
+    mode: 'danger', 
+  }}>
+    {TemplateIconOnly.bind({})}
+  </Story>
+</Canvas>
