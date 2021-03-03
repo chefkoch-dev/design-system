@@ -127,7 +127,6 @@
                     "options": {
                         "disable_code_sample": true
                     }
-
                 },
                 {
                     "group": "layout",
@@ -154,7 +153,6 @@
                     "options": {
                         "disable_code_sample": true
                     }
-
                 },
                 {
                     "group": "layout",
@@ -746,6 +744,17 @@
                 },
                 {
                     "group": "recipe-card",
+                    "name": "cookbook",
+                    "title": "Kochbuch"
+                }
+            ]
+        },
+        {
+            "name": "collection-card",
+            "title": "Collection Card",
+            "components": [
+                {
+                    "group": "collection-card",
                     "name": "cookbook",
                     "title": "Kochbuch"
                 }
