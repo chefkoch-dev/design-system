@@ -8,6 +8,7 @@ export default {
     mode: {
       control: { type: 'select', options: ['primary', 'secondary', 'tertiary', 'danger', 'conversion'] },
     },
+    disabled: { type: 'boolean'}
   },
   parameters: {
     docs: {

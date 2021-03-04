@@ -6,20 +6,23 @@ import {  Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
     mode: {
       control: { type: 'select', options: ['primary', 'secondary', 'tertiary', 'danger', 'conversion'] },
     },
+    disabled: {
+      control: { type: 'boolean' }
+    }
   }}
 />
 
 export const Template = ({ label, ...args }) => {
-  return `<button class="ds-btn ds-btn--${args.mode}"><span class="ds-btn__label">${label}</span></button>`;
+  return `<button class="ds-btn ds-btn--${args.mode}" ${args.disabled? 'disabled': ''}><span class="ds-btn__label">${label}</span></button>`;
 };
 
 export const TemplateIcon = ({ label, ...args }) => {
-  return `<button class="ds-btn ds-btn--${args.mode}"><i class="ds-btn__icon ds-btn__icon--leading chefkoch-icons">heart</i><span class="ds-btn__label">${label}</span></button>`;
+  return `<button class="ds-btn ds-btn--${args.mode}" ${args.disabled? 'disabled': ''}><i class="ds-btn__icon ds-btn__icon--leading chefkoch-icons">heart</i><span class="ds-btn__label">${label}</span></button>`;
 };
 
 
 export const TemplateIconOnly = ({ ...args }) => {
-  return `<button class="ds-btn ds-btn--round ds-btn--${args.mode}"><i class="ds-btn__icon chefkoch-icons">heart</i></button>`;
+  return `<button class="ds-btn ds-btn--round ds-btn--${args.mode}" ${args.disabled? 'disabled': ''}><i class="ds-btn__icon chefkoch-icons">heart</i></button>`;
 };
 
 ## Primary Button
