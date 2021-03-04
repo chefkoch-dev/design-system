@@ -1,2 +1,52 @@
 .ds-collection-card {
+    position: relative;
+    width: 100%;
+
+    &__body {
+        position: absolute;
+        bottom: 2*$unit;
+        left: 2*$unit;
+        right: 2*$unit;
+        line-height: 1;
+    }
+
+    &__headline {
+        margin-bottom: 0;
+        font-size: $fontsize-h3;
+        line-height: $lineheight-h3;
+    }
+
+    &__image-wrap {
+        border-radius: 3*$unit;
+        padding-bottom: 56.25%;
+    }
+
+    &__gradient {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background-image: linear-gradient(#21201800 50%, #212018bf);
+    }
+
+    &__action {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+
+        &--left {
+            right: auto;
+            left: 8px;
+        }
+    }
+
+    &__info {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__visibility-icon {
+        margin-left: 6px;
+        font-size: 18px;
+    }
 }
