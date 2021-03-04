@@ -755,8 +755,8 @@
             "components": [
                 {
                     "group": "collection-card",
-                    "name": "cookbook",
-                    "title": "Kochbuch"
+                    "name": "default",
+                    "title": "Standard"
                 }
             ]
         },
