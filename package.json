@@ -7,9 +7,20 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@storybook/addon-a11y": "^6.1.18",
+    "@storybook/addon-actions": "^6.1.14",
+    "@storybook/addon-essentials": "^6.1.14",
+    "@storybook/addon-links": "^6.1.14",
+    "@storybook/addons": "^6.1.18",
+    "@storybook/html": "^6.1.14",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/theming": "^6.1.18",
     "astrum": "^1.9.5",
+    "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.7",
     "chefkoch-stylelint-config": "^1.0.3",
+    "css-loader": "^5.0.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-if": "^2.0.2",
@@ -17,6 +28,13 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-stylelint": "^7.0.0",
     "node-sass": "^4.14.1",
+    "prettier": "^2.2.1",
+    "sass-loader": "^10.1.1",
+    "sass-resources-loader": "^2.1.1",
+    "storybook-addon-outline": "^1.2.0",
+    "storybook-addon-pseudo-states": "^1.0.0",
+    "storybook-mobile": "^0.1.29",
+    "style-loader": "^2.0.0",
     "stylelint": "^9.10.1"
   },
   "files": [
@@ -25,7 +43,9 @@
   ],
   "scripts": {
     "astrum": "astrum",
-    "stylelint": "stylelint"
+    "stylelint": "stylelint",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -o public"
   },
   "publishConfig": {
     "access": "public"

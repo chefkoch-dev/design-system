@@ -1,0 +1,15 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { createButton } from './Button';
+import * as buttonStories from './Button.stories.js';
+
+# Buttons
+
+## Primary Button
+
+export const Template = (args) => createButton(args)
+
+<Canvas>
+  {<>
+    {<button class="ds-btn ds-btn-primary">Button</button>}
+  </>}
+</Canvas>

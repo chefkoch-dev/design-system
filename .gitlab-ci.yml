@@ -1,0 +1,23 @@
+stages:
+  - build
+  - deploy
+  
+build:
+  stage: build
+  image: node:12.10.0
+  script:
+    - npm install
+    - npm run build-storybook
+  artifacts:
+    paths:
+      - public
+
+pages:
+  stage: deploy
+  allow_failure: true
+  only:
+    - master
+  artifacts:
+    paths:
+      - public
+

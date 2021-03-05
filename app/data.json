@@ -31,6 +31,7 @@
     },
     "assets": {
         "css": [
+            "./build/astrum-theming.css",
             "./build/chefkoch-design-system.css"
         ],
         "js": []
