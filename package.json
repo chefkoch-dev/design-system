@@ -45,7 +45,7 @@
     "astrum": "astrum",
     "stylelint": "stylelint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o public"
   },
   "publishConfig": {
     "access": "public"
