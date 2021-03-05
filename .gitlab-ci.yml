@@ -15,9 +15,10 @@ build:
 pages:
   stage: deploy
   allow_failure: true
+  script:
+    - echo "hello pages ..."
   only:
     - master
   artifacts:
     paths:
       - public
-
