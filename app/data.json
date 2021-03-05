@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v11.0.0",
+            "library_title": "v12.0.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -709,16 +709,16 @@
             ]
         },
         {
-            "name": "recipe-note",
-            "title": "Recipe Note",
+            "name": "text-toggle",
+            "title": "Text toggle",
             "components": [
                 {
-                    "group": "recipe-note",
+                    "group": "text-toggle",
                     "name": "default",
                     "title": "Standard"
                 },
                 {
-                    "group": "recipe-note",
+                    "group": "text-toggle",
                     "name": "truncated",
                     "title": "Truncated"
                 }
@@ -759,6 +759,11 @@
                     "group": "list-view-item",
                     "name": "recipe",
                     "title": "Recipe List"
+                },
+                {
+                    "group": "list-view-item",
+                    "name": "collection",
+                    "title": "Collection List"
                 }
             ]
         },

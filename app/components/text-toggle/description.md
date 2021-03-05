@@ -1,16 +1,16 @@
 *since v11.0.0*
 
-Recipe Note zum Darstellen einer Rezept Notiz. 
+Text Toggle zum Darstellen einer Rezept Notiz oder Sammlungsbeschreibung. 
 
 Die Logik zum Ein- und Ausklappen muss hinzugefügt werden, indem die Klassen für die Textkürzung (`.ds-trunc` in Verbindung mit z.B. `.ds-trunc-3`) hinzugefügt bzw. entfernt werden.
 
 ### Usage
     
     Via Shortlink
-    @import "~chefkoch-design-system/components/recipe-note";
+    @import "~chefkoch-design-system/components/text-toggle";
   
     Original Location
-    @import "~chefkoch-design-system/app/components/recipe-note/recipe-note";
+    @import "~chefkoch-design-system/app/components/text-toggle/text-toggle";
 
     Dependencies
     @import "~chefkoch-design-system/components/dsy-base";
