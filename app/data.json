@@ -805,6 +805,11 @@
             "components": [
                 {
                     "group": "teaser-link",
+                    "name": "collection-card",
+                    "title": "Collection Card"
+                },
+                {
+                    "group": "teaser-link",
                     "name": "recipe-card",
                     "title": "Recipe Card"
                 }
