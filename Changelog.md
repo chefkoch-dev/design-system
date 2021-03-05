@@ -411,3 +411,6 @@ Dropdown menu was refactored.
 
 ### Collection Card
 * Adds new component `.ds-collection-card`
+
+### Teaser Link
+* Adds `backface-visibility: hidden` to image element in order to avoid blurry images on zoom
