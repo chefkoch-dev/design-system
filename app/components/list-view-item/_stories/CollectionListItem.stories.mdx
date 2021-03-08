@@ -33,19 +33,20 @@ export const Template = ({ headline, description, recipeNo, descriptionClass, ..
                   <div class="ds-text-caption">
                     <div class="ds-list-view-item__collection-info">
                       <span class="ds-list-view-item__recipe-count">${recipeNo} Rezepte</span>
-                      <div class="ds-list-view-item__visibility">
+                      ${args.public? `<div class="ds-list-view-item__visibility">
                         <i class="chefkoch-icons ds-list-view-item__visibility-icon">visibility_on</i>
                         <span class="ds-list-view-item__visibility-text ds-from-s">Öffentliche Sammlung</span>
-                      </div>
+                      </div>`: ``}
                     </div>
                   </div>
                 </div>
-                <div class="ds-list-view-item__column ds-list-view-item__column--note">
+                ${description !=='' ?
+                `<div class="ds-list-view-item__column ds-list-view-item__column--note">
                   <div class="ds-text-toggle">
                     <i class="ds-text-toggle__icon chefkoch-icons">list_expand</i>
                     <p class="ds-text-toggle__text ds-text-caption ${descriptionClass}">&bdquo;${description}&rdquo;</p>
                   </div>
-                </div>
+                </div>`: ''}
               </div>
             </a>
             <div class="ds-list-view-item__action">
@@ -65,6 +66,7 @@ export const Template = ({ headline, description, recipeNo, descriptionClass, ..
   <Story name="Collection List Item" args={{
     headline: 'Hauptsammlung',
     recipeNo: 10000,
+    public: true,
     description: 'Das ist eine Hauptsammlung mit einem mehrzeiligen Text, der die Sammlung beschreibt. Wofür sie da ist, was drin ist, etc.',
     descriptionClass: 'ds-trunc ds-trunc-3'
   }}>

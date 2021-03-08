@@ -7,7 +7,7 @@ import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
   }}
 />
 
-export const Template = ({ headline, note, ...args }) => {
+export const Template = ({ ...args }) => {
   return `
     <div class="ds-container">
       <div class="ds-grid ds-row">
@@ -27,7 +27,7 @@ export const Template = ({ headline, note, ...args }) => {
               </div>
               <div class="ds-list-view-item__body">
                 <div class="ds-list-view-item__column ds-list-view-item__column--info">
-                  <h4 class="ds-teaser-link__headline ds-list-view-item__headline ds-h4 ds-text-sans ds-trunc ds-trunc-2">${headline}</h4>
+                  <h4 class="ds-teaser-link__headline ds-list-view-item__headline ds-h4 ds-text-sans ds-trunc ds-trunc-2">${args.headline}</h4>
                   <div class="ds-recipe-info ds-text-caption">
                     <i class="chefkoch-icons ds-recipe-info__icon ds-text-corporate-green-light">time</i>
                     <span class="ds-recipe-info__text ds-text-caption">15 Min.</span>
@@ -35,8 +35,12 @@ export const Template = ({ headline, note, ...args }) => {
                     <span class="ds-recipe-info__text ds-text-caption">normal</span>
                   </div>
                 </div>
-                <div class="ds-list-view-item__column ds-list-view-item__column--note">
-                </div>
+                ${args.note !== ''? `<div class="ds-list-view-item__column ds-list-view-item__column--note">
+                  <div class="ds-text-toggle">
+                    <i class="ds-text-toggle__icon chefkoch-icons">list_collapse</i>
+                    <p class="ds-text-toggle__text ds-text-caption">&bdquo;${args.note}&rdquo;</p>
+                  </div>
+                </div>`: ''}
               </div>
             </a>
             <div class="ds-list-view-item__action">
