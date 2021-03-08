@@ -406,3 +406,11 @@ Dropdown menu was refactored.
 * Replace all classes, modifiers and elements starting with `.ds-recipe-note` with `.ds-text-toggle`
 * `components/recipe-note` was renamed to `components/text-toggle`
 * `app/components/recipe-note/recipe-note` was renamed to `app/components/text-toggle/text-toggle`
+
+## V: 12.0.0 - 12.1.0
+
+### Collection Card
+* Adds new component `.ds-collection-card`
+
+### Teaser Link
+* Adds `backface-visibility: hidden` to image element in order to avoid blurry images on zoom

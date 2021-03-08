@@ -24,7 +24,7 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v12.0.0",
+            "library_title": "v12.1.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
@@ -128,7 +128,6 @@
                     "options": {
                         "disable_code_sample": true
                     }
-
                 },
                 {
                     "group": "layout",
@@ -155,7 +154,6 @@
                     "options": {
                         "disable_code_sample": true
                     }
-
                 },
                 {
                     "group": "layout",
@@ -753,6 +751,17 @@
             ]
         },
         {
+            "name": "collection-card",
+            "title": "Collection Card",
+            "components": [
+                {
+                    "group": "collection-card",
+                    "name": "default",
+                    "title": "Standard"
+                }
+            ]
+        },
+        {
             "name": "list-view-item",
             "title": "List View Item",
             "components": [
@@ -795,6 +804,11 @@
             "name": "teaser-link",
             "title": "Teaser Link",
             "components": [
+                {
+                    "group": "teaser-link",
+                    "name": "collection-card",
+                    "title": "Collection Card"
+                },
                 {
                     "group": "teaser-link",
                     "name": "recipe-card",
