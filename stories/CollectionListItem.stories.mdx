@@ -1,0 +1,73 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title="Library/List Item View/Collection List"
+  argTypes={{
+    headline: { control: 'text' },
+    recipeNo: { control: 'number' },
+    description: {control: 'text' },
+    descriptionClass: {control: 'text' }
+  }}
+/>
+
+export const Template = ({ headline, description, recipeNo, descriptionClass, ...args}) => {
+  return `
+    <div class="ds-container">
+      <div class="ds-grid ds-row">
+        <div class="ds-col-12">
+          <div class="ds-list-view-item ds-list-view-item--collection">
+            <a class="ds-list-view-item__link ds-teaser-link" href="#" title="${headline}">
+              <div class="ds-list-view-item__media">
+                <div class="ds-list-view-item__image-wrap ds-list-view-item__image-wrap--no-image">
+                <img class="ds-list-view-item__image"
+                  width="192" height="108"
+                  loading="lazy"
+                  srcset="https://img.chefkoch-cdn.de/images/crop-656x370/kochbuch/frontend/assets/img/collection_default.png 2x,
+                  https://img.chefkoch-cdn.de/images/crop-656x370/kochbuch/frontend/assets/img/collection_default.png 1x" 
+                  src="https://img.chefkoch-cdn.de/images/crop-656x370/kochbuch/frontend/assets/img/collection_default.png"
+                  >
+                </div>
+              </div>
+              <div class="ds-list-view-item__body">
+                <div class="ds-list-view-item__column ds-list-view-item__column--info">
+                  <h4 class="ds-list-view-item__headline ds-h4 ds-trunc ds-trunc-1 ds-text-sans">${headline}</h4>
+                  <div class="ds-text-caption">
+                    <div class="ds-list-view-item__collection-info">
+                      <span class="ds-list-view-item__recipe-count">${recipeNo} Rezepte</span>
+                      <div class="ds-list-view-item__visibility">
+                        <i class="chefkoch-icons ds-list-view-item__visibility-icon">visibility_on</i>
+                        <span class="ds-list-view-item__visibility-text ds-from-s">Öffentliche Sammlung</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ds-list-view-item__column ds-list-view-item__column--note">
+                  <div class="ds-text-toggle">
+                    <i class="ds-text-toggle__icon chefkoch-icons">list_expand</i>
+                    <p class="ds-text-toggle__text ds-text-caption ${descriptionClass}">&bdquo;${description}&rdquo;</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="ds-list-view-item__action">
+              <div class="ds-dropdown-menu">
+                <button class="ds-dropdown-menu__button ds-btn ds-btn--round ds-btn--action-menu ds-btn--size-s">
+                  <i class="chefkoch-icons">more_horiz</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`;
+}
+
+<Canvas>
+  <Story name="Collection List Item" args={{
+    headline: 'Hauptsammlung',
+    recipeNo: 10000,
+    description: 'Das ist eine Hauptsammlung mit einem mehrzeiligen Text, der die Sammlung beschreibt. Wofür sie da ist, was drin ist, etc.',
+    descriptionClass: 'ds-trunc ds-trunc-3'
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
