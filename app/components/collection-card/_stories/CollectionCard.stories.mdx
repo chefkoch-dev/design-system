@@ -10,11 +10,10 @@ export const Template = ({ ...args }) => {
       <div class="ds-box ds-col-m-4 ds-col-s-6 ds-col-xs-12">
         <div class="ds-collection-card">
             <a class="ds-teaser-link ds-collection-card__link" href="#">
-              <div class="ds-collection-card__image-wrap ds-teaser-link__image-wrap">
+              <div class="ds-collection-card__image-wrap ${args.gradient? 'ds-collection-card__image-wrap--gradient': ''} ds-teaser-link__image-wrap">
                 ${args.recipeCount == '0'? 
                   '<img alt="Hauptsammlung" class="ds-teaser-link__image" srcset="https://img.chefkoch-cdn.de/images/crop-656x370/kochbuch/frontend/assets/img/collection_default.png 1x, https://img.chefkoch-cdn.de/images/crop-656x370/kochbuch/frontend/assets/img/collection_default.png 2x" src="https://img.chefkoch-cdn.de/images/crop-656x370/kochbuch/frontend/assets/img/collection_default.png"/>': 
                   '<img alt="Hauptsammlung" class="ds-teaser-link__image" srcset="https://api.chefkoch.de/v2/images/crop-656x370/recipes/2737891426025016/images/1365577/fit-960x720 1x, https://api.chefkoch.de/v2/images/crop-656x370/recipes/2737891426025016/images/1365577/fit-960x720 2x" src="https://api.chefkoch.de/v2/images/crop-656x370/recipes/2737891426025016/images/1365577/fit-960x720" />'}                
-                ${args.gradient? '<div class="ds-collection-card__gradient"></div>': ''}
               </div>
               <div class="ds-collection-card__body ds-text-white">
                 <h3 class="ds-collection-card__headline ds-text-sans ds-trunc ds-trunc-1">${args.headline}</h3>
