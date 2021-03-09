@@ -1,0 +1,12 @@
+@import "../components/vars";
+@import "../app/components/breakpoints/breakpoints";
+
+.dialog-container {
+  max-width: 480px;
+  padding: 0;
+  width: 100%;
+
+  @include media-breakpoint-from(s) {
+    padding: 0 1rem;
+  }
+} 
