@@ -38,7 +38,7 @@ export const Template = ({ ...args }) => {
                 ${args.note !== ''? `<div class="ds-list-view-item__column ds-list-view-item__column--note">
                   <div class="ds-text-toggle">
                     <i class="ds-text-toggle__icon chefkoch-icons">list_collapse</i>
-                    <p class="ds-text-toggle__text ds-text-caption">&bdquo;${args.note}&rdquo;</p>
+                    <p class="ds-text-toggle__text ds-text-caption ${args.noteCollapsed? 'ds-trunc ds-trunc-3': ''}">&bdquo;${args.note}&rdquo;</p>
                   </div>
                 </div>`: ''}
               </div>
@@ -59,7 +59,8 @@ export const Template = ({ ...args }) => {
 <Canvas>
   <Story name="Recipe List Item" args={{
     headline: 'Der beste Pizzateig, den es weltweit zu finden gibt!',
-    note: 'Nach unzähligen Feldversuchen, reichlich Google-Recherche und Restaurant-Spionage habe ich endlich ein Rezept entwickelt, das absolut authentisch und lecker schmeckt - eben wie in Bella Italia!'
+    note: 'Nach unzähligen Feldversuchen, reichlich Google-Recherche und Restaurant-Spionage habe ich endlich ein Rezept entwickelt, das absolut authentisch und lecker schmeckt - eben wie in Bella Italia!',
+    noteCollapsed: true
   }}>
     {Template.bind({})}
   </Story>
