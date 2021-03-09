@@ -1,0 +1,31 @@
+.ds-list-view-item--dialog {
+    .ds-list-view-item__column {
+        @include media-breakpoint-from(m) {
+            padding-left: 16px;
+        }
+    }
+
+    &.ds-list-view-item--collection {
+        .ds-list-view-item__media {
+            max-width: $list-view-item-collection-image-width-xs;
+        }
+
+        .ds-list-view-item__collection-info {
+            @include media-breakpoint-from(m) {
+                flex-direction: row;
+            }
+        }
+
+        .ds-list-view-item__visibility {
+            margin-left: 4px;
+            margin-top: 0;
+            min-width: 0%;
+        }
+
+        .ds-list-view-item__action {
+            padding-right: 0;
+            flex-basis: 40px;
+            max-width: 40px;
+        }
+    }
+}
