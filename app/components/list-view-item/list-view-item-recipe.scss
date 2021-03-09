@@ -1,6 +1,8 @@
 @import "settings.list-view-item";
 
 .ds-list-view-item--recipe {
+    min-height: 68px;
+
     .ds-list-view-item__media {
         flex: 0 0 $list-view-item-recipe-image-width-xxxs;
 
