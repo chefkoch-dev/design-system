@@ -1,6 +1,7 @@
 import prettier from 'prettier'
 import HTMLParser from 'prettier/parser-html'
 import '../config/chefkoch-design-system.scss';
+import '../config/storybook.scss';
 
 const customViewports = {
   bpxxxs: {
