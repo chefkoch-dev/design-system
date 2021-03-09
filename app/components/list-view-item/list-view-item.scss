@@ -77,22 +77,21 @@
         box-sizing: border-box;
         flex-basis: 100%;
         max-width: 100%;
-        padding: 4px 0 4px 12px;
+        padding-left: 12px;
 
-        justify-content: center;
         display: inline-flex;
         flex-direction: column;
 
-
         @include media-breakpoint-from(xs) {
-            max-width: 90%;
+            max-width: 100%;
         }
 
-        @include media-breakpoint-from(s) {
+        @include media-breakpoint-from(xs) {
             padding-left: 16px;
         }
 
         @include media-breakpoint-from(m) {
+            justify-content: center;
             padding: 8px 0 8px 24px;
             flex-basis: 50%;
             max-width: 50%;
@@ -109,10 +108,9 @@
         align-items: center;
         flex-basis: 56px;
         max-width: 56px;
-        padding-right: 8px;
-
 
         @include media-breakpoint-from(m) {
+            padding-right: 8px;
             flex-basis: 80px;
             max-width: 80px;
         }
@@ -121,6 +119,8 @@
 
 .ds-list-view-item__column--note {
     @include media-breakpoint-to(s) {
+        padding-top: 4px;
+
         .ds-trunc {
             -webkit-line-clamp: 1;
         }
