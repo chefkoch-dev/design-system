@@ -414,3 +414,9 @@ Dropdown menu was refactored.
 
 ### Teaser Link
 * Adds `backface-visibility: hidden` to image element in order to avoid blurry images on zoom
+
+## V: 12.1.0 - 12.2.0
+
+### List view Item
+* New class `.ds-list-view-item--hover-bg-from-m` for hover effect on desktop only
+* Optimizations of spaces for mobile viewports for Recipes and Collections
