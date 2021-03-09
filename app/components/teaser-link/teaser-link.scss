@@ -24,6 +24,7 @@
         height: auto;
         transition: transform 0.8s ease-out;
         transform: translateZ(0);
+        backface-visibility: hidden;
 
         #{$root}:hover & {
             transition: transform 0.4s ease-in-out;

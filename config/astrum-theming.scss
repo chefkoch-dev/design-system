@@ -4,6 +4,10 @@
  */
 
 /* stylelint-disable  */
+@import '../components/dsy-base.scss';
+@import '../components/media-block.scss';
+@import "../app/components/shadows/box-shadow";
+
 
 html {
     min-width: 320px;

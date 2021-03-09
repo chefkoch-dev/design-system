@@ -392,3 +392,25 @@ Dropdown menu was refactored.
 * Removed
   * Class `.ds-recipe-card__button--active`
   * Class `.ds-recipe-card__note-icon`
+
+## V: 11.0.0 - 12.0.0
+
+### List view Item
+* List item modifier for collections is new (`.ds-list-view-item--collection`) 
+* Please see markup for implementation details
+* Styles for recipe list view item are moved to seperate file. If using recipe list item, make sure to also import new component `components/list-view-item-recipe` along with `components/list-view-item`
+* For background hover effect on a list view item, you have to explicitly set class `.ds-list-view-item--hover-bg`
+
+### Text Toggle (former Recipe Note)
+* Recipe Note has been renamed to a more generic name Text Toggle
+* Replace all classes, modifiers and elements starting with `.ds-recipe-note` with `.ds-text-toggle`
+* `components/recipe-note` was renamed to `components/text-toggle`
+* `app/components/recipe-note/recipe-note` was renamed to `app/components/text-toggle/text-toggle`
+
+## V: 12.0.0 - 12.1.0
+
+### Collection Card
+* Adds new component `.ds-collection-card`
+
+### Teaser Link
+* Adds `backface-visibility: hidden` to image element in order to avoid blurry images on zoom

@@ -15,7 +15,7 @@ var development = false;
 
 // Load config
 var config  = {
-    'patternsSrcDir' : './config/chefkoch-design-system.scss',
+    'patternsSrcDir' : './config/**/*.scss',
     'appRootDir':  './app',
     'destFolder' : './app/build',
     'autoprefixerOptions' : {

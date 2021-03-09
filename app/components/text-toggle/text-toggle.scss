@@ -1,15 +1,15 @@
-.ds-recipe-note {
+.ds-text-toggle {
     text-align: left;
     display: flex;
 
     &:hover {
         cursor: pointer;
 
-        .ds-recipe-note__icon {
+        .ds-text-toggle__icon {
             color: $color-corporate-green;
         }
 
-        .ds-recipe-note__text {
+        .ds-text-toggle__text {
             color: $color-olive;
         }
     }
@@ -19,5 +19,9 @@
         font-size: 18px;
         line-height: 18px;
         cursor: pointer;
+    }
+
+    &__text {
+        margin: 0;
     }
 }

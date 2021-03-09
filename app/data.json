@@ -24,13 +24,14 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "v11.0.0",
+            "library_title": "v12.1.0",
             "pages_title": "Übersicht",
             "components_title": "Komponenten"
         }
     },
     "assets": {
         "css": [
+            "./build/astrum-theming.css",
             "./build/chefkoch-design-system.css"
         ],
         "js": []
@@ -127,7 +128,6 @@
                     "options": {
                         "disable_code_sample": true
                     }
-
                 },
                 {
                     "group": "layout",
@@ -154,7 +154,6 @@
                     "options": {
                         "disable_code_sample": true
                     }
-
                 },
                 {
                     "group": "layout",
@@ -709,16 +708,16 @@
             ]
         },
         {
-            "name": "recipe-note",
-            "title": "Recipe Note",
+            "name": "text-toggle",
+            "title": "Text toggle",
             "components": [
                 {
-                    "group": "recipe-note",
+                    "group": "text-toggle",
                     "name": "default",
                     "title": "Standard"
                 },
                 {
-                    "group": "recipe-note",
+                    "group": "text-toggle",
                     "name": "truncated",
                     "title": "Truncated"
                 }
@@ -752,6 +751,17 @@
             ]
         },
         {
+            "name": "collection-card",
+            "title": "Collection Card",
+            "components": [
+                {
+                    "group": "collection-card",
+                    "name": "default",
+                    "title": "Standard"
+                }
+            ]
+        },
+        {
             "name": "list-view-item",
             "title": "List View Item",
             "components": [
@@ -759,6 +769,11 @@
                     "group": "list-view-item",
                     "name": "recipe",
                     "title": "Recipe List"
+                },
+                {
+                    "group": "list-view-item",
+                    "name": "collection",
+                    "title": "Collection List"
                 }
             ]
         },
@@ -789,6 +804,11 @@
             "name": "teaser-link",
             "title": "Teaser Link",
             "components": [
+                {
+                    "group": "teaser-link",
+                    "name": "collection-card",
+                    "title": "Collection Card"
+                },
                 {
                     "group": "teaser-link",
                     "name": "recipe-card",
