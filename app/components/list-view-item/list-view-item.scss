@@ -16,6 +16,14 @@
         }
     }
 
+    &--hover-bg-from-m {
+        @include media-breakpoint-from(m) {
+            &:hover {
+                background-color: $color-garlic-medium;
+            }
+        }
+    } 
+
     &__link {
         display: flex;
         flex: 0 1 auto;
