@@ -2,11 +2,11 @@
 @import "../app/components/breakpoints/breakpoints";
 
 .dialog-container {
-  max-width: 480px;
+  max-width: 420px;
   padding: 0;
   width: 100%;
 
   @include media-breakpoint-from(s) {
-    padding: 0 1rem;
+    padding: 0;
   }
 } 
