@@ -420,3 +420,10 @@ Dropdown menu was refactored.
 ### List view Item
 * New class `.ds-list-view-item--hover-bg-from-m` for hover effect on desktop only
 * Optimizations of spaces for mobile viewports for Recipes and Collections
+
+## V: 12.2.0 - 12.3.0
+
+### List view Item
+* Adds new modifier class `.ds-list-view-item__column--full` for full width columns
+* Adds new modifier class `.ds-list-view-item--dialog` for Collection List Items in dialogs, please see markup examples
+* Adds transition for background-color for an animated background hover effect
