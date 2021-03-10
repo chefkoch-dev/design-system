@@ -5,9 +5,19 @@
         }
     }
 
+    @include media-breakpoint-from(m) {
+        border-radius: 8px;
+    }
+
     &.ds-list-view-item--collection {
         .ds-list-view-item__media {
             max-width: $list-view-item-collection-image-width-xs;
+        }
+
+        .ds-list-view-item__image-wrap {
+            @include media-breakpoint-from(m) {
+                border-radius: 8px;
+            }
         }
 
         .ds-list-view-item__collection-info {
