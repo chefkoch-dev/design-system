@@ -774,6 +774,11 @@
                     "group": "list-view-item",
                     "name": "collection",
                     "title": "Collection List"
+                },
+                {
+                    "group": "list-view-item",
+                    "name": "dialog",
+                    "title": "Dialog"
                 }
             ]
         },
