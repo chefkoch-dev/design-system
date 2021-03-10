@@ -4,8 +4,6 @@ import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
   argTypes={{
     headline: { control: 'text' },
     recipeNo: { control: 'number' },
-    description: {control: 'text' },
-    descriptionClass: {control: 'text' }
   }}
 />
 
@@ -71,5 +69,62 @@ export const Template = ({ headline, description, recipeNo, descriptionClass, ..
     descriptionClass: 'ds-trunc ds-trunc-3'
   }}>
     {Template.bind({})}
+  </Story>
+</Canvas>
+
+
+export const DialogTemplate = ({...args}) => {
+  return `
+    <div class="dialog-container">
+          <div class="ds-list-view-item ds-list-view-item--dialog ${args.alreadyInCollection? '': 'ds-list-view-item--hover-bg'} ds-list-view-item--collection">
+            <a class="ds-list-view-item__link ds-teaser-link" href="#" title="${args.headline}">
+              <div class="ds-list-view-item__media">
+                <div class="ds-list-view-item__image-wrap ds-list-view-item__image-wrap--no-image">
+                <img class="ds-list-view-item__image"
+                  width="192" height="108"
+                  loading="lazy"
+                  alt="Hauptsammlung"
+                  srcset="https://img.chefkoch-cdn.de/images/crop-656x370/kochbuch/frontend/assets/img/collection_default.png 2x,
+                  https://img.chefkoch-cdn.de/images/crop-656x370/kochbuch/frontend/assets/img/collection_default.png 1x" 
+                  src="https://img.chefkoch-cdn.de/images/crop-656x370/kochbuch/frontend/assets/img/collection_default.png"
+                  >
+                </div>
+              </div>
+              <div class="ds-list-view-item__body">
+                <div class="ds-list-view-item__column ds-list-view-item__column--info ds-list-view-item__column--full">
+                  <h4 class="ds-list-view-item__headline ds-h4 ds-trunc ds-trunc-1 ds-text-sans">${args.headline}</h4>
+                  <div class="ds-text-caption">
+                    <div class="ds-list-view-item__collection-info">
+                      ${args.alreadyInCollection? 'Bereits in dieser Sammlung': `
+                      <span class="ds-list-view-item__recipe-count">${args.recipeNo} Rezepte</span>
+                      ${args.public? `<div class="ds-list-view-item__visibility">
+                        <i class="chefkoch-icons ds-list-view-item__visibility-icon">visibility_on</i>
+                      </div>`: ``}`}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              ${args.alreadyInCollection? '': `
+              <div class="ds-list-view-item__action">
+                <button class="ds-btn ds-btn--round ds-btn--size-s ds-text-corporate-green">
+                  <i class="ds-btn__icon chefkoch-icons">chevron_right</i>
+                </button>
+              </div>
+              `}
+            </a>
+          </div>
+    </div>`;
+}
+
+
+<Canvas>
+  <Story name="Collection List Item in Dialog" args={{
+    headline: 'Hauptsammlung',
+    recipeNo: 10000,
+    public: true,
+    alreadyInCollection: false,
+  }}
+  >
+    {DialogTemplate.bind({})}
   </Story>
 </Canvas>
