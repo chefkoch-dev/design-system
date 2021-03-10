@@ -1,0 +1,120 @@
+<div class="ds-grid ds-row">
+
+    <div class="ds-box ds-col-12">
+        <h4>Inline-Form in Kombination mit input, select, button</h4>
+        <form class="ds-inline-form">
+            <input class="ds-input" type="text" name="suche"
+                   placeholder="z. B. Pfannkuchen, Lasagne, Low Carb"
+                   autocomplete="off">
+
+            <div class="ds-select-box">
+                <select name="search-box" class="ds-select">
+                    <option value="0">überall</option><option value="4">im Magazin</option>
+                    <option value="2" selected="">in Rezepten</option>
+                    <option value="10">in Sammlungen</option>
+                    <option value="1">in Foren</option>
+                    <option value="7">in Gruppen</option>
+                    <option value="3">nach Usern</option>
+                </select>
+                <i class="material-icons">expand_more</i>
+            </div>
+
+            <button class="ds-btn ds-btn--primary ds-btn-icon" type="submit">
+                <i class="ds-btn__icon chefkoch-icons">search</i>
+            </button>
+        </form>
+
+        <hr class="ds-hr" />
+    </div>
+
+    <div class="ds-box ds-col-12">
+        <h4>Inline-Form mit select ab Breakpoint m</h4>
+        <form class="ds-inline-form">
+            <input class="ds-input" type="text" name="suche"
+                   placeholder="z. B. Pfannkuchen, Lasagne, Low Carb"
+                   autocomplete="off">
+
+            <div class="ds-select-box ds-from-m">
+                <select name="search-box" class="ds-select">
+                    <option value="0">überall</option><option value="4">im Magazin</option>
+                    <option value="2" selected="">in Rezepten</option>
+                    <option value="10">in Sammlungen</option>
+                    <option value="1">in Foren</option>
+                    <option value="7">in Gruppen</option>
+                    <option value="3">nach Usern</option>
+                </select>
+                <i class="material-icons">expand_more</i>
+            </div>
+            <button class="ds-btn ds-btn--primary" type="submit">
+                <i class="ds-btn__icon chefkoch-icons">search</i>
+            </button>
+        </form>
+
+        <hr class="ds-hr" />
+    </div>
+
+    <div class="ds-box ds-col-12">
+        <h4>Inline-Form mit 2 Elementen Input und Button</h4>
+        <small>Breitenangaben des Input Feldes manuell überschrieben</small>
+        <br/>
+
+        <form class="ds-inline-form">
+            <input class="ds-input" type="number" name="suche" placeholder="4" autocomplete="off" style="max-width:
+            80px;">
+
+            <button class="ds-btn ds-btn--primary ds-btn-icon" type="submit">
+                <i class="ds-btn__icon ds-btn__icon--leading chefkoch-icons">reload</i>
+                <span>Portionen</span>
+            </button>
+        </form>
+
+        <hr class="ds-hr" />
+    </div>
+
+    <div class="ds-box ds-col-12">
+        <h4>Inline-Form innerhalb komplexerer Form</h4>
+        <form>
+            <input class="ds-input" type="text" name="text"
+                   placeholder="Name (optional)"
+                   autocomplete="off">
+
+            <div class="ds-inline-form">
+                <input class="ds-input" type="text" name="suche"
+                       placeholder="E-Mail"
+                       autocomplete="off">
+
+                <button class="ds-btn ds-btn--primary ds-btn-icon" type="submit">
+                    <i class="ds-btn__icon material-icons">mail</i>
+                </button>
+            </div>
+        </form>
+
+        <hr class="ds-hr" />
+    </div>
+
+    <div class="ds-box ds-col-12">
+        <h4>Inline-Form Elemente ohne notwendige .ds-inline-form Klasse</h4>
+        <form>
+            <input class="ds-input" type="text" name="suche"
+                   placeholder="z. B. Pfannkuchen, Lasagne, Low Carb"
+                   autocomplete="off">
+
+            <div class="ds-select-box">
+                <select name="wo" class="ds-select">
+                    <option value="0">überall</option><option value="4">im Magazin</option>
+                    <option value="2" selected="">in Rezepten</option>
+                    <option value="10">in Sammlungen</option>
+                    <option value="1">in Foren</option>
+                    <option value="7">in Gruppen</option>
+                    <option value="3">nach Usern</option>
+                </select>
+                <i class="material-icons">expand_more</i>
+            </div>
+
+            <button class="ds-btn ds-btn--primary ds-btn-icon" type="submit">
+                <i class="ds-btn__icon chefkoch-icons">search</i>
+            </button>
+        </form>
+    </div>
+
+</div>

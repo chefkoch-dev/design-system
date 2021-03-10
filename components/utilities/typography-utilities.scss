@@ -1,0 +1,43 @@
+/* typography utilities
+----------------------------------- */
+
+/*
+    .ds-text-small are deprecated since v9.12.0, will be removed in future versions
+    small might be replaced by .ds-text-caption
+*/
+
+small,
+.ds-text-small {
+    display: block;
+    font-size: $fontsize-small;
+    line-height: $lineheight-small;
+}
+
+.ds-text-center {
+    text-align: center;
+}
+
+.ds-text-right {
+    text-align: right;
+}
+
+/*
+    .ds-text-italic are deprecated since v9.12.0,
+    because italic text is not part of the new design
+*/
+
+.ds-text-italic {
+    font-style: italic;
+}
+
+.ds-text-bold {
+    font-weight: bold;
+}
+
+.ds-text-semi-bold {
+    font-weight: $fontweight-semi-bold;
+}
+
+.ds-text-sans {
+    font-family: $fontfamily-base;
+}

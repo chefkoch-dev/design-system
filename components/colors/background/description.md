@@ -1,0 +1,1 @@
+Die Farbe "Weiß" wird immer für den Content- und Kontextbereich verwendet (Header, Footer, Main, Aside, Ads). Auch der Hintergrund des Body ist immer weiß.

@@ -1,0 +1,47 @@
+@mixin ds-fd-row {
+    flex-direction: row;
+}
+
+@mixin ds-fd-col {
+    flex-direction: column;
+}
+
+@mixin ds-mb-padding($direction, $unitMultiplier) {
+    > .ds-mb-right {
+        padding-#{$direction}: $unit * $unitMultiplier;
+    }
+}
+
+.ds-mb {
+    display: flex;
+
+    > [class*="ds-mb"] {
+        box-sizing: border-box;
+        word-break: break-word;
+    }
+
+    /* stylelint-disable */
+    // amps scrollable-carousel-container has white-space: nowrap !important; so we need to overwrite this for our .ds-mb content
+    amp-carousel & {
+        white-space: normal;
+    }
+    /* stylelint-enable */
+}
+
+.ds-mb-row {
+    @include ds-fd-row;
+    @include ds-mb-padding("left", 1.5);
+
+    @include media-breakpoint-from(s) {
+        @include ds-mb-padding("left", 2);
+    }
+}
+
+.ds-mb-col {
+    @include ds-fd-col;
+    @include ds-mb-padding("top", 1.5);
+
+    @include media-breakpoint-from(s) {
+        @include ds-mb-padding("top", 2);
+    }
+}

@@ -1,0 +1,826 @@
+{
+    "project_logo": "logo.svg",
+    "project_favicon": "favicon.png",
+    "project_name": "Chefkoch Design System",
+    "project_url": null,
+    "copyright_start_year": "2017",
+    "client_name": null,
+    "client_url": "https://www.chefkoch.de",
+    "creators": [
+        {
+            "name": "Chefkoch GmbH",
+            "url": "https://www.chefkoch.de"
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F9FAFC",
+        "brand_color": "#618F30",
+        "background_color": "#F6F5F2",
+        "code_highlight_theme": "",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#333333",
+        "show_project_name": true,
+        "show_version": true,
+        "max_width": null,
+        "titles": {
+            "library_title": "v12.3.0",
+            "pages_title": "Übersicht",
+            "components_title": "Komponenten"
+        }
+    },
+    "assets": {
+        "css": [
+            "./build/astrum-theming.css",
+            "./build/chefkoch-design-system.css"
+        ],
+        "js": []
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": null
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Intro",
+                "file": "./pages/intro.md"
+            },
+            {
+                "name": "usage",
+                "title": "Benutzung",
+                "file": "./pages/usage.md"
+            },
+            {
+                "name": "contribution",
+                "title": "Entwicklung",
+                "file": "./pages/contribution.md"
+            },
+            {
+                "name": "versioning",
+                "title": "Versionen",
+                "file": "./pages/versioning.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "breakpoints",
+            "title": "Breakpoints",
+            "components": [
+                {
+                    "group": "breakpoints",
+                    "name": "mediaqueries",
+                    "title": "MediaQueries",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "grid",
+            "title": "Grid",
+            "components": [
+                {
+                    "group": "grid",
+                    "name": "grid-base",
+                    "title": "Grid Base"
+                },
+                {
+                    "group": "grid",
+                    "name": "grid-float",
+                    "title": "Grid Float"
+                },
+                {
+                    "group": "grid",
+                    "name": "grid-offset",
+                    "title": "Grid Offset"
+                },
+                {
+                    "group": "grid",
+                    "name": "baseline-grid",
+                    "title": "Baseline Grid"
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "title": "Layout",
+            "components": [
+                {
+                    "group": "layout",
+                    "name": "bereich",
+                    "title": "Bereich",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "layout",
+                    "name": "statischer-bereich",
+                    "title": "— Statische Bereiche",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "layout",
+                    "name": "visueller-bereich",
+                    "title": "— Visuelle Bereiche",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "layout",
+                    "name": "modul",
+                    "title": "Modul",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "layout",
+                    "name": "einfaches-modul",
+                    "title": "— Einfache Module",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "layout",
+                    "name": "komplexes-modul",
+                    "title": "— Komplexe Module",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "margins",
+            "title": "Abstände",
+            "components": [
+                {
+                    "group": "margins",
+                    "name": "bereich",
+                    "title": "Bereich + Bereich",
+                    "width": "half"
+                },
+                {
+                    "group": "margins",
+                    "name": "modul",
+                    "title": "Modul + Modul",
+                    "width": "half"
+                },
+                {
+                    "group": "margins",
+                    "name": "aside",
+                    "title": "Aside Modul + Aside Modul",
+                    "width": "half"
+                },
+                {
+                    "group": "margins",
+                    "name": "komplexes-modul",
+                    "title": "Modul + Modul in komplexem Modul",
+                    "width": "half"
+                },
+                {
+                    "group": "margins",
+                    "name": "elemente",
+                    "title": "Elemente",
+                    "width": "half"
+                },
+                {
+                    "group": "margins",
+                    "name": "ds-box-hr",
+                    "title": ".ds-box & hr"
+                }
+            ]
+        },
+        {
+            "name": "logo",
+            "title": "Logo",
+            "components": [
+                {
+                    "group": "logo",
+                    "name": "logo",
+                    "title": "Logo"
+                }
+            ]
+        },
+        {
+            "name": "colors",
+            "title": "Farben",
+            "components": [
+                {
+                    "group": "colors",
+                    "name": "colors",
+                    "title": "Corporate Farben",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "colors",
+                    "name": "background",
+                    "title": "Background"
+                }
+            ]
+        },
+        {
+            "name": "images",
+            "title": "Images",
+            "components": [
+                {
+                    "group": "images",
+                    "name": "1zu1",
+                    "title": "1:1",
+                    "width": "half"
+                },
+                {
+                    "group": "images",
+                    "name": "3zu2",
+                    "title": "3:2",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "shadows",
+            "title": "Shadows",
+            "components": [
+                {
+                    "group": "shadows",
+                    "name": "btn-shadows",
+                    "title": "Button Shadow"
+                },
+                {
+                    "group": "shadows",
+                    "name": "card-shadows",
+                    "title": "Card Shadow"
+                },
+                {
+                    "group": "shadows",
+                    "name": "icon-shadows",
+                    "title": "Icon Shadow"
+                },
+                {
+                    "group": "shadows",
+                    "name": "material-shadows",
+                    "title": "Material Shadows"
+                }
+            ]
+        },
+        {
+            "name": "typography",
+            "title": "Typographie",
+            "components": [
+                {
+                    "group": "typography",
+                    "name": "headings",
+                    "title": "Headings"
+                },
+                {
+                    "group": "typography",
+                    "name": "secondary-headings",
+                    "title": "Secondary Headings"
+                },
+                {
+                    "group": "typography",
+                    "name": "copy-text",
+                    "title": "Copy Text"
+                },
+                {
+                    "group": "typography",
+                    "name": "category",
+                    "title": "Category Text"
+                },
+                {
+                    "group": "typography",
+                    "name": "caption",
+                    "title": "Caption Text"
+                },
+                {
+                    "group": "typography",
+                    "name": "small-text",
+                    "title": "Small Text"
+                }
+            ]
+        },
+        {
+            "name": "icons",
+            "title": "Icons",
+            "components": [
+                {
+                    "group": "icons",
+                    "name": "chefkoch-icons",
+                    "title": "Chefkoch Icons"
+                },
+                {
+                    "group": "icons",
+                    "name": "material-icons",
+                    "title": "Material Icons"
+                },
+                {
+                    "group": "icons",
+                    "name": "schmuck-icons",
+                    "title": "Schmuck-Icons"
+                }
+            ]
+        },
+        {
+            "name": "utilities",
+            "title": "Utilities",
+            "components": [
+                {
+                    "group": "utilities",
+                    "name": "typography-utilities",
+                    "title": "Typography Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "text-truncation-utilities",
+                    "title": "Text Truncation Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "color-utilities",
+                    "title": "Color Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "list-utilities",
+                    "title": "List Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "layout-utilities",
+                    "title": "Layout Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "screenreader-utilities",
+                    "title": "Screenreader Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "spacing-utilities",
+                    "title": "Spacing Utilities"
+                },
+                {
+                    "group": "utilities",
+                    "name": "breakpoint-utilities",
+                    "title": "Breakpoint Utilities"
+                }
+            ]
+        },
+        {
+            "name": "icon-list",
+            "title": "Icon List",
+            "components": [
+                {
+                    "group": "icon-list",
+                    "name": "icon-list",
+                    "title": "Icon List"
+                }
+            ]
+        },
+        {
+            "name": "media-block",
+            "title": "Media-Block",
+            "components": [
+                {
+                    "group": "media-block",
+                    "name": "media-block-static",
+                    "title": "Statischer Media-Block",
+                    "width": "half"
+                },
+                {
+                    "group": "media-block",
+                    "name": "media-block-dynamic",
+                    "title": "Dynamischer Media-Block",
+                    "width": "half"
+                },
+                {
+                    "group": "media-block",
+                    "name": "media-block-enhanced",
+                    "title": "Media-Block Enhanced"
+                }
+            ]
+        },
+        {
+            "name": "card",
+            "title": "Card",
+            "components": [
+                {
+                    "group": "card",
+                    "name": "card",
+                    "title": "Card"
+                }
+            ]
+        },
+        {
+            "name": "forms",
+            "title": "Formulare",
+            "components": [
+                {
+                    "group": "forms",
+                    "name": "structure",
+                    "title": "Struktur"
+                },
+                {
+                    "group": "forms",
+                    "name": "input",
+                    "title": "Input Felder"
+                },
+                {
+                    "group": "forms",
+                    "name": "checkboxes",
+                    "title": "Checkboxen",
+                    "width": "half"
+                },
+                {
+                    "group": "forms",
+                    "name": "radiobuttons",
+                    "title": "Radiobuttons",
+                    "width": "half"
+                },
+                {
+                    "group": "forms",
+                    "name": "select",
+                    "title": "Select",
+                    "width": "half"
+                },
+                {
+                    "group": "forms",
+                    "name": "inline-form",
+                    "title": "Inline-Form"
+                },
+                {
+                    "group": "forms",
+                    "name": "file",
+                    "title": "Input Type File"
+                }
+            ]
+        },
+        {
+            "name": "buttons",
+            "title": "Buttons",
+            "components": [
+                {
+                    "group": "buttons",
+                    "name": "primary",
+                    "title": "Primary Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "secondary",
+                    "title": "Secondary Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "tertiary",
+                    "title": "Tertiary Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "conversion",
+                    "title": "Conversion Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "danger",
+                    "title": "Danger Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "btn-box",
+                    "title": "Button Box Wrapper"
+                },
+                {
+                    "group": "buttons",
+                    "name": "menu",
+                    "title": "Menu Buttons"
+                },
+                {
+                    "group": "buttons",
+                    "name": "tile-action",
+                    "title": "Tile Action Button"
+                },
+                {
+                    "group": "buttons",
+                    "name": "view-toggle",
+                    "title": "View-Toggle"
+                },
+                {
+                    "group": "buttons",
+                    "name": "action-menu",
+                    "title": "Action-Menu Button"
+                }
+            ]
+        },
+        {
+            "name": "social-media",
+            "title": "Social-Media",
+            "components": [
+                {
+                    "group": "social-media",
+                    "name": "social-media-buttons",
+                    "title": "Social-Media-Buttons",
+                    "width": "half"
+                },
+                {
+                    "group": "social-media",
+                    "name": "amp-social-share",
+                    "title": "AMP-Social-Share",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "links",
+            "title": "Links",
+            "components": [
+                {
+                    "group": "links",
+                    "name": "copy",
+                    "title": "Copy Links"
+                },
+                {
+                    "group": "links",
+                    "name": "category",
+                    "title": "Category Links"
+                },
+                {
+                    "group": "links",
+                    "name": "caption",
+                    "title": "Caption Links"
+                },
+                {
+                    "group": "links",
+                    "name": "headline",
+                    "title": "Headline Links"
+                },
+                {
+                    "group": "links",
+                    "name": "target",
+                    "title": "Target Links"
+                }
+            ]
+        },
+        {
+            "name": "carousel",
+            "title": "Carousel",
+            "components": [
+                {
+                    "group": "carousel",
+                    "name": "indicators",
+                    "title": "Indicators",
+                    "width": "half"
+                },
+                {
+                    "group": "carousel",
+                    "name": "indicators-amp",
+                    "title": "AMP Indicators",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "pagination",
+            "title": "Pagination",
+            "components": [
+                {
+                    "group": "pagination",
+                    "name": "pagination",
+                    "title": "Pagination"
+                }
+            ]
+        },
+        {
+            "name": "tags",
+            "title": "Tags",
+            "components": [
+                {
+                    "group": "tags",
+                    "name": "tags",
+                    "title": "Tags (Link)"
+                },
+                {
+                    "group": "tags",
+                    "name": "filter",
+                    "title": "Tags (Filter)"
+                }
+            ]
+        },
+        {
+            "name": "rating-stars",
+            "title": "Rating Stars",
+            "components": [
+                {
+                    "group": "rating-stars",
+                    "name": "rating-stars",
+                    "title": "Rating Stars"
+                }
+            ]
+        },
+        {
+            "name": "recipe",
+            "title": "Recipe",
+            "components": [
+                {
+                    "group": "recipe",
+                    "name": "recipe-meta",
+                    "title": "Recipe Meta"
+                },
+                {
+                    "group": "recipe",
+                    "name": "recipe-integration",
+                    "title": "Recipe Integration"
+                }
+            ]
+        },
+        {
+            "name": "notice",
+            "title": "Notice",
+            "components": [
+                {
+                    "group": "notice",
+                    "name": "notice",
+                    "title": "Notice"
+                }
+            ]
+        },
+        {
+            "name": "menu",
+            "title": "Menu",
+            "components": [
+                {
+                    "group": "menu",
+                    "name": "action-menu",
+                    "title": "Action-Menu"
+                },
+                {
+                    "group": "menu",
+                    "name": "dropdown-menu",
+                    "title": "Dropdown-Menu"
+                }
+            ]
+        },
+        {
+            "name": "notifications",
+            "title": "Notifications",
+            "components": [
+                {
+                    "group": "notifications",
+                    "name": "toast",
+                    "title": "Toast"
+                }
+            ]
+        },
+        {
+            "name": "recipe-info",
+            "title": "Recipe Info",
+            "components": [
+                {
+                    "group": "recipe-info",
+                    "name": "rating",
+                    "title": "Rating"
+                },
+                {
+                    "group": "recipe-info",
+                    "name": "meta",
+                    "title": "Meta"
+                }
+            ]
+        },
+        {
+            "name": "text-toggle",
+            "title": "Text toggle",
+            "components": [
+                {
+                    "group": "text-toggle",
+                    "name": "default",
+                    "title": "Standard"
+                },
+                {
+                    "group": "text-toggle",
+                    "name": "truncated",
+                    "title": "Truncated"
+                }
+            ]
+        },
+        {
+            "name": "recipe-badge",
+            "title": "Recipe Badge",
+            "components": [
+                {
+                    "group": "recipe-badge",
+                    "name": "default",
+                    "title": "Private Recipe"
+                }
+            ]
+        },
+        {
+            "name": "recipe-card",
+            "title": "Recipe Card",
+            "components": [
+                {
+                    "group": "recipe-card",
+                    "name": "default",
+                    "title": "Standard"
+                },
+                {
+                    "group": "recipe-card",
+                    "name": "cookbook",
+                    "title": "Kochbuch"
+                }
+            ]
+        },
+        {
+            "name": "collection-card",
+            "title": "Collection Card",
+            "components": [
+                {
+                    "group": "collection-card",
+                    "name": "default",
+                    "title": "Standard"
+                }
+            ]
+        },
+        {
+            "name": "list-view-item",
+            "title": "List View Item",
+            "components": [
+                {
+                    "group": "list-view-item",
+                    "name": "recipe",
+                    "title": "Recipe List"
+                },
+                {
+                    "group": "list-view-item",
+                    "name": "collection",
+                    "title": "Collection List"
+                },
+                {
+                    "group": "list-view-item",
+                    "name": "dialog",
+                    "title": "Dialog"
+                }
+            ]
+        },
+        {
+            "name": "spacings",
+            "title": "Spacings",
+            "components": [
+                {
+                    "group": "spacings",
+                    "name": "vertical",
+                    "title": "Vertikal",
+                    "options": {
+                        "disable_code_sample": true,
+                        "sample_overflow_hidden": true
+                    }
+                },
+                {
+                    "group": "spacings",
+                    "name": "utilities",
+                    "title": "Utilities",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "teaser-link",
+            "title": "Teaser Link",
+            "components": [
+                {
+                    "group": "teaser-link",
+                    "name": "collection-card",
+                    "title": "Collection Card"
+                },
+                {
+                    "group": "teaser-link",
+                    "name": "recipe-card",
+                    "title": "Recipe Card"
+                }
+            ]
+        }
+    ],
+    "version": "1.9.5"
+}

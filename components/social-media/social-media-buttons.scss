@@ -1,0 +1,32 @@
+@import "settings.social-media";
+
+.ds-social-item {
+    background: $color-olive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.ds-pinterest {
+        background: #e60023;
+    }
+
+    &.ds-facebook {
+        background: #32529f;
+    }
+
+    &.ds-instagram {
+        background: #ec005f;
+    }
+
+    &.ds-twitter {
+        background: #1da1f2;
+    }
+
+    &.ds-youtube {
+        background: #f00;
+    }
+
+    &.ds-whatsapp {
+        background: #25d366;
+    }
+}

@@ -1,0 +1,29 @@
+.ds-btn--tertiary {
+    color: $color-corporate-green;
+    padding-left: 0;
+    padding-right: 0;
+    border-width: 0;
+
+    &:hover,
+    &:focus {
+        color: $color-corporate-green-medium;
+    }
+
+    &:active {
+        color: $color-corporate-green-dark;
+    }
+
+    &--disabled,
+    &:disabled,
+    &[disabled] {
+        color: $color-pepper;
+    }
+}
+
+// Additional Button modifier, only to be used within tertiary button
+.ds-btn {
+    &--flat {
+        height: auto;
+        line-height: $btn-flat-line-height;
+    }
+}

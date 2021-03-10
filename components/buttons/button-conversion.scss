@@ -1,0 +1,19 @@
+.ds-btn--conversion {
+    background-color: $color-watermelon;
+    color: $color-text-inverted;
+
+    &:hover,
+    &:focus {
+        background-color: $color-watermelon-medium;
+    }
+
+    &:active {
+        background-color: $color-watermelon-dark;
+    }
+
+    &--disabled,
+    &:disabled,
+    &[disabled] {
+        background-color: $color-pepper;
+    }
+}

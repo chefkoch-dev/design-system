@@ -1,0 +1,83 @@
+@import "settings.list-view-item";
+
+.ds-list-view-item--collection {
+    min-height: 46px;
+
+    .ds-list-view-item__media {
+        flex: 0 0 $list-view-item-collection-image-width-xxxs;
+
+        @include media-breakpoint-from(xs) {
+            flex-basis: $list-view-item-collection-image-width-xs;
+        }
+
+        @include media-breakpoint-from(s) {
+            flex-basis: $list-view-item-collection-image-width-s;
+        }
+
+        @include media-breakpoint-from(m) {
+            flex-basis: $list-view-item-collection-image-width-m;
+        }
+    }
+
+    .ds-list-view-item__image-wrap {
+        padding-bottom: percentage(1/$list-view-item-collection-image-apsect-ratio);
+    }
+
+    .ds-list-view-item__action {
+        max-height: $list-view-item-collection-image-width-xxxs * 1 / $list-view-item-collection-image-apsect-ratio;
+
+        @include media-breakpoint-from(xs) {
+            max-height: $list-view-item-collection-image-width-xs * 1 / $list-view-item-collection-image-apsect-ratio;
+        }
+
+        @include media-breakpoint-from(s) {
+            max-height: $list-view-item-collection-image-width-s * 1 / $list-view-item-collection-image-apsect-ratio;
+        }
+
+        @include media-breakpoint-from(m) {
+            max-height: $list-view-item-collection-image-width-m * 1 / $list-view-item-collection-image-apsect-ratio;
+        }
+    }
+
+    .ds-list-view-item__column--info {
+        justify-content: center;
+        @include media-breakpoint-from(m) {
+            max-height: $list-view-item-collection-image-width-m * 1 / $list-view-item-collection-image-apsect-ratio;
+        }
+    }
+
+    .ds-list-view-item__column--note {
+        @include media-breakpoint-to(xs) {
+            display: none;
+        }
+    }
+}
+
+.ds-list-view-item {
+    line-height: 18px;
+
+    &__collection-info {
+        display: flex;
+        @include media-breakpoint-from(m) {
+            flex-direction: column;
+        }
+    }
+
+    &__visibility {
+        display: inline-flex;
+        margin-left: 8px;
+        @include media-breakpoint-from(m) {
+            min-width: 100%;
+            margin-top: 4px;
+            margin-left: 0;
+        }
+
+        &-icon {
+            font-size: 18px;
+        }
+
+        &-text {
+            margin-left: 4px;
+        }
+    }
+}

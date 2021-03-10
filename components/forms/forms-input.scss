@@ -1,0 +1,23 @@
+/* input field
+-------------------------- */
+
+.ds-input {
+    border: 1px solid $color-pepper;
+    color: $color-text;
+    border-radius: $unit;
+    box-sizing: border-box;
+    height: $stdFormHeight;
+    margin-bottom: $unit * 2;
+    padding: $unit $unit * 1.5;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+        border-color: $color-corporate-green-dark;
+        outline: 0;
+    }
+
+    &::placeholder {
+        color: $color-pepper;
+    }
+}

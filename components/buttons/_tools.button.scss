@@ -1,0 +1,46 @@
+@import "settings.button";
+
+@mixin btn-reset {
+    background: transparent;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+
+    // normalize inner #fffspace in Firefox
+    &::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+// base mixin, which all buttons have in common
+@mixin btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &--disabled,
+    &:disabled,
+    &[disabled] {
+        cursor: not-allowed;
+    }
+}
+
+@mixin btn-transitions {
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-property: color, border-color, background-color;
+}

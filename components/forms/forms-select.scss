@@ -1,0 +1,36 @@
+/* select
+-------------------------- */
+
+.ds-select-box {
+    position: relative;
+
+    i {
+        color: $color-text;
+        pointer-events: none;
+        position: absolute;
+        right: $unit;
+        top: $unit;
+    }
+}
+
+.ds-select {
+    appearance: none;
+    background-color: $color-bg-content;
+    border: 1px solid $color-pepper;
+    border-radius: $unit;
+    height: $stdFormHeight;
+    margin-bottom: $unit * 2;
+    padding: 0 $unit * 4 0 $unit * 2;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+        border-color: $color-corporate-green-dark;
+        outline: 0;
+    }
+}
+
+/* hide UI arrow in select boxes in IE */
+select::-ms-expand {
+    display: none;
+}

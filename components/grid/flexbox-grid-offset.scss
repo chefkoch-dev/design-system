@@ -1,0 +1,14 @@
+/* Customizable Flexbox-Grid
+** OFFSET CLASSES
+** Inspired by http://flexboxgrid.com/
+** https://github.com/kristoferjoseph/flexboxgrid/blob/master/src/css/flexboxgrid.css
+**
+** You need another offset class of the offset set from flexbox grid on github?
+** No problem, mate! Just make a new class (.ds-col-[xs,s,m,l]-off-[1-11]), copy what you need from github, and import this file into your project. Happy offset-ing!
+*/
+
+.ds-col-m-off-8 {
+    @include media-breakpoint-from(m) {
+        margin-left: 66.66666667%;
+    }
+}

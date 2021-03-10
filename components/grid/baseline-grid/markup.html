@@ -1,0 +1,35 @@
+<div class="ds-grid ds-row ds-box">
+    <div class="ds-col-12 ds-col-s-8">
+        <div class="show-bl-grid">
+            <h2><span class="bg-stripes-grey">Baseline Grid für Copy Text</span></h2>
+            <p><span class="bg-stripes-grey">Prosciutto short ribs boudin burgdoggen brisket ham chuck tongue flank pig biltong. Rump hamburger cow andouille salami tongue chuck cupim leberkas. Prosciutto short ribs boudin burgdoggen brisket ham chuck tongue flank pig biltong. Rump hamburger cow andouille salami tongue chuck cupim leberkas. Ground round shankle pork ham hock, pork loin drumstick sausage landjaeger biltong bresaola turducken short ribs.</span></p>
+        </div>
+    </div>
+
+    <aside class="ds-box ds-col-12 ds-col-s-4">
+        <pre style="overflow-x: scroll; white-space: normal;">Bei einer Schriftgröße von 16px beträgt unsere Zeilenhöhe für Text im Content 3 Zeilen im Baseline Grid, also 24px.
+        </pre>
+    </aside>
+
+    <div class="ds-col-xs-12 ds-col-s-12 ds-col-m-12">
+        <hr class="ds-hr" />
+    </div>
+</div>
+
+<div class="ds-grid ds-row">
+    <div class="ds-col-12 ds-col-s-8">
+        <small>
+            <pre style="overflow-x: scroll; white-space: normal;">Bei einer Schriftgröße von 14px in der aside (betrifft &lt;p&gt; und &lt;h5&gt;), würden 3 Zeilen des Baseline Grids zu viel whitespace zwischen den Textzeilen verursachen. 2 Zeilen des Baseline Grids wären dagegen zu wenig.<br/>Für diesen Fall haben wir das Baseline Grid halbiert, eine Zeile beträgt demnach eine halbe $unit. Bei einer Schriftgröße von 14px beträgt unsere Zeilenhöhe für Text in der aside 5 Zeilen im Halbierten, bzw. 2.5 Zeilen im normalen Baseline Grid, also 20px.<br/>Dies wirkt sich ebenfalls auf &lt;small&gt; Texte aus.
+            </pre>
+        </small>
+    </div>
+
+    <aside class="ds-box ds-col-12 ds-col-s-4">
+        <div class="show-bl-grid">
+            <h3><span class="bg-stripes-grey">Baseline Grid für Text in aside</span></h3>
+            <p><span class="bg-stripes-grey">Porkchop Kevin bresaola ribeye chuck flank alcatra andouille, sirloin bacon ground round ball tip tenderloin fatback venison burgdoggen.</span></p>
+            <h5><span class="bg-stripes-grey">Headline h5</span></h5>
+            <p><span class="bg-stripes-grey">Prosciutto short ribs boudin burgdoggen brisket ham chuck tongue flank pig biltong.</span></p>
+        </div>
+    </aside>
+</div>

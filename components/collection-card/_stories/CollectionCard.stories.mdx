@@ -1,0 +1,65 @@
+import {  Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta title="Library/Collection Card" />
+
+# Collection Card
+
+export const Template = ({ ...args }) => {
+  return `
+    <div class="ds-grid ds-row">
+      <div class="ds-box ds-col-m-4 ds-col-s-6 ds-col-xs-12">
+        <div class="ds-collection-card">
+            <a class="ds-teaser-link ds-collection-card__link" href="#">
+              <div class="ds-collection-card__image-wrap ${args.gradient? 'ds-collection-card__image-wrap--gradient': ''} ds-teaser-link__image-wrap">
+                ${args.recipeCount == '0'? 
+                  '<img alt="Hauptsammlung" class="ds-teaser-link__image" srcset="https://img.chefkoch-cdn.de/images/crop-656x370/kochbuch/frontend/assets/img/collection_default.png 1x, https://img.chefkoch-cdn.de/images/crop-656x370/kochbuch/frontend/assets/img/collection_default.png 2x" src="https://img.chefkoch-cdn.de/images/crop-656x370/kochbuch/frontend/assets/img/collection_default.png"/>': 
+                  '<img alt="Hauptsammlung" class="ds-teaser-link__image" srcset="https://api.chefkoch.de/v2/images/crop-656x370/recipes/2737891426025016/images/1365577/fit-960x720 1x, https://api.chefkoch.de/v2/images/crop-656x370/recipes/2737891426025016/images/1365577/fit-960x720 2x" src="https://api.chefkoch.de/v2/images/crop-656x370/recipes/2737891426025016/images/1365577/fit-960x720" />'}                
+              </div>
+              <div class="ds-collection-card__body ds-text-white">
+                <h3 class="ds-collection-card__headline ds-text-sans ds-trunc ds-trunc-1">${args.headline}</h3>
+                <div class="ds-collection-card__info">
+                  <span class="ds-collection-card__recipe-count ds-text-white ds-text-caption">${args.recipeCount == '1'? '1 Rezept':  args.recipeCount +' Rezepte'}</span>
+                  ${args.public? '<i class="ds-collection-card__visibility-icon chefkoch-icons ">visibility_on</i>': ''}
+                </div>
+              </div>
+            </a>
+            ${args.hasMenuButton ? 
+              '<div class="ds-collection-card__action"><div class="ds-dropdown-menu"><button class="ds-btn ds-btn--round ds-btn--action-menu ds-btn--size-s menu-button"><i class="ds-btn__icon chefkoch-icons menu-button">more_horiz</i></button></div></div>': 
+              ''}
+        </div>
+      </div>
+    </div>`;
+};
+
+<Canvas>
+  <Story name="Hauptsammlung" args={{
+    headline: 'Hauptsammlung',
+    gradient: true,
+    recipeCount: 12
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Leere Sammlung" args={{
+    headline: 'Leere Sammlung',
+    gradient: false,
+    recipeCount: 0,
+    hasMenuButton: true
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Öffentliche Sammlung" args={{
+    headline: 'Öffentliche Sammlung',
+    gradient: true,
+    public: true,
+    recipeCount: 12,
+    hasMenuButton: true
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>

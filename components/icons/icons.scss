@@ -1,0 +1,73 @@
+@import url("https://img.chefkoch-cdn.de/assets/v1/ckfont.min.css");
+@import "../colors/colors";
+
+// Icons
+.ds-icon-elem {
+    &_inline {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    &_s {
+        width: 16px;
+        height: 16px;
+    }
+
+    &_m {
+        width: 24px;
+        height: 24px;
+    }
+
+    &_l {
+        width: 30px;
+        height: 30px;
+    }
+
+    &_xl {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.ds-icon {
+
+    pointer-events: none;
+
+    // Icons inside buttons
+    // - use text color
+    // - always use square artboards
+    &--button {
+        display: inline-block;
+        fill: currentColor;
+        height: 1em;
+        margin-top: -0.2em;
+        vertical-align: middle;
+        width: 1em;
+    }
+
+    // Icons inside text buttons have 5px whitespace between text and themselves
+    &--text-button {
+        margin-right: 3px; // visual goal of 5px margin needs only 3px via CSS due to general whitespace created by inline-block
+
+        // Apply special class on parent for rare cases where icon is displayed to the right of the text
+        .ds-button--icon-right & {
+            margin-left: 3px;
+            margin-right: 0;
+        }
+    }
+
+    // "Info" icons are colored blue
+    &--info {
+        fill: $color-info--blue;
+    }
+
+    // "Warning" icons are colored yellow
+    &--warning {
+        fill: $color-info--yellow;
+    }
+
+    // "Danger" icons are colored red
+    &--danger {
+        fill: $color-info--red;
+    }
+}

@@ -1,0 +1,67 @@
+@mixin ds-text-link {
+    color: $color-corporate-green;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+    text-underline-offset: 0.2em;
+}
+
+.ds-text-link {
+    @include ds-text-link;
+}
+
+/* class .ds-copy-link and mixin ds-copy-link are deprecated since v9.14.0, will be removed in future versions */
+
+@mixin ds-copy-link {
+    @include ds-text-link;
+}
+
+.ds-copy-link {
+    @include ds-copy-link;
+}
+
+/* if the headline is the link */
+
+a.ds-heading-link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $color-corporate-green-dark;
+        text-decoration: underline;
+    }
+}
+
+/* if the headline is IN the link */
+
+a {
+    &:hover,
+    &:focus {
+        .ds-heading-link {
+            color: $color-corporate-green-dark;
+            text-decoration: underline;
+        }
+    }
+}
+
+/* class .ds-target-link, .ds-mb and mixin ds-target-link are deprecated since v9.15.0 and will be removed in future versions */
+
+/* target links e.g. media-block-module as teaser */
+
+@mixin ds-target-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.ds-target-link {
+    @include ds-target-link;
+    display: block;
+}
+
+a.ds-mb {
+    @include ds-target-link;
+}

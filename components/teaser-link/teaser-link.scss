@@ -1,0 +1,34 @@
+.ds-teaser-link {
+    $root: &;
+    color: inherit;
+    text-decoration: none;
+
+    &__headline {
+        transition: color 0.8s ease-out;
+
+        #{$root}:hover & {
+            color: $color-corporate-green;
+            transition: color 0.4s ease-in-out;
+        }
+    }
+
+    &__image-wrap {
+        position: relative;
+        overflow: hidden;
+        will-change: transform;
+    }
+
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        transition: transform 0.8s ease-out;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+
+        #{$root}:hover & {
+            transition: transform 0.4s ease-in-out;
+            transform: scale(1.1);
+        }
+    }
+}

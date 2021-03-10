@@ -1,0 +1,23 @@
+.ds-btn--secondary {
+    background: $color-bg-content;
+    border-color: $color-corporate-green;
+    color: $color-corporate-green;
+
+    &:hover,
+    &:focus {
+        border-color: $color-corporate-green-medium;
+        color: $color-corporate-green-medium;
+    }
+
+    &:active {
+        border-color: $color-corporate-green-dark;
+        color: $color-corporate-green-dark;
+    }
+
+    &--disabled,
+    &:disabled,
+    &[disabled] {
+        border-color: $color-pepper;
+        color: $color-pepper;
+    }
+}

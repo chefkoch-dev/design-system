@@ -1,0 +1,37 @@
+@mixin carouselIndicatorBase() {
+    align-items: center;
+    align-content: center;
+    background-color: $color-white;
+    border-radius: 50%;
+    color: $color-corporate-green-dark;
+    display: flex;
+    font-family: "Material Icons";
+    font-size: 32px;
+    height: ($unit * 5);
+    justify-content: center;
+    outline: none;
+    width: ($unit * 5);
+    margin: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@mixin carouselNextButton() {
+    right: $unit;
+
+    &::before {
+        // Chevron right
+        content: "\e5cc";
+    }
+}
+
+@mixin carouselPrevButton() {
+    left: $unit;
+
+    &::before {
+        // Chevron left
+        content: "\e5cb";
+    }
+}

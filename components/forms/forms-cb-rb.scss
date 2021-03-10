@@ -1,0 +1,66 @@
+
+/* checkboxes / radiobuttons
+-------------------------- */
+
+.ds-cb-rb {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+
+    input {
+        margin: 0;
+        opacity: 0;
+        position: absolute;
+
+        // we don't show the input but we need it to simulate the click on the icon
+        zoom: 1.5;
+
+        @supports not (zoom:1.5) {
+            height: $unit * 2.5;
+            width: $unit * 2.5;
+        }
+
+        @media all and (-ms-high-contrast: none) {
+            /* IE10 */
+            margin-top: -10px;
+        }
+
+        &:not(:checked) ~ .ds-icon-active,
+        &:checked ~ .ds-icon-inactive {
+            display: none;
+        }
+    }
+
+    i {
+        margin-right: $unit;
+    }
+
+    .ds-icon-inactive {
+        color: $color-pepper;
+    }
+
+    .ds-icon-active {
+        color: $color-corporate-green;
+    }
+
+    &:hover {
+        * {
+            cursor: pointer;
+        }
+
+        i {
+            color: $color-corporate-green-dark;
+        }
+    }
+}
+
+.ds-rb {
+    + label {
+        border-radius: $unit * 2.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: $stdFormHeight;
+        width: $unit * 5;
+    }
+}

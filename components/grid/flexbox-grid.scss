@@ -1,0 +1,387 @@
+/* Customizable Flexbox-Grid
+** Inspired by http://flexboxgrid.com/
+** https://github.com/kristoferjoseph/flexboxgrid/blob/master/src/css/flexboxgrid.css
+**
+** You need offset classes or other utilities of the flexbox grid on github?
+** No problem, mate! Just make a new file (like grid-utilities or sth), copy what you need from github, prefix it with .ds- and import it to your project. Boom, you're done.
+*/
+
+/* stylelint-disable */
+
+/* gutter widths */
+$gutter-small: $unit; //8
+$gutter-std: $unit * 2; //16
+$gutter-big: $unit * 3; //24
+
+$gutter-half-small: $gutter-small / 2; //4
+$gutter-half-std: $gutter-std / 2; //8
+$gutter-half-big: $gutter-big / 2; //16
+
+/* content container widths */
+$container-xxxs-min: $screen-xxxs - ($gutter-small * 2); //320-16=304
+$container-xxs-min: $screen-xxs;
+$container-xs-min: $screen-xs;
+$container-s-min: $screen-s;
+$container-m-min: $screen-m;
+
+.ds-container {
+	box-sizing: border-box;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 $gutter-half-small;
+
+	@include media-breakpoint-from(xxs) {
+		padding: 0 $gutter-half-std;
+		// container is fluid
+		width: 100%;
+	}
+
+	@include media-breakpoint-from(s) {
+		// container is fluid till 600px
+		max-width: $container-s-min;
+	}
+
+	@include media-breakpoint-from(m) {
+		padding: 0 $gutter-half-big;
+		max-width: $container-m-min;
+	}
+}
+
+.ds-grid {
+	/* NOTE
+	** The shorthand flex stands for flex-grow, flex-shrink, flex-basis
+	** Old browsers (like Safari 8/9, IE) need this property to handle flexbox correctly
+	**
+	** https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
+	** here: initial value 0 = items don't grow uneven, all items share equal space
+	** https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink
+	** here: initial value 1 = items do shrink down to fit into the grid
+	** https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
+	** here: initial value auto = main-size of all items is equal
+	*/
+
+	box-sizing: border-box;
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.ds-grid-float {
+	@include media-breakpoint-from(m) {
+		float: left;
+	}
+}
+
+@mixin ds-row-xxxs {
+	margin-right: -($gutter-half-small);
+	margin-left: -($gutter-half-small);
+}
+
+@mixin ds-row-xxs {
+	@include media-breakpoint-from(xxs) {
+		margin-right: -($gutter-half-std);
+		margin-left: -($gutter-half-std);
+	}
+}
+
+@mixin ds-row-m {
+	@include media-breakpoint-from(m) {
+		margin-right: -($gutter-half-big);
+		margin-left: -($gutter-half-big);
+	}
+}
+
+@mixin ds-row {
+	@include ds-row-xxxs;
+	@include ds-row-xxs;
+	@include ds-row-m;
+}
+
+.ds-row {
+	@include ds-row;
+}
+
+.ds-clear {
+	clear: both;
+}
+
+[class*="ds-col-"] {
+	box-sizing: border-box;
+	flex: 0 1 auto; //grow shrink basis
+	padding-right: $gutter-half-small;
+	padding-left: $gutter-half-small;
+	width: 100%;
+
+	// 480–599px
+	@include media-breakpoint-from(xxs) {
+		padding-right: $gutter-half-std;
+		padding-left: $gutter-half-std;
+	}
+
+	// 600–959px
+	@include media-breakpoint-from(s) {
+		flex: 0 0 auto;
+	}
+
+	@include media-breakpoint-from(m) {
+		padding-right: $gutter-half-big;
+		padding-left: $gutter-half-big;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+
+// 0+
+.ds-col-1 {
+	flex-basis: 8.33333333%;
+	max-width: 8.33333333%;
+}
+
+.ds-col-2 {
+	flex-basis: 16.66666667%;
+	max-width: 16.66666667%;
+}
+
+.ds-col-3 {
+	flex-basis: 25%;
+	max-width: 25%;
+}
+
+.ds-col-4 {
+	flex-basis: 33.33333333%;
+	max-width: 33.33333333%;
+}
+
+.ds-col-5 {
+	flex-basis: 41.66666667%;
+	max-width: 41.66666667%;
+}
+
+.ds-col-6 {
+	flex-basis: 50%;
+	max-width: 50%;
+}
+
+.ds-col-7 {
+	flex-basis: 58.33333333%;
+	max-width: 58.33333333%;
+}
+
+.ds-col-8 {
+	flex-basis: 66.66666667%;
+	max-width: 66.66666667%;
+}
+
+.ds-col-9 {
+	flex-basis: 75%;
+	max-width: 75%;
+}
+
+.ds-col-10 {
+	flex-basis: 83.33333333%;
+	max-width: 83.33333333%;
+}
+
+.ds-col-11 {
+	flex-basis: 91.66666667%;
+	max-width: 91.66666667%;
+}
+
+.ds-col-12 {
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+// 480 - 599
+@include media-breakpoint-from(xs) {
+	.ds-col-xs-1 {
+		flex-basis: 8.33333333%;
+		max-width: 8.33333333%;
+	}
+
+	.ds-col-xs-2 {
+		flex-basis: 16.66666667%;
+		max-width: 16.66666667%;
+	}
+
+	.ds-col-xs-3 {
+		flex-basis: 25%;
+		max-width: 25%;
+	}
+
+	.ds-col-xs-4 {
+		flex-basis: 33.33333333%;
+		max-width: 33.33333333%;
+	}
+
+	.ds-col-xs-5 {
+		flex-basis: 41.66666667%;
+		max-width: 41.66666667%;
+	}
+
+	.ds-col-xs-6 {
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+
+	.ds-col-xs-7 {
+		flex-basis: 58.33333333%;
+		max-width: 58.33333333%;
+	}
+
+	.ds-col-xs-8 {
+		flex-basis: 66.66666667%;
+		max-width: 66.66666667%;
+	}
+
+	.ds-col-xs-9 {
+		flex-basis: 75%;
+		max-width: 75%;
+	}
+
+	.ds-col-xs-10 {
+		flex-basis: 83.33333333%;
+		max-width: 83.33333333%;
+	}
+
+	.ds-col-xs-11 {
+		flex-basis: 91.66666667%;
+		max-width: 91.66666667%;
+	}
+
+	.ds-col-xs-12 {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+}
+
+// 600 - 959
+@include media-breakpoint-from(s) {
+	.ds-col-s-1 {
+		flex-basis: 8.33333333%;
+		max-width: 8.33333333%;
+	}
+
+	.ds-col-s-2 {
+		flex-basis: 16.66666667%;
+		max-width: 16.66666667%;
+	}
+
+	.ds-col-s-3 {
+		flex-basis: 25%;
+		max-width: 25%;
+	}
+
+	.ds-col-s-4 {
+		flex-basis: 33.33333333%;
+		max-width: 33.33333333%;
+	}
+
+	.ds-col-s-5 {
+		flex-basis: 41.66666667%;
+		max-width: 41.66666667%;
+	}
+
+	.ds-col-s-6 {
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+
+	.ds-col-s-7 {
+		flex-basis: 58.33333333%;
+		max-width: 58.33333333%;
+	}
+
+	.ds-col-s-8 {
+		flex-basis: 66.66666667%;
+		max-width: 66.66666667%;
+	}
+
+	.ds-col-s-9 {
+		flex-basis: 75%;
+		max-width: 75%;
+	}
+
+	.ds-col-s-10 {
+		flex-basis: 83.33333333%;
+		max-width: 83.33333333%;
+	}
+
+	.ds-col-s-11 {
+		flex-basis: 91.66666667%;
+		max-width: 91.66666667%;
+	}
+
+	.ds-col-s-12 {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+}
+
+// 960+
+@include media-breakpoint-from(m) {
+	.ds-col-m-1 {
+		flex-basis: 8.33333333%;
+		max-width: 8.33333333%;
+	}
+
+	.ds-col-m-2 {
+		flex-basis: 16.66666667%;
+		max-width: 16.66666667%;
+	}
+
+	.ds-col-m-3 {
+		flex-basis: 25%;
+		max-width: 25%;
+	}
+
+	.ds-col-m-4 {
+		flex-basis: 33.33333333%;
+		max-width: 33.33333333%;
+	}
+
+	.ds-col-m-5 {
+		flex-basis: 41.66666667%;
+		max-width: 41.66666667%;
+	}
+
+	.ds-col-m-6 {
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+
+	.ds-col-m-7 {
+		flex-basis: 58.33333333%;
+		max-width: 58.33333333%;
+	}
+
+	.ds-col-m-8 {
+		flex-basis: 66.66666667%;
+		max-width: 66.66666667%;
+	}
+
+	.ds-col-m-9 {
+		flex-basis: 75%;
+		max-width: 75%;
+	}
+
+	.ds-col-m-10 {
+		flex-basis: 83.33333333%;
+		max-width: 83.33333333%;
+	}
+
+	.ds-col-m-11 {
+		flex-basis: 91.66666667%;
+		max-width: 91.66666667%;
+	}
+
+	.ds-col-m-12 {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+}
+
+/* stylelint-enable */

@@ -1,0 +1,101 @@
+/* Layout
+----------------------------------- */
+
+body {
+    background: $color-bg;
+}
+
+main.ds-container {
+    background: $color-bg-content;
+    padding-top: $unit * 4;
+    width: auto;
+    max-width: $max-content-width;
+
+    @include media-breakpoint-from(m) {
+        max-width: $screen-m - $skyscraper-width;
+    }
+
+    body[data-ads-site-type="tablet"] & {
+        // center content and skyscraper
+        margin-right: calc(((100vw - (#{$max-content-width} + #{$skyscraper-width})) / 2) + #{$skyscraper-width});
+        // static margin if content is less than $max-content-width
+        @media (max-width: calc(#{$skyscraper-width} + #{$max-content-width})) {
+            margin-right: $skyscraper-width;
+        }
+    }
+
+    body[data-ads-site-type="desktop"] & {
+        // center content and skyscraper
+        margin-right: calc(((100vw - #{$screen-m}) / 2) + #{$skyscraper-width});
+    }
+}
+
+.ds-box {
+    margin-bottom: $unit * 4;
+    position: relative;
+}
+
+.ds-hr {
+    border: 0;
+    border-bottom: 1px solid $color-pepper;
+    margin: 0;
+    padding-top: $unit * 4;
+    width: 100%;
+
+    /* stylelint-disable all */
+    .ad & {
+        padding-top: $unit * 2;
+    }
+
+    /* stylelint-enable all */
+}
+
+/* Images
+----------------------------------- */
+
+@mixin ds-border-radius {
+    border-radius: $unit;
+}
+
+figure {
+    margin: 0;
+}
+
+/* Breakpoint Utilities
+----------------------------------- */
+
+.ds-to-xs {
+    @include media-breakpoint-from(s) {
+        display: none;
+    }
+}
+
+.ds-to-s {
+    @include media-breakpoint-from(m) {
+        display: none;
+    }
+}
+
+.ds-from-xxs {
+    @include media-breakpoint-to(xxxs) {
+        display: none;
+    }
+}
+
+.ds-from-xs {
+    @include media-breakpoint-to(xxs) {
+        display: none;
+    }
+}
+
+.ds-from-s {
+    @include media-breakpoint-to(xs) {
+        display: none;
+    }
+}
+
+.ds-from-m {
+    @include media-breakpoint-to(s) {
+        display: none;
+    }
+}

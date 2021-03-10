@@ -1,0 +1,14 @@
+@import "../shadows/box-shadow";
+
+.ds-social-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ds-social-item {
+    border-radius: 50%;
+    height: $unit * 5;
+    margin: 0 $unit;
+    width: $unit * 5;
+}

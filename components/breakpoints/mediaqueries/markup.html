@@ -1,0 +1,60 @@
+<h4>Mixins für MediaQueries</h4>
+<br/>
+<div class="ds-grid ds-row">
+    <div class="ds-box ds-col-12">
+        <h4>from</h4>
+        <p>Breakpoints kleiner als <em>value</em> werden nicht berücksichtigt</p>
+        <code>@include media-breakpoint-from(<em>value</em>) { ... }</code>
+        <p>value: m = xxxs, xxs, xs, s, <strong>m</strong>, <strong>l</strong>, <strong>xl</strong></p>
+
+        <hr class="ds-hr" />
+    </div>
+
+    <div class="ds-box ds-col-12">
+        <h4>to</h4>
+        <p>Breakpoints vom kleinsten bis einschließlich <em>value</em> werden angesprochen</p>
+        <code>@include media-breakpoint-to(<em>value</em>) { ... }</code>
+        <p>value: m = <strong>xxxs</strong>, <strong>xxs</strong>, <strong>xs</strong>, <strong>s</strong>, <strong>m
+        </strong>, l, xl</p>
+
+        <hr class="ds-hr" />
+    </div>
+
+    <div class="ds-box ds-col-12">
+        <h4>between</h4>
+        <p>Breakpoints von <em>value from</em> bis einschließlich <em>value to</em> werden angesprochen</p>
+        <code>@include media-breakpoint-between(<em>value from</em>, <em>value to</em>) { ... }</code>
+        <p>values: s, l = xxxs, xxs, xs,  <strong>s</strong>, <strong>m</strong>, <strong>l</strong>, xl</p>
+
+        <hr class="ds-hr" />
+    </div>
+
+    <div class="ds-box ds-col-12">
+        <h4>only</h4>
+        <p>Ausschließlich der Breakpoint von <em>value</em> wird angesprochen</p>
+        <code>@include media-breakpoint-only(<em>value</em>) { ... }</code>
+        <p>value: m = xxxs, xxs, xs, s, <strong>m</strong>, l, xl</p>
+
+        <hr class="ds-hr" />
+    </div>
+</div>
+
+<h4>Aktive breakpoint values für Mixins</h4>
+
+<div class="ds-grid ds-row">
+    <div class="ds-col-4 ds-col-s-2">
+        xxxs: 320px
+    </div>
+    <div class="ds-col-4 ds-col-s-2">
+        xxs: 360px
+    </div>
+    <div class="ds-col-4 ds-col-s-2">
+        xs: 480px
+    </div>
+    <div class="ds-col-4 ds-col-s-2">
+        s: 600px
+    </div>
+    <div class="ds-col-4 ds-col-s-2">
+        m: 1196px
+    </div>
+</div>

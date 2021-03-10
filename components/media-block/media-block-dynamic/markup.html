@@ -1,0 +1,42 @@
+<div class="ds-grid ds-row">
+
+    <div class="ds-box ds-col-12">
+        <small>Zieh dein Browserfenster größer oder kleiner, um die Änderungen zu sehen. Wechsel bei Breakpoint s.</small>
+    </div>
+
+    <div class="ds-box ds-col-12">
+        <div class="ds-mb dsy-helper-ignore-this-2">
+            <figure class="ds-mb-left">
+                <img class="ds-to-xs" src="https://img.chefkoch-cdn.de/rezepte/2397571379105119/bilder/1102329/crop-276x276/lachs-von-bacon-umrollt-mit-pikanter-gemuesepfanne-und-feta-kaese.jpg" />
+                <img class="ds-from-s" src="https://img.chefkoch-cdn.de/rezepte/1153541221572701/bilder/1130636/crop-600x400/caprese-bacon-ciabatta-sandwich.jpg" />
+            </figure>
+
+            <div class="ds-mb-right">
+                <p>Bacon Stripes<br/>
+                    And Bacon Stripes, And Bacon Stripes, And Bacon Stripes, And Bacon Stripes</p>
+            </div>
+        </div>
+
+        <hr class="ds-hr" />
+    </div>
+
+    <div class="ds-col-12">
+        <h4>Beispiel SCSS</h4>
+        <small>
+            <pre style="overflow-x: scroll;">
+.ds-mb {
+    @include media-breakpoint-to(xs) {
+        @include ds-fd-row;
+        @include ds-mb-padding("left", 2);
+    }
+
+    @include media-breakpoint-from(s) {
+        @include ds-fd-col;
+        @include ds-mb-padding("top", 2);
+    }
+}
+            </pre>
+        </small>
+    </div>
+
+</div>

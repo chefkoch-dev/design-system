@@ -1,0 +1,131 @@
+/* stylelint-disable at-rule-blacklist */
+
+@mixin pagination-dot( $color ) {
+    background: $color;
+
+}
+
+%pagination-item-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $unit * 4;
+    min-width: $unit * 4;
+}
+
+%pagination-link {
+    color: $color-corporate-green-dark;
+    text-decoration: none;
+}
+
+%pagination-dot-type {
+    color: $color-text-inverted;
+    text-decoration: none;
+}
+
+%pagination-dot-hover {
+    &:hover,
+    &:focus {
+        @include pagination-dot( $color-corporate-green-dark );
+        @extend %pagination-dot-type;
+    }
+}
+
+/* pagination container
+--------------------------------------------- */
+
+.ds-pagination {
+    @extend .ds-list-plain;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media screen and (max-width: 414px) {
+        flex-wrap: wrap;
+    }
+
+    li {
+        margin: 0 2.5px;
+    }
+
+    i {
+        font-size: 26px;
+    }
+}
+
+/* pagination item
+--------------------------------------------- */
+
+.ds-page-item {
+    &.ds-disabled {
+        @extend %pagination-item-box;
+        color: $color-pepper;
+        cursor: default;
+    }
+
+    &.ds-truncated {
+        > span {
+            color: $color-chia;
+            cursor: default;
+            display: block;
+            line-height: 34px;
+        }
+    }
+}
+
+/* pagination link
+--------------------------------------------- */
+
+.ds-page-link {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 0 $unit;
+
+    .ds-active & {
+        @include pagination-dot( $color-corporate-green );
+        @extend %pagination-item-box;
+        @extend %pagination-dot-type;
+        @extend %pagination-dot-hover;
+    }
+}
+
+.ds-page-item:not(.ds-active) {
+    .ds-page-link {
+        @extend %pagination-link;
+        @extend %pagination-item-box;
+        @extend %pagination-dot-hover;
+    }
+}
+
+.ds-page-item.ds-prev,
+.ds-page-item.ds-next {
+    @extend %pagination-link;
+
+    .ds-page-link {
+        padding: 0;
+    }
+
+    &:not(.ds-disabled) {
+        .ds-page-link {
+            @extend %pagination-dot-hover;
+        }
+    }
+}
+
+/* pagination icon
+--------------------------------------------- */
+
+.ds-page-item.ds-prev {
+    i {
+        margin-left: -2px;
+    }
+}
+
+.ds-page-item.ds-next {
+    i {
+        margin-left: 1px;
+    }
+}
+
+/* stylelint-enable at-rule-blacklist */

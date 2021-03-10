@@ -1,0 +1,26 @@
+/* layout-utilities
+----------------------------------- */
+
+@mixin ds-float-left {
+    float: left;
+}
+
+.ds-float-left {
+    float: left;
+}
+
+@mixin clearfix {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+@mixin ds-or($numberOfClasses: 10) {
+    @for $index from 1 through $numberOfClasses {
+        .ds-or-#{$index} {
+            order: $index;
+        }
+    }
+}

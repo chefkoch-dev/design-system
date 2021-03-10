@@ -1,0 +1,38 @@
+/* .ds-recipe-meta styles are deprecated since v9.15.0 and will be removed in future versions */
+
+
+/* recipe-meta
+----------------------------------- */
+
+.ds-recipe-meta {
+    margin-left: -2px;
+    margin-bottom: -$unit / 2;
+
+    > span {
+        @include ds-border-radius;
+
+        background: rgba($color-pepper, 0.3);
+        color: $color-olive;
+        display: inline-flex;
+        align-items: center;
+        font-size: $fontsize-tiny;
+        height: $unit * 2;
+        margin-bottom: $unit / 2;
+        margin-right: $unit / 2;
+        padding: $unit / 2 $unit;
+
+        @include media-breakpoint-from(m) {
+            margin-bottom: $unit;
+            margin-right: $unit;
+        }
+    }
+
+    @include media-breakpoint-from(m) {
+        margin-bottom: -$unit;
+    }
+
+    i {
+        font-size: 16px;
+        margin-right: $unit / 2;
+    }
+}

@@ -1,0 +1,9 @@
+.ds-input-file {
+    //visually hide element but leaving it visible for browser because of accessibility
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}

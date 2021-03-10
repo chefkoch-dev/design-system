@@ -1,0 +1,85 @@
+.ds-recipe-card {
+    position: relative;
+
+    &__image-wrap {
+        border-radius: 16px;
+        max-width: 100%;
+        padding-bottom: 125%;
+        background-color: $color-garlic;
+        margin-bottom: 6px;
+    }
+
+    &__rating {
+        margin-bottom: 2px;
+    }
+
+    &__headline {
+        line-height: 22px;
+        margin-bottom: 0;
+    }
+
+    &__description {
+        margin-top: 2px;
+    }
+
+    &__button {
+        background-color: $color-white;
+        color: $color-corporate-green;
+        width: 40px;
+        height: 40px;
+
+        &--save {
+            color: $color-watermelon;
+
+            &:hover {
+                color: $color-watermelon-medium;
+            }
+        }
+
+        &--disabled {
+            color: $color-pepper;
+
+            &:hover {
+                color: $color-pepper;
+            }
+        }
+    }
+
+    &__action {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+
+        &--left {
+            right: auto;
+            left: 8px;
+        }
+
+        &--transform {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    &__badge {
+        background-color: $color-white;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+
+        &-icon {
+            margin-left: 0;
+            color: $color-pepper;
+            line-height: 40px;
+            font-size: 24px;
+        }
+    }
+
+    &__meta {
+        margin-top: 6px;
+    }
+
+    &__note {
+        margin-top: 8px;
+    }
+}

@@ -1,0 +1,13 @@
+@import "./mixins.indicators";
+
+.ds-carousel-indicators {
+    @include carouselIndicatorBase();
+}
+
+.ds-carousel-indicators-next {
+    @include carouselNextButton();
+}
+
+.ds-carousel-indicators-prev {
+    @include carouselPrevButton();
+}
