@@ -5,6 +5,7 @@
     background-color: $color-white;
     display: flex;
     border-radius: 8px;
+    transition: background-color 0.15s ease-in-out;
 
     @include media-breakpoint-from(m) {
         border-radius: 16px;
@@ -79,6 +80,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         flex: 1;
+        overflow: hidden;
     }
 
     &__column {
@@ -103,6 +105,13 @@
             padding: 8px 0 8px 24px;
             flex-basis: 50%;
             max-width: 50%;
+        }
+
+        &--full {
+            @include media-breakpoint-from(m) {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
         }
     }
 

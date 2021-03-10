@@ -1033,4 +1033,14 @@ td {
     }
 }
 
+.ndpl-dialog-container {
+    max-width: 420px;
+    padding: 0;
+    width: 100%;
+  
+    @include media-breakpoint-from(s) {
+        padding: 0;
+    }
+}
+
 /* stylelint-enable */
